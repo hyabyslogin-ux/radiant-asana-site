@@ -8,35 +8,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
+    /* Yoga Color Palette */
+    --background: 36 42% 91%; /* #EEE8DC */
+    --foreground: 331 37% 20%; /* Dark from #683147 */
+    
+    --card: 36 42% 91%;
+    --card-foreground: 331 37% 20%;
+    
+    --popover: 31 36% 94%; /* #F5E8E0 */
+    --popover-foreground: 331 37% 20%;
+    
+    --primary: 343 32% 38%; /* #914955 */
+    --primary-foreground: 36 42% 91%;
+    
+    --secondary: 13 50% 87%; /* #F8DEDC */
+    --secondary-foreground: 331 37% 20%;
+    
+    --muted: 31 36% 94%; /* #F5E8E0 */
+    --muted-foreground: 343 32% 38%;
+    
+    --accent: 353 30% 70%; /* #DAA2A1 */
+    --accent-foreground: 331 37% 20%;
+    
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    
+    --border: 353 30% 70%;
+    --input: 31 36% 94%;
+    --ring: 343 32% 38%;
+    
+    /* Yoga Design System */
+    --yoga-cream: 36 42% 91%;
+    --yoga-peach-light: 31 36% 94%;
+    --yoga-peach: 13 50% 87%;
+    --yoga-rose: 353 30% 70%;
+    --yoga-mauve: 343 32% 38%;
+    --yoga-plum: 331 37% 20%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--yoga-peach-light)), hsl(var(--yoga-peach)));
+    --gradient-border: linear-gradient(90deg, hsl(var(--yoga-rose)), hsl(var(--yoga-mauve)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--yoga-cream)), hsl(var(--yoga-peach-light)));
+    
+    /* Shadows */
+    --shadow-soft: 0 10px 25px -5px hsl(var(--yoga-rose) / 0.2);
+    --shadow-glow: 0 0 30px hsl(var(--yoga-mauve) / 0.3);
+    
+    /* Animation */
+    --transition-zen: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
