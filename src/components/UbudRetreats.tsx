@@ -15,7 +15,7 @@ const UbudRetreats = () => {
       price: '$350',
       level: 'Beginner',
       image: yogaRetreat1,
-      title: 'Spiritual Awakening Retreat',
+      title: '3 Days Yoga Retreat in Bali',
       description: 'Immerse yourself in the sacred energy of Ubud with this transformative 3-day retreat designed for beginners and those seeking spiritual renewal. Experience the perfect blend of traditional yoga practices and Balinese healing wisdom. Daily sunrise yoga sessions overlooking emerald rice terraces, traditional blessing ceremonies, and guided meditation in ancient temples. This introductory retreat includes organic vegetarian meals, spa treatments with local herbs, and cultural village walks. Perfect for first-time visitors to discover Ubud\'s mystical atmosphere and begin their yoga journey in Bali\'s spiritual heartland.',
       highlights: [
         'Daily sunrise yoga sessions overlooking rice terraces',
@@ -32,7 +32,7 @@ const UbudRetreats = () => {
       price: '$450',
       level: 'Beginner',
       image: yogaRetreat2,
-      title: 'Sound Healing & Yoga Immersion',
+      title: '4 Days Yoga Retreat in Bali',
       description: 'Deepen your practice with this 4-day retreat featuring daily yoga classes combined with transformative sound healing using traditional Tibetan singing bowls and Balinese gamelan instruments. Experience the healing vibrations that have been used for centuries to promote deep relaxation and spiritual awakening. Morning and evening yoga sessions complement pranayama breathing workshops and waterfall meditation excursions. Includes authentic Balinese cooking classes, sacred water temple visits, and jungle trekking experiences. This retreat perfectly balances physical practice with sound therapy, creating a comprehensive wellness experience that nurtures both body and soul.',
       highlights: [
         'Morning and evening yoga sessions',
@@ -49,7 +49,7 @@ const UbudRetreats = () => {
       price: '$550',
       level: 'Intermediate',
       image: yogaRetreat3,
-      title: 'Traditional Hatha Yoga Intensive',
+      title: '5 Days Yoga Retreat in Bali',
       description: 'Dive deeper into traditional Hatha yoga with this comprehensive 5-day intensive designed for intermediate practitioners. Focus on proper alignment, breathing techniques, and the philosophical foundations of yoga. Daily sessions include asana practice, pranayama, meditation, and yoga philosophy discussions. Experience authentic Balinese healing massages, participate in traditional ceremonies, and explore Ubud\'s sacred sites. This retreat emphasizes the classical approach to yoga, helping practitioners develop a strong foundation for their lifelong practice. Includes visits to traditional healers, organic farming experiences, and opportunities to connect with local yoga masters who carry forward ancient wisdom.',
       highlights: [
         'Traditional Hatha yoga intensive sessions',
@@ -66,7 +66,7 @@ const UbudRetreats = () => {
       price: '$650',
       level: 'Intermediate',
       image: yogaRetreat1,
-      title: 'Chakra Balancing & Energy Work',
+      title: '6 Days Yoga Retreat in Bali',
       description: 'Embark on a transformative 6-day journey focusing on chakra balancing and energy healing practices. Learn to identify and clear energy blockages while strengthening your subtle body awareness. Daily chakra-focused yoga sequences are combined with crystal healing sessions, energy meditation practices, and traditional Balinese energy clearing ceremonies. Experience the power of mantras, mudras, and visualization techniques. This retreat includes specialized workshops on aura reading, Reiki healing sessions, and sacred geometry meditation. Perfect for those seeking to deepen their understanding of energy work and develop intuitive healing abilities while surrounded by Ubud\'s naturally high-vibrational environment.',
       highlights: [
         'Chakra-focused yoga sequences',
@@ -83,7 +83,7 @@ const UbudRetreats = () => {
       price: '$750',
       level: 'All Levels',
       image: yogaRetreat2,
-      title: 'Complete Wellness Transformation',
+      title: '7 Days Yoga Retreat in Bali',
       description: 'Experience a comprehensive 7-day wellness transformation that addresses body, mind, and spirit. This all-levels retreat combines various yoga styles, meditation practices, detox programs, and holistic healing modalities. Daily schedules include dynamic Vinyasa flows, restorative Yin yoga, guided meditation, breathwork sessions, and nutritional workshops. Participate in traditional Balinese purification ceremonies, herbal medicine consultations, and personalized wellness assessments. The program includes jungle hiking, rice field meditation walks, and visits to sacred springs. This transformative week helps reset your entire system while providing tools and practices for maintaining wellness long after your return home.',
       highlights: [
         'Multiple yoga styles and meditation practices',
@@ -100,7 +100,7 @@ const UbudRetreats = () => {
       price: '$850',
       level: 'Advanced',
       image: yogaRetreat3,
-      title: 'Advanced Pranayama & Meditation',
+      title: '8 Days Yoga Retreat in Bali',
       description: 'Designed for experienced practitioners, this 8-day retreat focuses on advanced breathing techniques and deep meditation practices. Master complex pranayama sequences, explore esoteric yoga teachings, and develop sustained meditation abilities. Daily practices include advanced asana sequences, intensive breathwork sessions, silent meditation periods, and yogic philosophy studies. Experience advanced purification techniques, energy cultivation practices, and consciousness expansion methods. This retreat provides rare access to traditional Balinese spiritual teachers and includes participation in advanced ceremonial practices. Participants will receive initiation into deeper spiritual practices and personalized guidance for their continued advancement on the yogic path.',
       highlights: [
         'Advanced pranayama techniques',
@@ -117,7 +117,7 @@ const UbudRetreats = () => {
       price: '$950',
       level: 'Advanced',
       image: yogaRetreat1,
-      title: 'Yoga Teacher Development Intensive',
+      title: '9 Days Yoga Retreat in Bali',
       description: 'An intensive 9-day program for yoga teachers and serious practitioners seeking to deepen their teaching skills and personal practice. This advanced retreat covers anatomy, alignment principles, sequencing methodology, and teaching techniques. Includes practical teaching sessions, philosophy studies, Sanskrit learning, and business aspects of yoga instruction. Experience traditional Balinese teaching methods, learn to integrate cultural wisdom into modern yoga practice, and develop your unique teaching voice. The program features guest teachers, peer teaching opportunities, and personalized feedback sessions. Participants receive certification credits and comprehensive teaching materials. This retreat transforms dedicated practitioners into confident, knowledgeable teachers ready to share yoga\'s transformative power.',
       highlights: [
         'Teaching methodology and alignment training',
@@ -134,7 +134,7 @@ const UbudRetreats = () => {
       price: '$1050',
       level: 'All Levels',
       image: yogaRetreat2,
-      title: 'Spiritual Pilgrimage & Yoga Journey',
+      title: '10 Days Yoga Retreat in Bali',
       description: 'Embark on a profound 10-day spiritual pilgrimage combining yoga practice with visits to Bali\'s most sacred temples and power spots. This transformative journey includes daily yoga sessions at different sacred locations, temple ceremonies, holy water blessings, and meetings with traditional spiritual teachers. Experience the island\'s spiritual geography through guided pilgrimages to ancient temples, sacred mountains, and holy springs. The retreat incorporates various meditation techniques, chanting practices, and traditional offerings ceremonies. Participants receive teachings on Balinese Hindu philosophy, sacred geometry, and the spiritual significance of temple architecture. This once-in-a-lifetime experience creates deep spiritual connections and lasting transformation through the power of sacred spaces.',
       highlights: [
         'Sacred temple visits and ceremonies',
@@ -151,7 +151,7 @@ const UbudRetreats = () => {
       price: '$1150',
       level: 'Advanced',
       image: yogaRetreat3,
-      title: 'Complete Yoga Mastery Retreat',
+      title: '11 Days Yoga Retreat in Bali',
       description: 'The ultimate 11-day retreat for dedicated practitioners seeking mastery in all aspects of yoga. This comprehensive program covers advanced asana practice, complex pranayama techniques, meditation mastery, philosophical study, and energy work. Experience intensive daily practice sessions, one-on-one mentoring, advanced healing modalities, and traditional initiations. The retreat includes specialized workshops on yoga therapy, subtle energy work, consciousness studies, and spiritual counseling. Participants engage with master teachers, participate in advanced ceremonies, and receive personalized spiritual guidance. This transformative experience culminates in a graduation ceremony and ongoing mentorship opportunities. Perfect for those ready to embark on the path of yoga mastery and spiritual leadership.',
       highlights: [
         'Advanced asana and pranayama mastery',
