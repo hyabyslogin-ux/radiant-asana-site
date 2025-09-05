@@ -9,15 +9,14 @@ import yogaRetreat3 from '@/assets/yoga-retreat-3.jpg';
 const UbudRetreats = () => {
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
 
-  const detailedRetreats = [
+  const allRetreats = [
     {
       days: '3 Days',
       price: '$350',
       level: 'Beginner',
       image: yogaRetreat1,
       title: 'Spiritual Awakening Retreat',
-      shortDesc: 'Perfect introduction to Balinese yoga and spirituality.',
-      fullDesc: 'Immerse yourself in the sacred energy of Ubud with this transformative 3-day retreat designed for beginners and those seeking spiritual renewal. Experience the perfect blend of traditional yoga practices and Balinese healing wisdom.',
+      description: 'Immerse yourself in the sacred energy of Ubud with this transformative 3-day retreat designed for beginners and those seeking spiritual renewal. Experience the perfect blend of traditional yoga practices and Balinese healing wisdom. Daily sunrise yoga sessions overlooking emerald rice terraces, traditional blessing ceremonies, and guided meditation in ancient temples. This introductory retreat includes organic vegetarian meals, spa treatments with local herbs, and cultural village walks. Perfect for first-time visitors to discover Ubud\'s mystical atmosphere and begin their yoga journey in Bali\'s spiritual heartland.',
       highlights: [
         'Daily sunrise yoga sessions overlooking rice terraces',
         'Traditional Balinese blessing ceremony',
@@ -34,29 +33,136 @@ const UbudRetreats = () => {
       level: 'Beginner',
       image: yogaRetreat2,
       title: 'Sound Healing & Yoga Immersion',
-      shortDesc: 'Combine yoga practice with powerful sound healing sessions.',
-      fullDesc: 'Deepen your practice with this 4-day retreat featuring daily yoga classes combined with transformative sound healing using traditional Tibetan singing bowls and Balinese gamelan instruments.',
+      description: 'Deepen your practice with this 4-day retreat featuring daily yoga classes combined with transformative sound healing using traditional Tibetan singing bowls and Balinese gamelan instruments. Experience the healing vibrations that have been used for centuries to promote deep relaxation and spiritual awakening. Morning and evening yoga sessions complement pranayama breathing workshops and waterfall meditation excursions. Includes authentic Balinese cooking classes, sacred water temple visits, and jungle trekking experiences. This retreat perfectly balances physical practice with sound therapy, creating a comprehensive wellness experience that nurtures both body and soul.',
       highlights: [
         'Morning and evening yoga sessions',
         'Daily sound healing with singing bowls',
         'Pranayama and meditation workshops',
         'Waterfall meditation excursion',
         'Balinese cooking class',
-        'Sacred water temple visit',
-        'Jungle trekking and nature connection'
+        'Sacred water temple visit'
       ],
       includes: ['Boutique accommodation', 'All organic meals', 'Sound healing sessions', 'Cultural experiences', 'Transportation']
+    },
+    {
+      days: '5 Days',
+      price: '$550',
+      level: 'Intermediate',
+      image: yogaRetreat3,
+      title: 'Traditional Hatha Yoga Intensive',
+      description: 'Dive deeper into traditional Hatha yoga with this comprehensive 5-day intensive designed for intermediate practitioners. Focus on proper alignment, breathing techniques, and the philosophical foundations of yoga. Daily sessions include asana practice, pranayama, meditation, and yoga philosophy discussions. Experience authentic Balinese healing massages, participate in traditional ceremonies, and explore Ubud\'s sacred sites. This retreat emphasizes the classical approach to yoga, helping practitioners develop a strong foundation for their lifelong practice. Includes visits to traditional healers, organic farming experiences, and opportunities to connect with local yoga masters who carry forward ancient wisdom.',
+      highlights: [
+        'Traditional Hatha yoga intensive sessions',
+        'Yoga philosophy and meditation classes',
+        'Authentic Balinese healing massages',
+        'Visits to traditional healers',
+        'Organic farming experiences',
+        'Sacred site explorations'
+      ],
+      includes: ['Traditional accommodation', 'Vegetarian meals', 'Healing treatments', 'Cultural immersion', 'Philosophy classes']
+    },
+    {
+      days: '6 Days',
+      price: '$650',
+      level: 'Intermediate',
+      image: yogaRetreat1,
+      title: 'Chakra Balancing & Energy Work',
+      description: 'Embark on a transformative 6-day journey focusing on chakra balancing and energy healing practices. Learn to identify and clear energy blockages while strengthening your subtle body awareness. Daily chakra-focused yoga sequences are combined with crystal healing sessions, energy meditation practices, and traditional Balinese energy clearing ceremonies. Experience the power of mantras, mudras, and visualization techniques. This retreat includes specialized workshops on aura reading, Reiki healing sessions, and sacred geometry meditation. Perfect for those seeking to deepen their understanding of energy work and develop intuitive healing abilities while surrounded by Ubud\'s naturally high-vibrational environment.',
+      highlights: [
+        'Chakra-focused yoga sequences',
+        'Crystal healing and energy work',
+        'Traditional energy clearing ceremonies',
+        'Mantra and mudra workshops',
+        'Reiki healing sessions',
+        'Sacred geometry meditation'
+      ],
+      includes: ['Energy healing accommodation', 'Chakra-aligned meals', 'Crystal therapy', 'Energy workshops', 'Healing ceremonies']
+    },
+    {
+      days: '7 Days',
+      price: '$750',
+      level: 'All Levels',
+      image: yogaRetreat2,
+      title: 'Complete Wellness Transformation',
+      description: 'Experience a comprehensive 7-day wellness transformation that addresses body, mind, and spirit. This all-levels retreat combines various yoga styles, meditation practices, detox programs, and holistic healing modalities. Daily schedules include dynamic Vinyasa flows, restorative Yin yoga, guided meditation, breathwork sessions, and nutritional workshops. Participate in traditional Balinese purification ceremonies, herbal medicine consultations, and personalized wellness assessments. The program includes jungle hiking, rice field meditation walks, and visits to sacred springs. This transformative week helps reset your entire system while providing tools and practices for maintaining wellness long after your return home.',
+      highlights: [
+        'Multiple yoga styles and meditation practices',
+        'Detox programs and nutritional guidance',
+        'Traditional purification ceremonies',
+        'Herbal medicine consultations',
+        'Jungle hiking and nature immersion',
+        'Sacred spring visits'
+      ],
+      includes: ['Wellness resort accommodation', 'Detox meals & juices', 'Holistic treatments', 'Nature excursions', 'Wellness consultations']
+    },
+    {
+      days: '8 Days',
+      price: '$850',
+      level: 'Advanced',
+      image: yogaRetreat3,
+      title: 'Advanced Pranayama & Meditation',
+      description: 'Designed for experienced practitioners, this 8-day retreat focuses on advanced breathing techniques and deep meditation practices. Master complex pranayama sequences, explore esoteric yoga teachings, and develop sustained meditation abilities. Daily practices include advanced asana sequences, intensive breathwork sessions, silent meditation periods, and yogic philosophy studies. Experience advanced purification techniques, energy cultivation practices, and consciousness expansion methods. This retreat provides rare access to traditional Balinese spiritual teachers and includes participation in advanced ceremonial practices. Participants will receive initiation into deeper spiritual practices and personalized guidance for their continued advancement on the yogic path.',
+      highlights: [
+        'Advanced pranayama techniques',
+        'Intensive meditation and silence periods',
+        'Esoteric yoga teachings',
+        'Traditional spiritual teacher guidance',
+        'Advanced purification techniques',
+        'Consciousness expansion practices'
+      ],
+      includes: ['Advanced practitioner accommodation', 'Sattvic meals', 'Private teachings', 'Advanced ceremonies', 'Spiritual mentorship']
+    },
+    {
+      days: '9 Days',
+      price: '$950',
+      level: 'Advanced',
+      image: yogaRetreat1,
+      title: 'Yoga Teacher Development Intensive',
+      description: 'An intensive 9-day program for yoga teachers and serious practitioners seeking to deepen their teaching skills and personal practice. This advanced retreat covers anatomy, alignment principles, sequencing methodology, and teaching techniques. Includes practical teaching sessions, philosophy studies, Sanskrit learning, and business aspects of yoga instruction. Experience traditional Balinese teaching methods, learn to integrate cultural wisdom into modern yoga practice, and develop your unique teaching voice. The program features guest teachers, peer teaching opportunities, and personalized feedback sessions. Participants receive certification credits and comprehensive teaching materials. This retreat transforms dedicated practitioners into confident, knowledgeable teachers ready to share yoga\'s transformative power.',
+      highlights: [
+        'Teaching methodology and alignment training',
+        'Philosophy studies and Sanskrit learning',
+        'Traditional Balinese teaching methods',
+        'Practical teaching sessions with feedback',
+        'Business aspects of yoga instruction',
+        'Certification credits and materials'
+      ],
+      includes: ['Teacher accommodation', 'Educational meals', 'Teaching materials', 'Certification credits', 'Business guidance']
+    },
+    {
+      days: '10 Days',
+      price: '$1050',
+      level: 'All Levels',
+      image: yogaRetreat2,
+      title: 'Spiritual Pilgrimage & Yoga Journey',
+      description: 'Embark on a profound 10-day spiritual pilgrimage combining yoga practice with visits to Bali\'s most sacred temples and power spots. This transformative journey includes daily yoga sessions at different sacred locations, temple ceremonies, holy water blessings, and meetings with traditional spiritual teachers. Experience the island\'s spiritual geography through guided pilgrimages to ancient temples, sacred mountains, and holy springs. The retreat incorporates various meditation techniques, chanting practices, and traditional offerings ceremonies. Participants receive teachings on Balinese Hindu philosophy, sacred geometry, and the spiritual significance of temple architecture. This once-in-a-lifetime experience creates deep spiritual connections and lasting transformation through the power of sacred spaces.',
+      highlights: [
+        'Sacred temple visits and ceremonies',
+        'Yoga practice at power spots',
+        'Holy water blessings and rituals',
+        'Traditional spiritual teacher meetings',
+        'Sacred mountain and spring pilgrimages',
+        'Balinese Hindu philosophy teachings'
+      ],
+      includes: ['Pilgrimage accommodation', 'Ceremonial meals', 'Temple offerings', 'Spiritual guidance', 'Sacred site access']
+    },
+    {
+      days: '11 Days',
+      price: '$1150',
+      level: 'Advanced',
+      image: yogaRetreat3,
+      title: 'Complete Yoga Mastery Retreat',
+      description: 'The ultimate 11-day retreat for dedicated practitioners seeking mastery in all aspects of yoga. This comprehensive program covers advanced asana practice, complex pranayama techniques, meditation mastery, philosophical study, and energy work. Experience intensive daily practice sessions, one-on-one mentoring, advanced healing modalities, and traditional initiations. The retreat includes specialized workshops on yoga therapy, subtle energy work, consciousness studies, and spiritual counseling. Participants engage with master teachers, participate in advanced ceremonies, and receive personalized spiritual guidance. This transformative experience culminates in a graduation ceremony and ongoing mentorship opportunities. Perfect for those ready to embark on the path of yoga mastery and spiritual leadership.',
+      highlights: [
+        'Advanced asana and pranayama mastery',
+        'One-on-one mentoring with masters',
+        'Yoga therapy and healing training',
+        'Consciousness studies and counseling',
+        'Traditional initiations and ceremonies',
+        'Ongoing mentorship opportunities'
+      ],
+      includes: ['Master-level accommodation', 'Gourmet sattvic cuisine', 'Personal mentoring', 'Advanced certifications', 'Lifetime guidance']
     }
-  ];
-
-  const simpleRetreats = [
-    { days: '5 Days', price: '$550', level: 'Intermediate' },
-    { days: '6 Days', price: '$650', level: 'Intermediate' },
-    { days: '7 Days', price: '$750', level: 'All Levels' },
-    { days: '8 Days', price: '$850', level: 'Advanced' },
-    { days: '9 Days', price: '$950', level: 'Advanced' },
-    { days: '10 Days', price: '$1050', level: 'All Levels' },
-    { days: '11 Days', price: '$1150', level: 'Advanced' }
   ];
 
   return (
@@ -108,15 +214,15 @@ const UbudRetreats = () => {
           </div>
         </div>
 
-        {/* Detailed Retreat Cards (3-4 days) */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {detailedRetreats.map((retreat, index) => (
+        {/* All Retreat Cards - Uniform Design */}
+        <div className="grid md:grid-cols-3 gap-6">
+          {allRetreats.map((retreat, index) => (
             <Card key={index} className="overflow-hidden bg-gradient-card border border-yoga-rose/20 shadow-soft hover:shadow-glow transition-all duration-300">
               <div className="relative">
                 <img 
                   src={retreat.image} 
                   alt={`${retreat.title} in Ubud Bali`}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-48 object-cover"
                 />
                 <div className="absolute top-4 left-4 bg-yoga-mauve text-white px-3 py-1 rounded-full text-sm font-semibold">
                   {retreat.days}
@@ -128,24 +234,24 @@ const UbudRetreats = () => {
               
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-primary">{retreat.title}</h3>
-                  <span className="text-sm text-muted-foreground bg-yoga-peach px-2 py-1 rounded">
+                  <h3 className="text-lg font-bold text-primary">{retreat.title}</h3>
+                  <span className="text-xs text-muted-foreground bg-yoga-peach px-2 py-1 rounded">
                     {retreat.level}
                   </span>
                 </div>
                 
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  {expandedCard === retreat.days ? retreat.fullDesc : retreat.shortDesc}
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed line-clamp-4">
+                  {expandedCard === retreat.days ? retreat.description : retreat.description.substring(0, 100) + '...'}
                 </p>
                 
                 {expandedCard === retreat.days && (
                   <div className="space-y-4 animate-smooth-slide-up">
                     <div>
-                      <h4 className="font-semibold text-primary mb-2">Highlights:</h4>
+                      <h4 className="font-semibold text-primary mb-2 text-sm">Highlights:</h4>
                       <ul className="space-y-1">
                         {retreat.highlights.map((highlight, idx) => (
-                          <li key={idx} className="text-sm text-muted-foreground flex items-start">
-                            <Heart className="w-3 h-3 text-yoga-rose mt-1 mr-2 flex-shrink-0" />
+                          <li key={idx} className="text-xs text-muted-foreground flex items-start">
+                            <Heart className="w-3 h-3 text-yoga-rose mt-0.5 mr-2 flex-shrink-0" />
                             {highlight}
                           </li>
                         ))}
@@ -153,8 +259,8 @@ const UbudRetreats = () => {
                     </div>
                     
                     <div>
-                      <h4 className="font-semibold text-primary mb-2">Includes:</h4>
-                      <div className="flex flex-wrap gap-2">
+                      <h4 className="font-semibold text-primary mb-2 text-sm">Includes:</h4>
+                      <div className="flex flex-wrap gap-1">
                         {retreat.includes.map((item, idx) => (
                           <span key={idx} className="text-xs bg-yoga-rose/20 text-yoga-mauve px-2 py-1 rounded">
                             {item}
@@ -165,17 +271,18 @@ const UbudRetreats = () => {
                   </div>
                 )}
                 
-                <div className="flex gap-3 mt-6">
+                <div className="flex gap-2 mt-4">
                   <Button 
                     variant="outline" 
                     size="sm"
                     onClick={() => setExpandedCard(expandedCard === retreat.days ? null : retreat.days)}
-                    className="border-yoga-rose hover:bg-yoga-rose/10 transition-all duration-300"
+                    className="text-xs border-yoga-rose hover:bg-yoga-rose/10 transition-all duration-300"
                   >
-                    {expandedCard === retreat.days ? 'Read Less' : 'Read More'}
+                    {expandedCard === retreat.days ? 'Less' : 'More'}
                   </Button>
                   <Button 
-                    className="flex-1 bg-yoga-mauve hover:bg-yoga-plum text-white transition-all duration-300"
+                    size="sm"
+                    className="flex-1 bg-yoga-mauve hover:bg-yoga-plum text-white transition-all duration-300 text-xs"
                   >
                     Book Now
                   </Button>
@@ -183,35 +290,6 @@ const UbudRetreats = () => {
               </div>
             </Card>
           ))}
-        </div>
-
-        {/* Simple Retreat Cards (5-11 days) */}
-        <div className="border-t border-yoga-rose/20 pt-12">
-          <h3 className="text-2xl font-bold text-primary text-center mb-8">Extended Retreats</h3>
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {simpleRetreats.map((retreat, index) => (
-              <Card key={index} className="p-6 text-center bg-gradient-card border border-yoga-rose/20 shadow-soft hover:shadow-glow transition-all duration-300 hover:transform hover:scale-105">
-                <div className="flex justify-center mb-4">
-                  <Calendar className="w-8 h-8 text-yoga-mauve" />
-                </div>
-                <h3 className="text-xl font-semibold text-primary mb-2">
-                  {retreat.days}
-                </h3>
-                <p className="text-2xl font-bold text-yoga-mauve mb-2">
-                  {retreat.price}
-                </p>
-                <p className="text-sm text-muted-foreground mb-4">
-                  {retreat.level}
-                </p>
-                <Button 
-                  variant="outline" 
-                  className="border-yoga-rose hover:bg-yoga-rose hover:text-background transition-all duration-300"
-                >
-                  Book Now
-                </Button>
-              </Card>
-            ))}
-          </div>
         </div>
       </div>
     </section>
