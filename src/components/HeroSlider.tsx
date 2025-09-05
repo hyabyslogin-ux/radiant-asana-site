@@ -8,25 +8,25 @@ const HeroSlider = () => {
 
   const slides = [
     {
-      image: '/lovable-uploads/fa196a61-65f0-4c5b-945d-df28079ea3f3.png',
-      title: 'Discover Inner Peace',
-      subtitle: 'Pranayama & Breathwork Retreats',
-      description: 'Connect with your breath and unlock the bridge between body and soul through ancient pranayama techniques in the spiritual heart of Bali.',
-      cta: 'Begin Your Journey'
+      image: '/lovable-uploads/5bc20f00-75c6-4f94-83f8-be72e5c72b78.png',
+      title: 'Turn Each Moment',
+      subtitle: 'Into a Celebration of Now',
+      description: 'Join our vibrant community celebrations where traditional ceremonies meet joyful gathering. Experience the power of collective energy and shared spiritual moments.',
+      cta: 'Join the Celebration'
     },
     {
-      image: '/lovable-uploads/9e3fcc3b-076b-4912-b3b1-67a84baae207.png',
-      title: 'Healing Vibrations',
-      subtitle: 'Sound Healing & Meditation',
-      description: 'Experience transformative sound healing sessions with Tibetan singing bowls and traditional instruments in sacred spaces across Ubud.',
-      cta: 'Find Your Harmony'
+      image: '/lovable-uploads/5117ac0b-9cea-4be9-83af-8536b5cd98d6.png',
+      title: 'Sacred Water Blessings',
+      subtitle: 'Purification & Renewal',
+      description: 'Immerse yourself in ancient Balinese purification rituals at sacred water temples. Cleanse your spirit and renew your energy in these transformative ceremonies.',
+      cta: 'Experience Purification'
     },
     {
-      image: '/lovable-uploads/2c8cc260-25f3-4ae5-a498-e425800e509d.png',
-      title: 'True Independence',
-      subtitle: 'Group Yoga Classes & Community',
-      description: 'Join our supportive community of practitioners and free your mind from its own chains through collective practice and shared wisdom.',
-      cta: 'Join Our Community'
+      image: '/lovable-uploads/dd467e40-f434-4893-bfae-077adbaa9185.png',
+      title: 'Beach Yoga Bliss',
+      subtitle: 'Ocean Energy & Community',
+      description: 'Practice yoga on pristine Balinese beaches with the sound of waves as your soundtrack. Connect with nature and like-minded souls in paradise.',
+      cta: 'Find Your Flow'
     }
   ];
 
