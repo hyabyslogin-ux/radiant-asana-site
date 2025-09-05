@@ -16,15 +16,15 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Find Your
+            Discover
             <span className="block bg-gradient-border bg-clip-text text-transparent">
-              Inner Peace
+              Bali Yoga Retreats
             </span>
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">
-            Transform your body and mind through the ancient practice of yoga. 
-            Join our serene community and discover balance, strength, and tranquility.
+            Immerse yourself in transformative yoga retreats in Bali's most sacred locations. 
+            Experience authentic Balinese healing, mindfulness practices, and spiritual awakening.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

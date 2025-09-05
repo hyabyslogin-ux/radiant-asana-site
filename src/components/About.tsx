@@ -25,13 +25,27 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Welcome to Serenity
+            About Bali Yoga Retreats
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Our studio is a sanctuary where ancient wisdom meets modern wellness. 
-            We believe yoga is more than physical exercise—it's a transformative 
-            journey that nurtures your complete well-being.
-          </p>
+          <div className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed space-y-6">
+            <p>
+              Welcome to Bali Yoga Retreats, your gateway to transformative yoga experiences in the mystical island of Bali. 
+              We specialize in authentic yoga retreats that combine ancient Balinese wisdom with traditional yoga practices, 
+              offering life-changing journeys for practitioners of all levels across Ubud, Uluwatu, and Canggu.
+            </p>
+            <p>
+              Our carefully curated yoga retreats in Bali provide the perfect sanctuary for deepening your practice while 
+              experiencing the island's rich spiritual heritage. From the lush rice terraces of Ubud to the dramatic cliffs 
+              of Uluwatu and the vibrant surf culture of Canggu, each location offers unique energy and transformative experiences 
+              that will reconnect you with your inner self.
+            </p>
+            <p>
+              At Bali Yoga Retreats, we believe in holistic wellness that encompasses mind, body, and spirit. Our experienced 
+              instructors guide you through traditional Hatha, Vinyasa, and Yin yoga practices, complemented by meditation sessions, 
+              pranayama breathing techniques, and authentic Balinese healing ceremonies. Each retreat includes organic vegetarian 
+              meals, spa treatments, cultural excursions, and time for personal reflection in nature's embrace.
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -57,15 +71,16 @@ const About = () => {
                 Our Philosophy
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                At Serenity Yoga, we honor the traditional roots of yoga while embracing 
-                its evolution. Our approach integrates physical postures, breathwork, 
-                meditation, and mindfulness to create a holistic practice that serves 
-                modern lifestyles.
+                At Bali Yoga Retreats, we honor the sacred traditions of Balinese spirituality while creating authentic 
+                yoga experiences that transform lives. Our philosophy centers on the concept of "Tri Hita Karana" - the 
+                Balinese principle of harmony between humans, nature, and the divine. We integrate this ancient wisdom 
+                with comprehensive yoga practices to create retreats that heal, inspire, and awaken.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Whether you're beginning your yoga journey or deepening an existing practice, 
-                our welcoming community supports you every step of the way. We believe 
-                everyone deserves to experience the transformative power of yoga.
+                Whether you're seeking stress relief, spiritual awakening, or deeper yoga practice, our expertly designed 
+                retreats in Ubud, Uluwatu, and Canggu offer the perfect environment for transformation. We believe that 
+                yoga retreats in Bali should be more than just asana practice - they should be journeys of self-discovery 
+                that connect you with Bali's powerful healing energy and ancient wisdom traditions.
               </p>
             </div>
             <div className="relative">
