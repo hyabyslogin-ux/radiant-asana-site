@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Home, MapPin, Users, BookOpen, Phone, ChevronDown } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isRetreatsOpen, setIsRetreatsOpen] = useState(false);
+  const location = useLocation();
 
   const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      // If not on home page, navigate to home first
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -19,12 +27,12 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-lg">Y</span>
             </div>
             <span className="text-xl font-bold text-foreground">Bali Yoga Retreats</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
@@ -50,9 +58,16 @@ const Header = () => {
               
               {isRetreatsOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-background/95 backdrop-blur-md border border-border/50 rounded-lg shadow-soft animate-in slide-in-from-top-2 duration-200">
+                  <Link 
+                    to="/3-days-retreat"
+                    className="w-full text-left px-4 py-3 text-foreground hover:bg-accent hover:text-accent-foreground transition-colors rounded-t-lg"
+                    onClick={() => setIsRetreatsOpen(false)}
+                  >
+                    3 Days Retreat
+                  </Link>
                   <button 
                     onClick={() => scrollToSection('ubud-retreats')}
-                    className="w-full text-left px-4 py-3 text-foreground hover:bg-accent hover:text-accent-foreground transition-colors rounded-t-lg"
+                    className="w-full text-left px-4 py-3 text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
                   >
                     Ubud Retreats
                   </button>
@@ -97,9 +112,12 @@ const Header = () => {
             </button>
 
             {/* Book Now Button */}
-            <button className="bg-gradient-primary text-white px-6 py-2 rounded-full font-medium hover:shadow-glow hover:scale-105 transition-all duration-300">
+            <Link 
+              to="/3-days-retreat"
+              className="bg-gradient-primary text-white px-6 py-2 rounded-full font-medium hover:shadow-glow hover:scale-105 transition-all duration-300 text-center"
+            >
               Book Now
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -138,6 +156,13 @@ const Header = () => {
                 
                 {isRetreatsOpen && (
                   <div className="ml-8 space-y-2 animate-in slide-in-from-top-1 duration-200">
+                    <Link 
+                      to="/3-days-retreat"
+                      className="block text-left text-muted-foreground hover:text-primary transition-colors py-1"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      3 Days Retreat
+                    </Link>
                     <button 
                       onClick={() => scrollToSection('ubud-retreats')}
                       className="block text-left text-muted-foreground hover:text-primary transition-colors py-1"
@@ -184,9 +209,13 @@ const Header = () => {
                 <span>Contact Us</span>
               </button>
 
-              <button className="bg-gradient-primary text-white px-6 py-3 rounded-full font-medium mt-4 text-center hover:shadow-glow transition-all duration-300">
+              <Link 
+                to="/3-days-retreat"
+                className="bg-gradient-primary text-white px-6 py-3 rounded-full font-medium mt-4 text-center hover:shadow-glow transition-all duration-300 block"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Book Now
-              </button>
+              </Link>
             </div>
           </div>
         )}
