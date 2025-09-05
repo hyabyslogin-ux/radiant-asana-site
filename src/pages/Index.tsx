@@ -1,5 +1,5 @@
 import Navigation from '@/components/Navigation';
-import Hero from '@/components/Hero';
+import HeroSlider from '@/components/HeroSlider';
 import About from '@/components/About';
 import UbudRetreats from '@/components/UbudRetreats';
 import UluwatuRetreats from '@/components/UluwatuRetreats';
@@ -13,7 +13,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <Hero />
+      <HeroSlider />
       <About />
       <UbudRetreats />
       <UluwatuRetreats />
