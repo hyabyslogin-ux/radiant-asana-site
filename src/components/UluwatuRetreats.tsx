@@ -1,11 +1,54 @@
+import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Calendar, Waves, Sun } from 'lucide-react';
+import { Calendar, Waves, Sun, Heart } from 'lucide-react';
+import yogaRetreat1 from '@/assets/yoga-retreat-1.jpg';
+import yogaRetreat2 from '@/assets/yoga-retreat-2.jpg';
 
 const UluwatuRetreats = () => {
-  const retreats = [
-    { days: '3 Days', price: '$380', level: 'Beginner' },
-    { days: '4 Days', price: '$480', level: 'Beginner' },
+  const [expandedCard, setExpandedCard] = useState<string | null>(null);
+
+  const detailedRetreats = [
+    {
+      days: '3 Days',
+      price: '$380',
+      level: 'Beginner',
+      image: yogaRetreat1,
+      title: 'Clifftop Serenity Retreat',
+      shortDesc: 'Experience dramatic ocean views and sunset yoga sessions.',
+      fullDesc: 'Discover the breathtaking beauty of Uluwatu\'s dramatic cliffs while deepening your yoga practice. This 3-day retreat combines spectacular ocean views with transformative yoga sessions and sacred temple visits.',
+      highlights: [
+        'Sunrise yoga on cliff-top platforms',
+        'Sunset meditation at Uluwatu Temple',
+        'Traditional Kecak fire dance ceremony',
+        'Beach yoga sessions on pristine sands',
+        'Ocean-view spa treatments',
+        'Fresh seafood dining experiences'
+      ],
+      includes: ['Cliff-side accommodation', 'All meals', 'Temple visits', 'Cultural shows', 'Spa treatment']
+    },
+    {
+      days: '4 Days',
+      price: '$480',
+      level: 'Beginner',
+      image: yogaRetreat2,
+      title: 'Ocean Energy & Sacred Temples',
+      shortDesc: 'Harness the powerful energy of the ocean with temple ceremonies.',
+      fullDesc: 'Immerse yourself in the mystical energy of Uluwatu\'s sacred temples and dramatic coastline. This 4-day retreat combines ocean-inspired yoga practices with traditional Balinese ceremonies and cultural experiences.',
+      highlights: [
+        'Daily clifftop yoga with ocean panoramas',
+        'Sacred water blessing ceremonies',
+        'Traditional Balinese temple rituals',
+        'Surfing lessons (optional)',
+        'Hidden beach exploration',
+        'Sunset dinner at cliff restaurants',
+        'Ocean meditation sessions'
+      ],
+      includes: ['Luxury cliff accommodation', 'Gourmet seafood meals', 'Temple ceremonies', 'Cultural activities', 'Airport transfers']
+    }
+  ];
+
+  const simpleRetreats = [
     { days: '5 Days', price: '$580', level: 'Intermediate' },
     { days: '6 Days', price: '$680', level: 'Intermediate' },
     { days: '7 Days', price: '$780', level: 'All Levels' },
@@ -64,30 +107,110 @@ const UluwatuRetreats = () => {
           </div>
         </div>
 
-        {/* Retreat Packages */}
-        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {retreats.map((retreat, index) => (
-            <Card key={index} className="p-6 text-center bg-gradient-card border border-yoga-rose/20 shadow-soft hover:shadow-glow transition-all duration-300 hover:transform hover:scale-105">
-              <div className="flex justify-center mb-4">
-                <Calendar className="w-8 h-8 text-yoga-mauve" />
+        {/* Detailed Retreat Cards (3-4 days) */}
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {detailedRetreats.map((retreat, index) => (
+            <Card key={index} className="overflow-hidden bg-gradient-card border border-yoga-rose/20 shadow-soft hover:shadow-glow transition-all duration-300">
+              <div className="relative">
+                <img 
+                  src={retreat.image} 
+                  alt={`${retreat.title} in Uluwatu Bali`}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute top-4 left-4 bg-yoga-mauve text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  {retreat.days}
+                </div>
+                <div className="absolute top-4 right-4 bg-white/90 text-yoga-mauve px-3 py-1 rounded-full text-lg font-bold">
+                  {retreat.price}
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-primary mb-2">
-                {retreat.days}
-              </h3>
-              <p className="text-2xl font-bold text-yoga-mauve mb-2">
-                {retreat.price}
-              </p>
-              <p className="text-sm text-muted-foreground mb-4">
-                {retreat.level}
-              </p>
-              <Button 
-                variant="outline" 
-                className="border-yoga-rose hover:bg-yoga-rose hover:text-background transition-all duration-300"
-              >
-                Book Now
-              </Button>
+              
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-xl font-bold text-primary">{retreat.title}</h3>
+                  <span className="text-sm text-muted-foreground bg-yoga-peach px-2 py-1 rounded">
+                    {retreat.level}
+                  </span>
+                </div>
+                
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  {expandedCard === retreat.days ? retreat.fullDesc : retreat.shortDesc}
+                </p>
+                
+                {expandedCard === retreat.days && (
+                  <div className="space-y-4 animate-smooth-slide-up">
+                    <div>
+                      <h4 className="font-semibold text-primary mb-2">Highlights:</h4>
+                      <ul className="space-y-1">
+                        {retreat.highlights.map((highlight, idx) => (
+                          <li key={idx} className="text-sm text-muted-foreground flex items-start">
+                            <Waves className="w-3 h-3 text-yoga-rose mt-1 mr-2 flex-shrink-0" />
+                            {highlight}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="font-semibold text-primary mb-2">Includes:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {retreat.includes.map((item, idx) => (
+                          <span key={idx} className="text-xs bg-yoga-rose/20 text-yoga-mauve px-2 py-1 rounded">
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )}
+                
+                <div className="flex gap-3 mt-6">
+                  <Button 
+                    variant="outline" 
+                    size="sm"
+                    onClick={() => setExpandedCard(expandedCard === retreat.days ? null : retreat.days)}
+                    className="border-yoga-rose hover:bg-yoga-rose/10 transition-all duration-300"
+                  >
+                    {expandedCard === retreat.days ? 'Read Less' : 'Read More'}
+                  </Button>
+                  <Button 
+                    className="flex-1 bg-yoga-mauve hover:bg-yoga-plum text-white transition-all duration-300"
+                  >
+                    Book Now
+                  </Button>
+                </div>
+              </div>
             </Card>
           ))}
+        </div>
+
+        {/* Simple Retreat Cards (5-11 days) */}
+        <div className="border-t border-yoga-rose/20 pt-12">
+          <h3 className="text-2xl font-bold text-primary text-center mb-8">Extended Retreats</h3>
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {simpleRetreats.map((retreat, index) => (
+              <Card key={index} className="p-6 text-center bg-gradient-card border border-yoga-rose/20 shadow-soft hover:shadow-glow transition-all duration-300 hover:transform hover:scale-105">
+                <div className="flex justify-center mb-4">
+                  <Calendar className="w-8 h-8 text-yoga-mauve" />
+                </div>
+                <h3 className="text-xl font-semibold text-primary mb-2">
+                  {retreat.days}
+                </h3>
+                <p className="text-2xl font-bold text-yoga-mauve mb-2">
+                  {retreat.price}
+                </p>
+                <p className="text-sm text-muted-foreground mb-4">
+                  {retreat.level}
+                </p>
+                <Button 
+                  variant="outline" 
+                  className="border-yoga-rose hover:bg-yoga-rose hover:text-background transition-all duration-300"
+                >
+                  Book Now
+                </Button>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
