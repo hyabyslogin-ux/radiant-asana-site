@@ -186,31 +186,6 @@ const UbudRetreats = () => {
           </div>
         </div>
 
-        {/* Image Gallery */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
-          <div className="relative overflow-hidden rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300">
-            <img 
-              src="/lovable-uploads/8a948cb6-13f9-44c9-8fef-bce571ae9145.png" 
-              alt="Yoga retreat meditation in Ubud Bali" 
-              className="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div className="relative overflow-hidden rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300">
-            <img 
-              src="/lovable-uploads/9e3fcc3b-076b-4912-b3b1-67a84baae207.png" 
-              alt="Sound healing session in Ubud yoga retreat" 
-              className="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div className="relative overflow-hidden rounded-2xl shadow-soft hover:shadow-glow transition-all duration-300">
-            <img 
-              src="/lovable-uploads/3b45fe7e-1832-4fee-92d1-320376e40af5.png" 
-              alt="Group meditation class in Ubud Bali" 
-              className="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-        </div>
-
         {/* All Retreat Cards - Uniform Design */}
         <div className="grid md:grid-cols-3 gap-6">
           {allRetreats.map((retreat, index) => (
