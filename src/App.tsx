@@ -22,6 +22,15 @@ import UluwatuEightDaysRetreat from "./pages/UluwatuEightDaysRetreat";
 import UluwatuNineDaysRetreat from "./pages/UluwatuNineDaysRetreat";
 import UluwatuTenDaysRetreat from "./pages/UluwatuTenDaysRetreat";
 import UluwatuElevenDaysRetreat from "./pages/UluwatuElevenDaysRetreat";
+import CangguThreeDaysRetreat from "./pages/CangguThreeDaysRetreat";
+import CangguFourDaysRetreat from "./pages/CangguFourDaysRetreat";
+import CangguFiveDaysRetreat from "./pages/CangguFiveDaysRetreat";
+import CangguSixDaysRetreat from "./pages/CangguSixDaysRetreat";
+import CangguSevenDaysRetreat from "./pages/CangguSevenDaysRetreat";
+import CangguEightDaysRetreat from "./pages/CangguEightDaysRetreat";
+import CangguNineDaysRetreat from "./pages/CangguNineDaysRetreat";
+import CangguTenDaysRetreat from "./pages/CangguTenDaysRetreat";
+import CangguElevenDaysRetreat from "./pages/CangguElevenDaysRetreat";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -52,6 +61,15 @@ const App = () => (
           <Route path="/uluwatu-9-days-retreat" element={<UluwatuNineDaysRetreat />} />
           <Route path="/uluwatu-10-days-retreat" element={<UluwatuTenDaysRetreat />} />
           <Route path="/uluwatu-11-days-retreat" element={<UluwatuElevenDaysRetreat />} />
+          <Route path="/canggu-3-days-retreat" element={<CangguThreeDaysRetreat />} />
+          <Route path="/canggu-4-days-retreat" element={<CangguFourDaysRetreat />} />
+          <Route path="/canggu-5-days-retreat" element={<CangguFiveDaysRetreat />} />
+          <Route path="/canggu-6-days-retreat" element={<CangguSixDaysRetreat />} />
+          <Route path="/canggu-7-days-retreat" element={<CangguSevenDaysRetreat />} />
+          <Route path="/canggu-8-days-retreat" element={<CangguEightDaysRetreat />} />
+          <Route path="/canggu-9-days-retreat" element={<CangguNineDaysRetreat />} />
+          <Route path="/canggu-10-days-retreat" element={<CangguTenDaysRetreat />} />
+          <Route path="/canggu-11-days-retreat" element={<CangguElevenDaysRetreat />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
