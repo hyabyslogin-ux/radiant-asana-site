@@ -5,6 +5,7 @@ import { Menu, X, Home, MapPin, Users, BookOpen, Phone, ChevronDown } from 'luci
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isRetreatsOpen, setIsRetreatsOpen] = useState(false);
+  const [isUbudOpen, setIsUbudOpen] = useState(false);
   const location = useLocation();
 
   const scrollToSection = (sectionId: string) => {
@@ -57,20 +58,33 @@ const Header = () => {
               </button>
               
               {isRetreatsOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-background/95 backdrop-blur-md border border-border/50 rounded-lg shadow-soft animate-in slide-in-from-top-2 duration-200">
-                  <Link 
-                    to="/3-days-retreat"
-                    className="w-full text-left px-4 py-3 text-foreground hover:bg-accent hover:text-accent-foreground transition-colors rounded-t-lg"
-                    onClick={() => setIsRetreatsOpen(false)}
+                <div className="absolute top-full left-0 mt-2 w-56 bg-background/95 backdrop-blur-md border border-border/50 rounded-lg shadow-soft animate-in slide-in-from-top-2 duration-200">
+                  {/* Ubud Retreats with Submenu */}
+                  <div 
+                    className="relative group"
+                    onMouseEnter={() => setIsUbudOpen(true)}
+                    onMouseLeave={() => setIsUbudOpen(false)}
                   >
-                    3 Days Retreat
-                  </Link>
-                  <button 
-                    onClick={() => scrollToSection('ubud-retreats')}
-                    className="w-full text-left px-4 py-3 text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
-                  >
-                    Ubud Retreats
-                  </button>
+                    <button className="w-full flex items-center justify-between px-4 py-3 text-foreground hover:bg-accent hover:text-accent-foreground transition-colors rounded-t-lg">
+                      <span>Ubud Retreats</span>
+                      <ChevronDown className="w-4 h-4 -rotate-90" />
+                    </button>
+                    
+                    {isUbudOpen && (
+                      <div className="absolute top-0 left-full ml-1 w-48 bg-background/95 backdrop-blur-md border border-border/50 rounded-lg shadow-soft animate-in slide-in-from-left-2 duration-200">
+                        <Link to="/3-days-retreat" className="block px-4 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground transition-colors rounded-t-lg" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>3 Days Retreat</Link>
+                        <Link to="/4-days-retreat" className="block px-4 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>4 Days Retreat</Link>
+                        <Link to="/5-days-retreat" className="block px-4 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>5 Days Retreat</Link>
+                        <Link to="/6-days-retreat" className="block px-4 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>6 Days Retreat</Link>
+                        <Link to="/7-days-retreat" className="block px-4 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>7 Days Retreat</Link>
+                        <Link to="/8-days-retreat" className="block px-4 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>8 Days Retreat</Link>
+                        <Link to="/9-days-retreat" className="block px-4 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>9 Days Retreat</Link>
+                        <Link to="/10-days-retreat" className="block px-4 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>10 Days Retreat</Link>
+                        <Link to="/11-days-retreat" className="block px-4 py-2 text-sm text-foreground hover:bg-accent hover:text-accent-foreground transition-colors rounded-b-lg" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>11 Days Retreat</Link>
+                      </div>
+                    )}
+                  </div>
+                  
                   <button 
                     onClick={() => scrollToSection('uluwatu-retreats')}
                     className="w-full text-left px-4 py-3 text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
@@ -156,19 +170,31 @@ const Header = () => {
                 
                 {isRetreatsOpen && (
                   <div className="ml-8 space-y-2 animate-in slide-in-from-top-1 duration-200">
-                    <Link 
-                      to="/3-days-retreat"
-                      className="block text-left text-muted-foreground hover:text-primary transition-colors py-1"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      3 Days Retreat
-                    </Link>
-                    <button 
-                      onClick={() => scrollToSection('ubud-retreats')}
-                      className="block text-left text-muted-foreground hover:text-primary transition-colors py-1"
-                    >
-                      Ubud Retreats
-                    </button>
+                    {/* Ubud Retreats Submenu */}
+                    <div>
+                      <button 
+                        onClick={() => setIsUbudOpen(!isUbudOpen)}
+                        className="flex items-center justify-between w-full text-muted-foreground hover:text-primary transition-colors py-1"
+                      >
+                        <span>Ubud Retreats</span>
+                        <ChevronDown className={`w-3 h-3 transition-transform duration-300 ${isUbudOpen ? 'rotate-180' : ''}`} />
+                      </button>
+                      
+                      {isUbudOpen && (
+                        <div className="ml-4 space-y-1 mt-2 animate-in slide-in-from-top-1 duration-200">
+                          <Link to="/3-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>3 Days Retreat</Link>
+                          <Link to="/4-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>4 Days Retreat</Link>
+                          <Link to="/5-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>5 Days Retreat</Link>
+                          <Link to="/6-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>6 Days Retreat</Link>
+                          <Link to="/7-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>7 Days Retreat</Link>
+                          <Link to="/8-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>8 Days Retreat</Link>
+                          <Link to="/9-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>9 Days Retreat</Link>
+                          <Link to="/10-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>10 Days Retreat</Link>
+                          <Link to="/11-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>11 Days Retreat</Link>
+                        </div>
+                      )}
+                    </div>
+                    
                     <button 
                       onClick={() => scrollToSection('uluwatu-retreats')}
                       className="block text-left text-muted-foreground hover:text-primary transition-colors py-1"
