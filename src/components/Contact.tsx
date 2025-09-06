@@ -32,31 +32,42 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Get in Touch
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to begin your yoga journey? We'd love to hear from you. 
-            Reach out with any questions or to book your first class.
+          <div className="inline-flex items-center gap-3 mb-6">
+            <div className="w-12 h-0.5 bg-gradient-to-r from-transparent to-yoga-rose"></div>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary">
+              Get in Touch
+            </h2>
+            <div className="w-12 h-0.5 bg-gradient-to-l from-transparent to-yoga-rose"></div>
+          </div>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Ready to begin your transformative yoga journey in beautiful Bali? We'd love to connect with you. 
+            Whether you have questions about our retreats, want to book your experience, or simply need guidance 
+            on which program is perfect for you - we're here to help make your dreams a reality.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-bold text-primary mb-8">Visit Our Studio</h3>
+            <div className="text-center lg:text-left mb-8">
+              <h3 className="text-3xl font-bold text-primary mb-4">Visit Our Beautiful Studio</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Located in the heart of Ubud, surrounded by lush rice paddies and tropical gardens. 
+                Come experience the magic of Bali while deepening your yoga practice.
+              </p>
+            </div>
             
-            <div className="grid sm:grid-cols-2 gap-6 mb-8">
+            <div className="grid sm:grid-cols-2 gap-6">
               {contactInfo.map((info, index) => (
-                <Card key={index} className="p-6 bg-gradient-card border border-yoga-rose/20 shadow-soft">
-                  <div className="flex items-start gap-3">
-                    <div className="text-yoga-mauve mt-1">
+                <Card key={index} className="p-6 bg-gradient-card border border-yoga-rose/20 shadow-soft hover:shadow-glow transition-all duration-300 group">
+                  <div className="flex items-start gap-4">
+                    <div className="text-yoga-mauve mt-1 group-hover:scale-110 transition-transform duration-300">
                       {info.icon}
                     </div>
                     <div>
-                      <h4 className="font-semibold text-primary mb-2">{info.title}</h4>
+                      <h4 className="font-semibold text-primary mb-3 text-lg">{info.title}</h4>
                       {info.details.map((detail, i) => (
-                        <p key={i} className="text-sm text-muted-foreground">
+                        <p key={i} className="text-muted-foreground leading-relaxed mb-1">
                           {detail}
                         </p>
                       ))}
@@ -65,85 +76,110 @@ const Contact = () => {
                 </Card>
               ))}
             </div>
-
-            <Card className="p-6 bg-gradient-card border border-yoga-rose/20 shadow-soft">
-              <h4 className="text-lg font-semibold text-primary mb-4">First-Time Visitors</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>• Arrive 15 minutes early for your first class</li>
-                <li>• Bring a water bottle and towel</li>
-                <li>• Yoga mats and props are provided</li>
-                <li>• Wear comfortable, breathable clothing</li>
-                <li>• Let us know about any injuries or concerns</li>
-              </ul>
-            </Card>
           </div>
 
           {/* Contact Form */}
           <div>
-            <Card className="p-8 bg-gradient-card border border-yoga-rose/20 shadow-soft">
-              <h3 className="text-2xl font-bold text-primary mb-6">Send us a Message</h3>
+            <Card className="p-8 bg-gradient-card border border-yoga-rose/20 shadow-glow hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-yoga-peach/10 rounded-full -translate-y-16 translate-x-16"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-yoga-mauve/10 rounded-full translate-y-12 -translate-x-12"></div>
               
-              <form className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-primary mb-2">
-                      First Name
-                    </label>
-                    <Input placeholder="Your first name" className="border-yoga-rose/30" />
+              <div className="relative z-10">
+                <div className="text-center mb-8">
+                  <h3 className="text-3xl font-bold text-primary mb-3">Send us a Message</h3>
+                  <p className="text-muted-foreground">We typically respond within 24 hours</p>
+                </div>
+              
+                <form className="space-y-6">
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-semibold text-primary mb-3">
+                        First Name *
+                      </label>
+                      <Input 
+                        placeholder="Enter your first name" 
+                        className="border-yoga-rose/30 focus:border-yoga-mauve focus:ring-yoga-mauve/20 h-12 bg-white/50" 
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-semibold text-primary mb-3">
+                        Last Name *
+                      </label>
+                      <Input 
+                        placeholder="Enter your last name" 
+                        className="border-yoga-rose/30 focus:border-yoga-mauve focus:ring-yoga-mauve/20 h-12 bg-white/50" 
+                      />
+                    </div>
                   </div>
+
                   <div>
-                    <label className="block text-sm font-medium text-primary mb-2">
-                      Last Name
+                    <label className="block text-sm font-semibold text-primary mb-3">
+                      Email Address *
                     </label>
-                    <Input placeholder="Your last name" className="border-yoga-rose/30" />
+                    <Input 
+                      type="email" 
+                      placeholder="your.email@example.com" 
+                      className="border-yoga-rose/30 focus:border-yoga-mauve focus:ring-yoga-mauve/20 h-12 bg-white/50" 
+                    />
                   </div>
-                </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-primary mb-2">
-                    Email
-                  </label>
-                  <Input type="email" placeholder="your.email@example.com" className="border-yoga-rose/30" />
-                </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-primary mb-3">
+                      Phone Number
+                    </label>
+                    <Input 
+                      type="tel" 
+                      placeholder="+1 (555) 123-4567" 
+                      className="border-yoga-rose/30 focus:border-yoga-mauve focus:ring-yoga-mauve/20 h-12 bg-white/50" 
+                    />
+                  </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-primary mb-2">
-                    Phone (Optional)
-                  </label>
-                  <Input type="tel" placeholder="(555) 123-4567" className="border-yoga-rose/30" />
-                </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-primary mb-3">
+                      Your Message *
+                    </label>
+                    <Textarea 
+                      placeholder="Tell us about your yoga experience, which retreat interests you, any special requirements, or questions you have. We'd love to help you find the perfect program for your journey..."
+                      className="border-yoga-rose/30 focus:border-yoga-mauve focus:ring-yoga-mauve/20 min-h-[140px] bg-white/50 resize-none"
+                    />
+                  </div>
 
-                <div>
-                  <label className="block text-sm font-medium text-primary mb-2">
-                    Message
-                  </label>
-                  <Textarea 
-                    placeholder="Tell us about your yoga experience, questions, or what you're hoping to achieve..."
-                    className="border-yoga-rose/30 min-h-[120px]"
-                  />
-                </div>
-
-                <Button className="w-full bg-primary hover:bg-yoga-mauve transition-colors">
-                  Send Message
-                </Button>
-              </form>
+                  <Button className="w-full bg-gradient-to-r from-primary to-yoga-mauve hover:from-yoga-mauve hover:to-primary text-white font-semibold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                    Send Message ✨
+                  </Button>
+                </form>
+              </div>
             </Card>
           </div>
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-border rounded-2xl p-1 max-w-2xl mx-auto">
-            <div className="bg-yoga-cream rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-primary mb-4">
-                Ready to Start Your Journey?
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Join our welcoming community and discover the transformative power of yoga.
-              </p>
-              <Button size="lg" className="bg-primary hover:bg-yoga-mauve transition-colors">
-                Book Your First Class
-              </Button>
+        <div className="text-center mt-20">
+          <div className="bg-gradient-border rounded-3xl p-1 max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-yoga-cream via-white to-yoga-peach/20 rounded-2xl p-10 relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-40 h-40 bg-yoga-rose/10 rounded-full -translate-x-20 -translate-y-20"></div>
+              <div className="absolute bottom-0 right-0 w-32 h-32 bg-yoga-mauve/10 rounded-full translate-x-16 translate-y-16"></div>
+              
+              <div className="relative z-10">
+                <h3 className="text-3xl md:text-4xl font-bold text-primary mb-6">
+                  Ready to Begin Your Transformation? 🌸
+                </h3>
+                <p className="text-muted-foreground mb-8 text-lg leading-relaxed max-w-2xl mx-auto">
+                  Join thousands of students who have discovered inner peace, physical strength, and spiritual growth 
+                  through our authentic Balinese yoga programs. Your journey to wellness starts with a single step.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button size="lg" className="bg-gradient-to-r from-primary to-yoga-mauve hover:from-yoga-mauve hover:to-primary text-white font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    Book Your Retreat Now
+                  </Button>
+                  <Button size="lg" variant="outline" className="border-2 border-yoga-rose text-yoga-plum hover:bg-yoga-rose hover:text-white font-semibold px-8 py-4 text-lg transition-all duration-300">
+                    Schedule a Call
+                  </Button>
+                </div>
+                <p className="text-sm text-muted-foreground mt-4 italic">
+                  ✨ Free consultation available • Flexible payment plans • 100% satisfaction guarantee
+                </p>
+              </div>
             </div>
           </div>
         </div>
