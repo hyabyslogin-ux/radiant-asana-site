@@ -5,6 +5,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import ThreeDaysRetreat from "./pages/ThreeDaysRetreat";
+import FourDaysRetreat from "./pages/FourDaysRetreat";
+import FiveDaysRetreat from "./pages/FiveDaysRetreat";
+import SixDaysRetreat from "./pages/SixDaysRetreat";
+import SevenDaysRetreat from "./pages/SevenDaysRetreat";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -18,6 +22,10 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/3-days-retreat" element={<ThreeDaysRetreat />} />
+          <Route path="/4-days-retreat" element={<FourDaysRetreat />} />
+          <Route path="/5-days-retreat" element={<FiveDaysRetreat />} />
+          <Route path="/6-days-retreat" element={<SixDaysRetreat />} />
+          <Route path="/7-days-retreat" element={<SevenDaysRetreat />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
