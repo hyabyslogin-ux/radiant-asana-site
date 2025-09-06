@@ -1,83 +1,143 @@
-import { Heart } from 'lucide-react';
+import { Heart, MapPin, Phone, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-yoga-plum text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Serenity Yoga</h3>
-            <p className="text-white/80 mb-4 leading-relaxed">
-              Transform your body and mind through the ancient practice of yoga. 
-              Our studio is a sanctuary where you can find peace, strength, and community.
-            </p>
-            <div className="flex items-center gap-2 text-white/70">
-              <span>Made with</span>
-              <Heart className="w-4 h-4 text-yoga-rose" fill="currentColor" />
-              <span>for your wellness journey</span>
+    <footer className="relative bg-gradient-to-br from-yoga-earth via-yoga-plum to-yoga-sage text-white overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-10 left-10 w-32 h-32 bg-yoga-cream/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-40 h-40 bg-yoga-peach/8 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-yoga-rose/5 rounded-full blur-3xl"></div>
+      </div>
+      
+      <div className="relative py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+            
+            {/* Brand Section */}
+            <div className="lg:col-span-2">
+              <div className="mb-8">
+                <h3 className="font-playfair text-4xl font-bold mb-4 bg-gradient-to-r from-yoga-cream via-yoga-peach to-white bg-clip-text text-transparent">
+                  Bali Yoga Retreats
+                </h3>
+                <p className="text-white/90 text-lg leading-relaxed max-w-md">
+                  Transform your mind, body, and soul through authentic Balinese healing practices, mindful yoga, and spiritual awakening in paradise.
+                </p>
+              </div>
+              
+              <div className="flex items-center gap-2 text-white/80 mb-8">
+                <span className="font-inter flex items-center gap-2">
+                  Made with <Heart className="w-5 h-5 text-yoga-peach" fill="currentColor" /> 
+                  for your spiritual journey
+                </span>
+              </div>
+              
+              {/* Social Media */}
+              <div className="flex gap-4">
+                <a href="#" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group">
+                  <Facebook className="w-5 h-5 text-white/80 group-hover:text-white" />
+                </a>
+                <a href="#" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group">
+                  <Instagram className="w-5 h-5 text-white/80 group-hover:text-white" />
+                </a>
+                <a href="#" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group">
+                  <Twitter className="w-5 h-5 text-white/80 group-hover:text-white" />
+                </a>
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h4 className="font-playfair text-2xl font-bold mb-6 text-white">Quick Links</h4>
+              <ul className="space-y-3">
+                <li>
+                  <a href="/" className="text-white/80 hover:text-yoga-cream transition-colors duration-200 font-inter flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-yoga-cream rounded-full group-hover:w-2 transition-all duration-200"></span>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="/#about" className="text-white/80 hover:text-yoga-cream transition-colors duration-200 font-inter flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-yoga-cream rounded-full group-hover:w-2 transition-all duration-200"></span>
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="/#ubud-retreats" className="text-white/80 hover:text-yoga-cream transition-colors duration-200 font-inter flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-yoga-cream rounded-full group-hover:w-2 transition-all duration-200"></span>
+                    Ubud Retreats
+                  </a>
+                </li>
+                <li>
+                  <a href="/#uluwatu-retreats" className="text-white/80 hover:text-yoga-cream transition-colors duration-200 font-inter flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-yoga-cream rounded-full group-hover:w-2 transition-all duration-200"></span>
+                    Uluwatu Retreats
+                  </a>
+                </li>
+                <li>
+                  <a href="/#contact" className="text-white/80 hover:text-yoga-cream transition-colors duration-200 font-inter flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-yoga-cream rounded-full group-hover:w-2 transition-all duration-200"></span>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h4 className="font-playfair text-2xl font-bold mb-6 text-white">Get in Touch</h4>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3 group">
+                  <div className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-all duration-300">
+                    <MapPin className="w-5 h-5 text-yoga-cream" />
+                  </div>
+                  <div>
+                    <p className="text-white font-medium">Bali, Indonesia</p>
+                    <p className="text-white/70 text-sm">Ubud & Uluwatu Locations</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-3 group">
+                  <div className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-all duration-300">
+                    <Phone className="w-5 h-5 text-yoga-cream" />
+                  </div>
+                  <div>
+                    <a href="tel:+6212345678" className="text-white hover:text-yoga-cream transition-colors font-medium">
+                      +62 123 456 789
+                    </a>
+                  </div>
+                </div>
+                
+                <div className="flex items-center gap-3 group">
+                  <div className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-all duration-300">
+                    <Mail className="w-5 h-5 text-yoga-cream" />
+                  </div>
+                  <div>
+                    <a href="mailto:info@baliyogaschool.com" className="text-white hover:text-yoga-cream transition-colors font-medium">
+                      info@baliyogaschool.com
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#home" className="text-white/80 hover:text-white transition-colors">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="text-white/80 hover:text-white transition-colors">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#classes" className="text-white/80 hover:text-white transition-colors">
-                  Classes
-                </a>
-              </li>
-              <li>
-                <a href="#instructor" className="text-white/80 hover:text-white transition-colors">
-                  Instructor
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-white/80 hover:text-white transition-colors">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Studio Info</h4>
-            <div className="space-y-2 text-white/80">
-              <p>123 Serenity Lane</p>
-              <p>Wellness District</p>
-              <p>Peaceful City, PC 12345</p>
-              <p className="pt-2">
-                <a href="tel:5551239642" className="hover:text-white transition-colors">
-                  (555) 123-YOGA
-                </a>
+          {/* Bottom Section */}
+          <div className="relative mt-16 pt-8">
+            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <p className="text-white/70 font-inter">
+                © 2024 Bali Yoga Retreats. All rights reserved.
               </p>
-              <p>
-                <a href="mailto:info@serenityyoga.com" className="hover:text-white transition-colors">
-                  info@serenityyoga.com
-                </a>
-              </p>
+              <div className="flex gap-6 text-sm">
+                <a href="#" className="text-white/70 hover:text-yoga-cream transition-colors">Privacy Policy</a>
+                <span className="text-white/40">|</span>
+                <a href="#" className="text-white/70 hover:text-yoga-cream transition-colors">Terms of Service</a>
+                <span className="text-white/40">|</span>
+                <a href="#" className="text-white/70 hover:text-yoga-cream transition-colors">Refund Policy</a>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className="border-t border-white/20 mt-8 pt-8 text-center">
-          <p className="text-white/70">
-            © 2024 Serenity Yoga Studio. All rights reserved. | 
-            <span className="mx-2">Privacy Policy</span> | 
-            <span className="mx-2">Terms of Service</span>
-          </p>
         </div>
       </div>
     </footer>

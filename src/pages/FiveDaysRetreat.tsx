@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Calendar, Clock, MapPin, User, Mail, Phone, MessageSquare, Utensils, Waves, Gift, Wifi } from "lucide-react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const FiveDaysRetreat = () => {
   const [formData, setFormData] = useState({
@@ -720,6 +721,8 @@ const FiveDaysRetreat = () => {
           </Card>
         </section>
       </div>
+      
+      <Footer />
     </div>
   );
 };
