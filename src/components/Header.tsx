@@ -236,13 +236,13 @@ const Header = () => {
               )}
             </div>
 
-            <button 
-              onClick={() => scrollToSection('about')}
+            <Link 
+              to="/about-us"
               className="flex items-center space-x-2 text-foreground hover:text-primary transition-all duration-300 group"
             >
               <Users className="w-4 h-4 group-hover:scale-110 transition-transform" />
               <span>About Us</span>
-            </button>
+            </Link>
 
             <button 
               onClick={() => scrollToSection('blog')}

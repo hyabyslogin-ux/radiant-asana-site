@@ -31,6 +31,7 @@ import CangguEightDaysRetreat from "./pages/CangguEightDaysRetreat";
 import CangguNineDaysRetreat from "./pages/CangguNineDaysRetreat";
 import CangguTenDaysRetreat from "./pages/CangguTenDaysRetreat";
 import CangguElevenDaysRetreat from "./pages/CangguElevenDaysRetreat";
+import AboutUs from "./pages/AboutUs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -70,6 +71,7 @@ const App = () => (
           <Route path="/canggu-9-days-retreat" element={<CangguNineDaysRetreat />} />
           <Route path="/canggu-10-days-retreat" element={<CangguTenDaysRetreat />} />
           <Route path="/canggu-11-days-retreat" element={<CangguElevenDaysRetreat />} />
+          <Route path="/about-us" element={<AboutUs />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
