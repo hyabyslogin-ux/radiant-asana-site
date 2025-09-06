@@ -189,7 +189,7 @@ const SevenDaysRetreat = () => {
           </div>
         </section>
 
-        {/* Daily Schedule */}
+        {/* Enhanced Daily Schedule */}
         <section className="relative">
           <div className="absolute inset-0 bg-gradient-to-br from-yoga-sage/5 via-transparent to-yoga-earth/5 rounded-3xl"></div>
           <div className="absolute top-20 left-20 w-40 h-40 bg-yoga-cream/10 rounded-full blur-3xl"></div>
@@ -215,59 +215,265 @@ const SevenDaysRetreat = () => {
             </div>
 
             <div className="px-12 py-16">
-              <div className="grid lg:grid-cols-4 gap-12">
+            <div className="space-y-8">
                 
-                {/* Days 1-7 shown in organized grid */}
-                {Array.from({ length: 7 }, (_, index) => {
-                  const dayNumber = index + 1;
-                  const dayTitles = ["Foundation", "Deep Practice", "Cultural Journey", "Advanced Techniques", "Inner Mastery", "Integration", "Completion"];
-                  
-                  return (
-                    <div key={dayNumber} className={`relative ${dayNumber > 4 ? 'lg:col-start-2' : ''}`}>
-                      <div className="sticky top-4 mb-8">
-                        <div className="bg-gradient-to-r from-yoga-plum to-yoga-rose rounded-2xl p-6 shadow-lg">
-                          <div className="flex items-center gap-4 mb-2">
-                            <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                              <span className="font-playfair text-white text-xl font-bold">{dayNumber}</span>
-                            </div>
-                            <div>
-                              <h3 className="font-playfair text-2xl font-bold text-white">Day {dayNumber}</h3>
-                              <p className="font-inter text-white/90">{dayTitles[index]}</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="relative pl-8 space-y-6">
-                        <div className="absolute left-0 top-0 bottom-0 w-px bg-gradient-to-b from-yoga-plum via-yoga-rose to-yoga-peach"></div>
-                        
-                        <div className="group relative bg-white rounded-2xl p-6 shadow-lg border border-yoga-plum/10 hover:shadow-xl hover:scale-105 transition-all duration-300">
-                          <div className="absolute -left-8 top-6 w-4 h-4 bg-yoga-plum rounded-full border-4 border-white shadow-lg"></div>
-                          <div className="flex items-center gap-4 mb-3">
-                            <div className="w-12 h-12 bg-gradient-to-br from-yoga-plum/20 to-yoga-rose/20 rounded-xl flex items-center justify-center">
-                              <svg className="w-6 h-6 text-yoga-plum" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v18m9-12H3" />
-                              </svg>
-                            </div>
-                            <div>
-                              <h4 className="font-playfair font-semibold text-yoga-earth text-lg">Morning Practice</h4>
-                              <p className="font-inter text-yoga-plum font-medium">7:00 - 8:30 AM</p>
-                            </div>
-                          </div>
-                          <p className="font-inter text-gray-600 text-sm">
-                            {dayNumber === 1 ? "Foundation and breath awareness" :
-                             dayNumber === 2 ? "Dynamic vinyasa sequences" :
-                             dayNumber === 3 ? "Traditional Balinese yoga" :
-                             dayNumber === 4 ? "Advanced postures and flows" :
-                             dayNumber === 5 ? "Meditation mastery" :
-                             dayNumber === 6 ? "Personal practice development" :
-                             "Completion ceremony and integration"}
-                          </p>
-                        </div>
-                      </div>
+                {/* Day 1 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-plum/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum to-yoga-rose rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">1</span>
                     </div>
-                  );
-                })}
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 1 Schedule</h3>
+                      <p className="font-inter text-yoga-plum">Arrival & Welcome</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Check in</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:30 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Lunch</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">4:00 - 5:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Balinese Massage Treatment</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">7:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Dinner</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Day 2 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-sage/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">2</span>
+                    </div>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 2 Schedule</h3>
+                      <p className="font-inter text-yoga-sage">Sound Healing & Practice</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Pranayama & Meditation</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Hatha Vinyasa Yoga</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">9:30 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Breakfast</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">11:00 - 12:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Sound Healing Session</p>
+                    </div>
+                    <div className="bg-yoga-earth/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">12:30 PM & 4:00 - 5:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Lunch & Massage</p>
+                    </div>
+                    <div className="bg-yoga-plum/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Dinner</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Day 3 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-earth/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-earth to-yoga-plum rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">3</span>
+                    </div>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 3 Schedule</h3>
+                      <p className="font-inter text-yoga-earth">Reiki Healing & Renewal</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Pranayama & Meditation</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Hatha Vinyasa Yoga</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">9:30 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Breakfast</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">11:00 - 12:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Reiki Healing Session</p>
+                    </div>
+                    <div className="bg-yoga-earth/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">12:30 PM & 4:00 - 5:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Lunch & Massage</p>
+                    </div>
+                    <div className="bg-yoga-plum/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Dinner</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Day 4 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-rose/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-rose to-yoga-peach rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">4</span>
+                    </div>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 4 Schedule</h3>
+                      <p className="font-inter text-yoga-rose">Sound Healing & Deep Practice</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Pranayama & Meditation</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Hatha Vinyasa Yoga</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">9:30 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Breakfast</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">11:00 - 12:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Sound Healing Session</p>
+                    </div>
+                    <div className="bg-yoga-earth/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">12:30 PM & 4:00 - 5:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Lunch & Massage</p>
+                    </div>
+                    <div className="bg-yoga-plum/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Dinner</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Day 5 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-peach/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-peach to-yoga-cream rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">5</span>
+                    </div>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 5 Schedule</h3>
+                      <p className="font-inter text-yoga-peach">Reiki Healing & Inner Journey</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Pranayama & Meditation</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Hatha Vinyasa Yoga</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">9:30 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Breakfast</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">11:00 - 12:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Reiki Healing Session</p>
+                    </div>
+                    <div className="bg-yoga-earth/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">12:30 PM & 4:00 - 5:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Lunch & Massage</p>
+                    </div>
+                    <div className="bg-yoga-plum/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Dinner</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Day 6 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-cream/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-cream to-yoga-sage rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">6</span>
+                    </div>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 6 Schedule</h3>
+                      <p className="font-inter text-yoga-sage">Sound Healing & Integration</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Pranayama & Meditation</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Hatha Vinyasa Yoga</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">9:30 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Breakfast</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">11:00 - 12:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Sound Healing Session</p>
+                    </div>
+                    <div className="bg-yoga-earth/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">12:30 PM & 4:00 - 5:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Lunch & Massage</p>
+                    </div>
+                    <div className="bg-yoga-plum/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Dinner</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Day 7 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-plum/20">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum to-yoga-earth rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">7</span>
+                    </div>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 7 Schedule</h3>
+                      <p className="font-inter text-yoga-plum">Completion & Departure</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Pranayama & Meditation</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Hatha Vinyasa Yoga</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">9:30 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Breakfast</p>
+                    </div>
+                    <div className="bg-yoga-plum/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Check out</p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -292,7 +498,7 @@ const SevenDaysRetreat = () => {
                 </span>
               </h2>
               <p className="font-inter text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Transform your life with our complete 7-day retreat experience, available year-round in paradise
+                We do offer 7 Days & 6 Nights retreat throughout the month pls email us check the availability, we are always ready to welcome you.
               </p>
             </div>
 
@@ -301,14 +507,16 @@ const SevenDaysRetreat = () => {
                 <div className="text-center">
                   <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Private Campus I</h4>
                   <div className="flex items-center justify-center gap-2">
-                    <p className="text-4xl font-bold text-yoga-earth">$993</p>
+                    <p className="text-4xl font-bold text-yoga-earth">$850</p>
                     <div className="text-left">
-                      <p className="text-sm text-gray-500 line-through">$1168</p>
+                      <p className="text-sm text-gray-500 line-through">$1000</p>
                       <div className="bg-gradient-to-r from-yoga-sage to-yoga-earth text-white text-xs px-2 py-1 rounded-full">
                         15% OFF
                       </div>
                     </div>
                   </div>
+                  <p className="font-inter text-sm text-gray-600 mt-4">7 Days & 6 Nights</p>
+                  <p className="font-inter text-xs text-gray-500 mt-2">Check-in: 12pm / Check-out: 12pm</p>
                 </div>
               </div>
               
@@ -319,14 +527,16 @@ const SevenDaysRetreat = () => {
                 <div className="text-center">
                   <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Twin Shared</h4>
                   <div className="flex items-center justify-center gap-2">
-                    <p className="text-4xl font-bold text-yoga-earth">$619</p>
+                    <p className="text-4xl font-bold text-yoga-earth">$690</p>
                     <div className="text-left">
-                      <p className="text-sm text-gray-500 line-through">$728</p>
+                      <p className="text-sm text-gray-500 line-through">$812.5</p>
                       <div className="bg-gradient-to-r from-yoga-earth to-yoga-plum text-white text-xs px-2 py-1 rounded-full">
                         15% OFF
                       </div>
                     </div>
                   </div>
+                  <p className="font-inter text-sm text-gray-600 mt-4">7 Days & 6 Nights</p>
+                  <p className="font-inter text-xs text-gray-500 mt-2">Check-in: 12pm / Check-out: 12pm</p>
                 </div>
               </div>
               
@@ -334,14 +544,16 @@ const SevenDaysRetreat = () => {
                 <div className="text-center">
                   <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Private Campus II</h4>
                   <div className="flex items-center justify-center gap-2">
-                    <p className="text-4xl font-bold text-yoga-earth">$755</p>
+                    <p className="text-4xl font-bold text-yoga-earth">$743</p>
                     <div className="text-left">
-                      <p className="text-sm text-gray-500 line-through">$888</p>
+                      <p className="text-sm text-gray-500 line-through">$875</p>
                       <div className="bg-gradient-to-r from-yoga-plum to-yoga-rose text-white text-xs px-2 py-1 rounded-full">
                         15% OFF
                       </div>
                     </div>
                   </div>
+                  <p className="font-inter text-sm text-gray-600 mt-4">7 Days & 6 Nights</p>
+                  <p className="font-inter text-xs text-gray-500 mt-2">New Campus - Check-in: 12pm / Check-out: 12pm</p>
                 </div>
               </div>
             </div>
@@ -361,7 +573,7 @@ const SevenDaysRetreat = () => {
                       </svg>
                     </div>
                     <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Accommodation</h4>
-                    <p className="font-inter text-sm text-gray-600">7 days, 6 nights in paradise</p>
+                    <p className="font-inter text-sm text-gray-600">6 Nights Private Accommodation with Private Bathroom</p>
                   </div>
                   
                   <div className="text-center group">
@@ -369,7 +581,7 @@ const SevenDaysRetreat = () => {
                       <Utensils className="w-8 h-8 text-yoga-earth" />
                     </div>
                     <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Nourishing Meals</h4>
-                    <p className="font-inter text-sm text-gray-600">Organic vegetarian cuisine</p>
+                    <p className="font-inter text-sm text-gray-600">3 Times a Day Nutritious and Delicious vegan/Vegetarian Meals</p>
                   </div>
                   
                   <div className="text-center group">
@@ -377,7 +589,7 @@ const SevenDaysRetreat = () => {
                       <User className="w-8 h-8 text-yoga-plum" />
                     </div>
                     <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Yoga Classes</h4>
-                    <p className="font-inter text-sm text-gray-600">Daily guided sessions</p>
+                    <p className="font-inter text-sm text-gray-600">Mentioned Yoga Classes</p>
                   </div>
                   
                   <div className="text-center group">
@@ -385,8 +597,48 @@ const SevenDaysRetreat = () => {
                       <Gift className="w-8 h-8 text-yoga-rose" />
                     </div>
                     <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Spa Treatments</h4>
-                    <p className="font-inter text-sm text-gray-600">6 Balinese massages</p>
+                    <p className="font-inter text-sm text-gray-600">6 Full-Body Complimentary Balinese Massage</p>
                   </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage/20 to-yoga-peach/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Waves className="w-8 h-8 text-yoga-sage" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Pool Access</h4>
+                    <p className="font-inter text-sm text-gray-600">10:00 AM to 8:00 PM Swimming Pool Access</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-earth/20 to-yoga-rose/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Wifi className="w-8 h-8 text-yoga-earth" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">High-Speed Wi-Fi</h4>
+                    <p className="font-inter text-sm text-gray-600">Complementary High-Speed Wi-Fi Anywhere in the Campus</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum/20 to-yoga-cream/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-8 h-8 text-yoga-plum" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Class Equipment</h4>
+                    <p className="font-inter text-sm text-gray-600">All necessary items for classes available in yoga shala</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-rose/20 to-yoga-sage/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Gift className="w-8 h-8 text-yoga-rose" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Course Materials</h4>
+                    <p className="font-inter text-sm text-gray-600">BYS bag / BYS t-shirt / Notebook / Pen / Mala</p>
+                  </div>
+                </div>
+                
+                <div className="mt-12 p-6 bg-yoga-cream/20 rounded-2xl border border-yoga-earth/10">
+                  <p className="font-inter text-center text-yoga-earth text-sm">
+                    <strong>Important Note:</strong> The Management team holds the right to change the timings of the classes if it is needed.
+                  </p>
                 </div>
               </div>
             </div>
