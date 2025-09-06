@@ -1,6 +1,6 @@
 import { SEOData, LocationData, RetreatData } from '@/types/seo';
 
-const baseUrl = 'https://balinatureyogaretreats.com';
+const baseUrl = 'https://baliyogaretreat.org';
 const defaultImage = `${baseUrl}/lovable-uploads/yoga-hero.jpg`;
 
 export const locations: Record<string, LocationData> = {

@@ -49,17 +49,17 @@ export const EventSchema: React.FC<EventSchemaProps> = ({
       }
     },
     "image": [
-      "https://balinatureyogaretreats.com/lovable-uploads/yoga-hero.jpg",
-      "https://balinatureyogaretreats.com/lovable-uploads/yoga-retreat-1.jpg"
+      "https://baliyogaretreat.org/lovable-uploads/yoga-hero.jpg",
+      "https://baliyogaretreat.org/lovable-uploads/yoga-retreat-1.jpg"
     ],
     "organizer": {
       "@type": "Organization",
       "name": "Bali Nature Yoga Retreats",
-      "url": "https://balinatureyogaretreats.com"
+      "url": "https://baliyogaretreat.org"
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://balinatureyogaretreats.com/${retreatKey.replace('_', '-')}-retreat`,
+      "url": `https://baliyogaretreat.org/${retreatKey.replace('_', '-')}-retreat`,
       "price": retreat.price,
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",

@@ -53,7 +53,7 @@ export const Breadcrumbs: React.FC = () => {
   
   const schemaItems = breadcrumbs.map(item => ({
     name: item.name,
-    url: `https://balinatureyogaretreats.com${item.path}`
+    url: `https://baliyogaretreat.org${item.path}`
   }));
 
   return (

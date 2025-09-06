@@ -14,7 +14,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://balinatureyogaretreats.com/sitemap.xml
+Sitemap: https://baliyogaretreat.org/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

@@ -10,10 +10,10 @@ export const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({ locati
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": `https://balinatureyogaretreats.com/#local-business-${location}`,
+    "@id": `https://baliyogaretreat.org/#local-business-${location}`,
     "name": `Bali Nature Yoga Retreats - ${locationData.name}`,
     "description": locationData.description,
-    "url": "https://balinatureyogaretreats.com",
+    "url": "https://baliyogaretreat.org",
     "telephone": locationData.phone,
     "priceRange": "$675-$3575",
     "address": {
@@ -43,8 +43,8 @@ export const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({ locati
       "bestRating": "5"
     },
     "image": [
-      "https://balinatureyogaretreats.com/lovable-uploads/yoga-hero.jpg",
-      "https://balinatureyogaretreats.com/lovable-uploads/yoga-class.jpg"
+      "https://baliyogaretreat.org/lovable-uploads/yoga-hero.jpg",
+      "https://baliyogaretreat.org/lovable-uploads/yoga-class.jpg"
     ],
     "paymentAccepted": "Cash, Credit Card, Bank Transfer",
     "currenciesAccepted": "USD, IDR"

@@ -22,13 +22,13 @@ export const ProductSchema: React.FC<ProductSchemaProps> = ({ retreatKey }) => {
     },
     "category": "Yoga Retreat",
     "image": [
-      "https://balinatureyogaretreats.com/lovable-uploads/yoga-hero.jpg",
-      "https://balinatureyogaretreats.com/lovable-uploads/yoga-retreat-1.jpg",
-      "https://balinatureyogaretreats.com/lovable-uploads/yoga-retreat-2.jpg"
+      "https://baliyogaretreat.org/lovable-uploads/yoga-hero.jpg",
+      "https://baliyogaretreat.org/lovable-uploads/yoga-retreat-1.jpg",
+      "https://baliyogaretreat.org/lovable-uploads/yoga-retreat-2.jpg"
     ],
     "offers": {
       "@type": "Offer",
-      "url": `https://balinatureyogaretreats.com/${retreatKey.replace('_', '-')}-retreat`,
+      "url": `https://baliyogaretreat.org/${retreatKey.replace('_', '-')}-retreat`,
       "priceCurrency": "USD",
       "price": retreat.price,
       "priceValidUntil": new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
