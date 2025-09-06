@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -124,13 +128,45 @@ export default {
 					'50%': {
 						transform: 'translateY(-10px)'
 					}
+				},
+				'drift': {
+					'0%, 100%': {
+						transform: 'translateX(0px) translateY(0px)'
+					},
+					'33%': {
+						transform: 'translateX(-20px) translateY(-15px)'
+					},
+					'66%': {
+						transform: 'translateX(20px) translateY(15px)'
+					}
+				},
+				'pulse-glow': {
+					'0%, 100%': {
+						opacity: '0.6',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '1',
+						transform: 'scale(1.05)'
+					}
+				},
+				'text-shimmer': {
+					'0%': {
+						backgroundPosition: '-200% 0'
+					},
+					'100%': {
+						backgroundPosition: '200% 0'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
-				'float': 'float 3s ease-in-out infinite'
+				'float': 'float 3s ease-in-out infinite',
+				'drift': 'drift 8s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'text-shimmer': 'text-shimmer 3s linear infinite'
 			}
 		}
 	},
