@@ -11,7 +11,7 @@ const UluwatuRetreats = () => {
       days: '3 Days',
       price: '$380',
       level: 'Beginner',
-      image: '/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png',
+      image: '/lovable-uploads/67c5fc29-d538-4741-a4aa-4e5affaebef3.png',
       title: '3 Days Yoga Retreat in Bali',
       description: 'Experience the dramatic beauty of Uluwatu\'s limestone cliffs while discovering inner peace through yoga and meditation. This 3-day retreat combines spectacular ocean views with transformative practices, featuring sunrise yoga sessions on cliff-top platforms and sunset meditations at the sacred Uluwatu Temple. Participants enjoy traditional Kecak fire dance ceremonies, pristine beach yoga, and ocean-view spa treatments. The retreat includes fresh seafood dining experiences and exploration of hidden beaches accessible only by foot. Perfect for beginners seeking inspiration from nature\'s raw power while developing their yoga practice in one of Bali\'s most dramatic and sacred locations.',
       highlights: [
@@ -28,7 +28,7 @@ const UluwatuRetreats = () => {
       days: '4 Days',
       price: '$480',
       level: 'Beginner',
-      image: '/lovable-uploads/84b47165-30fa-48cd-8655-1fdd40968712.png',
+      image: '/lovable-uploads/2be9a81e-5b6a-4e5f-b5af-a18a60b00cb1.png',
       title: '4 Days Yoga Retreat in Bali',
       description: 'Harness the powerful energy of the Indian Ocean while exploring ancient temples perched on dramatic clifftops. This 4-day retreat offers daily yoga sessions with panoramic ocean views, sacred water blessing ceremonies, and traditional Balinese temple rituals. Experience the unique combination of ocean meditation, surfing lessons for adventurous spirits, and exploration of hidden beaches. The program includes visits to cliff-top restaurants, traditional healing ceremonies, and opportunities to witness breathtaking sunsets from multiple temple locations. This retreat perfectly balances spiritual practice with the exhilarating energy of the sea, creating lasting memories and deep personal transformation.',
       highlights: [
@@ -45,7 +45,7 @@ const UluwatuRetreats = () => {
       days: '5 Days',
       price: '$580',
       level: 'Intermediate',
-      image: '/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png',
+      image: '/lovable-uploads/7c0b8b0b-f25a-4ff7-8bb3-000c713d4480.png',
       title: '5 Days Yoga Retreat in Bali',
       description: 'Develop advanced yoga skills while drawing inspiration from the ocean\'s rhythm and power. This 5-day intermediate retreat focuses on dynamic flow sequences that mirror the waves\' movement, advanced balance poses practiced on cliff edges, and deep meditation sessions synchronized with tidal patterns. Participants explore challenging arm balances, inversions with ocean backdrops, and pranayama techniques that harness sea breezes. The retreat includes specialized workshops on ocean-inspired sequencing, traditional water blessing ceremonies, and night meditation under the stars. Perfect for practitioners ready to take their practice to new heights while surrounded by the raw beauty and power of Uluwatu\'s dramatic coastline.',
       highlights: [
@@ -62,7 +62,7 @@ const UluwatuRetreats = () => {
       days: '6 Days',
       price: '$680',
       level: 'Intermediate',
-      image: '/lovable-uploads/84b47165-30fa-48cd-8655-1fdd40968712.png',
+      image: '/lovable-uploads/51653aef-5975-435c-b70d-7a6aa6565482.png',
       title: '6 Days Yoga Retreat in Bali',
       description: 'Combine the art of surfing with advanced yoga practice in this unique 6-day retreat designed for water lovers and yoga enthusiasts. Experience early morning surf sessions followed by yoga practice that enhances balance, flexibility, and core strength essential for surfing. Learn breath control techniques that translate directly to wave riding, and develop the mental focus required for both surfing and advanced yoga poses. The retreat includes professional surf instruction, board selection guidance, ocean safety training, and specialized yoga sequences for surfers. Evening sessions feature restorative practices to aid recovery and deepen flexibility. This retreat creates the perfect synergy between two ancient practices of flow and balance.',
       highlights: [
@@ -79,7 +79,7 @@ const UluwatuRetreats = () => {
       days: '7 Days',
       price: '$780',
       level: 'All Levels',
-      image: '/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png',
+      image: '/lovable-uploads/b91ee822-4e33-4513-a5ec-abce556ce83a.png',
       title: '7 Days Yoga Retreat in Bali',
       description: 'Embark on a comprehensive 7-day wellness journey that combines yoga, meditation, ocean therapy, and cultural immersion. This all-levels retreat offers multiple yoga styles practiced in various cliff-top and beach locations, thalassotherapy sessions using ocean minerals, and traditional Balinese healing treatments enhanced by sea elements. Participants experience dawn meditation on pristine beaches, sunset yoga at sacred temples, and healing saltwater rituals. The program includes visits to traditional fishing villages, cooking classes featuring fresh seafood, and boat trips to hidden coves. This transformative week helps participants reconnect with nature\'s healing power while developing a sustainable wellness practice that integrates ocean energy.',
       highlights: [
@@ -96,7 +96,7 @@ const UluwatuRetreats = () => {
       days: '8 Days',
       price: '$880',
       level: 'Advanced',
-      image: '/lovable-uploads/84b47165-30fa-48cd-8655-1fdd40968712.png',
+      image: '/lovable-uploads/9d85e84b-2b54-463f-a296-cb8633fc085c.png',
       title: '8 Days Yoga Retreat in Bali',
       description: 'Push your yoga practice to new heights with this challenging 8-day intensive designed for advanced practitioners. Experience yoga poses at the edge of dramatic cliffs, advanced inversions with ocean backdrops, and meditation practices that require deep focus and courage. This retreat challenges both physical and mental boundaries through specialized cliff-edge sequences, advanced arm balances performed with stunning views, and fearlessness-building exercises. Participants develop extraordinary balance, strength, and mental clarity while practicing in one of the world\'s most dramatic settings. The program includes rock climbing elements, advanced breathing techniques, and workshops on overcoming fear. This transformative experience builds confidence that extends far beyond the yoga mat.',
       highlights: [
@@ -113,7 +113,7 @@ const UluwatuRetreats = () => {
       days: '9 Days',
       price: '$980',
       level: 'Advanced',
-      image: '/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png',
+      image: '/lovable-uploads/cb9d17a6-619d-4a6f-ad15-e3dd95953b54.png',
       title: '9 Days Yoga Retreat in Bali',
       description: 'Develop mastery in meditation practices enhanced by ocean energy in this intensive 9-day program for advanced practitioners. Learn specialized techniques that harness the sea\'s natural rhythm for deeper meditative states, practice extended sitting meditation sessions with wave sounds as guidance, and develop the ability to maintain awareness in challenging outdoor environments. The retreat includes teachings on ocean-based mindfulness, advanced concentration practices, and methods for accessing altered states of consciousness. Participants experience multi-hour meditation sessions, silent periods synchronized with tidal cycles, and night practices under the star-filled sky. This advanced training develops meditation skills that can be applied in any environment while building extraordinary mental resilience.',
       highlights: [
@@ -130,7 +130,7 @@ const UluwatuRetreats = () => {
       days: '10 Days',
       price: '$1080',
       level: 'All Levels',
-      image: '/lovable-uploads/84b47165-30fa-48cd-8655-1fdd40968712.png',
+      image: '/lovable-uploads/1f912899-2fba-4e5e-900d-da42b1a0d026.png',
       title: '10 Days Yoga Retreat in Bali',
       description: 'Journey along Bali\'s sacred southern coastline visiting multiple cliff-top temples and power spots in this comprehensive 10-day pilgrimage retreat. Each day features yoga practice at different temple locations, participation in traditional ceremonies, and teachings on the spiritual significance of ocean worship in Balinese culture. Experience sunrise ceremonies at Tanah Lot, cliff-top meditations at Uluwatu, and powerful healing rituals at lesser-known coastal temples. The retreat includes meetings with traditional priests, lessons in Balinese Hindu philosophy, and opportunities to participate in authentic ceremonial practices. This transformative pilgrimage creates deep spiritual connections while honoring the ancient traditions that recognize the ocean as a source of purification and blessing.',
       highlights: [
@@ -147,7 +147,7 @@ const UluwatuRetreats = () => {
       days: '11 Days',
       price: '$1180',
       level: 'Advanced',
-      image: '/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png',
+      image: '/lovable-uploads/006e4b87-f686-4703-bc52-d499a78f67df.png',
       title: '11 Days Yoga Retreat in Bali',
       description: 'Achieve mastery in ocean-inspired yoga practice through this comprehensive 11-day retreat that integrates advanced physical practice with deep spiritual teachings. Develop extraordinary balance through cliff-edge poses, master complex sequences inspired by wave movements, and learn to teach ocean-based yoga methodology. The program includes intensive daily practice sessions, individual mentoring with master teachers, and specialized training in working with natural elements. Participants receive certification in ocean yoga instruction, learn advanced safety protocols for outdoor practice, and develop the skills to lead retreats in natural settings. This ultimate experience combines physical mastery, spiritual development, and teaching preparation, creating well-rounded practitioners ready to share ocean yoga\'s transformative power.',
       highlights: [
