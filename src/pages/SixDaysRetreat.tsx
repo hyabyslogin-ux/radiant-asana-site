@@ -219,190 +219,222 @@ const SixDaysRetreat = () => {
             </div>
 
             <div className="px-12 py-16">
-              <div className="space-y-12">
+              <div className="space-y-8">
                 
-                {/* Day 1 */}
-                <div className="bg-gradient-to-r from-yoga-plum/10 to-yoga-rose/10 rounded-2xl p-8">
-                  <h3 className="font-playfair text-2xl font-bold text-yoga-earth mb-6">Day 1 - Arrival</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-plum">12:00 pm</Badge>
-                      <span className="font-inter">Check in</span>
+                {/* Day 1 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-plum/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum to-yoga-rose rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">1</span>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-sage">12:30 pm</Badge>
-                      <span className="font-inter">Lunch</span>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 1 Schedule</h3>
+                      <p className="font-inter text-yoga-plum">Arrival & Welcome</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-earth">4:00 pm to 5:00 pm</Badge>
-                      <span className="font-inter">Balinese Massage Treatment</span>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Check in</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-plum">7:00 pm</Badge>
-                      <span className="font-inter">Dinner</span>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:30 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Lunch</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">4:00 - 5:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Balinese Massage Treatment</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">7:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Dinner</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Day 2 */}
-                <div className="bg-gradient-to-r from-yoga-sage/10 to-yoga-earth/10 rounded-2xl p-8">
-                  <h3 className="font-playfair text-2xl font-bold text-yoga-earth mb-6">Day 2 - Deep Practice</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-plum">7:00 to 8:00 am</Badge>
-                      <span className="font-inter">Pranayama & Meditation</span>
+                {/* Day 2 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-sage/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">2</span>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-sage">8:00 to 9:00 am</Badge>
-                      <span className="font-inter">Hatha Vinyasa Yoga</span>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 2 Schedule</h3>
+                      <p className="font-inter text-yoga-sage">Sound Healing & Practice</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-earth">9:30 am</Badge>
-                      <span className="font-inter">Breakfast</span>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Pranayama & Meditation</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-rose">11:00 am to 12:00 pm</Badge>
-                      <span className="font-inter">Sound Healing Session</span>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Hatha Vinyasa Yoga</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-sage">12:30 pm</Badge>
-                      <span className="font-inter">Lunch</span>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">9:30 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Breakfast</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-earth">4:00 pm to 5:00 pm</Badge>
-                      <span className="font-inter">Balinese Massage Treatment</span>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">11:00 - 12:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Sound Healing Session</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-plum">7:00 pm</Badge>
-                      <span className="font-inter">Dinner</span>
+                    <div className="bg-yoga-earth/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">12:30 PM & 4:00 - 5:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Lunch & Massage</p>
+                    </div>
+                    <div className="bg-yoga-plum/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Dinner</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Day 3 */}
-                <div className="bg-gradient-to-r from-yoga-earth/10 to-yoga-plum/10 rounded-2xl p-8">
-                  <h3 className="font-playfair text-2xl font-bold text-yoga-earth mb-6">Day 3 - Reiki Healing</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-plum">7:00 to 8:00 am</Badge>
-                      <span className="font-inter">Pranayama & Meditation</span>
+                {/* Day 3 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-earth/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-earth to-yoga-plum rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">3</span>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-sage">8:00 to 9:00 am</Badge>
-                      <span className="font-inter">Hatha Vinyasa Yoga</span>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 3 Schedule</h3>
+                      <p className="font-inter text-yoga-earth">Reiki Healing & Renewal</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-earth">9:30 am</Badge>
-                      <span className="font-inter">Breakfast</span>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Pranayama & Meditation</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-rose">11:00 am to 12:00 pm</Badge>
-                      <span className="font-inter">Reiki Healing Session</span>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Hatha Vinyasa Yoga</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-sage">12:30 pm</Badge>
-                      <span className="font-inter">Lunch</span>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">9:30 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Breakfast</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-earth">4:00 pm to 5:00 pm</Badge>
-                      <span className="font-inter">Balinese Massage Treatment</span>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">11:00 - 12:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Reiki Healing Session</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-plum">7:00 pm</Badge>
-                      <span className="font-inter">Dinner</span>
+                    <div className="bg-yoga-earth/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">12:30 PM & 4:00 - 5:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Lunch & Massage</p>
+                    </div>
+                    <div className="bg-yoga-plum/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Dinner</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Day 4 */}
-                <div className="bg-gradient-to-r from-yoga-rose/10 to-yoga-peach/10 rounded-2xl p-8">
-                  <h3 className="font-playfair text-2xl font-bold text-yoga-earth mb-6">Day 4 - Sound Healing</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-plum">7:00 to 8:00 am</Badge>
-                      <span className="font-inter">Pranayama & Meditation</span>
+                {/* Day 4 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-rose/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-rose to-yoga-peach rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">4</span>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-sage">8:00 to 9:00 am</Badge>
-                      <span className="font-inter">Hatha Vinyasa Yoga</span>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 4 Schedule</h3>
+                      <p className="font-inter text-yoga-rose">Sound Healing Session</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-earth">9:30 am</Badge>
-                      <span className="font-inter">Breakfast</span>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Pranayama & Meditation</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-rose">11:00 am to 12:00 pm</Badge>
-                      <span className="font-inter">Sound Healing Session</span>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Hatha Vinyasa Yoga</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-sage">12:30 pm</Badge>
-                      <span className="font-inter">Lunch</span>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">9:30 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Breakfast</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-earth">4:00 pm to 5:00 pm</Badge>
-                      <span className="font-inter">Balinese Massage Treatment</span>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">11:00 - 12:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Sound Healing Session</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-plum">7:00 pm</Badge>
-                      <span className="font-inter">Dinner</span>
+                    <div className="bg-yoga-earth/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">12:30 PM & 4:00 - 5:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Lunch & Massage</p>
+                    </div>
+                    <div className="bg-yoga-plum/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Dinner</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Day 5 */}
-                <div className="bg-gradient-to-r from-yoga-plum/10 to-yoga-sage/10 rounded-2xl p-8">
-                  <h3 className="font-playfair text-2xl font-bold text-yoga-earth mb-6">Day 5 - Inner Mastery</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-plum">7:00 to 8:00 am</Badge>
-                      <span className="font-inter">Pranayama & Meditation</span>
+                {/* Day 5 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-peach/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-peach to-yoga-cream rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">5</span>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-sage">8:00 to 9:00 am</Badge>
-                      <span className="font-inter">Hatha Vinyasa Yoga</span>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 5 Schedule</h3>
+                      <p className="font-inter text-yoga-peach">Reiki Healing & Inner Peace</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-earth">9:30 am</Badge>
-                      <span className="font-inter">Breakfast</span>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Pranayama & Meditation</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-rose">11:00 am to 12:00 pm</Badge>
-                      <span className="font-inter">Reiki Healing Session</span>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Hatha Vinyasa Yoga</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-sage">12:30 pm</Badge>
-                      <span className="font-inter">Lunch</span>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">9:30 AM</p>
+                      <p className="font-inter text-xs text-gray-600">Breakfast</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-earth">4:00 pm to 5:00 pm</Badge>
-                      <span className="font-inter">Balinese Massage Treatment</span>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">11:00 - 12:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Reiki Healing Session</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-plum">7:00 pm</Badge>
-                      <span className="font-inter">Dinner</span>
+                    <div className="bg-yoga-earth/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">12:30 PM & 4:00 - 5:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Lunch & Massage</p>
+                    </div>
+                    <div className="bg-yoga-plum/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth text-sm">7:00 PM</p>
+                      <p className="font-inter text-xs text-gray-600">Dinner</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Day 6 */}
-                <div className="bg-gradient-to-r from-yoga-sage/10 to-yoga-cream/20 rounded-2xl p-8">
-                  <h3 className="font-playfair text-2xl font-bold text-yoga-earth mb-6">Day 6 - Departure</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-plum">7:00 to 8:00 am</Badge>
-                      <span className="font-inter">Pranayama & Meditation</span>
+                {/* Day 6 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-sage/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage to-yoga-plum rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">6</span>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-sage">8:00 to 9:00 am</Badge>
-                      <span className="font-inter">Hatha Vinyasa Yoga</span>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 6 Schedule</h3>
+                      <p className="font-inter text-yoga-sage">Farewell & Departure</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-earth">9:30 am</Badge>
-                      <span className="font-inter">Breakfast</span>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Pranayama & Meditation</p>
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Badge className="bg-yoga-plum">12:00 pm</Badge>
-                      <span className="font-inter">Check out</span>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Hatha Vinyasa Yoga</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">9:30 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Breakfast</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Check out</p>
                     </div>
                   </div>
                 </div>
