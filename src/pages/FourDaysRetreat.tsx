@@ -87,7 +87,7 @@ const FourDaysRetreat = () => {
             </h1>
             
             <p className="font-inter text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-              Take your holiday plans this season to a brand new level altogether by adding a dash of yoga to it. Sunny skies, lively seas, and soothing sands invite you to come to Bali.
+              Take your holiday plans this season to a brand new level altogether by adding a dash of yoga to it. Sunny skies, lively seas, and soothing sands invite you to come to Bali and be a part of the best 4 Days Yoga Retreat in Ubud Bali organized exclusively by the top yoga center – Bali Yoga School.
             </p>
           </div>
           
@@ -122,13 +122,16 @@ const FourDaysRetreat = () => {
               <p className="font-inter text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
                 Our yoga retreat center is located in heart of Bali (Ubud) that has a calm environment that includes private rooms, an outdoor swimming pool, and an open garden area. Yoga instructors at Bali Yoga School teach authentic and personalised yoga lessons along with detox and de-stress therapies irrespective of your age and experience. The yoga retreat enables you to integrate the benefits of yoga with meditation, asanas, pranayama, yogic kriyas, deep relaxation, etc into your daily life.
               </p>
+              <p className="font-inter text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed mt-6">
+                Our teachers possess the ancient knowledge and modern yoga teaching methods to offer classes for beginner, intermediate and advanced levels for yoga. We offer yoga/ detoxification & meditation sessions. We also offer customised yoga retreats for those who want to delve deeper into the ancient spiritual yoga tradition and allow you to experience the physical & subtle aspects of yoga. Bali offers a great yoga experience; it has a number of resorts, waterfalls, temples, shops, and much more. We guarantee you a completely refreshing experience in yoga school in Bali. A yoga retreat is a perfect way to take a break and divert your mind from negative thoughts to get settle into a blissful conscious state.
+              </p>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
                 <div className="bg-gradient-to-br from-white/90 to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/50">
                   <blockquote className="font-playfair text-2xl lg:text-3xl text-yoga-earth italic leading-relaxed mb-6">
-                    "Our teachers possess the ancient knowledge and modern yoga teaching methods to offer classes for beginner, intermediate and advanced levels for yoga. We offer yoga/ detoxification & meditation sessions."
+                    "We also offer customised yoga retreats for those who want to delve deeper into the ancient spiritual yoga tradition and allow you to experience the physical & subtle aspects of yoga."
                   </blockquote>
                   <div className="flex items-center gap-4">
                     <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-full"></div>
