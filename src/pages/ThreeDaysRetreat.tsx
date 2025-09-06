@@ -147,34 +147,210 @@ const ThreeDaysRetreat = () => {
 
       <div className="container mx-auto px-4 py-12 space-y-16">
         
-        {/* Details Section */}
-        <section>
-          <Card className="shadow-zen">
-            <CardHeader>
-              <CardTitle className="text-3xl text-yoga-earth mb-4">Experience Deep Transformation</CardTitle>
-            </CardHeader>
-            <CardContent className="prose prose-lg max-w-none">
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Embark on a transformative journey through our carefully crafted 3-day yoga retreat in the heart of Bali. This immersive experience combines traditional Hatha Vinyasa yoga practices with authentic Balinese healing traditions, creating the perfect environment for physical rejuvenation and spiritual awakening.
-              </p>
+        {/* Enhanced About/Details Section */}
+        <section className="relative">
+          {/* Background Elements */}
+          <div className="absolute inset-0 bg-gradient-to-br from-yoga-cream/5 via-transparent to-yoga-sage/5 rounded-3xl"></div>
+          <div className="absolute top-10 right-10 w-32 h-32 bg-yoga-peach/10 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 left-10 w-40 h-40 bg-yoga-rose/8 rounded-full blur-2xl"></div>
+          
+          <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/50 overflow-hidden">
+            {/* Header */}
+            <div className="relative bg-gradient-to-r from-yoga-sage/10 via-yoga-earth/5 to-yoga-plum/10 px-12 py-16">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center gap-3 bg-white/60 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+                  <div className="w-2 h-2 bg-yoga-sage rounded-full animate-pulse"></div>
+                  <span className="font-inter text-yoga-earth font-medium">Authentic Bali Experience</span>
+                </div>
+                <h2 className="font-playfair text-5xl lg:text-6xl font-bold text-yoga-earth mb-4">
+                  Experience Deep 
+                  <span className="block bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-plum bg-clip-text text-transparent">
+                    Transformation
+                  </span>
+                </h2>
+                <p className="font-inter text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                  Immerse yourself in a carefully crafted journey that combines ancient wisdom with modern wellness practices
+                </p>
+              </div>
+            </div>
+
+            {/* Content */}
+            <div className="px-12 py-16 space-y-16">
               
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Located in Bali's serene countryside, our retreat center offers two beautiful campuses designed to harmonize with nature's rhythm. Each morning begins with pranayama breathing exercises and meditation sessions that ground you in mindfulness, followed by dynamic Hatha Vinyasa yoga classes that strengthen your body while calming your mind.
-              </p>
-              
-              <p className="text-gray-700 leading-relaxed mb-4">
-                The retreat experience extends beyond yoga mat practice. Sound healing sessions using traditional Tibetan singing bowls and crystal instruments create vibrational therapy that releases deep-seated tension and promotes cellular healing. Complementary Balinese massages incorporate ancient techniques passed down through generations, using natural oils and pressure points to restore energy flow.
-              </p>
-              
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Nourishment forms a cornerstone of your retreat journey. Our vegetarian and vegan meal offerings feature fresh, organic ingredients sourced from local Balinese farmers. Each dish combines nutritional balance with authentic Indonesian flavors, supporting your body's natural detoxification process while satisfying your palate.
-              </p>
-              
-              <p className="text-gray-700 leading-relaxed">
-                Whether you're a beginner seeking introduction to yoga principles or an experienced practitioner deepening your practice, this retreat provides personalized attention in intimate group settings. The combination of structured activities and free time allows natural integration of learning, ensuring lasting transformation that continues long after you return home.
-              </p>
-            </CardContent>
-          </Card>
+              {/* Journey Overview */}
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="space-y-8">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-xl flex items-center justify-center">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v18m9-12H3" />
+                      </svg>
+                    </div>
+                    <h3 className="font-playfair text-2xl font-semibold text-yoga-earth">Your Transformative Journey</h3>
+                  </div>
+                  
+                  <p className="font-inter text-lg text-gray-700 leading-relaxed">
+                    Embark on a transformative journey through our carefully crafted 3-day yoga retreat in the heart of Bali. This immersive experience combines traditional <strong className="text-yoga-earth">Hatha Vinyasa yoga practices</strong> with authentic Balinese healing traditions, creating the perfect environment for physical rejuvenation and spiritual awakening.
+                  </p>
+                  
+                  <p className="font-inter text-lg text-gray-700 leading-relaxed">
+                    Located in Bali's serene countryside, our retreat center offers <strong className="text-yoga-sage">two beautiful campuses</strong> designed to harmonize with nature's rhythm. Each morning begins with pranayama breathing exercises and meditation sessions that ground you in mindfulness.
+                  </p>
+                </div>
+                
+                <div className="relative">
+                  <div className="bg-gradient-to-br from-yoga-cream/20 to-yoga-peach/20 rounded-2xl p-8 backdrop-blur-sm border border-yoga-cream/30">
+                    <div className="grid grid-cols-2 gap-6">
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-yoga-sage/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <Calendar className="w-8 h-8 text-yoga-sage" />
+                        </div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">3 Days</h4>
+                        <p className="font-inter text-sm text-gray-600">Intensive Program</p>
+                      </div>
+                      
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-yoga-earth/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <MapPin className="w-8 h-8 text-yoga-earth" />
+                        </div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">2 Campuses</h4>
+                        <p className="font-inter text-sm text-gray-600">Beautiful Locations</p>
+                      </div>
+                      
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-yoga-rose/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <User className="w-8 h-8 text-yoga-rose" />
+                        </div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Small Groups</h4>
+                        <p className="font-inter text-sm text-gray-600">Personal Attention</p>
+                      </div>
+                      
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-yoga-peach/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <Gift className="w-8 h-8 text-yoga-plum" />
+                        </div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">All Levels</h4>
+                        <p className="font-inter text-sm text-gray-600">Beginner to Advanced</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Healing Practices */}
+              <div className="space-y-12">
+                <div className="text-center">
+                  <h3 className="font-playfair text-3xl font-bold text-yoga-earth mb-4">Holistic Healing Practices</h3>
+                  <p className="font-inter text-lg text-gray-600 max-w-3xl mx-auto">
+                    Our retreat extends beyond yoga mat practice to encompass complete wellness and spiritual growth
+                  </p>
+                </div>
+                
+                <div className="grid md:grid-cols-3 gap-8">
+                  
+                  {/* Sound Healing */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-cream/10 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-cream/20 hover:scale-105">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <Waves className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-4">Sound Healing</h4>
+                    <p className="font-inter text-gray-700 leading-relaxed">
+                      Traditional Tibetan singing bowls and crystal instruments create vibrational therapy that releases deep-seated tension and promotes cellular healing.
+                    </p>
+                  </div>
+                  
+                  {/* Balinese Massage */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-peach/10 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-peach/20 hover:scale-105">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-earth to-yoga-plum rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <Gift className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-4">Balinese Massage</h4>
+                    <p className="font-inter text-gray-700 leading-relaxed">
+                      Authentic techniques passed down through generations, using natural oils and pressure points to restore energy flow and deep relaxation.
+                    </p>
+                  </div>
+                  
+                  {/* Organic Nutrition */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-rose/10 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-rose/20 hover:scale-105">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-rose to-yoga-mauve rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <Utensils className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-4">Organic Nutrition</h4>
+                    <p className="font-inter text-gray-700 leading-relaxed">
+                      Fresh, organic ingredients from local farmers combined with authentic Indonesian flavors to support natural detoxification.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Personal Growth */}
+              <div className="bg-gradient-to-r from-yoga-sage/5 via-yoga-earth/5 to-yoga-plum/5 rounded-2xl p-12 border border-yoga-sage/10">
+                <div className="text-center mb-8">
+                  <h3 className="font-playfair text-3xl font-bold text-yoga-earth mb-4">Personalized Growth Journey</h3>
+                  <p className="font-inter text-lg text-gray-600 max-w-2xl mx-auto">
+                    Whether you're a beginner or experienced practitioner, our intimate group settings ensure personalized attention
+                  </p>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-12 items-center">
+                  <div className="space-y-6">
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-yoga-sage rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Beginner-Friendly Approach</h4>
+                        <p className="font-inter text-gray-700">Introduction to yoga principles and foundational practices in a supportive environment.</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-yoga-earth rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Advanced Practice Development</h4>
+                        <p className="font-inter text-gray-700">Deepen your existing practice with advanced techniques and spiritual insights.</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-yoga-plum rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Lasting Transformation</h4>
+                        <p className="font-inter text-gray-700">Integration techniques that ensure your learning continues long after returning home.</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="relative">
+                    <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/30">
+                      <blockquote className="font-playfair text-xl italic text-yoga-earth mb-6 leading-relaxed">
+                        "The combination of structured activities and free time allows natural integration of learning, ensuring lasting transformation."
+                      </blockquote>
+                      <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-full flex items-center justify-center">
+                          <span className="font-playfair text-white font-bold text-lg">YH</span>
+                        </div>
+                        <div>
+                          <p className="font-inter font-semibold text-yoga-earth">Yogi Himanshu</p>
+                          <p className="font-inter text-sm text-gray-600">Founder & Lead Instructor</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Daily Schedule */}
