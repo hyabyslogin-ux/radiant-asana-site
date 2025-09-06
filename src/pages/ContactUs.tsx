@@ -56,19 +56,73 @@ const ContactUs = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 px-6">
-        <div className="container mx-auto text-center">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-primary opacity-10 rounded-3xl"></div>
-            <div className="relative py-16 px-8">
-              <h1 className="text-5xl md:text-6xl font-bold text-yoga-plum mb-6">
-                Contact Us
-              </h1>
-              <p className="text-xl text-yoga-mauve max-w-2xl mx-auto">
-                Ready to begin your transformative yoga journey in the heart of Bali? 
-                We're here to guide you every step of the way.
-              </p>
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        {/* Background with overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-yoga-cream via-yoga-rose/20 to-yoga-mauve/30"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(120,113,108,0.1),transparent_50%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(168,85,247,0.05),transparent_50%)]"></div>
+        
+        {/* Decorative elements */}
+        <div className="absolute top-20 left-10 w-32 h-32 border-2 border-yoga-mauve/20 rounded-full animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-24 h-24 bg-gradient-primary/10 rounded-full blur-xl"></div>
+        <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-yoga-plum rounded-full animate-bounce"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-3 h-3 bg-yoga-rose rounded-full animate-bounce delay-300"></div>
+        
+        <div className="relative container mx-auto px-6 text-center">
+          <div className="max-w-4xl mx-auto">
+            {/* Main heading with gradient */}
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-yoga-plum via-yoga-mauve to-yoga-plum bg-clip-text text-transparent">
+                Let's Connect
+              </span>
+            </h1>
+            
+            {/* Subtitle */}
+            <p className="text-xl md:text-2xl text-yoga-mauve mb-8 max-w-3xl mx-auto leading-relaxed">
+              Begin your transformative yoga journey in the mystical landscapes of Bali. 
+              Our experienced team is ready to guide you toward inner peace and wellness.
+            </p>
+            
+            {/* Call-to-action buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+              <Button className="bg-gradient-primary hover:opacity-90 text-white px-8 py-3 rounded-full text-lg font-medium transition-all hover:scale-105">
+                <MessageCircle className="w-5 h-5 mr-2" />
+                WhatsApp Us Now
+              </Button>
+              <Button variant="outline" className="border-yoga-plum text-yoga-plum hover:bg-yoga-plum hover:text-white px-8 py-3 rounded-full text-lg font-medium transition-all hover:scale-105">
+                <Phone className="w-5 h-5 mr-2" />
+                Schedule a Call
+              </Button>
             </div>
+            
+            {/* Quick contact info */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Phone className="w-6 h-6 text-yoga-plum" />
+                </div>
+                <p className="text-yoga-mauve font-medium">+62 812 3456 7890</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3">
+                  <Mail className="w-6 h-6 text-yoga-plum" />
+                </div>
+                <p className="text-yoga-mauve font-medium">info@himalayanyoga.com</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3">
+                  <MapPin className="w-6 h-6 text-yoga-plum" />
+                </div>
+                <p className="text-yoga-mauve font-medium">Ubud, Uluwatu, Canggu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-yoga-mauve/50 rounded-full p-1">
+            <div className="w-1 h-3 bg-yoga-mauve/70 rounded-full mx-auto animate-pulse"></div>
           </div>
         </div>
       </section>
