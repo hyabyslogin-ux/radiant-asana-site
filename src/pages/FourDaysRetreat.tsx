@@ -87,7 +87,7 @@ const FourDaysRetreat = () => {
             </h1>
             
             <p className="font-inter text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-              Extended transformation journey through mindful practice, spiritual awakening, and deep inner healing in paradise
+              Take your holiday plans this season to a brand new level altogether by adding a dash of yoga to it. Sunny skies, lively seas, and soothing sands invite you to come to Bali.
             </p>
           </div>
           
@@ -120,8 +120,7 @@ const FourDaysRetreat = () => {
                 </span>
               </h2>
               <p className="font-inter text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                Immerse yourself deeper into the transformative power of yoga with our extended 4-day retreat program, 
-                designed for those seeking profound spiritual growth and lasting inner change.
+                Our yoga retreat center is located in heart of Bali (Ubud) that has a calm environment that includes private rooms, an outdoor swimming pool, and an open garden area. Yoga instructors at Bali Yoga School teach authentic and personalised yoga lessons along with detox and de-stress therapies irrespective of your age and experience. The yoga retreat enables you to integrate the benefits of yoga with meditation, asanas, pranayama, yogic kriyas, deep relaxation, etc into your daily life.
               </p>
             </div>
 
@@ -129,7 +128,7 @@ const FourDaysRetreat = () => {
               <div className="space-y-8">
                 <div className="bg-gradient-to-br from-white/90 to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/50">
                   <blockquote className="font-playfair text-2xl lg:text-3xl text-yoga-earth italic leading-relaxed mb-6">
-                    "In stillness, we discover the profound wisdom that has always resided within us, waiting patiently to guide our transformation."
+                    "Our teachers possess the ancient knowledge and modern yoga teaching methods to offer classes for beginner, intermediate and advanced levels for yoga. We offer yoga/ detoxification & meditation sessions."
                   </blockquote>
                   <div className="flex items-center gap-4">
                     <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-full"></div>
@@ -412,9 +411,9 @@ const FourDaysRetreat = () => {
                   <div className="text-center">
                     <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Private Campus I</h4>
                     <div className="flex items-center justify-center gap-2">
-                      <p className="text-4xl font-bold text-yoga-earth">$565</p>
+                      <p className="text-4xl font-bold text-yoga-earth">$531</p>
                       <div className="text-left">
-                        <p className="text-sm text-gray-500 line-through">$665</p>
+                        <p className="text-sm text-gray-500 line-through">$625</p>
                         <div className="bg-gradient-to-r from-yoga-sage to-yoga-earth text-white text-xs px-2 py-1 rounded-full">
                           15% OFF
                         </div>
@@ -430,9 +429,9 @@ const FourDaysRetreat = () => {
                   <div className="text-center">
                     <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Twin Shared</h4>
                     <div className="flex items-center justify-center gap-2">
-                      <p className="text-4xl font-bold text-yoga-earth">$355</p>
+                      <p className="text-4xl font-bold text-yoga-earth">$372</p>
                       <div className="text-left">
-                        <p className="text-sm text-gray-500 line-through">$418</p>
+                        <p className="text-sm text-gray-500 line-through">$437.5</p>
                         <div className="bg-gradient-to-r from-yoga-earth to-yoga-plum text-white text-xs px-2 py-1 rounded-full">
                           15% OFF
                         </div>
@@ -445,9 +444,9 @@ const FourDaysRetreat = () => {
                   <div className="text-center">
                     <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Private Campus II</h4>
                     <div className="flex items-center justify-center gap-2">
-                      <p className="text-4xl font-bold text-yoga-earth">$431</p>
+                      <p className="text-4xl font-bold text-yoga-earth">$425</p>
                       <div className="text-left">
-                        <p className="text-sm text-gray-500 line-through">$507</p>
+                        <p className="text-sm text-gray-500 line-through">$500</p>
                         <div className="bg-gradient-to-r from-yoga-plum to-yoga-rose text-white text-xs px-2 py-1 rounded-full">
                           15% OFF
                         </div>
@@ -460,11 +459,11 @@ const FourDaysRetreat = () => {
 
             {/* What's Included */}
             <div className="max-w-6xl mx-auto">
-              <div className="bg-gradient-to-br from-white/90 via-white/80 to-yoga-cream/20 backdrop-blur-sm rounded-3xl p-12 shadow-2xl border border-white/50">
-                <div className="text-center mb-12">
-                  <h3 className="font-playfair text-4xl font-semibold text-yoga-earth mb-4">Everything Included</h3>
-                  <p className="font-inter text-lg text-gray-600">Your complete 4-day transformation package</p>
-                </div>
+                <div className="bg-gradient-to-br from-white/90 via-white/80 to-yoga-cream/20 backdrop-blur-sm rounded-3xl p-12 shadow-2xl border border-white/50">
+                  <div className="text-center mb-12">
+                    <h3 className="font-playfair text-4xl font-semibold text-yoga-earth mb-4">What's Included in the Retreat</h3>
+                    <p className="font-inter text-lg text-gray-600">4 Days & 3 Nights • Check-in: 12pm / Check-out: 12pm</p>
+                  </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                   <div className="text-center group">
@@ -474,31 +473,63 @@ const FourDaysRetreat = () => {
                       </svg>
                     </div>
                     <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Accommodation</h4>
-                    <p className="font-inter text-sm text-gray-600">4 days, 3 nights in paradise</p>
+                    <p className="font-inter text-sm text-gray-600">3 nights private room with bathroom</p>
                   </div>
                   
                   <div className="text-center group">
                     <div className="w-16 h-16 bg-gradient-to-br from-yoga-earth/20 to-yoga-plum/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <Utensils className="w-8 h-8 text-yoga-earth" />
                     </div>
-                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Nourishing Meals</h4>
-                    <p className="font-inter text-sm text-gray-600">Organic vegetarian cuisine</p>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">3 Daily Meals</h4>
+                    <p className="font-inter text-sm text-gray-600">Nutritious vegan/vegetarian cuisine</p>
                   </div>
                   
                   <div className="text-center group">
                     <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum/20 to-yoga-rose/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <User className="w-8 h-8 text-yoga-plum" />
                     </div>
-                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Yoga Classes</h4>
-                    <p className="font-inter text-sm text-gray-600">Daily guided sessions</p>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">All Yoga Classes</h4>
+                    <p className="font-inter text-sm text-gray-600">Daily guided sessions & materials</p>
                   </div>
                   
                   <div className="text-center group">
                     <div className="w-16 h-16 bg-gradient-to-br from-yoga-rose/20 to-yoga-peach/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <Gift className="w-8 h-8 text-yoga-rose" />
                     </div>
-                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Spa Treatments</h4>
-                    <p className="font-inter text-sm text-gray-600">3 Balinese massages</p>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">3 Balinese Massages</h4>
+                    <p className="font-inter text-sm text-gray-600">Complimentary healing treatments</p>
+                  </div>
+
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage/20 to-yoga-earth/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Wifi className="w-8 h-8 text-yoga-sage" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">High-Speed WiFi</h4>
+                    <p className="font-inter text-sm text-gray-600">Complimentary across campus</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-earth/20 to-yoga-plum/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Waves className="w-8 h-8 text-yoga-earth" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Pool Access</h4>
+                    <p className="font-inter text-sm text-gray-600">10:00 AM to 8:00 PM daily</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum/20 to-yoga-rose/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Gift className="w-8 h-8 text-yoga-plum" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Course Materials</h4>
+                    <p className="font-inter text-sm text-gray-600">BYS bag, t-shirt, notebook, pen, mala</p>
+                  </div>
+
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-rose/20 to-yoga-peach/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <User className="w-8 h-8 text-yoga-rose" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Class Equipment</h4>
+                    <p className="font-inter text-sm text-gray-600">All necessary items provided</p>
                   </div>
                 </div>
               </div>
