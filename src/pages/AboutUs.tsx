@@ -5,6 +5,8 @@ import { Badge } from '@/components/ui/badge';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const AboutUs = () => {
   const stats = [
@@ -61,7 +63,9 @@ const AboutUs = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO pageKey="about-us" />
       <Header />
+      <Breadcrumbs />
       
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 overflow-hidden">

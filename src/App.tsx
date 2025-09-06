@@ -3,6 +3,10 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
+import OrganizationSchema from '@/components/schema/OrganizationSchema';
+import WebSiteSchema from '@/components/schema/WebSiteSchema';
+import PreloadCriticalResources from '@/components/performance/PreloadCriticalResources';
 import Index from "./pages/Index";
 import ThreeDaysRetreat from "./pages/ThreeDaysRetreat";
 import FourDaysRetreat from "./pages/FourDaysRetreat";
@@ -37,12 +41,21 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const criticalImages = [
+  '/lovable-uploads/yoga-hero.jpg',
+  '/lovable-uploads/yoga-class.jpg'
+];
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
+    <HelmetProvider>
+      <TooltipProvider>
+        <OrganizationSchema />
+        <WebSiteSchema />
+        <PreloadCriticalResources images={criticalImages} />
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/3-days-retreat" element={<ThreeDaysRetreat />} />
@@ -79,6 +92,7 @@ const App = () => (
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
+    </HelmetProvider>
   </QueryClientProvider>
 );
 

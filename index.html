@@ -3,23 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Fallback for no-JS -->
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </noscript>
+    
+    <!-- Default meta tags (will be overridden by React Helmet) -->
     <title>Bali Yoga Retreats - Authentic Yoga Experiences in Ubud, Uluwatu & Canggu</title>
     <meta name="description" content="Transform your life with authentic yoga retreats in Bali. Experience Ubud's spiritual energy, Uluwatu's clifftop serenity, and Canggu's vibrant wellness culture. 3-11 day programs available." />
     <meta name="author" content="Serenity Yoga Studio" />
     
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Robots meta -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    
+    <!-- Canonical URL (will be updated by React Helmet for specific pages) -->
+    <link rel="canonical" href="https://balinatureyogaretreats.com/" />
 
+    <!-- Open Graph meta tags -->
     <meta property="og:title" content="Bali Yoga Retreats - Authentic Yoga Experiences in Ubud, Uluwatu & Canggu" />
     <meta property="og:description" content="Transform your life with authentic yoga retreats in Bali's most sacred locations. Experience spiritual awakening and healing." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:url" content="https://balinatureyogaretreats.com/" />
+    <meta property="og:image" content="https://balinatureyogaretreats.com/lovable-uploads/yoga-hero.jpg" />
+    <meta property="og:image:alt" content="Serene yoga practice at sunrise in Bali" />
+    <meta property="og:locale" content="en_US" />
 
+    <!-- Twitter Card meta tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:title" content="Bali Yoga Retreats - Authentic Sacred Experiences" />
+    <meta name="twitter:description" content="Transform your life with authentic yoga retreats in Bali's most sacred locations." />
+    <meta name="twitter:image" content="https://balinatureyogaretreats.com/lovable-uploads/yoga-hero.jpg" />
+    
+    <!-- Additional meta tags for better SEO -->
+    <meta name="theme-color" content="#914955" />
+    <meta name="msapplication-TileColor" content="#914955" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    
+    <!-- Structured data for organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Bali Nature Yoga Retreats",
+      "url": "https://balinatureyogaretreats.com",
+      "logo": "https://balinatureyogaretreats.com/lovable-uploads/yoga-hero.jpg",
+      "description": "Authentic yoga retreats in Bali's sacred locations",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ubud",
+        "addressRegion": "Bali",
+        "addressCountry": "ID"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+62-361-123-456",
+        "contactType": "Customer Service"
+      }
+    }
+    </script>
   </head>
 
   <body>

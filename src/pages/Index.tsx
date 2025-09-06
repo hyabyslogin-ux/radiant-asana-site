@@ -10,10 +10,16 @@ import Founder from '@/components/Founder';
 import Blog from '@/components/Blog';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
+import LocalBusinessSchema from '@/components/schema/LocalBusinessSchema';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEO pageKey="home" />
+      <LocalBusinessSchema location="ubud" />
+      <LocalBusinessSchema location="uluwatu" />
+      <LocalBusinessSchema location="canggu" />
       <Header />
       <div id="hero">
         <HeroSlider />

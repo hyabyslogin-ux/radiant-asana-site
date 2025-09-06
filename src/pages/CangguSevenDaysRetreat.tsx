@@ -6,11 +6,22 @@ import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock, Users, Star } from 'lucide-react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from '@/components/SEO';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import EventSchema from '@/components/schema/EventSchema';
+import ProductSchema from '@/components/schema/ProductSchema';
+import LocalBusinessSchema from '@/components/schema/LocalBusinessSchema';
+import LazyImage from '@/components/performance/LazyImage';
 
 const CangguSevenDaysRetreat = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+      <SEO pageKey="canggu-7-days" />
+      <EventSchema retreatKey="canggu-7-days" />
+      <ProductSchema retreatKey="canggu-7-days" />
+      <LocalBusinessSchema location="canggu" />
       <Header />
+      <Breadcrumbs />
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20"></div>
