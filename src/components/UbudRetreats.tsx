@@ -186,6 +186,125 @@ const UbudRetreats = () => {
           </div>
         </div>
 
+        {/* Yoga Practice Gallery */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-primary mb-4">Experience Authentic Yoga Practices</h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Discover the transformative power of traditional yoga, meditation, and healing practices in the sacred heart of Bali
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="relative overflow-hidden rounded-2xl group shadow-soft hover:shadow-glow transition-all duration-500">
+              <img 
+                src="/lovable-uploads/e3d6b5ea-63cc-4290-adb0-6ba33a38acfd.png" 
+                alt="Traditional wood therapy healing treatment"
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4">
+                <h4 className="text-white font-semibold text-lg mb-1">Traditional Healing</h4>
+                <p className="text-white/80 text-sm">Wood therapy and authentic Balinese treatments</p>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl group shadow-soft hover:shadow-glow transition-all duration-500">
+              <img 
+                src="/lovable-uploads/f6403da2-1660-453f-b374-e5c60721d662.png" 
+                alt="Sound healing with Tibetan singing bowls"
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4">
+                <h4 className="text-white font-semibold text-lg mb-1">Sound Healing</h4>
+                <p className="text-white/80 text-sm">Tibetan singing bowls and vibrational therapy</p>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl group shadow-soft hover:shadow-glow transition-all duration-500">
+              <img 
+                src="/lovable-uploads/eee86151-0a9a-4f24-951f-a0c980b2955c.png" 
+                alt="Yoga philosophy and theory classes"
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4">
+                <h4 className="text-white font-semibold text-lg mb-1">Yoga Philosophy</h4>
+                <p className="text-white/80 text-sm">Deep theoretical understanding and wisdom</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="relative overflow-hidden rounded-2xl group shadow-soft hover:shadow-glow transition-all duration-500">
+              <img 
+                src="/lovable-uploads/3a5a6a3a-f2c8-45ad-9db2-c6e920fd1a07.png" 
+                alt="Pranayama breathing practices"
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4">
+                <h4 className="text-white font-semibold text-lg mb-1">Pranayama</h4>
+                <p className="text-white/80 text-sm">Bridge between body and soul through breath</p>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl group shadow-soft hover:shadow-glow transition-all duration-500">
+              <img 
+                src="/lovable-uploads/e117aae2-f01b-48ce-acfc-48827f392a58.png" 
+                alt="Group yoga practice fostering independence"
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4">
+                <h4 className="text-white font-semibold text-lg mb-1">True Independence</h4>
+                <p className="text-white/80 text-sm">Freeing the mind from its own chains</p>
+              </div>
+            </div>
+
+            <div className="relative overflow-hidden rounded-2xl group shadow-soft hover:shadow-glow transition-all duration-500">
+              <img 
+                src="/lovable-uploads/d4236abb-6f90-4ce4-b1ad-562a9b295817.png" 
+                alt="Meditation class with multiple students"
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute bottom-4 left-4 right-4">
+                <h4 className="text-white font-semibold text-lg mb-1">Group Meditation</h4>
+                <p className="text-white/80 text-sm">Collective consciousness and shared peace</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Benefits Section */}
+          <div className="mt-12 grid md:grid-cols-3 gap-8">
+            <div className="text-center p-6 bg-gradient-card rounded-2xl border border-yoga-rose/20 shadow-soft">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-yoga-peach flex items-center justify-center">
+                <Heart className="w-8 h-8 text-yoga-mauve" />
+              </div>
+              <h4 className="text-lg font-semibold text-primary mb-2">Activates Parasympathetic Response</h4>
+              <p className="text-sm text-muted-foreground">Deep relaxation and healing through restorative practices</p>
+            </div>
+
+            <div className="text-center p-6 bg-gradient-card rounded-2xl border border-yoga-rose/20 shadow-soft">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-yoga-peach flex items-center justify-center">
+                <Users className="w-8 h-8 text-yoga-mauve" />
+              </div>
+              <h4 className="text-lg font-semibold text-primary mb-2">Restores Physical & Mental Vitality</h4>
+              <p className="text-sm text-muted-foreground">Rejuvenate your entire being through holistic practices</p>
+            </div>
+
+            <div className="text-center p-6 bg-gradient-card rounded-2xl border border-yoga-rose/20 shadow-soft">
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-yoga-peach flex items-center justify-center">
+                <Calendar className="w-8 h-8 text-yoga-mauve" />
+              </div>
+              <h4 className="text-lg font-semibold text-primary mb-2">Improves Concentration</h4>
+              <p className="text-sm text-muted-foreground">Quieting the mind for enhanced focus and clarity</p>
+            </div>
+          </div>
+        </div>
+
         {/* All Retreat Cards - Uniform Design */}
         <div className="grid md:grid-cols-3 gap-6">
           {allRetreats.map((retreat, index) => (
