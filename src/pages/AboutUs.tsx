@@ -37,29 +37,6 @@ const AboutUs = () => {
     }
   ];
 
-  const team = [
-    {
-      name: "Kadek Sari",
-      role: "Founder & Lead Instructor",
-      specialties: ["Hatha Yoga", "Meditation", "Balinese Healing"],
-      experience: "15+ years",
-      bio: "Born and raised in Ubud, Kadek brings authentic Balinese wisdom to every practice. She trained with renowned masters in India and combines traditional teachings with modern wellness approaches."
-    },
-    {
-      name: "Made Wirawan",
-      role: "Vinyasa Specialist",
-      specialties: ["Vinyasa Flow", "Breathwork", "Sound Healing"],
-      experience: "12+ years",
-      bio: "A certified Yoga Alliance instructor who specializes in dynamic flow practices. Made creates transformative sequences that honor both traditional and contemporary yoga styles."
-    },
-    {
-      name: "Putu Ayu",
-      role: "Wellness Coordinator",
-      specialties: ["Nutrition", "Ayurveda", "Retreat Planning"],
-      experience: "8+ years",
-      bio: "Our wellness expert ensures every aspect of your retreat supports your health goals. She designs personalized nutrition plans using local, organic ingredients."
-    }
-  ];
 
   const locations = [
     {
@@ -252,44 +229,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Meet Our Team Section */}
-      <section className="py-20 bg-yoga-light">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Meet Our Team</h2>
-            <p className="text-xl text-muted-foreground">
-              Experienced instructors dedicated to your transformation
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-glow transition-all duration-300">
-                <div className="aspect-square bg-gradient-primary">
-                  <img 
-                    src="/lovable-uploads/5117ac0b-9cea-4be9-83af-8536b5cd98d6.png" 
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                  <p className="text-primary font-medium mb-3">{member.role}</p>
-                  <div className="flex flex-wrap gap-1 mb-3">
-                    {member.specialties.map((specialty, idx) => (
-                      <Badge key={idx} variant="secondary" className="text-xs">
-                        {specialty}
-                      </Badge>
-                    ))}
-                  </div>
-                  <p className="text-sm text-muted-foreground mb-3">{member.experience} experience</p>
-                  <p className="text-sm leading-relaxed">{member.bio}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Our Locations Section */}
       <section className="py-20">
