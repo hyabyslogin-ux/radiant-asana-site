@@ -958,114 +958,140 @@ const ThreeDaysRetreat = () => {
           </Card>
         </section>
 
-        {/* Beautiful Gallery Section */}
+        {/* Seamless Gallery Section - New Design */}
         <section className="relative">
           {/* Background Elements */}
-          <div className="absolute inset-0 bg-gradient-to-br from-yoga-sage/5 via-transparent to-yoga-peach/10 rounded-3xl"></div>
-          <div className="absolute top-20 left-20 w-40 h-40 bg-yoga-cream/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-48 h-48 bg-yoga-rose/15 rounded-full blur-3xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-yoga-earth/5 via-transparent to-yoga-sage/10"></div>
           
-          <div className="relative space-y-16">
+          <div className="relative space-y-12">
             {/* Section Header */}
             <div className="text-center">
-              <div className="inline-flex items-center gap-3 bg-white/60 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+              <div className="inline-flex items-center gap-3 bg-white/70 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
                 <svg className="w-5 h-5 text-yoga-earth" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                <span className="font-inter text-yoga-earth font-medium">Moments of Transformation</span>
+                <span className="font-inter text-yoga-earth font-medium">Visual Journey</span>
               </div>
               <h2 className="font-playfair text-5xl lg:text-6xl font-bold text-yoga-earth mb-6">
-                Retreat 
-                <span className="block bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-plum bg-clip-text text-transparent">
-                  Gallery
-                </span>
+                Gallery
               </h2>
-              <p className="font-inter text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Experience the beauty and serenity of our yoga retreat through these captured moments of peace and transformation
+              <p className="font-inter text-xl text-gray-600 max-w-2xl mx-auto">
+                Immerse yourself in the beauty of our retreat experience
               </p>
             </div>
 
-            {/* Gallery Grid */}
-            <div className="relative">
-              <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-12 shadow-2xl border border-white/50">
-                {/* Masonry Gallery Layout */}
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                  {galleryImages.map((image, index) => (
-                    <div 
-                      key={index} 
-                      className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in ${
-                        index === 0 ? 'md:col-span-2 md:row-span-2' : 
-                        index === 4 ? 'lg:col-span-2' :
-                        index === 7 ? 'md:row-span-2' : ''
-                      }`}
-                      style={{ animationDelay: `${index * 100}ms` }}
-                    >
-                      {/* Image Container */}
-                      <div className="relative aspect-square overflow-hidden">
-                        <img 
-                          src={image} 
-                          alt={`Yoga retreat moment ${index + 1}`}
-                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                          loading="lazy"
-                        />
-                        
-                        {/* Gradient Overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        
-                        {/* Hover Content */}
-                        <div className="absolute inset-0 flex items-end justify-center p-6 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                          <div className="text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                            <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-2">
-                              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                              </svg>
-                            </div>
-                            <p className="text-sm font-medium">View Image</p>
+            {/* Seamless Photo Grid */}
+            <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden">
+              {/* No-gap Grid Layout */}
+              <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
+                {galleryImages.map((image, index) => (
+                  <div 
+                    key={index} 
+                    className={`group relative overflow-hidden cursor-pointer transition-all duration-500 hover:z-10 ${
+                      index === 0 ? 'col-span-2 row-span-2' : 
+                      index === 3 ? 'col-span-2' :
+                      index === 6 ? 'row-span-2' :
+                      index === 8 ? 'col-span-2' : ''
+                    }`}
+                    style={{ 
+                      aspectRatio: index === 0 || index === 6 ? '1/2' : 
+                                  index === 3 || index === 8 ? '2/1' : '1/1'
+                    }}
+                  >
+                    {/* Image */}
+                    <img 
+                      src={image} 
+                      alt={`Retreat moment ${index + 1}`}
+                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
+                    />
+                    
+                    {/* Hover Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-yoga-earth/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <div className="flex items-center justify-between text-white">
+                          <div>
+                            <p className="text-sm font-medium">Moment {index + 1}</p>
+                            <p className="text-xs opacity-80">Bali Yoga Retreat</p>
+                          </div>
+                          <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
                           </div>
                         </div>
-                        
-                        {/* Decorative Border */}
-                        <div className="absolute inset-0 border-2 border-white/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      </div>
-                      
-                      {/* Floating Number Badge */}
-                      <div className="absolute top-4 left-4 w-8 h-8 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <span className="text-white text-xs font-bold">{index + 1}</span>
                       </div>
                     </div>
-                  ))}
-                </div>
-                
-                {/* Gallery Stats */}
-                <div className="mt-12 text-center">
-                  <div className="inline-flex items-center gap-8 bg-gradient-to-r from-yoga-cream/30 to-yoga-peach/20 rounded-full px-8 py-4">
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-yoga-earth">{galleryImages.length}</p>
-                      <p className="text-sm text-gray-600">Beautiful Moments</p>
-                    </div>
-                    <div className="w-px h-8 bg-yoga-sage/30"></div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-yoga-earth">3</p>
-                      <p className="text-sm text-gray-600">Days of Bliss</p>
-                    </div>
-                    <div className="w-px h-8 bg-yoga-sage/30"></div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-yoga-earth">∞</p>
-                      <p className="text-sm text-gray-600">Lasting Memories</p>
-                    </div>
+                    
+                    {/* Scale Effect on Hover */}
+                    <div className="absolute inset-0 transform transition-transform duration-300 group-hover:scale-105"></div>
+                  </div>
+                ))}
+              </div>
+              
+              {/* Bottom Banner */}
+              <div className="bg-gradient-to-r from-yoga-earth via-yoga-sage to-yoga-plum p-8 text-center">
+                <h3 className="font-playfair text-2xl font-semibold text-white mb-2">
+                  Experience the Magic Yourself
+                </h3>
+                <p className="text-white/90 mb-6">
+                  Join us for a transformative 3-day journey in paradise
+                </p>
+                <div className="flex items-center justify-center gap-6 text-white/80 text-sm">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>3 Days</span>
+                  </div>
+                  <div className="w-px h-4 bg-white/30"></div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Bali, Indonesia</span>
+                  </div>
+                  <div className="w-px h-4 bg-white/30"></div>
+                  <div className="flex items-center gap-2">
+                    <User className="w-4 h-4" />
+                    <span>All Levels Welcome</span>
                   </div>
                 </div>
-                
-                {/* Call to Action */}
-                <div className="mt-12 text-center">
-                  <div className="bg-gradient-to-r from-yoga-sage/10 to-yoga-earth/10 rounded-2xl p-8">
-                    <h3 className="font-playfair text-2xl font-semibold text-yoga-earth mb-4">Ready to Create Your Own Story?</h3>
-                    <p className="font-inter text-gray-600 mb-6">Join us for an unforgettable retreat experience in the heart of Bali</p>
-                    <button className="bg-gradient-to-r from-yoga-sage to-yoga-earth text-white px-8 py-3 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300">
-                      Book Your Retreat
-                    </button>
+              </div>
+            </div>
+            
+            {/* Alternative Layout - Flowing Design */}
+            <div className="mt-20">
+              <div className="text-center mb-12">
+                <h3 className="font-playfair text-3xl font-semibold text-yoga-earth mb-4">
+                  More Memories
+                </h3>
+                <p className="font-inter text-gray-600">
+                  Every moment captured tells a story of transformation
+                </p>
+              </div>
+              
+              {/* Flowing Grid */}
+              <div className="columns-2 md:columns-3 lg:columns-4 gap-2">
+                {galleryImages.slice().reverse().map((image, index) => (
+                  <div 
+                    key={`alt-${index}`}
+                    className="group relative break-inside-avoid cursor-pointer mb-2"
+                  >
+                    <img 
+                      src={image} 
+                      alt={`Alternative view ${index + 1}`}
+                      className="w-full object-cover transition-all duration-500 group-hover:brightness-110 group-hover:scale-105 rounded-lg shadow-lg"
+                      style={{ 
+                        height: `${200 + (index % 3) * 50}px`
+                      }}
+                    />
+                    
+                    {/* Subtle Hover Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                      <div className="absolute bottom-2 left-2 right-2">
+                        <div className="bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2">
+                          <p className="text-xs font-medium text-yoga-earth">Retreat Experience</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
