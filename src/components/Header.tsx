@@ -252,13 +252,13 @@ const Header = () => {
               <span>Blog</span>
             </button>
 
-            <button 
-              onClick={() => scrollToSection('contact')}
+            <Link 
+              to="/contact-us"
               className="flex items-center space-x-2 text-foreground hover:text-primary transition-all duration-300 group"
             >
               <Phone className="w-4 h-4 group-hover:scale-110 transition-transform" />
               <span>Contact Us</span>
-            </button>
+            </Link>
 
             {/* Book Now Button */}
             <Link 
@@ -383,13 +383,14 @@ const Header = () => {
                 )}
               </div>
 
-              <button 
-                onClick={() => scrollToSection('about')}
+              <Link 
+                to="/about-us"
                 className="flex items-center space-x-3 text-foreground hover:text-primary transition-colors py-2"
+                onClick={() => setIsMenuOpen(false)}
               >
                 <Users className="w-5 h-5" />
                 <span>About Us</span>
-              </button>
+              </Link>
 
               <button 
                 onClick={() => scrollToSection('blog')}
@@ -399,13 +400,14 @@ const Header = () => {
                 <span>Blog</span>
               </button>
 
-              <button 
-                onClick={() => scrollToSection('contact')}
+              <Link 
+                to="/contact-us"
                 className="flex items-center space-x-3 text-foreground hover:text-primary transition-colors py-2"
+                onClick={() => setIsMenuOpen(false)}
               >
                 <Phone className="w-5 h-5" />
                 <span>Contact Us</span>
-              </button>
+              </Link>
 
               <Link 
                 to="/3-days-retreat"
