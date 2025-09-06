@@ -31,12 +31,17 @@ const ThreeDaysRetreat = () => {
   };
 
   const galleryImages = [
-    '/lovable-uploads/yoga-retreat-1.jpg',
-    '/lovable-uploads/yoga-retreat-2.jpg',
-    '/lovable-uploads/yoga-retreat-3.jpg',
     '/lovable-uploads/2c8cc260-25f3-4ae5-a498-e425800e509d.png',
-    '/lovable-uploads/3b45fe7e-1832-4fee-92d1-320376e40af5.png',
-    '/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png'
+    '/lovable-uploads/3b45fe7e-1832-4fee-92d1-320376e40af5.png', 
+    '/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png',
+    '/lovable-uploads/5117ac0b-9cea-4be9-83af-8536b5cd98d6.png',
+    '/lovable-uploads/5bc20f00-75c6-4f94-83f8-be72e5c72b78.png',
+    '/lovable-uploads/84b47165-30fa-48cd-8655-1fdd40968712.png',
+    '/lovable-uploads/8a948cb6-13f9-44c9-8fef-bce571ae9145.png',
+    '/lovable-uploads/9e3fcc3b-076b-4912-b3b1-67a84baae207.png',
+    '/lovable-uploads/b36093bd-c1e4-40a7-8601-24e53d082b0c.png',
+    '/lovable-uploads/dd467e40-f434-4893-bfae-077adbaa9185.png',
+    '/lovable-uploads/fa196a61-65f0-4c5b-945d-df28079ea3f3.png'
   ];
 
   return (
@@ -953,27 +958,117 @@ const ThreeDaysRetreat = () => {
           </Card>
         </section>
 
-        {/* Gallery Section */}
-        <section>
-          <Card className="shadow-zen">
-            <CardHeader>
-              <CardTitle className="text-3xl text-yoga-earth text-center">Retreat Gallery</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {galleryImages.map((image, index) => (
-                  <div key={index} className="relative group overflow-hidden rounded-lg aspect-square">
-                    <img 
-                      src={image} 
-                      alt={`Yoga retreat gallery ${index + 1}`}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                ))}
+        {/* Beautiful Gallery Section */}
+        <section className="relative">
+          {/* Background Elements */}
+          <div className="absolute inset-0 bg-gradient-to-br from-yoga-sage/5 via-transparent to-yoga-peach/10 rounded-3xl"></div>
+          <div className="absolute top-20 left-20 w-40 h-40 bg-yoga-cream/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-48 h-48 bg-yoga-rose/15 rounded-full blur-3xl"></div>
+          
+          <div className="relative space-y-16">
+            {/* Section Header */}
+            <div className="text-center">
+              <div className="inline-flex items-center gap-3 bg-white/60 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+                <svg className="w-5 h-5 text-yoga-earth" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span className="font-inter text-yoga-earth font-medium">Moments of Transformation</span>
               </div>
-            </CardContent>
-          </Card>
+              <h2 className="font-playfair text-5xl lg:text-6xl font-bold text-yoga-earth mb-6">
+                Retreat 
+                <span className="block bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-plum bg-clip-text text-transparent">
+                  Gallery
+                </span>
+              </h2>
+              <p className="font-inter text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Experience the beauty and serenity of our yoga retreat through these captured moments of peace and transformation
+              </p>
+            </div>
+
+            {/* Gallery Grid */}
+            <div className="relative">
+              <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-12 shadow-2xl border border-white/50">
+                {/* Masonry Gallery Layout */}
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                  {galleryImages.map((image, index) => (
+                    <div 
+                      key={index} 
+                      className={`group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 animate-fade-in ${
+                        index === 0 ? 'md:col-span-2 md:row-span-2' : 
+                        index === 4 ? 'lg:col-span-2' :
+                        index === 7 ? 'md:row-span-2' : ''
+                      }`}
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    >
+                      {/* Image Container */}
+                      <div className="relative aspect-square overflow-hidden">
+                        <img 
+                          src={image} 
+                          alt={`Yoga retreat moment ${index + 1}`}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          loading="lazy"
+                        />
+                        
+                        {/* Gradient Overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                        {/* Hover Content */}
+                        <div className="absolute inset-0 flex items-end justify-center p-6 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                          <div className="text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                            <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-2">
+                              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                              </svg>
+                            </div>
+                            <p className="text-sm font-medium">View Image</p>
+                          </div>
+                        </div>
+                        
+                        {/* Decorative Border */}
+                        <div className="absolute inset-0 border-2 border-white/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                      </div>
+                      
+                      {/* Floating Number Badge */}
+                      <div className="absolute top-4 left-4 w-8 h-8 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span className="text-white text-xs font-bold">{index + 1}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                {/* Gallery Stats */}
+                <div className="mt-12 text-center">
+                  <div className="inline-flex items-center gap-8 bg-gradient-to-r from-yoga-cream/30 to-yoga-peach/20 rounded-full px-8 py-4">
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-yoga-earth">{galleryImages.length}</p>
+                      <p className="text-sm text-gray-600">Beautiful Moments</p>
+                    </div>
+                    <div className="w-px h-8 bg-yoga-sage/30"></div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-yoga-earth">3</p>
+                      <p className="text-sm text-gray-600">Days of Bliss</p>
+                    </div>
+                    <div className="w-px h-8 bg-yoga-sage/30"></div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-yoga-earth">∞</p>
+                      <p className="text-sm text-gray-600">Lasting Memories</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Call to Action */}
+                <div className="mt-12 text-center">
+                  <div className="bg-gradient-to-r from-yoga-sage/10 to-yoga-earth/10 rounded-2xl p-8">
+                    <h3 className="font-playfair text-2xl font-semibold text-yoga-earth mb-4">Ready to Create Your Own Story?</h3>
+                    <p className="font-inter text-gray-600 mb-6">Join us for an unforgettable retreat experience in the heart of Bali</p>
+                    <button className="bg-gradient-to-r from-yoga-sage to-yoga-earth text-white px-8 py-3 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300">
+                      Book Your Retreat
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Contact Form */}
