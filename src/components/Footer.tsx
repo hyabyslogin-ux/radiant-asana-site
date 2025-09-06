@@ -127,7 +127,7 @@ const Footer = () => {
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-white/70 font-inter">
-                © 2024 Bali Yoga Retreats. All rights reserved.
+                © 2025 Himalayan Yoga Association. All rights reserved.
               </p>
               <div className="flex gap-6 text-sm">
                 <a href="#" className="text-white/70 hover:text-yoga-cream transition-colors">Privacy Policy</a>
