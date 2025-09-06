@@ -1,10 +1,17 @@
 import { useState } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 import { Calendar, Users, Heart } from 'lucide-react';
 
 const UbudRetreats = () => {
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
+  const navigate = useNavigate();
+
+  const handleBookNow = (days: string) => {
+    const dayNumber = days.split(' ')[0].toLowerCase();
+    navigate(`/${dayNumber}-days-retreat`);
+  };
 
   const allRetreats = [
     {
@@ -255,6 +262,7 @@ const UbudRetreats = () => {
                   </Button>
                   <Button 
                     size="sm"
+                    onClick={() => handleBookNow(retreat.days)}
                     className="flex-1 bg-yoga-mauve hover:bg-yoga-plum text-white transition-all duration-300 text-xs"
                   >
                     Book Now

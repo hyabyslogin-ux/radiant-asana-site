@@ -160,15 +160,15 @@ const Header = () => {
                         onMouseEnter={handleUbudEnter}
                         onMouseLeave={handleUbudLeave}
                       >
-                        <Link to="/3-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-t-lg" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>3 Days Retreat</Link>
-                        <Link to="/4-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>4 Days Retreat</Link>
-                        <Link to="/5-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>5 Days Retreat</Link>
-                        <Link to="/6-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>6 Days Retreat</Link>
-                        <Link to="/7-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>7 Days Retreat</Link>
-                        <Link to="/8-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>8 Days Retreat</Link>
-                        <Link to="/9-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>9 Days Retreat</Link>
-                        <Link to="/10-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>10 Days Retreat</Link>
-                        <Link to="/11-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-b-lg" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>11 Days Retreat</Link>
+                        <Link to="/3-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-t-lg" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>3 Days Retreat Ubud</Link>
+                        <Link to="/4-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>4 Days Retreat Ubud</Link>
+                        <Link to="/5-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>5 Days Retreat Ubud</Link>
+                        <Link to="/6-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>6 Days Retreat Ubud</Link>
+                        <Link to="/7-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>7 Days Retreat Ubud</Link>
+                        <Link to="/8-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>8 Days Retreat Ubud</Link>
+                        <Link to="/9-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>9 Days Retreat Ubud</Link>
+                        <Link to="/10-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>10 Days Retreat Ubud</Link>
+                        <Link to="/11-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-b-lg" onClick={() => { setIsRetreatsOpen(false); setIsUbudOpen(false); }}>11 Days Retreat Ubud</Link>
                       </div>
                     )}
                   </div>
@@ -190,15 +190,15 @@ const Header = () => {
                         onMouseEnter={handleUluwatuEnter}
                         onMouseLeave={handleUluwatuLeave}
                       >
-                        <Link to="/uluwatu-3-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-t-lg" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>3 Days Retreat</Link>
-                        <Link to="/uluwatu-4-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>4 Days Retreat</Link>
-                        <Link to="/uluwatu-5-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>5 Days Retreat</Link>
-                        <Link to="/uluwatu-6-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>6 Days Retreat</Link>
-                        <Link to="/uluwatu-7-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>7 Days Retreat</Link>
-                        <Link to="/uluwatu-8-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>8 Days Retreat</Link>
-                        <Link to="/uluwatu-9-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>9 Days Retreat</Link>
-                        <Link to="/uluwatu-10-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>10 Days Retreat</Link>
-                        <Link to="/uluwatu-11-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-b-lg" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>11 Days Retreat</Link>
+                        <Link to="/uluwatu-3-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-t-lg" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>3 Days Retreat Uluwatu</Link>
+                        <Link to="/uluwatu-4-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>4 Days Retreat Uluwatu</Link>
+                        <Link to="/uluwatu-5-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>5 Days Retreat Uluwatu</Link>
+                        <Link to="/uluwatu-6-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>6 Days Retreat Uluwatu</Link>
+                        <Link to="/uluwatu-7-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>7 Days Retreat Uluwatu</Link>
+                        <Link to="/uluwatu-8-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>8 Days Retreat Uluwatu</Link>
+                        <Link to="/uluwatu-9-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>9 Days Retreat Uluwatu</Link>
+                        <Link to="/uluwatu-10-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>10 Days Retreat Uluwatu</Link>
+                        <Link to="/uluwatu-11-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-b-lg" onClick={() => { setIsRetreatsOpen(false); setIsUluwatuOpen(false); }}>11 Days Retreat Uluwatu</Link>
                       </div>
                     )}
                   </div>
@@ -220,15 +220,15 @@ const Header = () => {
                         onMouseEnter={handleCangguEnter}
                         onMouseLeave={handleCangguLeave}
                       >
-                        <Link to="/canggu-3-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-t-lg" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>3 Days Retreat</Link>
-                        <Link to="/canggu-4-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>4 Days Retreat</Link>
-                        <Link to="/canggu-5-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>5 Days Retreat</Link>
-                        <Link to="/canggu-6-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>6 Days Retreat</Link>
-                        <Link to="/canggu-7-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>7 Days Retreat</Link>
-                        <Link to="/canggu-8-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>8 Days Retreat</Link>
-                        <Link to="/canggu-9-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>9 Days Retreat</Link>
-                        <Link to="/canggu-10-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>10 Days Retreat</Link>
-                        <Link to="/canggu-11-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-b-lg" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>11 Days Retreat</Link>
+                        <Link to="/canggu-3-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-t-lg" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>3 Days Retreat Canggu</Link>
+                        <Link to="/canggu-4-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>4 Days Retreat Canggu</Link>
+                        <Link to="/canggu-5-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>5 Days Retreat Canggu</Link>
+                        <Link to="/canggu-6-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>6 Days Retreat Canggu</Link>
+                        <Link to="/canggu-7-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>7 Days Retreat Canggu</Link>
+                        <Link to="/canggu-8-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>8 Days Retreat Canggu</Link>
+                        <Link to="/canggu-9-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>9 Days Retreat Canggu</Link>
+                        <Link to="/canggu-10-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>10 Days Retreat Canggu</Link>
+                        <Link to="/canggu-11-days-retreat" className="block px-4 py-2 text-sm text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-b-lg" onClick={() => { setIsRetreatsOpen(false); setIsCangguOpen(false); }}>11 Days Retreat Canggu</Link>
                       </div>
                     )}
                   </div>
@@ -317,15 +317,15 @@ const Header = () => {
                       
                       {isUbudOpen && (
                         <div className="ml-4 space-y-1 mt-2 animate-in slide-in-from-top-1 duration-200">
-                          <Link to="/3-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>3 Days Retreat</Link>
-                          <Link to="/4-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>4 Days Retreat</Link>
-                          <Link to="/5-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>5 Days Retreat</Link>
-                          <Link to="/6-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>6 Days Retreat</Link>
-                          <Link to="/7-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>7 Days Retreat</Link>
-                          <Link to="/8-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>8 Days Retreat</Link>
-                          <Link to="/9-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>9 Days Retreat</Link>
-                          <Link to="/10-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>10 Days Retreat</Link>
-                          <Link to="/11-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>11 Days Retreat</Link>
+                          <Link to="/3-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>3 Days Retreat Ubud</Link>
+                          <Link to="/4-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>4 Days Retreat Ubud</Link>
+                          <Link to="/5-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>5 Days Retreat Ubud</Link>
+                          <Link to="/6-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>6 Days Retreat Ubud</Link>
+                          <Link to="/7-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>7 Days Retreat Ubud</Link>
+                          <Link to="/8-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>8 Days Retreat Ubud</Link>
+                          <Link to="/9-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>9 Days Retreat Ubud</Link>
+                          <Link to="/10-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>10 Days Retreat Ubud</Link>
+                          <Link to="/11-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>11 Days Retreat Ubud</Link>
                         </div>
                       )}
                     </div>
@@ -342,15 +342,15 @@ const Header = () => {
                       
                       {isUluwatuOpen && (
                         <div className="ml-4 space-y-1 mt-2 animate-in slide-in-from-top-1 duration-200">
-                          <Link to="/uluwatu-3-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>3 Days Retreat</Link>
-                          <Link to="/uluwatu-4-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>4 Days Retreat</Link>
-                          <Link to="/uluwatu-5-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>5 Days Retreat</Link>
-                          <Link to="/uluwatu-6-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>6 Days Retreat</Link>
-                          <Link to="/uluwatu-7-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>7 Days Retreat</Link>
-                          <Link to="/uluwatu-8-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>8 Days Retreat</Link>
-                          <Link to="/uluwatu-9-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>9 Days Retreat</Link>
-                          <Link to="/uluwatu-10-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>10 Days Retreat</Link>
-                          <Link to="/uluwatu-11-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>11 Days Retreat</Link>
+                          <Link to="/uluwatu-3-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>3 Days Retreat Uluwatu</Link>
+                          <Link to="/uluwatu-4-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>4 Days Retreat Uluwatu</Link>
+                          <Link to="/uluwatu-5-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>5 Days Retreat Uluwatu</Link>
+                          <Link to="/uluwatu-6-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>6 Days Retreat Uluwatu</Link>
+                          <Link to="/uluwatu-7-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>7 Days Retreat Uluwatu</Link>
+                          <Link to="/uluwatu-8-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>8 Days Retreat Uluwatu</Link>
+                          <Link to="/uluwatu-9-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>9 Days Retreat Uluwatu</Link>
+                          <Link to="/uluwatu-10-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>10 Days Retreat Uluwatu</Link>
+                          <Link to="/uluwatu-11-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>11 Days Retreat Uluwatu</Link>
                         </div>
                       )}
                     </div>
@@ -367,15 +367,15 @@ const Header = () => {
                       
                       {isCangguOpen && (
                         <div className="ml-4 space-y-1 mt-2 animate-in slide-in-from-top-1 duration-200">
-                          <Link to="/canggu-3-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>3 Days Retreat</Link>
-                          <Link to="/canggu-4-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>4 Days Retreat</Link>
-                          <Link to="/canggu-5-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>5 Days Retreat</Link>
-                          <Link to="/canggu-6-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>6 Days Retreat</Link>
-                          <Link to="/canggu-7-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>7 Days Retreat</Link>
-                          <Link to="/canggu-8-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>8 Days Retreat</Link>
-                          <Link to="/canggu-9-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>9 Days Retreat</Link>
-                          <Link to="/canggu-10-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>10 Days Retreat</Link>
-                          <Link to="/canggu-11-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>11 Days Retreat</Link>
+                          <Link to="/canggu-3-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>3 Days Retreat Canggu</Link>
+                          <Link to="/canggu-4-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>4 Days Retreat Canggu</Link>
+                          <Link to="/canggu-5-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>5 Days Retreat Canggu</Link>
+                          <Link to="/canggu-6-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>6 Days Retreat Canggu</Link>
+                          <Link to="/canggu-7-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>7 Days Retreat Canggu</Link>
+                          <Link to="/canggu-8-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>8 Days Retreat Canggu</Link>
+                          <Link to="/canggu-9-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>9 Days Retreat Canggu</Link>
+                          <Link to="/canggu-10-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>10 Days Retreat Canggu</Link>
+                          <Link to="/canggu-11-days-retreat" className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" onClick={() => setIsMenuOpen(false)}>11 Days Retreat Canggu</Link>
                         </div>
                       )}
                     </div>
