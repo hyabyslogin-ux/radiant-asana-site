@@ -5,7 +5,7 @@ import UbudRetreats from '@/components/UbudRetreats';
 import UluwatuRetreats from '@/components/UluwatuRetreats';
 import CangguRetreats from '@/components/CangguRetreats';
 import Classes from '@/components/Classes';
-import Instructor from '@/components/Instructor';
+import Founder from '@/components/Founder';
 import Blog from '@/components/Blog';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -30,7 +30,7 @@ const Index = () => {
         <CangguRetreats />
       </div>
       <Classes />
-      <Instructor />
+      <Founder />
       <div id="blog">
         <Blog />
       </div>
