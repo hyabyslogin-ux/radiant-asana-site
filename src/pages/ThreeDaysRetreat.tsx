@@ -676,74 +676,245 @@ const ThreeDaysRetreat = () => {
           </div>
         </section>
 
-        {/* Retreat Dates & Pricing - Minimal Design */}
-        <section className="space-y-16">
-          {/* Section Header */}
-          <div className="text-center">
-            <h2 className="font-playfair text-4xl font-bold text-yoga-earth mb-4">
-              Dates & Pricing
-            </h2>
-            <p className="font-inter text-lg text-gray-600 max-w-2xl mx-auto">
-              Simple pricing for your transformative journey
-            </p>
-          </div>
+        {/* Retreat Dates & Pricing - Beautiful Design */}
+        <section className="relative">
+          {/* Background Elements */}
+          <div className="absolute inset-0 bg-gradient-to-br from-yoga-cream/20 via-transparent to-yoga-peach/20 rounded-3xl"></div>
+          <div className="absolute top-10 right-10 w-32 h-32 bg-yoga-sage/10 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 left-10 w-40 h-40 bg-yoga-rose/8 rounded-full blur-3xl"></div>
+          
+          <div className="relative space-y-20">
+            {/* Section Header */}
+            <div className="text-center">
+              <div className="inline-flex items-center gap-3 bg-white/60 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+                <Calendar className="w-5 h-5 text-yoga-earth" />
+                <span className="font-inter text-yoga-earth font-medium">Investment in Your Wellbeing</span>
+              </div>
+              <h2 className="font-playfair text-5xl lg:text-6xl font-bold text-yoga-earth mb-6">
+                Dates & 
+                <span className="block bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-plum bg-clip-text text-transparent">
+                  Pricing
+                </span>
+              </h2>
+              <p className="font-inter text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Transform your life with our carefully curated retreat experience, available year-round in paradise
+              </p>
+            </div>
 
-          {/* Dates */}
-          <div className="text-center space-y-6">
-            <h3 className="font-playfair text-2xl font-semibold text-yoga-earth">Available Year-Round</h3>
-            <div className="max-w-2xl mx-auto space-y-3">
-              <p className="font-inter text-gray-700">Check-in: Day 1 after 12:00 PM</p>
-              <p className="font-inter text-gray-700">Check-out: Day 3 before 12:00 PM</p>
-              <p className="font-inter text-sm text-gray-600">Contact us to check availability for your preferred dates</p>
+            {/* Availability & Schedule */}
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-12 shadow-2xl border border-white/50">
+                <div className="text-center mb-8">
+                  <h3 className="font-playfair text-3xl font-semibold text-yoga-earth mb-4">Available Year-Round</h3>
+                  <p className="font-inter text-lg text-gray-600">Join us any time in 2025 for your transformative journey</p>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="text-center p-6 bg-gradient-to-br from-yoga-sage/10 to-yoga-earth/10 rounded-2xl">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-2xl flex items-center justify-center mx-auto mb-4">
+                      <Clock className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-2">Check-in</h4>
+                    <p className="font-inter text-gray-700">Day 1 after 12:00 PM</p>
+                  </div>
+                  
+                  <div className="text-center p-6 bg-gradient-to-br from-yoga-plum/10 to-yoga-rose/10 rounded-2xl">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum to-yoga-rose rounded-2xl flex items-center justify-center mx-auto mb-4">
+                      <MapPin className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-2">Check-out</h4>
+                    <p className="font-inter text-gray-700">Day 3 before 12:00 PM</p>
+                  </div>
+                </div>
+                
+                <div className="text-center mt-8 p-4 bg-yoga-cream/20 rounded-xl">
+                  <p className="font-inter text-yoga-earth font-medium">Contact us to check availability for your preferred dates</p>
+                </div>
+              </div>
             </div>
-          </div>
 
-          {/* Pricing Cards - Minimal */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center p-8 bg-white/60 backdrop-blur-sm rounded-2xl border border-yoga-cream/30 hover:border-yoga-sage/30 transition-colors duration-300">
-              <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-3">Private Campus I</h4>
-              <div className="space-y-2">
-                <p className="text-3xl font-bold text-yoga-earth">$425</p>
-                <p className="text-sm text-gray-500 line-through">$500</p>
+            {/* Pricing Cards - Beautiful */}
+            <div className="space-y-12">
+              <div className="text-center">
+                <h3 className="font-playfair text-4xl font-semibold text-yoga-earth mb-4">Choose Your Experience</h3>
+                <p className="font-inter text-lg text-gray-600">All prices include special 15% early bird discount</p>
+              </div>
+              
+              <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {/* Private Campus I */}
+                <div className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 hover:scale-105 transition-all duration-300 overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-yoga-sage/20 to-transparent rounded-full blur-2xl"></div>
+                  <div className="relative">
+                    <div className="text-center mb-6">
+                      <div className="w-20 h-20 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                      </div>
+                      <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Private Campus I</h4>
+                      <p className="font-inter text-gray-600">Luxury private accommodation</p>
+                    </div>
+                    
+                    <div className="text-center mb-6">
+                      <div className="flex items-center justify-center gap-2">
+                        <p className="text-4xl font-bold text-yoga-earth">$425</p>
+                        <div className="text-left">
+                          <p className="text-sm text-gray-500 line-through">$500</p>
+                          <div className="bg-gradient-to-r from-yoga-sage to-yoga-earth text-white text-xs px-2 py-1 rounded-full">
+                            15% OFF
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-3 text-center">
+                      <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+                        <div className="w-2 h-2 bg-yoga-sage rounded-full"></div>
+                        <span>Private room with garden view</span>
+                      </div>
+                      <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+                        <div className="w-2 h-2 bg-yoga-sage rounded-full"></div>
+                        <span>Premium location facilities</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Twin Shared - Featured */}
+                <div className="group relative bg-gradient-to-br from-white via-white to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-yoga-earth/20 hover:scale-105 transition-all duration-300 overflow-hidden">
+                  <div className="absolute -top-4 -right-4 bg-gradient-to-br from-yoga-earth to-yoga-plum text-white px-6 py-2 rounded-full text-sm font-semibold rotate-12">
+                    Most Popular
+                  </div>
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-yoga-earth/20 to-transparent rounded-full blur-2xl"></div>
+                  <div className="relative">
+                    <div className="text-center mb-6">
+                      <div className="w-20 h-20 bg-gradient-to-br from-yoga-earth to-yoga-plum rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                      </div>
+                      <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Twin Shared</h4>
+                      <p className="font-inter text-gray-600">Share the journey with a friend</p>
+                    </div>
+                    
+                    <div className="text-center mb-6">
+                      <div className="flex items-center justify-center gap-2">
+                        <p className="text-4xl font-bold text-yoga-earth">$265</p>
+                        <div className="text-left">
+                          <p className="text-sm text-gray-500 line-through">$312</p>
+                          <div className="bg-gradient-to-r from-yoga-earth to-yoga-plum text-white text-xs px-2 py-1 rounded-full">
+                            15% OFF
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-3 text-center">
+                      <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+                        <div className="w-2 h-2 bg-yoga-earth rounded-full"></div>
+                        <span>Shared accommodation</span>
+                      </div>
+                      <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+                        <div className="w-2 h-2 bg-yoga-earth rounded-full"></div>
+                        <span>Perfect for friends or couples</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Private Campus II */}
+                <div className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 hover:scale-105 transition-all duration-300 overflow-hidden">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-yoga-plum/20 to-transparent rounded-full blur-2xl"></div>
+                  <div className="relative">
+                    <div className="text-center mb-6">
+                      <div className="w-20 h-20 bg-gradient-to-br from-yoga-plum to-yoga-rose rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Private Campus II</h4>
+                      <p className="font-inter text-gray-600">Intimate private setting</p>
+                    </div>
+                    
+                    <div className="text-center mb-6">
+                      <div className="flex items-center justify-center gap-2">
+                        <p className="text-4xl font-bold text-yoga-earth">$323</p>
+                        <div className="text-left">
+                          <p className="text-sm text-gray-500 line-through">$375</p>
+                          <div className="bg-gradient-to-r from-yoga-plum to-yoga-rose text-white text-xs px-2 py-1 rounded-full">
+                            15% OFF
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-3 text-center">
+                      <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+                        <div className="w-2 h-2 bg-yoga-plum rounded-full"></div>
+                        <span>Private room with nature views</span>
+                      </div>
+                      <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
+                        <div className="w-2 h-2 bg-yoga-plum rounded-full"></div>
+                        <span>Serene campus location</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            
-            <div className="text-center p-8 bg-white/60 backdrop-blur-sm rounded-2xl border border-yoga-cream/30 hover:border-yoga-sage/30 transition-colors duration-300">
-              <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-3">Twin Shared</h4>
-              <div className="space-y-2">
-                <p className="text-3xl font-bold text-yoga-earth">$265</p>
-                <p className="text-sm text-gray-500 line-through">$312</p>
-              </div>
-            </div>
-            
-            <div className="text-center p-8 bg-white/60 backdrop-blur-sm rounded-2xl border border-yoga-cream/30 hover:border-yoga-sage/30 transition-colors duration-300">
-              <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-3">Private Campus II</h4>
-              <div className="space-y-2">
-                <p className="text-3xl font-bold text-yoga-earth">$323</p>
-                <p className="text-sm text-gray-500 line-through">$375</p>
-              </div>
-            </div>
-          </div>
 
-          {/* What's Included - Simplified */}
-          <div className="text-center space-y-8">
-            <h3 className="font-playfair text-2xl font-semibold text-yoga-earth">What's Included</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
-              <div className="space-y-2">
-                <p className="font-inter font-medium text-yoga-earth">Accommodation</p>
-                <p className="font-inter text-sm text-gray-600">3 days, 2 nights</p>
-              </div>
-              <div className="space-y-2">
-                <p className="font-inter font-medium text-yoga-earth">All Meals</p>
-                <p className="font-inter text-sm text-gray-600">Organic vegetarian</p>
-              </div>
-              <div className="space-y-2">
-                <p className="font-inter font-medium text-yoga-earth">Yoga Classes</p>
-                <p className="font-inter text-sm text-gray-600">Daily sessions included</p>
-              </div>
-              <div className="space-y-2">
-                <p className="font-inter font-medium text-yoga-earth">2 Massages</p>
-                <p className="font-inter text-sm text-gray-600">Traditional Balinese</p>
+            {/* What's Included - Beautiful Grid */}
+            <div className="max-w-6xl mx-auto">
+              <div className="bg-gradient-to-br from-white/90 via-white/80 to-yoga-cream/20 backdrop-blur-sm rounded-3xl p-12 shadow-2xl border border-white/50">
+                <div className="text-center mb-12">
+                  <h3 className="font-playfair text-4xl font-semibold text-yoga-earth mb-4">Everything Included</h3>
+                  <p className="font-inter text-lg text-gray-600">Your complete transformation package</p>
+                </div>
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage/20 to-yoga-earth/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-8 h-8 text-yoga-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Accommodation</h4>
+                    <p className="font-inter text-sm text-gray-600">3 days, 2 nights in paradise</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-earth/20 to-yoga-plum/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Utensils className="w-8 h-8 text-yoga-earth" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Nourishing Meals</h4>
+                    <p className="font-inter text-sm text-gray-600">Organic vegetarian cuisine</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum/20 to-yoga-rose/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <User className="w-8 h-8 text-yoga-plum" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Yoga Classes</h4>
+                    <p className="font-inter text-sm text-gray-600">Daily guided sessions</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-rose/20 to-yoga-peach/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Gift className="w-8 h-8 text-yoga-rose" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Spa Treatments</h4>
+                    <p className="font-inter text-sm text-gray-600">2 Balinese massages</p>
+                  </div>
+                </div>
+                
+                <div className="mt-12 text-center">
+                  <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yoga-sage/10 to-yoga-earth/10 rounded-full px-6 py-3">
+                    <svg className="w-5 h-5 text-yoga-earth" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="font-inter text-yoga-earth font-medium">Plus swimming pool, WiFi, course materials & more</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
