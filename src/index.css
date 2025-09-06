@@ -53,11 +53,14 @@ All colors MUST be HSL.
     --yoga-rose: 353 30% 70%;
     --yoga-mauve: 343 32% 38%;
     --yoga-plum: 331 37% 20%;
+    --yoga-sage: 120 15% 60%;
+    --yoga-earth: 28 25% 35%;
     
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--yoga-peach-light)), hsl(var(--yoga-peach)));
     --gradient-border: linear-gradient(90deg, hsl(var(--yoga-rose)), hsl(var(--yoga-mauve)));
     --gradient-card: linear-gradient(145deg, hsl(var(--yoga-cream)), hsl(var(--yoga-peach-light)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--yoga-mauve)), hsl(var(--yoga-plum)));
     
     /* Shadows */
     --shadow-soft: 0 10px 25px -5px hsl(var(--yoga-rose) / 0.2);

@@ -64,7 +64,9 @@ export default {
 					},
 					rose: 'hsl(var(--yoga-rose))',
 					mauve: 'hsl(var(--yoga-mauve))',
-					plum: 'hsl(var(--yoga-plum))'
+					plum: 'hsl(var(--yoga-plum))',
+					sage: 'hsl(var(--yoga-sage))',
+					earth: 'hsl(var(--yoga-earth))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -80,7 +82,8 @@ export default {
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-border': 'var(--gradient-border)',
-				'gradient-card': 'var(--gradient-card)'
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-primary': 'var(--gradient-primary)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
