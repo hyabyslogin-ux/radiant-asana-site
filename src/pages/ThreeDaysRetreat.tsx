@@ -46,35 +46,23 @@ const ThreeDaysRetreat = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-800">
         
-        {/* Animated Background Layers */}
+        {/* Minimal Background Layers */}
         <div className="absolute inset-0">
-          {/* Primary Background Image */}
+          {/* Static Background Image */}
           <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 scale-110 animate-drift"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
             style={{ backgroundImage: `url(/lovable-uploads/5bc20f00-75c6-4f94-83f8-be72e5c72b78.png)` }}
           />
           
-          {/* Gradient Overlays */}
-          <div className="absolute inset-0 bg-gradient-to-br from-yoga-plum/95 via-yoga-sage/80 to-yoga-earth/85"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yoga-rose/20 to-transparent"></div>
+          {/* Clean Gradient Overlays */}
+          <div className="absolute inset-0 bg-gradient-to-br from-yoga-plum/90 via-yoga-sage/75 to-yoga-earth/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
         </div>
         
-        {/* Organic Floating Shapes */}
+        {/* Subtle Floating Elements */}
         <div className="absolute inset-0 pointer-events-none">
-          {/* Large organic shapes */}
-          <div className="absolute top-1/4 -left-32 w-96 h-96 bg-gradient-to-br from-yoga-cream/30 to-yoga-peach/20 rounded-full blur-3xl animate-float opacity-60"></div>
-          <div className="absolute bottom-1/3 -right-32 w-80 h-80 bg-gradient-to-tl from-yoga-rose/25 to-yoga-mauve/15 rounded-full blur-3xl animate-drift opacity-50"></div>
-          
-          {/* Medium flowing shapes */}
-          <div className="absolute top-20 right-1/4 w-64 h-64 bg-gradient-to-br from-white/20 to-yoga-cream/10 rounded-full blur-2xl animate-pulse-glow"></div>
-          <div className="absolute bottom-20 left-1/4 w-48 h-48 bg-gradient-to-tr from-yoga-sage/30 to-transparent rounded-full blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
-          
-          {/* Small particles */}
-          <div className="absolute top-32 left-16 w-6 h-6 bg-yoga-cream/60 rounded-full animate-float blur-sm" style={{ animationDelay: '0.5s' }}></div>
-          <div className="absolute top-1/2 right-20 w-4 h-4 bg-yoga-peach/50 rounded-full animate-drift blur-sm" style={{ animationDelay: '1.5s' }}></div>
-          <div className="absolute bottom-40 left-1/3 w-8 h-8 bg-yoga-rose/40 rounded-full animate-pulse-glow blur-sm" style={{ animationDelay: '3s' }}></div>
-          <div className="absolute top-40 right-1/3 w-5 h-5 bg-white/40 rounded-full animate-float blur-sm" style={{ animationDelay: '2.5s' }}></div>
+          <div className="absolute top-1/4 -left-32 w-96 h-96 bg-gradient-to-br from-yoga-cream/20 to-yoga-peach/10 rounded-full blur-3xl animate-float opacity-40"></div>
+          <div className="absolute bottom-1/3 -right-32 w-80 h-80 bg-gradient-to-tl from-yoga-rose/15 to-yoga-mauve/8 rounded-full blur-3xl animate-float opacity-30" style={{ animationDelay: '2s' }}></div>
         </div>
         
         {/* Main Content */}
@@ -82,28 +70,28 @@ const ThreeDaysRetreat = () => {
           <div className="animate-fade-in">
             
             {/* Premium Badge */}
-            <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-lg border border-white/30 rounded-full px-8 py-4 mb-12 shadow-2xl">
+            <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-lg border border-white/30 rounded-full px-8 py-4 mb-12 shadow-xl">
               <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-yoga-sage rounded-full animate-pulse-glow"></div>
+                <div className="w-2 h-2 bg-yoga-sage rounded-full animate-pulse"></div>
                 <Badge className="bg-yoga-sage/90 text-white text-sm font-semibold px-3 py-1">Limited Time</Badge>
               </div>
               <span className="text-white/95 font-inter font-medium text-lg">15% Early Bird Discount Available</span>
             </div>
             
-            {/* Main Heading with Custom Typography */}
+            {/* Main Heading with Clean Typography */}
             <div className="mb-8 space-y-4">
               <h1 className="font-playfair text-7xl sm:text-8xl lg:text-9xl font-bold leading-none">
-                <span className="block text-white drop-shadow-2xl tracking-tight">3 Days</span>
-                <span className="block bg-gradient-to-r from-yoga-cream via-yoga-peach to-yoga-rose bg-clip-text text-transparent animate-text-shimmer bg-[length:200%_auto] font-playfair">
+                <span className="block text-white drop-shadow-xl tracking-tight">3 Days</span>
+                <span className="block bg-gradient-to-r from-yoga-cream via-yoga-peach to-yoga-rose bg-clip-text text-transparent font-playfair">
                   Yoga Retreat
                 </span>
               </h1>
               <div className="flex items-center justify-center gap-4 mb-6">
-                <div className="h-px bg-gradient-to-r from-transparent via-white/60 to-transparent w-24"></div>
+                <div className="h-px bg-gradient-to-r from-transparent via-white/50 to-transparent w-24"></div>
                 <p className="font-playfair text-3xl sm:text-4xl lg:text-5xl font-light text-white/90 italic tracking-wide">
                   in Paradise
                 </p>
-                <div className="h-px bg-gradient-to-r from-transparent via-white/60 to-transparent w-24"></div>
+                <div className="h-px bg-gradient-to-r from-transparent via-white/50 to-transparent w-24"></div>
               </div>
             </div>
             
@@ -121,89 +109,40 @@ const ThreeDaysRetreat = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20">
               <Button 
                 size="lg" 
-                className="group relative overflow-hidden bg-white/95 text-yoga-earth hover:bg-white font-inter font-semibold text-xl px-12 py-8 h-auto border-2 border-transparent hover:border-yoga-rose/50 transition-all duration-500 shadow-2xl hover:shadow-yoga-rose/25 hover:scale-105 transform"
+                className="group relative overflow-hidden bg-white/95 text-yoga-earth hover:bg-white font-inter font-semibold text-xl px-12 py-8 h-auto border-2 border-transparent hover:border-yoga-rose/50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-yoga-cream/20 to-yoga-peach/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <Calendar className="w-6 h-6 mr-3 relative z-10" />
-                <span className="relative z-10">Book Your Retreat - From $265</span>
+                <Calendar className="w-6 h-6 mr-3" />
+                <span>Book Your Retreat - From $265</span>
               </Button>
               
               <Button 
                 variant="outline" 
                 size="lg"
-                className="group relative overflow-hidden border-2 border-white/80 text-white hover:bg-white/15 font-inter font-semibold text-xl px-12 py-8 h-auto backdrop-blur-md transition-all duration-500 hover:border-white hover:scale-105 transform shadow-xl"
+                className="border-2 border-white/80 text-white hover:bg-white/15 font-inter font-semibold text-xl px-12 py-8 h-auto backdrop-blur-md transition-all duration-300 hover:border-white hover:scale-105 transform shadow-lg"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <Phone className="w-6 h-6 mr-3 relative z-10" />
-                <span className="relative z-10">Contact Our Team</span>
+                <Phone className="w-6 h-6 mr-3" />
+                <span>Contact Our Team</span>
               </Button>
             </div>
-            
-            {/* Enhanced Feature Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              
-              <div className="group bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-500 hover:scale-105 transform shadow-2xl hover:shadow-yoga-sage/25">
-                <div className="relative mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-2xl flex items-center justify-center mx-auto shadow-lg group-hover:shadow-yoga-sage/40 transition-shadow duration-500">
-                    <Waves className="w-8 h-8 text-white" />
-                  </div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-yoga-cream/80 rounded-full animate-pulse-glow"></div>
-                </div>
-                <h3 className="font-playfair font-semibold text-white text-xl mb-3">Sound Healing</h3>
-                <p className="text-white/80 text-base font-inter leading-relaxed">Tibetan singing bowls & crystal therapy sessions</p>
-              </div>
-              
-              <div className="group bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-500 hover:scale-105 transform shadow-2xl hover:shadow-yoga-earth/25">
-                <div className="relative mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-yoga-earth to-yoga-plum rounded-2xl flex items-center justify-center mx-auto shadow-lg group-hover:shadow-yoga-earth/40 transition-shadow duration-500">
-                    <Gift className="w-8 h-8 text-white" />
-                  </div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-yoga-rose/80 rounded-full animate-pulse-glow" style={{ animationDelay: '0.5s' }}></div>
-                </div>
-                <h3 className="font-playfair font-semibold text-white text-xl mb-3">Balinese Massage</h3>
-                <p className="text-white/80 text-base font-inter leading-relaxed">2 complimentary traditional healing massages</p>
-              </div>
-              
-              <div className="group bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-500 hover:scale-105 transform shadow-2xl hover:shadow-yoga-rose/25">
-                <div className="relative mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-yoga-rose to-yoga-mauve rounded-2xl flex items-center justify-center mx-auto shadow-lg group-hover:shadow-yoga-rose/40 transition-shadow duration-500">
-                    <Utensils className="w-8 h-8 text-white" />
-                  </div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-yoga-peach/80 rounded-full animate-pulse-glow" style={{ animationDelay: '1s' }}></div>
-                </div>
-                <h3 className="font-playfair font-semibold text-white text-xl mb-3">Organic Meals</h3>
-                <p className="text-white/80 text-base font-inter leading-relaxed">Fresh vegetarian & vegan Balinese cuisine</p>
-              </div>
-            </div>
           </div>
         </div>
         
-        {/* Enhanced Scroll Indicator */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white/90 z-30">
+        {/* Minimal Scroll Indicator */}
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-white/80 z-30">
           <div className="animate-bounce">
             <div className="flex flex-col items-center gap-3">
-              <span className="text-base font-inter font-medium tracking-wider">Scroll to explore</span>
-              <div className="relative">
-                <div className="w-8 h-12 border-2 border-white/70 rounded-full flex justify-center shadow-lg">
-                  <div className="w-2 h-4 bg-white/70 rounded-full mt-2 animate-pulse"></div>
-                </div>
-                <div className="absolute -inset-2 border border-white/30 rounded-full animate-ping"></div>
+              <span className="text-sm font-inter font-medium tracking-wider opacity-80">Scroll to explore</span>
+              <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center shadow-lg">
+                <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
               </div>
             </div>
           </div>
         </div>
         
-        {/* Decorative Bottom Border */}
+        {/* Clean Bottom Border */}
         <div className="absolute bottom-0 left-0 right-0">
-          <div className="h-2 bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-rose"></div>
-          <div className="h-px bg-gradient-to-r from-transparent via-white/50 to-transparent"></div>
+          <div className="h-1 bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-rose opacity-80"></div>
         </div>
-        
-        {/* Corner Decorative Elements */}
-        <div className="absolute top-8 left-8 w-16 h-16 border-l-2 border-t-2 border-white/30 rounded-tl-xl"></div>
-        <div className="absolute top-8 right-8 w-16 h-16 border-r-2 border-t-2 border-white/30 rounded-tr-xl"></div>
-        <div className="absolute bottom-8 left-8 w-16 h-16 border-l-2 border-b-2 border-white/30 rounded-bl-xl"></div>
-        <div className="absolute bottom-8 right-8 w-16 h-16 border-r-2 border-b-2 border-white/30 rounded-br-xl"></div>
       </section>
 
       <div className="container mx-auto px-4 py-12 space-y-16">
