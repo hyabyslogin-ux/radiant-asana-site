@@ -958,7 +958,7 @@ const ThreeDaysRetreat = () => {
           </Card>
         </section>
 
-        {/* Seamless Gallery Section - New Design */}
+        {/* Memories Section Only */}
         <section className="relative">
           {/* Background Elements */}
           <div className="absolute inset-0 bg-gradient-to-br from-yoga-earth/5 via-transparent to-yoga-sage/10"></div>
@@ -973,126 +973,39 @@ const ThreeDaysRetreat = () => {
                 <span className="font-inter text-yoga-earth font-medium">Visual Journey</span>
               </div>
               <h2 className="font-playfair text-5xl lg:text-6xl font-bold text-yoga-earth mb-6">
-                Gallery
+                Memories
               </h2>
               <p className="font-inter text-xl text-gray-600 max-w-2xl mx-auto">
-                Immerse yourself in the beauty of our retreat experience
+                Every moment captured tells a story of transformation
               </p>
             </div>
-
-            {/* Seamless Photo Grid */}
-            <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden">
-              {/* No-gap Grid Layout */}
-              <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
-                {galleryImages.map((image, index) => (
-                  <div 
-                    key={index} 
-                    className={`group relative overflow-hidden cursor-pointer transition-all duration-500 hover:z-10 ${
-                      index === 0 ? 'col-span-2 row-span-2' : 
-                      index === 3 ? 'col-span-2' :
-                      index === 6 ? 'row-span-2' :
-                      index === 8 ? 'col-span-2' : ''
-                    }`}
+            
+            {/* Flowing Grid - Only 2 Rows */}
+            <div className="columns-2 md:columns-3 lg:columns-4 gap-2">
+              {galleryImages.slice().reverse().slice(0, 8).map((image, index) => (
+                <div 
+                  key={`alt-${index}`}
+                  className="group relative break-inside-avoid cursor-pointer mb-2"
+                >
+                  <img 
+                    src={image} 
+                    alt={`Alternative view ${index + 1}`}
+                    className="w-full object-cover transition-all duration-500 group-hover:brightness-110 group-hover:scale-105 rounded-lg shadow-lg"
                     style={{ 
-                      aspectRatio: index === 0 || index === 6 ? '1/2' : 
-                                  index === 3 || index === 8 ? '2/1' : '1/1'
+                      height: `${200 + (index % 3) * 50}px`
                     }}
-                  >
-                    {/* Image */}
-                    <img 
-                      src={image} 
-                      alt={`Retreat moment ${index + 1}`}
-                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
-                    />
-                    
-                    {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-yoga-earth/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
-                      <div className="absolute bottom-4 left-4 right-4">
-                        <div className="flex items-center justify-between text-white">
-                          <div>
-                            <p className="text-sm font-medium">Moment {index + 1}</p>
-                            <p className="text-xs opacity-80">Bali Yoga Retreat</p>
-                          </div>
-                          <div className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
-                          </div>
-                        </div>
+                  />
+                  
+                  {/* Subtle Hover Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                    <div className="absolute bottom-2 left-2 right-2">
+                      <div className="bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2">
+                        <p className="text-xs font-medium text-yoga-earth">Retreat Experience</p>
                       </div>
                     </div>
-                    
-                    {/* Scale Effect on Hover */}
-                    <div className="absolute inset-0 transform transition-transform duration-300 group-hover:scale-105"></div>
-                  </div>
-                ))}
-              </div>
-              
-              {/* Bottom Banner */}
-              <div className="bg-gradient-to-r from-yoga-earth via-yoga-sage to-yoga-plum p-8 text-center">
-                <h3 className="font-playfair text-2xl font-semibold text-white mb-2">
-                  Experience the Magic Yourself
-                </h3>
-                <p className="text-white/90 mb-6">
-                  Join us for a transformative 3-day journey in paradise
-                </p>
-                <div className="flex items-center justify-center gap-6 text-white/80 text-sm">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>3 Days</span>
-                  </div>
-                  <div className="w-px h-4 bg-white/30"></div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Bali, Indonesia</span>
-                  </div>
-                  <div className="w-px h-4 bg-white/30"></div>
-                  <div className="flex items-center gap-2">
-                    <User className="w-4 h-4" />
-                    <span>All Levels Welcome</span>
                   </div>
                 </div>
-              </div>
-            </div>
-            
-            {/* Alternative Layout - Flowing Design */}
-            <div className="mt-20">
-              <div className="text-center mb-12">
-                <h3 className="font-playfair text-3xl font-semibold text-yoga-earth mb-4">
-                  More Memories
-                </h3>
-                <p className="font-inter text-gray-600">
-                  Every moment captured tells a story of transformation
-                </p>
-              </div>
-              
-              {/* Flowing Grid */}
-              <div className="columns-2 md:columns-3 lg:columns-4 gap-2">
-                {galleryImages.slice().reverse().map((image, index) => (
-                  <div 
-                    key={`alt-${index}`}
-                    className="group relative break-inside-avoid cursor-pointer mb-2"
-                  >
-                    <img 
-                      src={image} 
-                      alt={`Alternative view ${index + 1}`}
-                      className="w-full object-cover transition-all duration-500 group-hover:brightness-110 group-hover:scale-105 rounded-lg shadow-lg"
-                      style={{ 
-                        height: `${200 + (index % 3) * 50}px`
-                      }}
-                    />
-                    
-                    {/* Subtle Hover Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
-                      <div className="absolute bottom-2 left-2 right-2">
-                        <div className="bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2">
-                          <p className="text-xs font-medium text-yoga-earth">Retreat Experience</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              ))}
             </div>
           </div>
         </section>
