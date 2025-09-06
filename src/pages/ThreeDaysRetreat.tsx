@@ -676,109 +676,77 @@ const ThreeDaysRetreat = () => {
           </div>
         </section>
 
-        {/* Retreat Dates & Pricing */}
-        <section>
-          <Card className="shadow-zen">
-            <CardHeader>
-              <CardTitle className="text-3xl text-yoga-earth">Retreat Dates & Pricing</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-8">
-              
-              {/* Dates */}
-              <div>
-                <h3 className="text-xl font-semibold mb-4 text-yoga-sage">Yoga Retreat Dates</h3>
-                <div className="bg-yoga-mist/10 p-6 rounded-lg space-y-2">
-                  <p className="font-medium">Retreat Dates – We offer Yoga Retreats throughout the year of 2025. Please contact us to check availabilities of your desired dates.</p>
-                  <p><strong>Check In –</strong> On the Day 1st after 12:00 pm</p>
-                  <p><strong>Check Out –</strong> On the last day before 12:00 pm</p>
-                </div>
+        {/* Retreat Dates & Pricing - Minimal Design */}
+        <section className="space-y-16">
+          {/* Section Header */}
+          <div className="text-center">
+            <h2 className="font-playfair text-4xl font-bold text-yoga-earth mb-4">
+              Dates & Pricing
+            </h2>
+            <p className="font-inter text-lg text-gray-600 max-w-2xl mx-auto">
+              Simple pricing for your transformative journey
+            </p>
+          </div>
+
+          {/* Dates */}
+          <div className="text-center space-y-6">
+            <h3 className="font-playfair text-2xl font-semibold text-yoga-earth">Available Year-Round</h3>
+            <div className="max-w-2xl mx-auto space-y-3">
+              <p className="font-inter text-gray-700">Check-in: Day 1 after 12:00 PM</p>
+              <p className="font-inter text-gray-700">Check-out: Day 3 before 12:00 PM</p>
+              <p className="font-inter text-sm text-gray-600">Contact us to check availability for your preferred dates</p>
+            </div>
+          </div>
+
+          {/* Pricing Cards - Minimal */}
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="text-center p-8 bg-white/60 backdrop-blur-sm rounded-2xl border border-yoga-cream/30 hover:border-yoga-sage/30 transition-colors duration-300">
+              <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-3">Private Campus I</h4>
+              <div className="space-y-2">
+                <p className="text-3xl font-bold text-yoga-earth">$425</p>
+                <p className="text-sm text-gray-500 line-through">$500</p>
               </div>
-
-              <Separator />
-
-              {/* Pricing */}
-              <div>
-                <h3 className="text-xl font-semibold mb-4 text-yoga-sage">Retreat Fees / Inclusions</h3>
-                <div className="grid md:grid-cols-3 gap-4 mb-6">
-                  <Card className="border-2 border-yoga-sage/20">
-                    <CardContent className="p-6 text-center">
-                      <h4 className="font-semibold text-lg mb-2">Private Room Campus-I</h4>
-                      <div className="space-y-1">
-                        <p className="text-2xl font-bold text-yoga-earth">$425 USD</p>
-                        <p className="text-sm text-gray-500 line-through">$500 USD</p>
-                        <Badge className="bg-yoga-sage text-white">15% off</Badge>
-                      </div>
-                    </CardContent>
-                  </Card>
-                  
-                  <Card className="border-2 border-yoga-sage/20">
-                    <CardContent className="p-6 text-center">
-                      <h4 className="font-semibold text-lg mb-2">Twin Shared Campus-I</h4>
-                      <div className="space-y-1">
-                        <p className="text-2xl font-bold text-yoga-earth">$265 USD</p>
-                        <p className="text-sm text-gray-500 line-through">$312.5 USD</p>
-                        <Badge className="bg-yoga-sage text-white">15% off</Badge>
-                      </div>
-                    </CardContent>
-                  </Card>
-                  
-                  <Card className="border-2 border-yoga-sage/20">
-                    <CardContent className="p-6 text-center">
-                      <h4 className="font-semibold text-lg mb-2">Private Room Campus-II</h4>
-                      <div className="space-y-1">
-                        <p className="text-2xl font-bold text-yoga-earth">$323 USD</p>
-                        <p className="text-sm text-gray-500 line-through">$375 USD</p>
-                        <Badge className="bg-yoga-sage text-white">15% off</Badge>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                {/* Inclusions */}
-                <div className="bg-gradient-to-r from-yoga-mist/10 to-yoga-sage/5 p-6 rounded-lg">
-                  <p className="font-semibold mb-3 text-yoga-earth">Retreat Duration - 3 Days & 2 Nights</p>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-2">
-                        <MapPin className="h-4 w-4 text-yoga-sage" />
-                        <span>Private Accommodation</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Utensils className="h-4 w-4 text-yoga-sage" />
-                        <span>Nutritious vegan/vegetarian meals</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Calendar className="h-4 w-4 text-yoga-sage" />
-                        <span>All mentioned Yoga Classes</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Wifi className="h-4 w-4 text-yoga-sage" />
-                        <span>Complimentary High-Speed Wi-Fi</span>
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-2">
-                        <Waves className="h-4 w-4 text-yoga-sage" />
-                        <span>Swimming pool Access (10:00 AM - 8:00 PM)</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Gift className="h-4 w-4 text-yoga-sage" />
-                        <span>All necessary class items provided</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Gift className="h-4 w-4 text-yoga-sage" />
-                        <span>2 Complimentary Balinese Massages</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Gift className="h-4 w-4 text-yoga-sage" />
-                        <span>Course Materials (Bag, T-shirt, Notebook, Pen, Mala)</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            </div>
+            
+            <div className="text-center p-8 bg-white/60 backdrop-blur-sm rounded-2xl border border-yoga-cream/30 hover:border-yoga-sage/30 transition-colors duration-300">
+              <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-3">Twin Shared</h4>
+              <div className="space-y-2">
+                <p className="text-3xl font-bold text-yoga-earth">$265</p>
+                <p className="text-sm text-gray-500 line-through">$312</p>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+            
+            <div className="text-center p-8 bg-white/60 backdrop-blur-sm rounded-2xl border border-yoga-cream/30 hover:border-yoga-sage/30 transition-colors duration-300">
+              <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-3">Private Campus II</h4>
+              <div className="space-y-2">
+                <p className="text-3xl font-bold text-yoga-earth">$323</p>
+                <p className="text-sm text-gray-500 line-through">$375</p>
+              </div>
+            </div>
+          </div>
+
+          {/* What's Included - Simplified */}
+          <div className="text-center space-y-8">
+            <h3 className="font-playfair text-2xl font-semibold text-yoga-earth">What's Included</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+              <div className="space-y-2">
+                <p className="font-inter font-medium text-yoga-earth">Accommodation</p>
+                <p className="font-inter text-sm text-gray-600">3 days, 2 nights</p>
+              </div>
+              <div className="space-y-2">
+                <p className="font-inter font-medium text-yoga-earth">All Meals</p>
+                <p className="font-inter text-sm text-gray-600">Organic vegetarian</p>
+              </div>
+              <div className="space-y-2">
+                <p className="font-inter font-medium text-yoga-earth">Yoga Classes</p>
+                <p className="font-inter text-sm text-gray-600">Daily sessions included</p>
+              </div>
+              <div className="space-y-2">
+                <p className="font-inter font-medium text-yoga-earth">2 Massages</p>
+                <p className="font-inter text-sm text-gray-600">Traditional Balinese</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Terms & Conditions */}
