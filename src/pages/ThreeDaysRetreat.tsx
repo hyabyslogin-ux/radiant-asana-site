@@ -388,7 +388,7 @@ const ThreeDaysRetreat = () => {
                 <div className="relative">
                   {/* Day Header */}
                   <div className="sticky top-4 mb-8">
-                    <div className="bg-gradient-to-r from-yoga-sage to-yoga-earth rounded-2xl p-6 shadow-lg">
+                    <div className="bg-gradient-to-r from-yoga-plum to-yoga-rose rounded-2xl p-6 shadow-lg">
                       <div className="flex items-center gap-4 mb-2">
                         <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                           <span className="font-playfair text-white text-xl font-bold">1</span>
@@ -471,7 +471,7 @@ const ThreeDaysRetreat = () => {
                 <div className="relative">
                   {/* Day Header */}
                   <div className="sticky top-4 mb-8">
-                    <div className="bg-gradient-to-r from-yoga-earth to-yoga-plum rounded-2xl p-6 shadow-lg">
+                    <div className="bg-gradient-to-r from-yoga-plum to-yoga-rose rounded-2xl p-6 shadow-lg">
                       <div className="flex items-center gap-4 mb-2">
                         <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
                           <span className="font-playfair text-white text-xl font-bold">2</span>
