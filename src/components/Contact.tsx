@@ -9,22 +9,22 @@ const Contact = () => {
     {
       icon: <MapPin className="w-5 h-5" />,
       title: "Studio Location",
-      details: ["123 Serenity Lane", "Wellness District", "Peaceful City, PC 12345"]
+      details: ["Jl. Campuhan III, Singakerta", "Kecamatan Ubud, Kabupaten Gianyar", "Bali 80571, Indonesia"]
     },
     {
       icon: <Phone className="w-5 h-5" />,
       title: "Phone",
-      details: ["(555) 123-YOGA", "(555) 123-9642"]
+      details: ["+91 7217206223"]
     },
     {
       icon: <Mail className="w-5 h-5" />,
       title: "Email",
-      details: ["info@serenityyoga.com", "classes@serenityyoga.com"]
+      details: ["info@baliyogaschool.com"]
     },
     {
       icon: <Clock className="w-5 h-5" />,
       title: "Studio Hours",
-      details: ["Mon-Fri: 6:00 AM - 9:00 PM", "Sat-Sun: 7:00 AM - 7:00 PM"]
+      details: ["Mon-Sun: 6:00 AM - 8:00 PM", "Open 7 days a week"]
     }
   ];
 
