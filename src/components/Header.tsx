@@ -6,6 +6,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isRetreatsOpen, setIsRetreatsOpen] = useState(false);
   const [isUbudOpen, setIsUbudOpen] = useState(false);
+  const [isUluwatuOpen, setIsUluwatuOpen] = useState(false);
   const location = useLocation();
   
   const retreatsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
