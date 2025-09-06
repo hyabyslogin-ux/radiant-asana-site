@@ -44,16 +44,110 @@ const ThreeDaysRetreat = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-20 pb-16 bg-gradient-yoga-primary">
-        <div className="container mx-auto px-4">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">3 Days Yoga Retreat in Bali</h1>
-            <p className="text-xl mb-8 opacity-90">Transform Your Mind, Body & Soul in Paradise</p>
-            <Button size="lg" className="bg-white text-yoga-earth hover:bg-gray-100">
-              Book Now - 15% Off
-            </Button>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-110 animate-float"
+          style={{ backgroundImage: `url(/lovable-uploads/5bc20f00-75c6-4f94-83f8-be72e5c72b78.png)` }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-yoga-plum/80 via-yoga-sage/60 to-yoga-earth/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+        </div>
+        
+        {/* Floating Decorative Elements */}
+        <div className="absolute top-20 left-10 w-24 h-24 bg-white/10 rounded-full animate-float blur-sm"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 bg-yoga-rose/30 rounded-full animate-float blur-sm" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-32 left-16 w-20 h-20 bg-yoga-peach/20 rounded-full animate-float blur-sm" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 right-10 w-32 h-32 bg-yoga-cream/15 rounded-full animate-float blur-sm" style={{ animationDelay: '0.5s' }}></div>
+        
+        {/* Content */}
+        <div className="relative z-10 text-center max-w-6xl mx-auto px-4">
+          <div className="animate-fade-in">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm border border-white/30 rounded-full px-6 py-2 mb-8">
+              <Badge className="bg-yoga-sage text-white text-xs">Limited Time</Badge>
+              <span className="text-white/90 font-medium">15% Early Bird Discount</span>
+            </div>
+            
+            {/* Main Heading */}
+            <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
+              <span className="block text-white drop-shadow-lg">3 Days</span>
+              <span className="block bg-gradient-to-r from-yoga-cream via-yoga-peach to-yoga-rose bg-clip-text text-transparent">
+                Yoga Retreat
+              </span>
+              <span className="block text-white/90 text-4xl md:text-6xl font-light">in Paradise</span>
+            </h1>
+            
+            {/* Subtitle */}
+            <p className="text-xl md:text-3xl text-white/95 mb-4 leading-relaxed max-w-4xl mx-auto font-light">
+              Transform Your Mind, Body & Soul
+            </p>
+            <p className="text-lg md:text-xl text-white/80 mb-12 leading-relaxed max-w-3xl mx-auto">
+              Experience authentic Balinese healing, mindfulness practices, and spiritual awakening in Bali's most sacred locations
+            </p>
+            
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+              <Button 
+                size="lg" 
+                className="bg-white/95 text-yoga-earth hover:bg-white hover:scale-105 border-2 border-transparent hover:border-yoga-rose transition-all duration-300 shadow-glow text-lg px-12 py-6 h-auto font-semibold"
+              >
+                <Calendar className="w-5 h-5 mr-2" />
+                Book Your Retreat - $265
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-2 border-white/70 text-white hover:bg-white/20 hover:border-white hover:scale-105 transition-all duration-300 backdrop-blur-sm text-lg px-12 py-6 h-auto font-semibold"
+              >
+                <Phone className="w-5 h-5 mr-2" />
+                Contact Us
+              </Button>
+            </div>
+            
+            {/* Key Features */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="w-12 h-12 bg-yoga-sage/80 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <Waves className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="font-semibold text-white mb-2">Sound Healing</h3>
+                <p className="text-white/80 text-sm">Tibetan singing bowls & crystal therapy</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="w-12 h-12 bg-yoga-earth/80 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <Gift className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="font-semibold text-white mb-2">Balinese Massage</h3>
+                <p className="text-white/80 text-sm">2 complimentary traditional massages</p>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">
+                <div className="w-12 h-12 bg-yoga-rose/80 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <Utensils className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="font-semibold text-white mb-2">Organic Meals</h3>
+                <p className="text-white/80 text-sm">Fresh vegetarian & vegan cuisine</p>
+              </div>
+            </div>
           </div>
         </div>
+        
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/80">
+          <div className="animate-bounce">
+            <div className="flex flex-col items-center gap-2">
+              <span className="text-sm font-medium">Scroll to explore</span>
+              <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
+                <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-pulse"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Decorative Border */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-rose"></div>
       </section>
 
       <div className="container mx-auto px-4 py-12 space-y-16">
