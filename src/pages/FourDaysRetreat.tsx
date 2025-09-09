@@ -88,13 +88,17 @@ const FourDaysRetreat = () => {
             </h1>
             
             <p className="font-inter text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-              Take your holiday plans this season to a brand new level altogether by adding a dash of yoga to it. Sunny skies, lively seas, and soothing sands invite you to come to Bali and be a part of the best 4 Days Yoga Retreat in Ubud Bali organized exclusively by the top yoga center – Bali Yoga School.
+              Take your holiday plans this season to a brand new level altogether by adding a dash of yoga to it. Sunny skies, lively cultures, and soothing tropical breeze invite you to come to Ubud, and be a part of the best 4 Days Yoga Retreat in Ubud Bali organized exclusively by the top yoga center – Bali Yoga School.
             </p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/30 text-white px-8 py-3">
-              Book Your Journey
+            <Button 
+              size="lg" 
+              className="bg-white/95 text-yoga-earth hover:bg-white font-inter font-semibold text-xl px-12 py-8 h-auto border-2 border-transparent hover:border-yoga-rose/50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform"
+              onClick={() => window.location.href = '/contact-us'}
+            >
+              Book Your Journey - From $372
             </Button>
           </div>
         </div>
@@ -132,13 +136,19 @@ const FourDaysRetreat = () => {
               <div className="space-y-8">
                 <div className="bg-gradient-to-br from-white/90 to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/50">
                   <blockquote className="font-playfair text-2xl lg:text-3xl text-yoga-earth italic leading-relaxed mb-6">
-                    "We also offer customised yoga retreats for those who want to delve deeper into the ancient spiritual yoga tradition and allow you to experience the physical & subtle aspects of yoga."
+                    "Yoga is not a religion, but it's a set of life practices that bring clarity and harmony in our physical, mental, spiritual aspects."
                   </blockquote>
                   <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-full"></div>
+                    <div className="w-16 h-16 rounded-full overflow-hidden">
+                      <img 
+                        src="/lovable-uploads/2b08dcad-cacb-410c-9dc3-205baa240081.png" 
+                        alt="Yogi Himanshu" 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                     <div>
-                      <p className="font-inter font-semibold text-yoga-earth">Master Kadek</p>
-                      <p className="font-inter text-sm text-gray-600">Retreat Founder & Guide</p>
+                      <p className="font-inter font-semibold text-yoga-earth">Yogi Himanshu</p>
+                      <p className="font-inter text-sm text-gray-600">Founder</p>
                     </div>
                   </div>
                 </div>
@@ -156,8 +166,8 @@ const FourDaysRetreat = () => {
                     <div className="w-12 h-12 bg-gradient-to-br from-yoga-earth/20 to-yoga-plum/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                       <Gift className="w-6 h-6 text-yoga-earth" />
                     </div>
-                    <h3 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Cultural Immersion</h3>
-                    <p className="font-inter text-sm text-gray-600">Authentic Balinese cultural experiences and temple visits</p>
+                    <h3 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Energy Healing</h3>
+                    <p className="font-inter text-sm text-gray-600">Surrender yourself into the power of sound and reiki healing performed by our professional healers.</p>
                   </div>
                 </div>
               </div>
@@ -665,7 +675,7 @@ const FourDaysRetreat = () => {
                 </span>
               </h2>
               <p className="font-inter text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                We offer Yoga Retreats throughout the year of 2024 & 2025. Please contact us to check availabilities of your desired dates.
+                We offer Yoga Retreats throughout the year of 2025. Please contact us to check availabilities of your desired dates.
               </p>
               <p className="font-inter text-sm text-gray-500 italic mt-4">
                 Important note: The Management team holds the right to change the timings of the classes if it is needed.
@@ -691,7 +701,10 @@ const FourDaysRetreat = () => {
               </div>
               
               <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 hover:scale-105 transition-all duration-300 overflow-hidden">
+                <div className="group relative bg-gradient-to-br from-white via-white to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-yoga-sage/20 hover:scale-105 transition-all duration-300 overflow-hidden">
+                  <div className="absolute -top-4 -right-4 bg-gradient-to-br from-yoga-sage to-yoga-earth text-white px-6 py-2 rounded-full text-sm font-semibold rotate-12">
+                    Most Popular
+                  </div>
                   <div className="text-center">
                     <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Private Campus I</h4>
                     <div className="flex items-center justify-center gap-2">
@@ -706,10 +719,7 @@ const FourDaysRetreat = () => {
                   </div>
                 </div>
                 
-                <div className="group relative bg-gradient-to-br from-white via-white to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-yoga-earth/20 hover:scale-105 transition-all duration-300 overflow-hidden">
-                  <div className="absolute -top-4 -right-4 bg-gradient-to-br from-yoga-earth to-yoga-plum text-white px-6 py-2 rounded-full text-sm font-semibold rotate-12">
-                    Most Popular
-                  </div>
+                <div className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 hover:scale-105 transition-all duration-300 overflow-hidden">
                   <div className="text-center">
                     <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Twin Shared</h4>
                     <div className="flex items-center justify-center gap-2">
@@ -757,7 +767,7 @@ const FourDaysRetreat = () => {
                       </svg>
                     </div>
                     <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Accommodation</h4>
-                    <p className="font-inter text-sm text-gray-600">3 nights private room with bathroom</p>
+                    <p className="font-inter text-sm text-gray-600">3 nights room with bathroom</p>
                   </div>
                   
                   <div className="text-center group">
