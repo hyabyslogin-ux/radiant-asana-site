@@ -64,66 +64,73 @@ const ContactUs = () => {
       <section 
         className="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: `url(${contactHeroBg})`,
+          backgroundImage: `url('/lovable-uploads/71f70b0a-7265-4b1e-b0b1-c5a91f8e39fe.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Background overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-yoga-cream/10 via-transparent to-yoga-mauve/20"></div>
+        {/* Animated background overlay with faded effect */}
+        <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/40 animate-fade-in"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-yoga-plum/20 via-transparent to-yoga-cream/10 animate-pulse"></div>
         
-        {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 border-2 border-yoga-mauve/20 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-24 h-24 bg-gradient-primary/10 rounded-full blur-xl"></div>
-        <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-yoga-plum rounded-full animate-bounce"></div>
-        <div className="absolute bottom-1/3 left-1/4 w-3 h-3 bg-yoga-rose rounded-full animate-bounce delay-300"></div>
+        {/* Floating animation elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-10 w-32 h-32 bg-yoga-cream/5 rounded-full blur-3xl animate-[fade-in_3s_ease-in-out_infinite_alternate]"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-yoga-peach/5 rounded-full blur-3xl animate-[fade-in_4s_ease-in-out_infinite_alternate-reverse]"></div>
+          <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-yoga-mauve/5 rounded-full blur-2xl animate-[scale-in_2s_ease-in-out_infinite_alternate]"></div>
+        </div>
         
-        <div className="relative container mx-auto px-6 text-center">
+        {/* Decorative animated elements */}
+        <div className="absolute top-20 left-10 w-32 h-32 border-2 border-white/10 rounded-full animate-[pulse_3s_ease-in-out_infinite]"></div>
+        <div className="absolute bottom-20 right-10 w-24 h-24 bg-white/5 rounded-full blur-xl animate-[fade-in_2s_ease-in-out_infinite_alternate]"></div>
+        <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-yoga-cream rounded-full animate-[bounce_2s_infinite]"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-3 h-3 bg-yoga-peach rounded-full animate-bounce delay-300"></div>
+        
+        <div className="relative container mx-auto px-6 text-center animate-fade-in">
           <div className="max-w-4xl mx-auto">
-            {/* Main heading with gradient */}
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight">
-              <span className="bg-gradient-to-r from-yoga-plum via-yoga-mauve to-yoga-plum bg-clip-text text-transparent">
+            {/* Main heading with gradient and animation */}
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight animate-scale-in">
+              <span className="bg-gradient-to-r from-white via-yoga-cream to-white bg-clip-text text-transparent drop-shadow-lg">
                 Let's Connect
               </span>
             </h1>
             
-            {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-yoga-mauve mb-8 max-w-3xl mx-auto leading-relaxed">
+            {/* Subtitle with smooth animation */}
+            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-md animate-fade-in delay-150">
               Begin your transformative yoga journey in the mystical landscapes of Bali. 
               Our experienced team is ready to guide you toward inner peace and wellness.
             </p>
             
             
-            {/* Quick contact info */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
-              <div className="text-center">
-                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Phone className="w-6 h-6 text-yoga-plum" />
+            {/* Quick contact info with animations */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto animate-fade-in delay-300">
+              <div className="text-center group hover-scale">
+                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-white/20 transition-all duration-300 animate-scale-in">
+                  <Phone className="w-6 h-6 text-white" />
                 </div>
-                <p className="text-white font-medium">+917217206223</p>
+                <p className="text-white font-medium drop-shadow-sm">+917217206223</p>
               </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Mail className="w-6 h-6 text-yoga-plum" />
+              <div className="text-center group hover-scale">
+                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-white/20 transition-all duration-300 animate-scale-in delay-100">
+                  <Mail className="w-6 h-6 text-white" />
                 </div>
-                <p className="text-white font-medium">info@baliyogaschool.com</p>
+                <p className="text-white font-medium drop-shadow-sm">info@baliyogaschool.com</p>
               </div>
-              <div className="text-center">
-                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3">
-                  <MapPin className="w-6 h-6 text-yoga-plum" />
+              <div className="text-center group hover-scale">
+                <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-white/20 transition-all duration-300 animate-scale-in delay-200">
+                  <MapPin className="w-6 h-6 text-white" />
                 </div>
-                <p className="text-white font-medium">Ubud, Uluwatu, Canggu</p>
+                <p className="text-white font-medium drop-shadow-sm">Ubud, Uluwatu, Canggu</p>
               </div>
             </div>
           </div>
         </div>
         
-        {/* Scroll indicator */}
+        {/* Scroll indicator with animation */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-yoga-mauve/50 rounded-full p-1">
-            <div className="w-1 h-3 bg-yoga-mauve/70 rounded-full mx-auto animate-pulse"></div>
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full p-1 backdrop-blur-sm">
+            <div className="w-1 h-3 bg-white/70 rounded-full mx-auto animate-pulse"></div>
           </div>
         </div>
       </section>
