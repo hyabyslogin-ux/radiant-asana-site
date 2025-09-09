@@ -226,7 +226,7 @@ const UluwatuRetreats = () => {
                 <img 
                   src={retreat.image} 
                   alt={`${retreat.title} in Uluwatu Bali`}
-                  className="w-full h-[30%] object-cover"
+                  className="w-full h-56 object-cover"
                 />
                 <div className="absolute top-4 left-4 bg-yoga-mauve text-white px-3 py-1 rounded-full text-sm font-semibold">
                   {retreat.days}
