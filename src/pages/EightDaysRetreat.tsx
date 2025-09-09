@@ -1,28 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin, Clock, Users, Star, Calendar, User, Gift, Waves, Utensils } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Users, Star, Calendar, User, Gift, Waves, Utensils, MessageSquare, Wifi } from 'lucide-react';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const EightDaysRetreat = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log('Form submitted:', formData);
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+    <div className="min-h-screen bg-background">
       <Header />
+      
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-800">
         
         {/* Minimal Background Layers */}
         <div className="absolute inset-0">
-          {/* Static Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
             style={{ backgroundImage: `url(/lovable-uploads/9e3fcc3b-076b-4912-b3b1-67a84baae207.png)` }}
           />
-          
-          {/* Clean Gradient Overlays */}
           <div className="absolute inset-0 bg-gradient-to-br from-yoga-plum/90 via-yoga-sage/75 to-yoga-earth/80"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
         </div>
@@ -264,195 +282,433 @@ const EightDaysRetreat = () => {
             </div>
           </div>
         </section>
-      </div>
 
-      {/* Daily Schedule Section */}
-      <section className="py-20 px-4 bg-muted/30">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Your 8-Day Journey
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Each day builds upon the previous, creating a comprehensive experience of growth and discovery
-            </p>
+        {/* Enhanced Daily Schedule */}
+        <section className="relative">
+          {/* Background Elements */}
+          <div className="absolute inset-0 bg-gradient-to-br from-yoga-sage/5 via-transparent to-yoga-earth/5 rounded-3xl"></div>
+          <div className="absolute top-20 left-20 w-40 h-40 bg-yoga-cream/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-48 h-48 bg-yoga-peach/8 rounded-full blur-3xl"></div>
+          
+          <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/50 overflow-hidden">
+            <div className="relative bg-gradient-to-r from-yoga-earth/10 via-yoga-sage/5 to-yoga-plum/10 px-12 py-16">
+              <div className="text-center">
+                <div className="inline-flex items-center gap-3 bg-white/60 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+                  <Clock className="w-5 h-5 text-yoga-earth" />
+                  <span className="font-inter text-yoga-earth font-medium">8-Day Journey</span>
+                </div>
+                <h2 className="font-playfair text-5xl lg:text-6xl font-bold text-yoga-earth mb-4">
+                  Your Daily 
+                  <span className="block bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-plum bg-clip-text text-transparent">
+                    Schedule
+                  </span>
+                </h2>
+                <p className="font-inter text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                  A complete eight-day flow designed for ultimate transformation of mind, body, and spirit
+                </p>
+              </div>
+            </div>
+
+            <div className="px-12 py-16">
+              <div className="space-y-8">
+                
+                {/* Day 1 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-plum/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum to-yoga-rose rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">1</span>
+                    </div>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 1 Schedule</h3>
+                      <p className="font-inter text-yoga-plum">Arrival & Welcome</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Check in</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:30 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Lunch</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">4:00 - 5:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Balinese Massage Treatment</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">7:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Dinner</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Days 2-7 Schedules */}
+                {[
+                  { day: 2, theme: "Sound Healing & Practice", color: "sage" },
+                  { day: 3, theme: "Reiki Healing & Renewal", color: "earth" },
+                  { day: 4, theme: "Sound Healing & Deep Practice", color: "rose" },
+                  { day: 5, theme: "Reiki Healing & Inner Journey", color: "peach" },
+                  { day: 6, theme: "Sound Healing & Integration", color: "cream" },
+                  { day: 7, theme: "Deepening & Reflection", color: "plum" }
+                ].map(({ day, theme, color }) => (
+                  <div key={day} className={`bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-${color}/10`}>
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className={`w-16 h-16 bg-gradient-to-br from-yoga-${color} to-yoga-earth rounded-2xl flex items-center justify-center`}>
+                        <span className="font-playfair text-white text-2xl font-bold">{day}</span>
+                      </div>
+                      <div>
+                        <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day {day} Schedule</h3>
+                        <p className={`font-inter text-yoga-${color}`}>{theme}</p>
+                      </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4 text-center">
+                      {["7:00 - 8:00 AM", "8:00 - 9:00 AM", "9:30 AM", "11:00 - 12:00 PM", "12:30 PM & 4:00 - 5:00 PM", "7:00 PM"].map((time, idx) => {
+                        const activities = ["Pranayama & Meditation", "Hatha Vinyasa Yoga", "Breakfast", day === 3 || day === 5 ? "Reiki Healing Session" : "Sound Healing Session", "Lunch & Massage", "Dinner"];
+                        const colors = ["cream", "sage", "peach", "rose", "earth", "plum"];
+                        return (
+                          <div key={idx} className={`bg-yoga-${colors[idx]}/20 rounded-xl p-4`}>
+                            <p className="font-inter font-semibold text-yoga-earth text-sm">{time}</p>
+                            <p className="font-inter text-xs text-gray-600">{activities[idx]}</p>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
+
+                {/* Day 8 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-plum/20">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum to-yoga-earth rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">8</span>
+                    </div>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 8 Schedule</h3>
+                      <p className="font-inter text-yoga-plum">Completion & Departure</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Pranayama & Meditation</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Hatha Vinyasa Yoga</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">9:30 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Breakfast</p>
+                    </div>
+                    <div className="bg-yoga-plum/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Check out</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
+        </section>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { day: "Day 1-2", title: "Foundation & Alignment", desc: "Establish your practice foundation and perfect your alignment" },
-              { day: "Day 3-4", title: "Deepening Practice", desc: "Advanced asanas and pranayama techniques for deeper connection" },
-              { day: "Day 5-6", title: "Meditation Mastery", desc: "Extended meditation sessions and mindfulness practices" },
-              { day: "Day 7-8", title: "Integration & Transformation", desc: "Integrate learnings and celebrate your transformation" }
-            ].map((item, index) => (
-              <Card key={index} className="bg-card/80 backdrop-blur-sm border-primary/20 hover:shadow-lg transition-all duration-300">
-                <CardHeader>
-                  <CardTitle className="text-center text-primary text-lg">{item.day}</CardTitle>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <h3 className="font-semibold mb-2 text-foreground">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.desc}</p>
-                </CardContent>
-              </Card>
-            ))}
+        {/* Dates & Pricing */}
+        <section className="relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-yoga-cream/20 via-transparent to-yoga-peach/20 rounded-3xl"></div>
+          <div className="absolute top-10 right-10 w-32 h-32 bg-yoga-sage/10 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 left-10 w-40 h-40 bg-yoga-rose/8 rounded-full blur-3xl"></div>
+          
+          <div className="relative space-y-20">
+            <div className="text-center">
+              <div className="inline-flex items-center gap-3 bg-white/60 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+                <Calendar className="w-5 h-5 text-yoga-earth" />
+                <span className="font-inter text-yoga-earth font-medium">Investment in Your Wellbeing</span>
+              </div>
+              <h2 className="font-playfair text-5xl lg:text-6xl font-bold text-yoga-earth mb-6">
+                Dates & 
+                <span className="block bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-plum bg-clip-text text-transparent">
+                  Pricing
+                </span>
+              </h2>
+              <p className="font-inter text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                We offer 8 Days & 7 Nights retreat throughout the year. Contact us to check the availability. We are always ready to welcome you.
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              <div className="group relative bg-gradient-to-br from-white via-white to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-yoga-earth/20 hover:scale-105 transition-all duration-300 overflow-visible">
+                <div className="absolute -top-4 left-4 bg-yoga-earth text-white px-4 py-1.5 rounded-md text-xs font-semibold shadow-lg border border-white/10">
+                  Most Popular
+                </div>
+                <div className="text-center">
+                  <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Campus I</h4>
+                  <div className="flex items-center justify-center gap-2">
+                    <p className="text-4xl font-bold text-yoga-earth">$950</p>
+                    <div className="text-left">
+                      <p className="text-sm text-gray-500 line-through">$1120</p>
+                      <div className="bg-gradient-to-r from-yoga-sage to-yoga-earth text-white text-xs px-2 py-1 rounded-full">
+                        15% OFF
+                      </div>
+                    </div>
+                  </div>
+                  <p className="font-inter text-sm text-gray-600 mt-4">8 Days & 7 Nights</p>
+                  <p className="font-inter text-xs text-gray-500 mt-2">Check-in: 12pm / Check-out: 12pm</p>
+                </div>
+              </div>
+              
+              <div className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 hover:scale-105 transition-all duration-300 overflow-hidden">
+                <div className="text-center">
+                  <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Twin Shared</h4>
+                  <div className="flex items-center justify-center gap-2">
+                    <p className="text-4xl font-bold text-yoga-earth">$780</p>
+                    <div className="text-left">
+                      <p className="text-sm text-gray-500 line-through">$918</p>
+                      <div className="bg-gradient-to-r from-yoga-earth to-yoga-plum text-white text-xs px-2 py-1 rounded-full">
+                        15% OFF
+                      </div>
+                    </div>
+                  </div>
+                  <p className="font-inter text-sm text-gray-600 mt-4">8 Days & 7 Nights</p>
+                  <p className="font-inter text-xs text-gray-500 mt-2">Check-in: 12pm / Check-out: 12pm</p>
+                </div>
+              </div>
+              
+              <div className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 hover:scale-105 transition-all duration-300 overflow-hidden">
+                <div className="text-center">
+                  <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Campus II</h4>
+                  <div className="flex items-center justify-center gap-2">
+                    <p className="text-4xl font-bold text-yoga-earth">$840</p>
+                    <div className="text-left">
+                      <p className="text-sm text-gray-500 line-through">$990</p>
+                      <div className="bg-gradient-to-r from-yoga-plum to-yoga-rose text-white text-xs px-2 py-1 rounded-full">
+                        15% OFF
+                      </div>
+                    </div>
+                  </div>
+                  <p className="font-inter text-sm text-gray-600 mt-4">8 Days & 7 Nights</p>
+                  <p className="font-inter text-xs text-gray-500 mt-2">New Campus - Check-in: 12pm / Check-out: 12pm</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="max-w-6xl mx-auto">
+              <div className="bg-gradient-to-br from-white/90 via-white/80 to-yoga-cream/20 backdrop-blur-sm rounded-3xl p-12 shadow-2xl border border-white/50">
+                <div className="text-center mb-12">
+                  <h3 className="font-playfair text-4xl font-semibold text-yoga-earth mb-4">Everything Included</h3>
+                  <p className="font-inter text-lg text-gray-600">Your complete 8-day transformation package</p>
+                </div>
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage/20 to-yoga-earth/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-8 h-8 text-yoga-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                      </svg>
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Accommodation</h4>
+                    <p className="font-inter text-sm text-gray-600">7 Nights Accommodation with Bathroom</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-earth/20 to-yoga-plum/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Utensils className="w-8 h-8 text-yoga-earth" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Nourishing Meals</h4>
+                    <p className="font-inter text-sm text-gray-600">3 Times a Day Nutritious and Delicious vegan/Vegetarian Meals</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum/20 to-yoga-rose/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <User className="w-8 h-8 text-yoga-plum" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Yoga Classes</h4>
+                    <p className="font-inter text-sm text-gray-600">Mentioned Yoga Classes</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-rose/20 to-yoga-peach/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Gift className="w-8 h-8 text-yoga-rose" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Spa Treatments</h4>
+                    <p className="font-inter text-sm text-gray-600">7 Full-Body Complimentary Balinese Massage</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage/20 to-yoga-peach/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Waves className="w-8 h-8 text-yoga-sage" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Pool Access</h4>
+                    <p className="font-inter text-sm text-gray-600">10:00 AM to 8:00 PM Swimming Pool Access</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-earth/20 to-yoga-rose/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Wifi className="w-8 h-8 text-yoga-earth" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">High-Speed Wi-Fi</h4>
+                    <p className="font-inter text-sm text-gray-600">Complementary High-Speed Wi-Fi Anywhere in the Campus</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum/20 to-yoga-cream/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-8 h-8 text-yoga-plum" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Class Equipment</h4>
+                    <p className="font-inter text-sm text-gray-600">All necessary items for classes available in yoga shala</p>
+                  </div>
+                  
+                  <div className="text-center group">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-rose/20 to-yoga-sage/20 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Gift className="w-8 h-8 text-yoga-rose" />
+                    </div>
+                    <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Course Materials</h4>
+                    <p className="font-inter text-sm text-gray-600">BYS bag / BYS t-shirt / Notebook / Pen / Mala</p>
+                  </div>
+                </div>
+                
+                <div className="mt-12 p-6 bg-yoga-cream/20 rounded-2xl border border-yoga-earth/10">
+                  <p className="font-inter text-center text-yoga-earth text-sm">
+                    <strong>Important Note:</strong> The Management team holds the right to change the timings of the classes if it is needed.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Pricing Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            Investment in Your Transformation
-          </h2>
-          <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Experience 8 days of profound growth and transformation
-          </p>
-
-          <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8 md:p-12 shadow-2xl">
-            <div className="text-6xl md:text-7xl font-bold text-primary mb-4">$2,400</div>
-            <p className="text-xl text-muted-foreground mb-8">Complete 8-day retreat experience</p>
+        {/* Memories Section */}
+        <section className="relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-yoga-earth/5 via-transparent to-yoga-sage/10"></div>
+          
+          <div className="relative space-y-12">
+            <div className="text-center">
+              <div className="inline-flex items-center gap-3 bg-white/70 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+                <svg className="w-5 h-5 text-yoga-earth" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span className="font-inter text-yoga-earth font-medium">Visual Journey</span>
+              </div>
+              <h2 className="font-playfair text-5xl lg:text-6xl font-bold text-yoga-earth mb-6">
+                Memories
+              </h2>
+              <p className="font-inter text-xl text-gray-600 max-w-2xl mx-auto">
+                Every moment captured tells a story of transformation
+              </p>
+            </div>
             
-            <div className="grid md:grid-cols-2 gap-6 mb-8 text-left">
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>8 days of guided yoga sessions</span>
+            <div className="columns-2 md:columns-3 lg:columns-4 gap-2">
+              {[
+                '/lovable-uploads/2c8cc260-25f3-4ae5-a498-e425800e509d.png',
+                '/lovable-uploads/3b45fe7e-1832-4fee-92d1-320376e40af5.png',
+                '/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png',
+                '/lovable-uploads/5117ac0b-9cea-4be9-83af-8536b5cd98d6.png',
+                '/lovable-uploads/5bc20f00-75c6-4f94-83f8-be72e5c72b78.png',
+                '/lovable-uploads/84b47165-30fa-48cd-8655-1fdd40968712.png',
+                '/lovable-uploads/8a948cb6-13f9-44c9-8fef-bce571ae9145.png',
+                '/lovable-uploads/9e3fcc3b-076b-4912-b3b1-67a84baae207.png'
+              ].slice().reverse().slice(0, 8).map((image, index) => (
+                <div 
+                  key={`alt-${index}`}
+                  className="group relative break-inside-avoid cursor-pointer mb-2"
+                >
+                  <img 
+                    src={image} 
+                    alt={`Alternative view ${index + 1}`}
+                    className="w-full object-cover transition-all duration-500 group-hover:brightness-110 group-hover:scale-105 rounded-lg shadow-lg"
+                    style={{ 
+                      height: `${200 + (index % 3) * 50}px`
+                    }}
+                  />
+                  
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                    <div className="absolute bottom-2 left-2 right-2">
+                      <div className="bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2">
+                        <p className="text-xs font-medium text-yoga-earth">8-Day Retreat Experience</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>All meals and accommodation</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>Extended meditation workshops</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>Personalized guidance</span>
-                </div>
-              </div>
-              <div className="space-y-3">
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>Nature excursions</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>Wellness treatments</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>Take-home practice materials</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>Lifetime community access</span>
-                </div>
-              </div>
+              ))}
             </div>
-
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-4 text-lg">
-              Reserve Your Spot
-            </Button>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Memories Section */}
-      <section className="py-20 px-4 bg-muted/30">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Retreat Memories
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Glimpses of transformation, connection, and joy from our previous retreats
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              '/lovable-uploads/2c8cc260-25f3-4ae5-a498-e425800e509d.png',
-              '/lovable-uploads/3b45fe7e-1832-4fee-92d1-320376e40af5.png',
-              '/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png',
-              '/lovable-uploads/5117ac0b-9cea-4be9-83af-8536b5cd98d6.png',
-              '/lovable-uploads/5bc20f00-75c6-4f94-83f8-be72e5c72b78.png',
-              '/lovable-uploads/84b47165-30fa-48cd-8655-1fdd40968712.png',
-              '/lovable-uploads/8a948cb6-13f9-44c9-8fef-bce571ae9145.png',
-              '/lovable-uploads/9e3fcc3b-076b-4912-b3b1-67a84baae207.png'
-            ].map((image, index) => (
-              <div key={index} className="aspect-square overflow-hidden rounded-xl group cursor-pointer">
-                <img 
-                  src={image}
-                  alt={`Retreat memory ${index + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Begin Your Journey
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Ready to transform your life? Get in touch to secure your place in our next 8-day retreat
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              <div className="flex items-start space-x-4">
-                <Phone className="w-6 h-6 text-primary mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-foreground">Call Us</h3>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <Mail className="w-6 h-6 text-primary mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-foreground">Email</h3>
-                  <p className="text-muted-foreground">info@yogaretreat.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <MapPin className="w-6 h-6 text-primary mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold mb-2 text-foreground">Location</h3>
-                  <p className="text-muted-foreground">Bali, Indonesia</p>
-                </div>
-              </div>
-            </div>
-
-            <Card className="p-6 bg-card/80 backdrop-blur-sm border-primary/20">
-              <form className="space-y-4">
+        {/* Contact Form */}
+        <section>
+          <Card className="shadow-zen max-w-2xl mx-auto">
+            <CardHeader>
+              <CardTitle className="text-3xl text-yoga-earth text-center">Book Your 8-Day Retreat</CardTitle>
+              <p className="text-center text-gray-600">Ready to transform? Get in touch with us today.</p>
+            </CardHeader>
+            <CardContent>
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
-                  <Input placeholder="First Name" className="bg-background/50" />
-                  <Input placeholder="Last Name" className="bg-background/50" />
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium flex items-center gap-2">
+                      <User className="h-4 w-4" />
+                      Full Name
+                    </label>
+                    <Input
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      placeholder="Enter your full name"
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium flex items-center gap-2">
+                      <Mail className="h-4 w-4" />
+                      Email Address
+                    </label>
+                    <Input
+                      name="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
                 </div>
-                <Input type="email" placeholder="Email" className="bg-background/50" />
-                <Input placeholder="Phone" className="bg-background/50" />
-                <Textarea 
-                  placeholder="Tell us about your yoga experience and what you hope to gain from this retreat..." 
-                  className="bg-background/50 min-h-[120px]"
-                />
-                <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  Send Message
+                <div className="space-y-2">
+                  <label className="text-sm font-medium flex items-center gap-2">
+                    <Phone className="h-4 w-4" />
+                    Phone Number
+                  </label>
+                  <Input
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium flex items-center gap-2">
+                    <MessageSquare className="h-4 w-4" />
+                    Message
+                  </label>
+                  <Textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder="Tell us about your retreat goals and any questions you have..."
+                    rows={4}
+                  />
+                </div>
+                <Button type="submit" className="w-full bg-yoga-sage hover:bg-yoga-earth">
+                  Send Inquiry
                 </Button>
               </form>
-            </Card>
-          </div>
-        </div>
-      </section>
+            </CardContent>
+          </Card>
+        </section>
+      </div>
+      
+      <Footer />
     </div>
   );
 };
