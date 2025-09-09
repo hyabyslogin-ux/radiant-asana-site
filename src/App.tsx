@@ -9,6 +9,7 @@ import WebSiteSchema from '@/components/schema/WebSiteSchema';
 import PreloadCriticalResources from '@/components/performance/PreloadCriticalResources';
 import Index from "./pages/Index";
 import BlogPage from "./pages/Blog";
+import Founder from "./pages/Founder";
 import ThreeDaysRetreat from "./pages/ThreeDaysRetreat";
 import FourDaysRetreat from "./pages/FourDaysRetreat";
 import FiveDaysRetreat from "./pages/FiveDaysRetreat";
@@ -61,6 +62,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/founder" element={<Founder />} />
           <Route path="/3-days-retreat" element={<ThreeDaysRetreat />} />
           <Route path="/4-days-retreat" element={<FourDaysRetreat />} />
           <Route path="/5-days-retreat" element={<FiveDaysRetreat />} />

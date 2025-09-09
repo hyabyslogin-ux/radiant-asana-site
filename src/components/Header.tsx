@@ -1,16 +1,18 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, MapPin, Users, BookOpen, Phone, ChevronDown } from 'lucide-react';
+import { Menu, X, Home, MapPin, Users, BookOpen, Phone, ChevronDown, User } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isRetreatsOpen, setIsRetreatsOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isUbudOpen, setIsUbudOpen] = useState(false);
   const [isUluwatuOpen, setIsUluwatuOpen] = useState(false);
   const [isCangguOpen, setIsCangguOpen] = useState(false);
   const location = useLocation();
   
   const retreatsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const aboutTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const ubudTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const uluwatuTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const cangguTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -20,6 +22,9 @@ const Header = () => {
     return () => {
       if (retreatsTimeoutRef.current) {
         clearTimeout(retreatsTimeoutRef.current);
+      }
+      if (aboutTimeoutRef.current) {
+        clearTimeout(aboutTimeoutRef.current);
       }
       if (ubudTimeoutRef.current) {
         clearTimeout(ubudTimeoutRef.current);
@@ -46,6 +51,19 @@ const Header = () => {
       setIsUbudOpen(false);
       setIsUluwatuOpen(false);
       setIsCangguOpen(false);
+    }, 150);
+  };
+
+  const handleAboutEnter = () => {
+    if (aboutTimeoutRef.current) {
+      clearTimeout(aboutTimeoutRef.current);
+    }
+    setIsAboutOpen(true);
+  };
+
+  const handleAboutLeave = () => {
+    aboutTimeoutRef.current = setTimeout(() => {
+      setIsAboutOpen(false);
     }, 150);
   };
 
@@ -238,13 +256,41 @@ const Header = () => {
               )}
             </div>
 
-            <Link 
-              to="/about-us"
-              className="flex items-center space-x-2 text-foreground hover:text-primary transition-all duration-300 group"
+            {/* About Us Dropdown */}
+            <div 
+              className="relative"
+              onMouseEnter={handleAboutEnter}
+              onMouseLeave={handleAboutLeave}
             >
-              <Users className="w-4 h-4 group-hover:scale-110 transition-transform" />
-              <span>About Us</span>
-            </Link>
+              <button className="flex items-center space-x-2 text-foreground hover:text-primary transition-all duration-300 group">
+                <Users className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                <span>About Us</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isAboutOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {isAboutOpen && (
+                <div 
+                  className="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-xl z-50"
+                  onMouseEnter={handleAboutEnter}
+                  onMouseLeave={handleAboutLeave}
+                >
+                  <Link 
+                    to="/about-us" 
+                    className="block px-4 py-3 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-t-lg" 
+                    onClick={() => setIsAboutOpen(false)}
+                  >
+                    Our Story
+                  </Link>
+                  <Link 
+                    to="/founder" 
+                    className="block px-4 py-3 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-b-lg" 
+                    onClick={() => setIsAboutOpen(false)}
+                  >
+                    Meet the Founder
+                  </Link>
+                </div>
+              )}
+            </div>
 
             <Link 
               to="/ubud-campus-gallery"
@@ -395,14 +441,38 @@ const Header = () => {
                 )}
               </div>
 
-              <Link 
-                to="/about-us"
-                className="flex items-center space-x-3 text-foreground hover:text-primary transition-colors py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                <Users className="w-5 h-5" />
-                <span>About Us</span>
-              </Link>
+              {/* About Us Mobile Dropdown */}
+              <div>
+                <button 
+                  onClick={() => setIsAboutOpen(!isAboutOpen)}
+                  className="flex items-center justify-between w-full text-foreground hover:text-primary transition-colors py-2"
+                >
+                  <div className="flex items-center space-x-3">
+                    <Users className="w-5 h-5" />
+                    <span>About Us</span>
+                  </div>
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isAboutOpen ? 'rotate-180' : ''}`} />
+                </button>
+                
+                {isAboutOpen && (
+                  <div className="ml-8 space-y-1 mt-2 animate-in slide-in-from-top-1 duration-200">
+                    <Link 
+                      to="/about-us" 
+                      className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" 
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Our Story
+                    </Link>
+                    <Link 
+                      to="/founder" 
+                      className="block text-sm text-muted-foreground hover:text-primary transition-colors py-1" 
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Meet the Founder
+                    </Link>
+                  </div>
+                )}
+              </div>
 
               <Link 
                 to="/ubud-campus-gallery"
