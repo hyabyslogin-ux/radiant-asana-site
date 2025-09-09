@@ -115,18 +115,10 @@ const ThreeDaysRetreat = () => {
               <Button 
                 size="lg" 
                 className="group relative overflow-hidden bg-white/95 text-yoga-earth hover:bg-white font-inter font-semibold text-xl px-12 py-8 h-auto border-2 border-transparent hover:border-yoga-rose/50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 transform"
+                onClick={() => window.location.href = '/contact-us'}
               >
                 <Calendar className="w-6 h-6 mr-3" />
                 <span>Book Your Retreat - From $265</span>
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-2 border-white/80 text-white hover:bg-white/15 font-inter font-semibold text-xl px-12 py-8 h-auto backdrop-blur-md transition-all duration-300 hover:border-white hover:scale-105 transform shadow-lg"
-              >
-                <Phone className="w-6 h-6 mr-3" />
-                <span>Contact Our Team</span>
               </Button>
             </div>
           </div>
@@ -275,14 +267,14 @@ const ThreeDaysRetreat = () => {
                     </p>
                   </div>
                   
-                  {/* Organic Nutrition */}
+                  {/* Vegan Food */}
                   <div className="group bg-gradient-to-br from-white to-yoga-rose/10 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-rose/20 hover:scale-105">
                     <div className="w-16 h-16 bg-gradient-to-br from-yoga-rose to-yoga-mauve rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                       <Utensils className="w-8 h-8 text-white" />
                     </div>
-                    <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-4">Organic Nutrition</h4>
+                    <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-4">Vegan Food</h4>
                     <p className="font-inter text-gray-700 leading-relaxed">
-                      Fresh, organic ingredients from local farmers combined with authentic Indonesian flavors to support natural detoxification.
+                      Fresh, nutritious vegan food is served 3 times a day to support natural detoxification and healing of the body, mind, and soul.
                     </p>
                   </div>
                 </div>
@@ -747,7 +739,10 @@ const ThreeDaysRetreat = () => {
               
               <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 {/* Private Campus I */}
-                <div className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 hover:scale-105 transition-all duration-300 overflow-hidden">
+                <div className="group relative bg-gradient-to-br from-white via-white to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-yoga-sage/20 hover:scale-105 transition-all duration-300 overflow-hidden">
+                  <div className="absolute -top-4 -right-4 bg-gradient-to-br from-yoga-sage to-yoga-earth text-white px-6 py-2 rounded-full text-sm font-semibold rotate-12">
+                    Most Popular
+                  </div>
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-yoga-sage/20 to-transparent rounded-full blur-2xl"></div>
                   <div className="relative">
                     <div className="text-center mb-6">
@@ -785,11 +780,8 @@ const ThreeDaysRetreat = () => {
                   </div>
                 </div>
                 
-                {/* Twin Shared - Featured */}
-                <div className="group relative bg-gradient-to-br from-white via-white to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-yoga-earth/20 hover:scale-105 transition-all duration-300 overflow-hidden">
-                  <div className="absolute -top-4 -right-4 bg-gradient-to-br from-yoga-earth to-yoga-plum text-white px-6 py-2 rounded-full text-sm font-semibold rotate-12">
-                    Most Popular
-                  </div>
+                {/* Twin Shared */}
+                <div className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 hover:scale-105 transition-all duration-300 overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-yoga-earth/20 to-transparent rounded-full blur-2xl"></div>
                   <div className="relative">
                     <div className="text-center mb-6">
