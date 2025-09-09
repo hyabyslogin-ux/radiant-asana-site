@@ -8,9 +8,8 @@ const CangguRetreats = () => {
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  const handleBookNow = (days: string) => {
-    const dayNumber = days.split(' ')[0].toLowerCase();
-    navigate(`/canggu-${dayNumber}-days-retreat`);
+  const handleBookNow = () => {
+    navigate('/contact-us');
   };
 
   const allRetreats = [
@@ -286,7 +285,7 @@ const CangguRetreats = () => {
                   </Button>
                   <Button 
                     size="sm"
-                    onClick={() => handleBookNow(retreat.days)}
+                    onClick={handleBookNow}
                     className="flex-1 bg-yoga-mauve hover:bg-yoga-plum text-white transition-all duration-300 text-xs"
                   >
                     Book Now
