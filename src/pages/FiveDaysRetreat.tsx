@@ -85,7 +85,11 @@ const FiveDaysRetreat = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/30 text-white px-8 py-3">
+            <Button 
+              size="lg" 
+              className="bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/30 text-white px-8 py-3"
+              onClick={() => window.location.href = '/contact-us'}
+            >
               Book Your Journey
             </Button>
           </div>
@@ -122,13 +126,13 @@ const FiveDaysRetreat = () => {
               <div className="space-y-8">
                 <div className="bg-gradient-to-br from-white/90 to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/50">
                   <blockquote className="font-playfair text-2xl lg:text-3xl text-yoga-earth italic leading-relaxed mb-6">
-                    "Through dedicated practice and mindful living, we unlock the limitless potential that lies dormant within our being."
+                    "The combination of structured activities and free time allows natural integration of learning, ensuring lasting transformation."
                   </blockquote>
                   <div className="flex items-center gap-4">
                     <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-full"></div>
                     <div>
-                      <p className="font-inter font-semibold text-yoga-earth">Master Kadek</p>
-                      <p className="font-inter text-sm text-gray-600">Retreat Founder & Guide</p>
+                      <p className="font-inter font-semibold text-yoga-earth">Yogi Himanshu</p>
+                      <p className="font-inter text-sm text-gray-600">Founder & Lead Instructor</p>
                     </div>
                   </div>
                 </div>
@@ -139,15 +143,15 @@ const FiveDaysRetreat = () => {
                       <Waves className="w-6 h-6 text-yoga-sage" />
                     </div>
                     <h3 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Comprehensive Practice</h3>
-                    <p className="font-inter text-sm text-gray-600">Complete yoga system with philosophy, ethics, and advanced techniques</p>
+                    <p className="font-inter text-sm text-gray-600">Dedicate yourself into the daily yoga practice and experience deeper transformation.</p>
                   </div>
                   
                   <div className="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/30 hover:scale-105">
                     <div className="w-12 h-12 bg-gradient-to-br from-yoga-earth/20 to-yoga-plum/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                       <Gift className="w-6 h-6 text-yoga-earth" />
                     </div>
-                    <h3 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Cultural Journey</h3>
-                    <p className="font-inter text-sm text-gray-600">Deep Balinese cultural immersion and traditional ceremonies</p>
+                    <h3 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Total Rejuvenation</h3>
+                    <p className="font-inter text-sm text-gray-600">Melt your stress out with daily Balinese massages and sound / reiki healing sessions.</p>
                   </div>
                 </div>
               </div>
@@ -445,7 +449,10 @@ const FiveDaysRetreat = () => {
               </div>
               
               <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 hover:scale-105 transition-all duration-300 overflow-hidden">
+                <div className="group relative bg-gradient-to-br from-white via-white to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-yoga-earth/20 hover:scale-105 transition-all duration-300 overflow-hidden">
+                  <div className="absolute -top-4 -right-4 bg-gradient-to-br from-yoga-earth to-yoga-plum text-white px-6 py-2 rounded-full text-sm font-semibold rotate-12">
+                    Most Popular
+                  </div>
                   <div className="text-center">
                     <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Private Room Campus I</h4>
                     <div className="flex items-center justify-center gap-2">
@@ -461,10 +468,7 @@ const FiveDaysRetreat = () => {
                   </div>
                 </div>
                 
-                <div className="group relative bg-gradient-to-br from-white via-white to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-yoga-earth/20 hover:scale-105 transition-all duration-300 overflow-hidden">
-                  <div className="absolute -top-4 -right-4 bg-gradient-to-br from-yoga-earth to-yoga-plum text-white px-6 py-2 rounded-full text-sm font-semibold rotate-12">
-                    Most Popular
-                  </div>
+                <div className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 hover:scale-105 transition-all duration-300 overflow-hidden">
                   <div className="text-center">
                     <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Twin Shared Campus I</h4>
                     <div className="flex items-center justify-center gap-2">
@@ -513,7 +517,7 @@ const FiveDaysRetreat = () => {
                     </div>
                     <div>
                       <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Dates Available</h4>
-                      <p className="font-inter text-gray-600">Throughout 2024 & 2025</p>
+                      <p className="font-inter text-gray-600">Throughout 2025</p>
                     </div>
                   </div>
                   <div className="mt-6 text-center">
