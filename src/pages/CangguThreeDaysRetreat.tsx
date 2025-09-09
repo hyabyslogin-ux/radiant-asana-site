@@ -356,6 +356,17 @@ const CangguThreeDaysRetreat = () => {
                   <p className="font-inter text-lg text-gray-600 max-w-3xl mx-auto">
                     Invest in your well-being with our affordable 3-day Canggu retreat packages
                   </p>
+                  <div className="mt-8">
+                    <button 
+                      onClick={() => window.location.href = '/ubud-campus-gallery'}
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-yoga-plum to-yoga-rose text-white px-6 py-3 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 002 2v12a2 2 0 002 2z" />
+                      </svg>
+                      View Campus Images
+                    </button>
+                  </div>
                 </div>
                 
                 <div className="grid md:grid-cols-3 gap-8">
