@@ -199,7 +199,7 @@ const ThreeDaysRetreat = () => {
                   </p>
                   
                   <p className="font-inter text-lg text-gray-700 leading-relaxed">
-                    Located in Bali's serene countryside, our retreat center offers <strong className="text-yoga-sage">two beautiful campuses</strong> designed to harmonize with nature's rhythm. Each morning begins with pranayama breathing exercises and meditation sessions that ground you in mindfulness.
+                    Located in Bali's serene ubud, our retreat center offers <strong className="text-yoga-sage">two beautiful campuses</strong> designed to harmonize with nature's rhythm. Each morning begins with pranayama breathing exercises and meditation sessions that ground you in mindfulness.
                   </p>
                 </div>
                 
