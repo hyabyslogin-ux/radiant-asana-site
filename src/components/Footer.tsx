@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="lg:col-span-2">
               <div className="mb-8 flex items-center gap-4">
                 <img 
-                  src="/lovable-uploads/b7c337a0-f964-45ce-ba6f-0dbe704e5e64.png" 
+                  src="/lovable-uploads/ecc51699-b2a2-48db-b13f-653aca4b3e91.png" 
                   alt="Bali Yoga Retreat Logo" 
                   className="w-16 h-16"
                 />
