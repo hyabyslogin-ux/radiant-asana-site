@@ -94,97 +94,202 @@ const SixDaysRetreat = () => {
 
       <div className="container mx-auto px-4 py-16 space-y-24">
         
-        {/* About Section */}
+        {/* Enhanced About/Details Section */}
         <section className="relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-yoga-cream/20 via-transparent to-yoga-sage/10 rounded-3xl"></div>
-          <div className="absolute top-10 right-10 w-32 h-32 bg-yoga-peach/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-10 left-10 w-40 h-40 bg-yoga-rose/15 rounded-full blur-3xl"></div>
+          {/* Background Elements */}
+          <div className="absolute inset-0 bg-gradient-to-br from-yoga-cream/5 via-transparent to-yoga-sage/5 rounded-3xl"></div>
+          <div className="absolute top-10 right-10 w-32 h-32 bg-yoga-peach/10 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 left-10 w-40 h-40 bg-yoga-rose/8 rounded-full blur-2xl"></div>
           
-          <div className="relative">
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-3 bg-white/60 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
-                <User className="w-5 h-5 text-yoga-earth" />
-                <span className="font-inter text-yoga-earth font-medium">Advanced Journey</span>
+          <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/50 overflow-hidden">
+            {/* Header */}
+            <div className="relative bg-gradient-to-r from-yoga-sage/10 via-yoga-earth/5 to-yoga-plum/10 px-12 py-16">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center gap-3 bg-white/60 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+                  <div className="w-2 h-2 bg-yoga-sage rounded-full animate-pulse"></div>
+                  <span className="font-inter text-yoga-earth font-medium">Authentic Bali Experience</span>
+                </div>
+                <h2 className="font-playfair text-5xl lg:text-6xl font-bold text-yoga-earth mb-4">
+                  Experience Deep 
+                  <span className="block bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-plum bg-clip-text text-transparent">
+                    Transformation
+                  </span>
+                </h2>
+                <p className="font-inter text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                  Immerse yourself in a carefully crafted journey that combines ancient wisdom with modern wellness practices
+                </p>
               </div>
-              <h2 className="font-playfair text-5xl lg:text-6xl font-bold text-yoga-earth mb-6">
-                About This
-                <span className="block bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-plum bg-clip-text text-transparent">
-                  6-Day Retreat
-                </span>
-              </h2>
-              <p className="font-inter text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                Dive deeper into the transformative power of yoga with our advanced 6-day retreat program, 
-                designed for comprehensive spiritual growth, cultural immersion, and life-changing transformation.
-              </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div className="space-y-8">
-                <div className="bg-gradient-to-br from-white/90 to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-white/50">
-                  <blockquote className="font-playfair text-2xl lg:text-3xl text-yoga-earth italic leading-relaxed mb-6">
-                    "The path to enlightenment is walked step by step, breath by breath, with unwavering dedication to our highest self."
-                  </blockquote>
+            {/* Content */}
+            <div className="px-12 py-16 space-y-16">
+              
+              {/* Journey Overview */}
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="space-y-8">
                   <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-full"></div>
-                    <div>
-                      <p className="font-inter font-semibold text-yoga-earth">Master Kadek</p>
-                      <p className="font-inter text-sm text-gray-600">Retreat Founder & Guide</p>
+                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-xl flex items-center justify-center">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v18m9-12H3" />
+                      </svg>
                     </div>
-                  </div>
-                </div>
-                
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/30 hover:scale-105">
-                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-sage/20 to-yoga-earth/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <Waves className="w-6 h-6 text-yoga-sage" />
-                    </div>
-                    <h3 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Advanced Practices</h3>
-                    <p className="font-inter text-sm text-gray-600">Master-level yoga techniques and advanced meditation practices</p>
+                    <h3 className="font-playfair text-2xl font-semibold text-yoga-earth">Your Transformative Journey</h3>
                   </div>
                   
-                  <div className="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-white/30 hover:scale-105">
-                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-earth/20 to-yoga-plum/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <Gift className="w-6 h-6 text-yoga-earth" />
+                  <p className="font-inter text-lg text-gray-700 leading-relaxed">
+                    Embark on a transformative journey through our carefully crafted 6-day yoga retreat in the heart of Bali. This advanced experience combines traditional <strong className="text-yoga-earth">Hatha Vinyasa yoga practices</strong> with authentic Balinese healing traditions, creating the perfect environment for physical rejuvenation and spiritual awakening.
+                  </p>
+                  
+                  <p className="font-inter text-lg text-gray-700 leading-relaxed">
+                    Located in Bali's serene ubud, our retreat center offers <strong className="text-yoga-sage">two beautiful campuses</strong> designed to harmonize with nature's rhythm. Each morning begins with pranayama breathing exercises and meditation sessions that ground you in mindfulness.
+                  </p>
+                </div>
+                
+                <div className="relative">
+                  <div className="bg-gradient-to-br from-yoga-cream/20 to-yoga-peach/20 rounded-2xl p-8 backdrop-blur-sm border border-yoga-cream/30">
+                    <div className="grid grid-cols-2 gap-6">
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-yoga-sage/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <Calendar className="w-8 h-8 text-yoga-sage" />
+                        </div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">6 Days</h4>
+                        <p className="font-inter text-sm text-gray-600">Advanced Program</p>
+                      </div>
+                      
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-yoga-earth/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <MapPin className="w-8 h-8 text-yoga-earth" />
+                        </div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">2 Campuses</h4>
+                        <p className="font-inter text-sm text-gray-600">Beautiful Locations</p>
+                      </div>
+                      
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-yoga-rose/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <User className="w-8 h-8 text-yoga-rose" />
+                        </div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Small Groups</h4>
+                        <p className="font-inter text-sm text-gray-600">Personal Attention</p>
+                      </div>
+                      
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-yoga-peach/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <Gift className="w-8 h-8 text-yoga-plum" />
+                        </div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">All Levels</h4>
+                        <p className="font-inter text-sm text-gray-600">Beginner to Advanced</p>
+                      </div>
                     </div>
-                    <h3 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Deep Cultural Experience</h3>
-                    <p className="font-inter text-sm text-gray-600">Extended Balinese cultural immersion and sacred ceremonies</p>
                   </div>
                 </div>
               </div>
-              
-              <div className="relative">
-                <div className="bg-gradient-to-br from-yoga-cream/20 to-yoga-peach/20 rounded-2xl p-8 backdrop-blur-sm border border-yoga-cream/30">
-                  <div className="grid grid-cols-2 gap-6">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-yoga-sage/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Calendar className="w-8 h-8 text-yoga-sage" />
+
+              {/* Healing Practices */}
+              <div className="space-y-12">
+                <div className="text-center">
+                  <h3 className="font-playfair text-3xl font-bold text-yoga-earth mb-4">Holistic Healing Practices</h3>
+                  <p className="font-inter text-lg text-gray-600 max-w-3xl mx-auto">
+                    Our retreat extends beyond yoga mat practice to encompass complete wellness and spiritual growth
+                  </p>
+                </div>
+                
+                <div className="grid md:grid-cols-3 gap-8">
+                  
+                  {/* Sound Healing */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-cream/10 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-cream/20 hover:scale-105">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <Waves className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-4">Sound Healing</h4>
+                    <p className="font-inter text-gray-700 leading-relaxed">
+                      Traditional Tibetan singing bowls and crystal instruments create vibrational therapy that releases deep-seated tension and promotes cellular healing.
+                    </p>
+                  </div>
+                  
+                  {/* Balinese Massage */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-peach/10 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-peach/20 hover:scale-105">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-earth to-yoga-plum rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <Gift className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-4">Balinese Massage</h4>
+                    <p className="font-inter text-gray-700 leading-relaxed">
+                      Authentic techniques passed down through generations, using natural oils and pressure points to restore energy flow and deep relaxation.
+                    </p>
+                  </div>
+                  
+                  {/* Vegan Food */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-rose/10 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-rose/20 hover:scale-105">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-rose to-yoga-mauve rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                      <Utensils className="w-8 h-8 text-white" />
+                    </div>
+                    <h4 className="font-playfair text-xl font-semibold text-yoga-earth mb-4">Vegan Food</h4>
+                    <p className="font-inter text-gray-700 leading-relaxed">
+                      Fresh, nutritious vegan food is served 3 times a day to support natural detoxification and healing of the body, mind, and soul.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Personal Growth */}
+              <div className="bg-gradient-to-r from-yoga-sage/5 via-yoga-earth/5 to-yoga-plum/5 rounded-2xl p-12 border border-yoga-sage/10">
+                <div className="text-center mb-8">
+                  <h3 className="font-playfair text-3xl font-bold text-yoga-earth mb-4">Personalized Growth Journey</h3>
+                  <p className="font-inter text-lg text-gray-600 max-w-2xl mx-auto">
+                    Whether you're a beginner or experienced practitioner, our intimate group settings ensure personalized attention
+                  </p>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-12 items-center">
+                  <div className="space-y-6">
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-yoga-sage rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
                       </div>
-                      <h4 className="font-playfair font-semibold text-yoga-earth mb-2">6 Days</h4>
-                      <p className="font-inter text-sm text-gray-600">Advanced Program</p>
+                      <div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Beginner-Friendly Approach</h4>
+                        <p className="font-inter text-gray-600">No previous yoga experience required. Our expert instructors guide you step-by-step through each practice.</p>
+                      </div>
                     </div>
                     
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-yoga-earth/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <MapPin className="w-8 h-8 text-yoga-earth" />
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-yoga-earth rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
                       </div>
-                      <h4 className="font-playfair font-semibold text-yoga-earth mb-2">2 Campuses</h4>
-                      <p className="font-inter text-sm text-gray-600">Beautiful Locations</p>
+                      <div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Advanced Practitioners</h4>
+                        <p className="font-inter text-gray-600">Deepen your existing practice with advanced techniques, philosophy, and personalized guidance.</p>
+                      </div>
                     </div>
                     
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-yoga-rose/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <User className="w-8 h-8 text-yoga-rose" />
+                    <div className="flex items-start gap-4">
+                      <div className="w-8 h-8 bg-yoga-plum rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
                       </div>
-                      <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Small Groups</h4>
-                      <p className="font-inter text-sm text-gray-600">Personal Attention</p>
+                      <div>
+                        <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Individual Attention</h4>
+                        <p className="font-inter text-gray-600">Small group sizes ensure each participant receives personal guidance and support throughout their journey.</p>
+                      </div>
                     </div>
-                    
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-yoga-peach/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Gift className="w-8 h-8 text-yoga-plum" />
+                  </div>
+                  
+                  <div className="relative">
+                    <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/30">
+                      <div className="text-center mb-6">
+                        <div className="w-20 h-20 bg-gradient-to-br from-yoga-sage via-yoga-earth to-yoga-plum rounded-full flex items-center justify-center mx-auto mb-4">
+                          <User className="w-10 h-10 text-white" />
+                        </div>
+                        <h4 className="font-playfair text-xl font-semibold text-yoga-earth">Yogi Himanshu</h4>
+                        <p className="font-inter text-sm text-gray-600 mb-4">Founder & Lead Instructor</p>
                       </div>
-                      <h4 className="font-playfair font-semibold text-yoga-earth mb-2">All Levels</h4>
-                      <p className="font-inter text-sm text-gray-600">Beginner to Advanced</p>
+                      <blockquote className="font-playfair text-lg text-yoga-earth italic text-center">
+                        "The combination of structured activities and free time allows natural integration of learning, ensuring lasting transformation."
+                      </blockquote>
                     </div>
                   </div>
                 </div>
