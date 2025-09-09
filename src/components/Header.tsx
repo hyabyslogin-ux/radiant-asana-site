@@ -109,9 +109,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">Y</span>
-            </div>
+            <img 
+              src="/lovable-uploads/b7c337a0-f964-45ce-ba6f-0dbe704e5e64.png" 
+              alt="Bali Yoga Retreat Logo" 
+              className="w-10 h-10"
+            />
             <span className="text-xl font-bold text-foreground">Bali Yoga Retreats</span>
           </Link>
 

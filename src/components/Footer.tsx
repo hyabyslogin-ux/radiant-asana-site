@@ -16,13 +16,20 @@ const Footer = () => {
             
             {/* Brand Section */}
             <div className="lg:col-span-2">
-              <div className="mb-8">
-                <h3 className="font-playfair text-4xl font-bold mb-4 bg-gradient-to-r from-yoga-cream via-yoga-peach to-white bg-clip-text text-transparent">
-                  Bali Yoga Retreats
-                </h3>
-                <p className="text-white/90 text-lg leading-relaxed max-w-md">
-                  Transform your mind, body, and soul through authentic Balinese healing practices, mindful yoga, and spiritual awakening in paradise.
-                </p>
+              <div className="mb-8 flex items-center gap-4">
+                <img 
+                  src="/lovable-uploads/b7c337a0-f964-45ce-ba6f-0dbe704e5e64.png" 
+                  alt="Bali Yoga Retreat Logo" 
+                  className="w-16 h-16"
+                />
+                <div>
+                  <h3 className="font-playfair text-4xl font-bold mb-4 bg-gradient-to-r from-yoga-cream via-yoga-peach to-white bg-clip-text text-transparent">
+                    Bali Yoga Retreats
+                  </h3>
+                  <p className="text-white/90 text-lg leading-relaxed max-w-md">
+                    Transform your mind, body, and soul through authentic Balinese healing practices, mindful yoga, and spiritual awakening in paradise.
+                  </p>
+                </div>
               </div>
               
               <div className="flex items-center gap-2 text-white/80 mb-8">

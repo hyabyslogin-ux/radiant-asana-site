@@ -60,11 +60,18 @@ const ContactUs = () => {
       <Breadcrumbs />
       
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-        {/* Background with overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-yoga-cream via-yoga-rose/20 to-yoga-mauve/30"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(120,113,108,0.1),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(168,85,247,0.05),transparent_50%)]"></div>
+      <section 
+        className="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: `url('/lovable-uploads/56b08f35-18f2-4235-8c72-80caf5e99d21.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Background overlay */}
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-yoga-cream/20 via-transparent to-yoga-mauve/20"></div>
         
         {/* Decorative elements */}
         <div className="absolute top-20 left-10 w-32 h-32 border-2 border-yoga-mauve/20 rounded-full animate-pulse"></div>
@@ -87,17 +94,6 @@ const ContactUs = () => {
               Our experienced team is ready to guide you toward inner peace and wellness.
             </p>
             
-            {/* Call-to-action buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button className="bg-gradient-primary hover:opacity-90 text-white px-8 py-3 rounded-full text-lg font-medium transition-all hover:scale-105">
-                <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp Us Now
-              </Button>
-              <Button variant="outline" className="border-yoga-plum text-yoga-plum hover:bg-yoga-plum hover:text-white px-8 py-3 rounded-full text-lg font-medium transition-all hover:scale-105">
-                <Phone className="w-5 h-5 mr-2" />
-                Schedule a Call
-              </Button>
-            </div>
             
             {/* Quick contact info */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
@@ -105,19 +101,19 @@ const ContactUs = () => {
                 <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3">
                   <Phone className="w-6 h-6 text-yoga-plum" />
                 </div>
-                <p className="text-yoga-mauve font-medium">+62 812 3456 7890</p>
+                <p className="text-white font-medium">+917217206223</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3">
                   <Mail className="w-6 h-6 text-yoga-plum" />
                 </div>
-                <p className="text-yoga-mauve font-medium">info@himalayanyoga.com</p>
+                <p className="text-white font-medium">info@baliyogaschool.com</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-3">
                   <MapPin className="w-6 h-6 text-yoga-plum" />
                 </div>
-                <p className="text-yoga-mauve font-medium">Ubud, Uluwatu, Canggu</p>
+                <p className="text-white font-medium">Ubud, Uluwatu, Canggu</p>
               </div>
             </div>
           </div>
@@ -147,7 +143,7 @@ const ContactUs = () => {
                   <Phone className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="font-semibold text-yoga-plum mb-2">Call Us</h3>
-                <p className="text-yoga-mauve text-sm mb-2">+62 812 3456 7890</p>
+                <p className="text-yoga-mauve text-sm mb-2">+917217206223</p>
                 <p className="text-xs text-yoga-mauve">Available 9 AM - 6 PM (GMT+8)</p>
               </CardContent>
             </Card>
@@ -159,7 +155,7 @@ const ContactUs = () => {
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="font-semibold text-yoga-plum mb-2">Email Us</h3>
-                <p className="text-yoga-mauve text-sm mb-2">info@himalayanyoga.com</p>
+                <p className="text-yoga-mauve text-sm mb-2">info@baliyogaschool.com</p>
                 <p className="text-xs text-yoga-mauve">Response within 24 hours</p>
               </CardContent>
             </Card>
@@ -171,7 +167,7 @@ const ContactUs = () => {
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="font-semibold text-yoga-plum mb-2">WhatsApp</h3>
-                <p className="text-yoga-mauve text-sm mb-2">+62 812 3456 7890</p>
+                <p className="text-yoga-mauve text-sm mb-2">+918279705844</p>
                 <p className="text-xs text-yoga-mauve">Instant messaging support</p>
               </CardContent>
             </Card>
@@ -184,8 +180,12 @@ const ContactUs = () => {
                 </div>
                 <h3 className="font-semibold text-yoga-plum mb-2">Follow Us</h3>
                 <div className="flex justify-center gap-2 mb-2">
-                  <Instagram className="w-4 h-4 text-yoga-mauve" />
-                  <Facebook className="w-4 h-4 text-yoga-mauve" />
+                  <a href="https://www.instagram.com/baliyogaschool/" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="w-4 h-4 text-yoga-mauve hover:text-yoga-plum transition-colors" />
+                  </a>
+                  <a href="https://www.facebook.com/yogaschoolinbali/" target="_blank" rel="noopener noreferrer">
+                    <Facebook className="w-4 h-4 text-yoga-mauve hover:text-yoga-plum transition-colors" />
+                  </a>
                 </div>
                 <p className="text-xs text-yoga-mauve">Daily inspiration & updates</p>
               </CardContent>
@@ -209,26 +209,18 @@ const ContactUs = () => {
                 <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-center text-yoga-plum">Ubud Sacred Center</CardTitle>
+                <CardTitle className="text-center text-yoga-plum">Bali Yoga School Ubud</CardTitle>
                 <CardDescription className="text-center">Cultural Heart of Bali</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center justify-center gap-2 text-sm text-yoga-mauve">
                     <MapPin className="w-4 h-4" />
-                    <span>Jl. Monkey Forest Road, Ubud</span>
-                  </div>
-                  <div className="flex items-center justify-center gap-2 text-sm text-yoga-mauve">
-                    <Phone className="w-4 h-4" />
-                    <span>+62 361 123 4567</span>
+                    <span>Jl. Campuhan III, Singakerta, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia</span>
                   </div>
                 </div>
-                <p className="text-xs text-yoga-mauve mb-4">
-                  Nestled among rice terraces and ancient temples, our Ubud center offers 
-                  the most authentic Balinese yoga experience.
-                </p>
                 <div className="text-xs text-yoga-mauve">
-                  <strong>Specialties:</strong> Hatha Yoga, Meditation, Cultural Immersion
+                  <strong>Special:</strong> YTT, Yoga Retreat, Sound Healing, Reiki Healing, Ayurveda
                 </div>
               </CardContent>
             </Card>
@@ -239,26 +231,18 @@ const ContactUs = () => {
                 <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                   <Globe className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-center text-yoga-plum">Uluwatu Cliffside Retreat</CardTitle>
+                <CardTitle className="text-center text-yoga-plum">Bali Yoga School Uluwatu</CardTitle>
                 <CardDescription className="text-center">Ocean Views & Sunsets</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center justify-center gap-2 text-sm text-yoga-mauve">
                     <MapPin className="w-4 h-4" />
-                    <span>Jl. Uluwatu, Pecatu</span>
-                  </div>
-                  <div className="flex items-center justify-center gap-2 text-sm text-yoga-mauve">
-                    <Phone className="w-4 h-4" />
-                    <span>+62 361 234 5678</span>
+                    <span>54XX+9G Jimbaran, Badung Regency, Bali, Indonesia</span>
                   </div>
                 </div>
-                <p className="text-xs text-yoga-mauve mb-4">
-                  Perched on dramatic cliffs overlooking the Indian Ocean, perfect for 
-                  sunset yoga and spiritual reflection.
-                </p>
                 <div className="text-xs text-yoga-mauve">
-                  <strong>Specialties:</strong> Vinyasa Flow, Sunset Yoga, Ocean Meditation
+                  <strong>Special:</strong> YTT, Yoga Retreat, Sound Healing, Reiki Healing, Ayurveda
                 </div>
               </CardContent>
             </Card>
@@ -269,26 +253,18 @@ const ContactUs = () => {
                 <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-white" />
                 </div>
-                <CardTitle className="text-center text-yoga-plum">Canggu Beach Hub</CardTitle>
+                <CardTitle className="text-center text-yoga-plum">Bali Yoga School Canggu</CardTitle>
                 <CardDescription className="text-center">Modern Beach Lifestyle</CardDescription>
               </CardHeader>
               <CardContent className="text-center">
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center justify-center gap-2 text-sm text-yoga-mauve">
                     <MapPin className="w-4 h-4" />
-                    <span>Jl. Pantai Berawa, Canggu</span>
-                  </div>
-                  <div className="flex items-center justify-center gap-2 text-sm text-yoga-mauve">
-                    <Phone className="w-4 h-4" />
-                    <span>+62 361 345 6789</span>
+                    <span>Canggu, Bali, Indonesia</span>
                   </div>
                 </div>
-                <p className="text-xs text-yoga-mauve mb-4">
-                  Contemporary beach-side studio with modern amenities, perfect for 
-                  combining yoga with surf and beach activities.
-                </p>
                 <div className="text-xs text-yoga-mauve">
-                  <strong>Specialties:</strong> Power Yoga, Beach Yoga, Surf & Yoga
+                  <strong>Special:</strong> YTT, Yoga Retreat, Sound Healing, Reiki Healing, Ayurveda
                 </div>
               </CardContent>
             </Card>
@@ -489,8 +465,7 @@ const ContactUs = () => {
                     How do I book a retreat and what's the payment process?
                   </AccordionTrigger>
                   <AccordionContent className="text-yoga-mauve">
-                    You can book through our contact form, phone, or WhatsApp. We require a 30% deposit to secure your spot, 
-                    with the balance due 30 days before your retreat. We accept bank transfers, credit cards, and PayPal.
+                    You can book through our contact form, phone, or WhatsApp. We require a 150USD deposit to secure your spot. Balance should be paid on arrival either by card, cash, or online transfer.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -499,9 +474,7 @@ const ContactUs = () => {
                     What's included in the retreat packages?
                   </AccordionTrigger>
                   <AccordionContent className="text-yoga-mauve">
-                    All retreats include accommodation, daily yoga classes, meditation sessions, healthy meals, 
-                    airport transfers, and cultural activities. Specific inclusions vary by package - please check 
-                    individual retreat pages for detailed information.
+                    All retreats include accommodation, daily yoga classes, healing sessions, healthy meals, and special events when the retreat days fall on the event days at the retreat center. Specific inclusions vary by package - please check individual retreat pages for detailed information.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -530,8 +503,7 @@ const ContactUs = () => {
                     What's your cancellation policy?
                   </AccordionTrigger>
                   <AccordionContent className="text-yoga-mauve">
-                    Cancellations more than 60 days before: full refund minus processing fee. 30-60 days: 50% refund. 
-                    Less than 30 days: no refund, but you can transfer to a future retreat. We strongly recommend travel insurance.
+                    Advance booking deposit is not refundable. We accept date rescheduling if you cancel the retreat after the enrolment. We accept the cancellation, but the deposit / retreat fee will not be refunded with the cancellation.
                   </AccordionContent>
                 </AccordionItem>
 
