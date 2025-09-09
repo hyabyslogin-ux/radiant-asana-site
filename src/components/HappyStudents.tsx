@@ -1,55 +1,61 @@
 import { Card } from '@/components/ui/card';
 import { Star, Quote, Heart } from 'lucide-react';
+import testimonialSarah from '@/assets/testimonial-sarah.jpg';
+import testimonialMichael from '@/assets/testimonial-michael.jpg';
+import testimonialEmma from '@/assets/testimonial-emma.jpg';
+import testimonialDavid from '@/assets/testimonial-david.jpg';
+import testimonialLisa from '@/assets/testimonial-lisa.jpg';
+import testimonialJames from '@/assets/testimonial-james.jpg';
 
 const HappyStudents = () => {
   const testimonials = [
     {
       name: "Sarah Mitchell",
       location: "Australia",
-      image: "/lovable-uploads/3a5a6a3a-f2c8-45ad-9db2-c6e920fd1a07.png",
+      image: testimonialSarah,
       rating: 5,
-      text: "The retreat in Ubud was absolutely life-changing! The instructors were incredibly knowledgeable and caring. I left feeling rejuvenated and connected to my inner self. The beautiful setting made every practice session magical.",
-      program: "7-Day Ubud Retreat"
+      text: "The 3-day retreat in Ubud was perfect for my first yoga experience! In just three days, I learned foundational poses, discovered inner peace through meditation, and felt completely rejuvenated. The sacred valley setting made every moment magical.",
+      program: "3-Day Ubud Sacred Valley Retreat"
     },
     {
       name: "Michael Chen",
       location: "Singapore",
-      image: "/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png",
+      image: testimonialMichael,
       rating: 5,
-      text: "I've never experienced such a perfect blend of adventure and spirituality. The surf lessons combined with yoga practice in Uluwatu created the most balanced vacation I've ever had. Highly recommend!",
-      program: "5-Day Uluwatu Adventure"
+      text: "The 5-day Uluwatu retreat exceeded all expectations! The cliff-top yoga sessions at sunrise, combined with surf lessons and meditation, created the perfect balance. I left feeling stronger both physically and mentally.",
+      program: "5-Day Uluwatu Clifftop Retreat"
     },
     {
       name: "Emma Rodriguez",
       location: "Spain", 
-      image: "/lovable-uploads/5bc20f00-75c6-4f94-83f8-be72e5c72b78.png",
+      image: testimonialEmma,
       rating: 5,
-      text: "Canggu's vibrant energy was exactly what I needed. The community feeling, the beach yoga sessions, and the healthy lifestyle workshops gave me tools I still use daily. Thank you for this amazing experience!",
-      program: "6-Day Canggu Experience"
+      text: "Seven days in Ubud transformed my entire approach to wellness. The daily yoga practice, temple visits, and healing ceremonies in the sacred valley created a profound spiritual awakening I'll treasure forever.",
+      program: "7-Day Ubud Spiritual Journey"
     },
     {
       name: "David Kumar",
       location: "India",
-      image: "/lovable-uploads/8a948cb6-13f9-44c9-8fef-bce571ae9145.png",
+      image: testimonialDavid,
       rating: 5,
-      text: "Coming from India, I thought I knew yoga well, but this retreat opened my eyes to new dimensions of practice. The fusion of traditional techniques with modern approaches was enlightening.",
-      program: "10-Day Transformation"
+      text: "The 4-day Canggu retreat was exactly what I needed! The beach yoga sessions, surf culture immersion, and creative workshops gave me new perspectives on traditional practice. Short but incredibly impactful.",
+      program: "4-Day Canggu Beach Experience"
     },
     {
       name: "Lisa Thompson", 
       location: "Canada",
-      image: "/lovable-uploads/9e3fcc3b-076b-4912-b3b1-67a84baae207.png",
+      image: testimonialLisa,
       rating: 5,
-      text: "The instructors created such a safe and nurturing environment. I overcame my fear of inversions and found confidence both on and off the mat. This retreat gave me so much more than I expected.",
-      program: "8-Day Advanced Training"
+      text: "Six days in Uluwatu's dramatic clifftop setting was life-changing. The combination of advanced yoga practice, ocean meditation, and Balinese healing traditions helped me overcome years of stress and anxiety.",
+      program: "6-Day Uluwatu Advanced Retreat"
     },
     {
       name: "James Wilson",
       location: "UK",
-      image: "/lovable-uploads/b36093bd-c1e4-40a7-8601-24e53d082b0c.png",
+      image: testimonialJames,
       rating: 5,
-      text: "The digital detox aspect was exactly what my soul needed. Disconnecting from technology and reconnecting with nature and myself was transformative. I returned home with clarity and peace.",
-      program: "7-Day Digital Detox"
+      text: "The 8-day Ubud deep immersion retreat was transformational beyond words. From sunrise yoga in rice terraces to evening meditation in ancient temples, every moment was perfectly crafted for spiritual growth.",
+      program: "8-Day Ubud Deep Immersion"
     }
   ];
 
