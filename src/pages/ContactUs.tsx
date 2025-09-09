@@ -27,6 +27,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import contactHeroBg from '@/assets/contact-hero-bg.jpg';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -63,15 +64,15 @@ const ContactUs = () => {
       <section 
         className="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: `url('/lovable-uploads/56b08f35-18f2-4235-8c72-80caf5e99d21.png')`,
+          backgroundImage: `url(${contactHeroBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       >
         {/* Background overlay */}
-        <div className="absolute inset-0 bg-black/30"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-yoga-cream/20 via-transparent to-yoga-mauve/20"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-yoga-cream/10 via-transparent to-yoga-mauve/20"></div>
         
         {/* Decorative elements */}
         <div className="absolute top-20 left-10 w-32 h-32 border-2 border-yoga-mauve/20 rounded-full animate-pulse"></div>
