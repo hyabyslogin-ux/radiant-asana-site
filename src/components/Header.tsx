@@ -256,13 +256,13 @@ const Header = () => {
               <span>Campus Photos</span>
             </Link>
 
-            <button 
-              onClick={() => scrollToSection('blog')}
+            <Link 
+              to="/blog"
               className="flex items-center space-x-2 text-foreground hover:text-primary transition-all duration-300 group"
             >
               <BookOpen className="w-4 h-4 group-hover:scale-110 transition-transform" />
               <span>Blog</span>
-            </button>
+            </Link>
 
             <Link 
               to="/contact-us"
@@ -415,13 +415,14 @@ const Header = () => {
                 <span>Campus Photos</span>
               </Link>
 
-              <button 
-                onClick={() => scrollToSection('blog')}
+              <Link 
+                to="/blog"
                 className="flex items-center space-x-3 text-foreground hover:text-primary transition-colors py-2"
+                onClick={() => setIsMenuOpen(false)}
               >
                 <BookOpen className="w-5 h-5" />
                 <span>Blog</span>
-              </button>
+              </Link>
 
               <Link 
                 to="/contact-us"
