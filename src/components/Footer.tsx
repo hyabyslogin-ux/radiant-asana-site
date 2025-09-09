@@ -1,4 +1,4 @@
-import { Heart, MapPin, Phone, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Heart, MapPin, Phone, Mail, Facebook, Instagram, Twitter, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -34,14 +34,17 @@ const Footer = () => {
               
               {/* Social Media */}
               <div className="flex gap-4">
-                <a href="#" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group">
+                <a href="https://www.facebook.com/yogaschoolinbali/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group">
                   <Facebook className="w-5 h-5 text-white/80 group-hover:text-white" />
                 </a>
-                <a href="#" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group">
+                <a href="https://www.instagram.com/baliyogaschool/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group">
                   <Instagram className="w-5 h-5 text-white/80 group-hover:text-white" />
                 </a>
-                <a href="#" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group">
+                <a href="https://twitter.com/BaliYogaSchool1" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group">
                   <Twitter className="w-5 h-5 text-white/80 group-hover:text-white" />
+                </a>
+                <a href="https://www.youtube.com/channel/UCCuk6dzNT49OSJf0mK0bYSg" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group">
+                  <MessageCircle className="w-5 h-5 text-white/80 group-hover:text-white" />
                 </a>
               </div>
             </div>
@@ -75,6 +78,12 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
+                  <a href="/#canggu-retreats" className="text-white/80 hover:text-yoga-cream transition-colors duration-200 font-inter flex items-center gap-2 group">
+                    <span className="w-1 h-1 bg-yoga-cream rounded-full group-hover:w-2 transition-all duration-200"></span>
+                    Canggu Retreats
+                  </a>
+                </li>
+                <li>
                   <a href="/#contact" className="text-white/80 hover:text-yoga-cream transition-colors duration-200 font-inter flex items-center gap-2 group">
                     <span className="w-1 h-1 bg-yoga-cream rounded-full group-hover:w-2 transition-all duration-200"></span>
                     Contact
@@ -93,7 +102,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <p className="text-white font-medium">Bali, Indonesia</p>
-                    <p className="text-white/70 text-sm">Ubud & Uluwatu Locations</p>
+                    <p className="text-white/70 text-sm">Ubud / Uluwatu / Canggu</p>
                   </div>
                 </div>
                 
@@ -102,8 +111,11 @@ const Footer = () => {
                     <Phone className="w-5 h-5 text-yoga-cream" />
                   </div>
                   <div>
-                    <a href="tel:+6212345678" className="text-white hover:text-yoga-cream transition-colors font-medium">
-                      +62 123 456 789
+                    <a href="tel:+917217206223" className="text-white hover:text-yoga-cream transition-colors font-medium block">
+                      Call +917217206223
+                    </a>
+                    <a href="https://wa.me/918279705844" className="text-white/70 hover:text-yoga-cream transition-colors text-sm">
+                      WhatsApp +918279705844
                     </a>
                   </div>
                 </div>
@@ -127,7 +139,7 @@ const Footer = () => {
             <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-white/70 font-inter">
-                © 2025 Himalayan Yoga Association. All rights reserved.
+                Bali Yoga School - Yoga School in Bali | Yoga Retreat in Bali © 2019 - 2025. All Rights Reserved.
               </p>
               <div className="flex gap-6 text-sm">
                 <a href="#" className="text-white/70 hover:text-yoga-cream transition-colors">Privacy Policy</a>

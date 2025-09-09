@@ -152,37 +152,6 @@ const Contact = () => {
             </Card>
           </div>
         </div>
-
-        {/* Call to Action */}
-        <div className="text-center mt-20">
-          <div className="bg-gradient-border rounded-3xl p-1 max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-yoga-cream via-white to-yoga-peach/20 rounded-2xl p-10 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-40 h-40 bg-yoga-rose/10 rounded-full -translate-x-20 -translate-y-20"></div>
-              <div className="absolute bottom-0 right-0 w-32 h-32 bg-yoga-mauve/10 rounded-full translate-x-16 translate-y-16"></div>
-              
-              <div className="relative z-10">
-                <h3 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-                  Ready to Begin Your Transformation? 🌸
-                </h3>
-                <p className="text-muted-foreground mb-8 text-lg leading-relaxed max-w-2xl mx-auto">
-                  Join thousands of students who have discovered inner peace, physical strength, and spiritual growth 
-                  through our authentic Balinese yoga programs. Your journey to wellness starts with a single step.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" className="bg-gradient-to-r from-primary to-yoga-mauve hover:from-yoga-mauve hover:to-primary text-white font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                    Book Your Retreat Now
-                  </Button>
-                  <Button size="lg" variant="outline" className="border-2 border-yoga-rose text-yoga-plum hover:bg-yoga-rose hover:text-white font-semibold px-8 py-4 text-lg transition-all duration-300">
-                    Schedule a Call
-                  </Button>
-                </div>
-                <p className="text-sm text-muted-foreground mt-4 italic">
-                  ✨ Free consultation available • Flexible payment plans • 100% satisfaction guarantee
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

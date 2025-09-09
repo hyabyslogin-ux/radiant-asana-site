@@ -34,7 +34,7 @@ const Founder = () => {
                   Yogi Himanshu
                 </h3>
                 <p className="text-xl font-medium text-primary/80">
-                  Founder & Lead Instructor
+                  Founder
                 </p>
               </div>
               
@@ -42,7 +42,7 @@ const Founder = () => {
                 <div className="relative">
                   <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-primary rounded-full opacity-30"></div>
                   <p className="text-lg text-muted-foreground leading-relaxed pl-6">
-                    Everything you experience at Bali Yoga School community has come from our great leader, 
+                    Everything you experience at Bali Yoga Retreat has come from our great leader, 
                     Yogi Himanshu Joshi. He is the most honest, hard-working, authentic person we can ever meet. 
                     His yoga journey started from a severe injury after playing sports for a long time at the 
                     state / national level. Yoga brought him up into the light from the darkness.
@@ -52,9 +52,9 @@ const Founder = () => {
                 <div className="relative">
                   <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-primary rounded-full opacity-30"></div>
                   <p className="text-lg text-muted-foreground leading-relaxed pl-6">
-                    He contributed to the success of other yoga schools in Rishikesh, and then built his own — 
-                    Himalayan Yoga Association and Bali Yoga School. He continues to expand the community, 
-                    uplifting lives for the better. Feel his essence in every detail of the school and learning.
+                    He contributed to the success of other yoga schools in Rishikesh, and then built his own in 
+                    Rishikesh and Bali, and expanding more in the world. He continues to expand the community, 
+                    uplifting lives for the better. Feel his essence in every detail of Bali Yoga Retreat.
                   </p>
                 </div>
               </div>
