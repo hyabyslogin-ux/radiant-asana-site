@@ -310,130 +310,25 @@ const ElevenDaysRetreat = () => {
             </div>
 
             <div className="px-12 py-16">
-              <div className="grid gap-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
-                  {
-                    day: "Day 1",
-                    title: "Sacred Arrival",
-                    focus: "Divine Grounding",
-                    activities: ["Welcome ceremony", "Sacred introduction", "Group meditation", "Divine intention setting"],
-                    highlight: "Begin your sacred transformation"
-                  },
-                  {
-                    day: "Day 2",
-                    title: "Foundation Building",
-                    focus: "Sacred Establishment",
-                    activities: ["Morning pranayama", "Hatha yoga foundation", "Philosophy introduction", "Evening reflection"],
-                    highlight: "Build sacred practice foundation"
-                  },
-                  {
-                    day: "Day 3",
-                    title: "Deepening Practice",
-                    focus: "Spiritual Strengthening",
-                    activities: ["Advanced breathing", "Vinyasa flow", "Sound healing session", "Meditation deepening"],
-                    highlight: "Expand spiritual capabilities"
-                  },
-                  {
-                    day: "Day 4",
-                    title: "Inner Exploration",
-                    focus: "Soul Discovery",
-                    activities: ["Chakra meditation", "Therapeutic yoga", "Personal guidance", "Sacred journaling"],
-                    highlight: "Discover divine wisdom within"
-                  },
-                  {
-                    day: "Day 5",
-                    title: "Transformation Portal",
-                    focus: "Breaking Sacred Barriers",
-                    activities: ["Advanced asanas", "Energy healing", "Deep meditation", "Emotional liberation"],
-                    highlight: "Break through all limitations"
-                  },
-                  {
-                    day: "Day 6",
-                    title: "Spiritual Mastery",
-                    focus: "Divine Techniques",
-                    activities: ["Complex poses", "Breathwork mastery", "Philosophy immersion", "Sacred practices"],
-                    highlight: "Develop divine skills"
-                  },
-                  {
-                    day: "Day 7",
-                    title: "Sacred Awakening",
-                    focus: "Higher Consciousness",
-                    activities: ["Silent meditation", "Advanced pranayama", "Kundalini awakening", "Sacred ceremonies"],
-                    highlight: "Awaken divine consciousness"
-                  },
-                  {
-                    day: "Day 8",
-                    title: "Transcendent Experience",
-                    focus: "Divine Integration",
-                    activities: ["Master-level practice", "Healing ceremonies", "Wisdom integration", "Sacred bonding"],
-                    highlight: "Reach transcendent states"
-                  },
-                  {
-                    day: "Day 9",
-                    title: "Divine Mastery",
-                    focus: "Sacred Embodiment",
-                    activities: ["Advanced integration", "Master teachings", "Sacred ceremonies", "Divine wisdom"],
-                    highlight: "Embody divine mastery"
-                  },
-                  {
-                    day: "Day 10",
-                    title: "Sacred Wisdom",
-                    focus: "Divine Consolidation",
-                    activities: ["Wisdom practices", "Sacred planning", "Celebration ceremony", "Final teachings"],
-                    highlight: "Integrate sacred wisdom"
-                  },
-                  {
-                    day: "Day 11",
-                    title: "Divine Completion",
-                    focus: "Sacred New Beginning",
-                    activities: ["Graduation ceremony", "Final blessing", "Sacred circle", "Divine sendoff"],
-                    highlight: "Complete sacred transformation"
-                  }
-                ].map((schedule, index) => (
-                  <div key={index} className="group bg-gradient-to-r from-white to-yoga-cream/5 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-cream/20">
-                    <div className="flex flex-col lg:flex-row lg:items-center gap-6">
-                      <div className="flex-shrink-0">
-                        <div className="w-20 h-20 bg-gradient-to-br from-yoga-sage via-yoga-earth to-yoga-plum rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                          <span className="font-playfair text-lg font-bold text-white">{schedule.day.split(' ')[1]}</span>
-                        </div>
-                        <div className="text-center">
-                          <div className="text-sm font-medium text-yoga-earth">{schedule.day}</div>
-                        </div>
+                  { phase: "Days 1-3", title: "Sacred Foundation", desc: "Arrival, grounding, and establishing your sacred practice foundation" },
+                  { phase: "Days 4-6", title: "Deepening Practice", desc: "Building strength, exploring inner wisdom, and breaking through barriers" },
+                  { phase: "Days 7-9", title: "Spiritual Mastery", desc: "Advanced techniques, awakening consciousness, and transcendent experiences" },
+                  { phase: "Days 10-11", title: "Divine Integration", desc: "Wisdom consolidation and sacred completion of your transformation" }
+                ].map((item, index) => (
+                  <Card key={index} className="group bg-gradient-to-br from-white to-yoga-cream/10 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-cream/20 hover:scale-105">
+                    <CardHeader className="pb-4">
+                      <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage via-yoga-earth to-yoga-plum rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <Calendar className="w-8 h-8 text-white" />
                       </div>
-                      
-                      <div className="flex-grow space-y-4">
-                        <div>
-                          <h3 className="font-playfair text-2xl font-bold text-yoga-earth mb-2">{schedule.title}</h3>
-                          <p className="font-inter text-lg text-yoga-sage font-medium mb-4">{schedule.focus}</p>
-                        </div>
-                        
-                        <div className="grid md:grid-cols-2 gap-6">
-                          <div>
-                            <h4 className="font-inter font-semibold text-gray-800 mb-3">Sacred Activities</h4>
-                            <ul className="space-y-2">
-                              {schedule.activities.map((activity, idx) => (
-                                <li key={idx} className="flex items-center gap-2 text-gray-600">
-                                  <div className="w-1.5 h-1.5 bg-yoga-sage rounded-full"></div>
-                                  <span className="font-inter text-sm">{activity}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                          
-                          <div className="flex items-center">
-                            <div className="bg-gradient-to-br from-yoga-peach/10 to-yoga-rose/10 rounded-xl p-4 border border-yoga-peach/20">
-                              <div className="flex items-center gap-3">
-                                <div className="w-8 h-8 bg-yoga-earth/20 rounded-full flex items-center justify-center">
-                                  <Star className="w-4 h-4 text-yoga-earth" />
-                                </div>
-                                <p className="font-inter text-sm text-gray-700 italic">{schedule.highlight}</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                      <CardTitle className="text-center text-yoga-earth text-lg font-playfair">{item.phase}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="text-center pt-0">
+                      <h3 className="font-playfair font-bold mb-3 text-yoga-earth text-xl">{item.title}</h3>
+                      <p className="font-inter text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                    </CardContent>
+                  </Card>
                 ))}
               </div>
             </div>
