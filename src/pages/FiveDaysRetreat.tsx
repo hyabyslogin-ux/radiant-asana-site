@@ -449,8 +449,8 @@ const FiveDaysRetreat = () => {
               </div>
               
               <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div className="group relative bg-gradient-to-br from-white via-white to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-yoga-earth/20 hover:scale-105 transition-all duration-300 overflow-hidden">
-                  <div className="absolute -top-4 -right-4 bg-gradient-to-br from-yoga-earth to-yoga-plum text-white px-6 py-2 rounded-full text-sm font-semibold rotate-12">
+                <div className="group relative bg-gradient-to-br from-white via-white to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-yoga-earth/20 hover:scale-105 transition-all duration-300 overflow-visible">
+                  <div className="absolute -top-2 -right-2 bg-gradient-to-br from-yoga-earth to-yoga-plum text-white px-4 py-2 rounded-full text-sm font-semibold rotate-12 z-10 shadow-lg">
                     Most Popular
                   </div>
                   <div className="text-center">
