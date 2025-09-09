@@ -574,7 +574,10 @@ const SixDaysRetreat = () => {
             </div>
 
             <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <div className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 hover:scale-105 transition-all duration-300 overflow-hidden">
+              <div className="group relative bg-gradient-to-br from-white via-white to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-yoga-earth/20 hover:scale-105 transition-all duration-300 overflow-visible">
+                <div className="absolute -top-4 left-4 bg-yoga-earth text-white px-4 py-1.5 rounded-md text-xs font-semibold shadow-lg border border-white/10">
+                  Most Popular
+                </div>
                 <div className="text-center">
                   <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Private Room Campus-I</h4>
                   <div className="flex items-center justify-center gap-2">
@@ -589,10 +592,7 @@ const SixDaysRetreat = () => {
                 </div>
               </div>
               
-              <div className="group relative bg-gradient-to-br from-white via-white to-yoga-cream/30 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-yoga-earth/20 hover:scale-105 transition-all duration-300 overflow-visible">
-                <div className="absolute -top-4 left-4 bg-yoga-earth text-white px-4 py-1.5 rounded-md text-xs font-semibold shadow-lg border border-white/10">
-                  Most Popular
-                </div>
+              <div className="group relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border border-white/50 hover:scale-105 transition-all duration-300 overflow-hidden">
                 <div className="text-center">
                   <h4 className="font-playfair text-2xl font-semibold text-yoga-earth mb-2">Twin Shared Room Campus-I</h4>
                   <div className="flex items-center justify-center gap-2">
@@ -638,7 +638,7 @@ const SixDaysRetreat = () => {
                       </svg>
                     </div>
                     <h4 className="font-playfair font-semibold text-yoga-earth mb-2">Accommodation</h4>
-                    <p className="font-inter text-sm text-gray-600">5 Nights Private Accommodation with a Private Bathroom</p>
+                    <p className="font-inter text-sm text-gray-600">5 Nights Accommodation with a Bathroom</p>
                   </div>
                   
                   <div className="text-center group">
