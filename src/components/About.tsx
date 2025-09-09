@@ -25,7 +25,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            About Bali Yoga Retreats
+            About Bali Yoga Retreat
           </h2>
           <div className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed space-y-6">
             <p>
@@ -90,7 +90,7 @@ const About = () => {
                   <p className="text-muted-foreground mb-6">
                     Experience the benefits of regular practice with our supportive yoga family.
                   </p>
-                  <div className="text-3xl font-bold text-yoga-mauve">500+</div>
+                  <div className="text-3xl font-bold text-yoga-mauve">10K+</div>
                   <div className="text-sm text-muted-foreground">Happy Students</div>
                 </div>
               </div>
