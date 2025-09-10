@@ -40,6 +40,8 @@ import CangguElevenDaysRetreat from "./pages/CangguElevenDaysRetreat";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import UbudCampusGallery from "./pages/UbudCampusGallery";
+import UluwatuCampusGallery from "./pages/UluwatuCampusGallery";
+import CangguCampusGallery from "./pages/CangguCampusGallery";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -92,6 +94,8 @@ const App = () => (
           <Route path="/canggu-11-days-retreat" element={<CangguElevenDaysRetreat />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/ubud-campus-gallery" element={<UbudCampusGallery />} />
+          <Route path="/uluwatu-campus-gallery" element={<UluwatuCampusGallery />} />
+          <Route path="/canggu-campus-gallery" element={<CangguCampusGallery />} />
           <Route path="/contact-us" element={<ContactUs />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -5,62 +5,60 @@ import { Button } from '@/components/ui/button';
 import { X, ZoomIn, ArrowLeft, ArrowRight } from 'lucide-react';
 import SEO from '@/components/SEO';
 
-const UbudCampusGallery = () => {
+const UluwatuCampusGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-  // Curated Ubud-specific gallery images (removing duplicates and selecting best ones)
-  const allImages = [
-    '/lovable-uploads/006e4b87-f686-4703-bc52-d499a78f67df.png',
-    '/lovable-uploads/09dfc4f5-0f6e-4884-a662-96aa7dcd9ee6.png',
-    '/lovable-uploads/09fdfbc9-ac2c-4ddc-acfb-efddfc6bf6e9.png',
-    '/lovable-uploads/14ae0fe9-ca33-463f-8698-24208b61a9f7.png',
-    '/lovable-uploads/173537e5-6843-47f7-8ed8-37529c8eb27e.png',
-    '/lovable-uploads/1ca1ff4f-7a55-4087-9cc9-e270eb98efc8.png',
-    '/lovable-uploads/1f912899-2fba-4e5e-900d-da42b1a0d026.png',
-    '/lovable-uploads/31da4317-88ad-4519-8397-4428779fefc4.png',
-    '/lovable-uploads/3a5a6a3a-f2c8-45ad-9db2-c6e920fd1a07.png',
-    '/lovable-uploads/3b45fe7e-1832-4fee-92d1-320376e40af5.png',
-    '/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png',
-    '/lovable-uploads/46a670a0-e176-42ef-9f57-e6e9814b6bb9.png',
-    '/lovable-uploads/4d1d4d50-849e-4a3d-a886-557f7e491b7c.png',
-    '/lovable-uploads/5117ac0b-9cea-4be9-83af-8536b5cd98d6.png',
-    '/lovable-uploads/51653aef-5975-435c-b70d-7a6aa6565482.png',
-    '/lovable-uploads/52121918-0404-4420-9333-3747af0f9d7a.png',
-    '/lovable-uploads/56b08f35-18f2-4235-8c72-80caf5e99d21.png',
-    '/lovable-uploads/5bc20f00-75c6-4f94-83f8-be72e5c72b78.png',
-    '/lovable-uploads/62650205-96dd-45fd-a68e-6eb105184280.png',
-    '/lovable-uploads/67c5fc29-d538-4741-a4aa-4e5affaebef3.png',
-    '/lovable-uploads/71f70b0a-7265-4b1e-b0b1-c5a91f8e39fe.png',
-    '/lovable-uploads/7c0b8b0b-f25a-4ff7-8bb3-000c713d4480.png',
-    '/lovable-uploads/82f12a81-9889-4829-a670-f5c77558bc74.png',
-    '/lovable-uploads/8403dcd5-94b4-4581-8968-3f85d8fb0fed.png',
-    '/lovable-uploads/84b47165-30fa-48cd-8655-1fdd40968712.png',
-    '/lovable-uploads/8a948cb6-13f9-44c9-8fef-bce571ae9145.png',
-    '/lovable-uploads/9d85e84b-2b54-463f-a296-cb8633fc085c.png',
-    '/lovable-uploads/9e3fcc3b-076b-4912-b3b1-67a84baae207.png',
-    '/lovable-uploads/b36093bd-c1e4-40a7-8601-24e53d082b0c.png',
-    '/lovable-uploads/b6b1e71e-5af0-4506-8ed2-50fbb49feb6a.png',
-    '/lovable-uploads/b7c337a0-f964-45ce-ba6f-0dbe704e5e64.png',
-    '/lovable-uploads/b91ee822-4e33-4513-a5ec-abce556ce83a.png',
-    '/lovable-uploads/cb9d17a6-619d-4a6f-ad15-e3dd95953b54.png',
-    '/lovable-uploads/d4236abb-6f90-4ce4-b1ad-562a9b295817.png',
-    '/lovable-uploads/dd467e40-f434-4893-bfae-077adbaa9185.png',
-    '/lovable-uploads/e117aae2-f01b-48ce-acfc-48827f392a58.png',
-    '/lovable-uploads/e3852749-ebcf-4e5a-8dae-7f9663b20acf.png',
-    '/lovable-uploads/e3d6b5ea-63cc-4290-adb0-6ba33a38acfd.png',
-    '/lovable-uploads/ea560468-ddc8-4d3b-98eb-2db6aac7b16b.png',
-    '/lovable-uploads/eb7f3511-36b4-4061-b6ee-7bc64b93bd1e.png',
-    '/lovable-uploads/ec0fb716-0da0-4fa2-b4eb-bbadd0226932.png',
-    '/lovable-uploads/ecc51699-b2a2-48db-b13f-653aca4b3e91.png',
-    '/lovable-uploads/eee86151-0a9a-4f24-951f-a0c980b2955c.png',
-    '/lovable-uploads/f2151035-c120-4b70-b58d-3ba55d30bf7f.png',
-    '/lovable-uploads/f2253b66-2282-4700-bebb-969092de041d.png',
-    '/lovable-uploads/f58e04e1-fda5-48c9-b3ab-41f6f7235e94.png',
-    '/lovable-uploads/f6403da2-1660-453f-b374-e5c60721d662.png',
-    '/lovable-uploads/fa196a61-65f0-4c5b-945d-df28079ea3f3.png',
-    '/lovable-uploads/fdb98fee-a394-4daa-85fa-ac6f82ae729b.png',
-    '/lovable-uploads/ff031fbd-ee3b-4abb-988a-dc9bf0fd93cc.png'
+  // Uluwatu-specific gallery images with SEO-optimized alt texts
+  const uluwatuImages = [
+    {
+      src: '/lovable-uploads/116af622-9ecd-4d77-a979-6c043102cfce.png',
+      alt: 'Luxury bedroom with ocean view at Uluwatu yoga retreat center Bali'
+    },
+    {
+      src: '/lovable-uploads/2666d43f-e0a5-4bba-a044-58ad4248a4cf.png',
+      alt: 'Modern kitchenette facilities at Uluwatu cliff-top yoga retreat'
+    },
+    {
+      src: '/lovable-uploads/2b08dcad-cacb-410c-9dc3-205baa240081.png',
+      alt: 'Elegant bathroom with natural stone design Uluwatu retreat accommodation'
+    },
+    {
+      src: '/lovable-uploads/3007f6a0-2fd5-4ac3-a3c8-96fd132eb857.png',
+      alt: 'Comfortable twin bed setup overlooking Uluwatu cliffs Bali yoga retreat'
+    },
+    {
+      src: '/lovable-uploads/3853444f-cf97-46b3-a8a2-62032660f070.png',
+      alt: 'Spacious bedroom with traditional Balinese touches Uluwatu retreat'
+    },
+    {
+      src: '/lovable-uploads/4c349547-29e1-4bf0-adeb-ad294c4842be.png',
+      alt: 'Cozy single bedroom with ocean breeze at Uluwatu yoga sanctuary'
+    },
+    {
+      src: '/lovable-uploads/5452b8e2-9e0c-4bd4-bd15-5598c37da455.png',
+      alt: 'Premium bathroom amenities natural materials Uluwatu cliff retreat'
+    },
+    {
+      src: '/lovable-uploads/63ff05de-f806-4a76-acfd-d1b48254ed48.png',
+      alt: 'Serene bedroom sanctuary with meditation corner Uluwatu Bali'
+    },
+    {
+      src: '/lovable-uploads/6e9de023-381f-457c-9bae-69019d80a410.png',
+      alt: 'Minimalist bathroom design with tropical views Uluwatu yoga retreat'
+    },
+    {
+      src: '/lovable-uploads/76153bc7-9de3-4b24-b604-6f11f047c77a.png',
+      alt: 'Peaceful twin bedroom overlooking Indian Ocean Uluwatu retreat center'
+    },
+    {
+      src: '/lovable-uploads/78d35dbb-ba28-454c-adc8-b8feb1ee2a9b.png',
+      alt: 'Luxury accommodation with cliff-top location Uluwatu yoga school Bali'
+    },
+    {
+      src: '/lovable-uploads/8ce277ec-6c63-418b-99ae-6196e53a01e8.png',
+      alt: 'Traditional Balinese bedroom design Uluwatu retreat accommodation facilities'
+    }
   ];
 
   const openLightbox = (image: string, index: number) => {
@@ -74,13 +72,13 @@ const UbudCampusGallery = () => {
 
   const navigateImage = (direction: 'prev' | 'next') => {
     if (direction === 'prev') {
-      const newIndex = currentIndex === 0 ? allImages.length - 1 : currentIndex - 1;
+      const newIndex = currentIndex === 0 ? uluwatuImages.length - 1 : currentIndex - 1;
       setCurrentIndex(newIndex);
-      setSelectedImage(allImages[newIndex]);
+      setSelectedImage(uluwatuImages[newIndex].src);
     } else {
-      const newIndex = currentIndex === allImages.length - 1 ? 0 : currentIndex + 1;
+      const newIndex = currentIndex === uluwatuImages.length - 1 ? 0 : currentIndex + 1;
       setCurrentIndex(newIndex);
-      setSelectedImage(allImages[newIndex]);
+      setSelectedImage(uluwatuImages[newIndex].src);
     }
   };
 
@@ -88,10 +86,35 @@ const UbudCampusGallery = () => {
     <div className="min-h-screen bg-background">
       <SEO 
         data={{
-          title: "Ubud Retreat Campus Photos - Bali Yoga Retreats",
-          description: "Explore our beautiful Ubud yoga retreat campus through our photo gallery. See accommodation, yoga spaces, dining areas and peaceful surroundings.",
-          keywords: ["Ubud retreat campus", "yoga retreat photos", "Bali yoga accommodation", "retreat facilities", "yoga spaces"],
-          canonical: "/ubud-campus-gallery"
+          title: "Uluwatu Retreat Campus Photos - Cliff-top Yoga Sanctuary Bali",
+          description: "Explore our stunning Uluwatu yoga retreat campus perched on dramatic cliffs. Luxury accommodation, ocean views, and serene yoga spaces overlooking the Indian Ocean.",
+          keywords: ["Uluwatu retreat campus", "cliff-top yoga retreat", "ocean view accommodation", "Uluwatu yoga photos", "Bali retreat facilities", "luxury yoga accommodation"],
+          canonical: "/uluwatu-campus-gallery",
+          openGraph: {
+            title: "Uluwatu Retreat Campus Photos - Cliff-top Yoga Sanctuary",
+            description: "Discover our breathtaking Uluwatu retreat campus with stunning cliff-top views and luxury accommodation.",
+            image: "/lovable-uploads/116af622-9ecd-4d77-a979-6c043102cfce.png",
+            imageAlt: "Luxury bedroom with ocean view at Uluwatu yoga retreat center Bali",
+            type: "website",
+            locale: "en_US"
+          },
+          twitter: {
+            card: "summary_large_image",
+            title: "Uluwatu Retreat Campus Photos",
+            description: "Cliff-top yoga sanctuary with breathtaking ocean views in Bali",
+            image: "/lovable-uploads/116af622-9ecd-4d77-a979-6c043102cfce.png"
+          },
+          schema: [{
+            "@context": "https://schema.org",
+            "@type": "ImageGallery",
+            "name": "Uluwatu Yoga Retreat Campus Photo Gallery",
+            "description": "Photo gallery showcasing our cliff-top yoga retreat campus in Uluwatu, Bali",
+            "image": uluwatuImages.map(img => ({
+              "@type": "ImageObject",
+              "url": `https://baliyogaretreat.org${img.src}`,
+              "description": img.alt
+            }))
+          }]
         }}
       />
       <Header />
@@ -102,7 +125,7 @@ const UbudCampusGallery = () => {
         <div className="absolute inset-0">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-            style={{ backgroundImage: `url(${allImages[0]})` }}
+            style={{ backgroundImage: `url(${uluwatuImages[0].src})` }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-yoga-sage/90 via-yoga-earth/80 to-yoga-plum/90"></div>
         </div>
@@ -119,13 +142,13 @@ const UbudCampusGallery = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-lg border border-white/30 rounded-full px-8 py-4 mb-12 shadow-xl">
               <div className="w-2 h-2 bg-yoga-sage rounded-full animate-pulse"></div>
-              <span className="text-white/95 font-inter font-medium text-lg">Visual Journey</span>
+              <span className="text-white/95 font-inter font-medium text-lg">Cliff-top Sanctuary</span>
             </div>
             
             {/* Main Heading */}
             <div className="mb-8 space-y-4">
               <h1 className="font-playfair text-6xl sm:text-7xl lg:text-8xl font-bold leading-none">
-                <span className="block text-white drop-shadow-xl tracking-tight">Ubud Retreat</span>
+                <span className="block text-white drop-shadow-xl tracking-tight">Uluwatu Retreat</span>
                 <span className="block bg-gradient-to-r from-yoga-cream via-yoga-peach to-yoga-rose bg-clip-text text-transparent font-playfair">
                   Campus Photos
                 </span>
@@ -133,7 +156,7 @@ const UbudCampusGallery = () => {
               <div className="flex items-center justify-center gap-4 mb-6">
                 <div className="h-px bg-gradient-to-r from-transparent via-white/50 to-transparent w-24"></div>
                 <p className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-light text-white/90 italic tracking-wide">
-                  A Visual Story
+                  Ocean Cliff Serenity
                 </p>
                 <div className="h-px bg-gradient-to-r from-transparent via-white/50 to-transparent w-24"></div>
               </div>
@@ -142,10 +165,10 @@ const UbudCampusGallery = () => {
             {/* Subtitle */}
             <div className="mb-16 space-y-6">
               <p className="font-inter text-xl sm:text-2xl lg:text-3xl font-light text-white/95 leading-relaxed max-w-4xl mx-auto">
-                Discover Our Sacred Sanctuary
+                Perched on Dramatic Clifftops
               </p>
               <p className="font-inter text-lg sm:text-xl text-white/80 leading-relaxed max-w-3xl mx-auto font-light">
-                Immerse yourself in the beauty of our Ubud retreat campus through this curated collection of moments
+                Experience breathtaking ocean views and sunset magic at our Uluwatu retreat campus
               </p>
             </div>
           </div>
@@ -170,16 +193,16 @@ const UbudCampusGallery = () => {
           <div className="bg-gradient-to-br from-white/90 to-yoga-cream/20 backdrop-blur-sm rounded-3xl p-12 shadow-xl border border-white/50">
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold text-yoga-earth mb-2">{allImages.length}+</div>
-                <p className="font-inter text-gray-600">Beautiful Photos</p>
+                <div className="text-4xl font-bold text-yoga-earth mb-2">{uluwatuImages.length}+</div>
+                <p className="font-inter text-gray-600">Stunning Views</p>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-yoga-sage mb-2">2</div>
-                <p className="font-inter text-gray-600">Campus Locations</p>
+                <div className="text-4xl font-bold text-yoga-sage mb-2">180°</div>
+                <p className="font-inter text-gray-600">Ocean Panorama</p>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold text-yoga-plum mb-2">∞</div>
-                <p className="font-inter text-gray-600">Peaceful Moments</p>
+                <p className="font-inter text-gray-600">Sunset Magic</p>
               </div>
             </div>
           </div>
@@ -197,21 +220,21 @@ const UbudCampusGallery = () => {
                 Campus Gallery
               </h2>
               <p className="font-inter text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Every corner of our retreat center tells a story of peace, transformation, and natural beauty
+                Discover our cliff-top sanctuary where dramatic ocean views meet luxury accommodation and serene yoga spaces
               </p>
             </div>
             
             {/* Masonry Grid */}
             <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-              {allImages.map((image, index) => (
+              {uluwatuImages.map((image, index) => (
                 <div 
                   key={index}
                   className="group relative break-inside-avoid cursor-pointer mb-4"
-                  onClick={() => openLightbox(image, index)}
+                  onClick={() => openLightbox(image.src, index)}
                 >
                   <img 
-                    src={image} 
-                    alt={`Authentic Ubud yoga retreat campus accommodation and facilities view ${index + 1} - sacred valley sanctuary Bali`}
+                    src={image.src} 
+                    alt={image.alt}
                     className="w-full object-cover transition-all duration-500 group-hover:brightness-110 group-hover:scale-105 rounded-xl shadow-lg"
                     style={{ 
                       height: `${250 + (index % 4) * 50}px`
@@ -231,7 +254,7 @@ const UbudCampusGallery = () => {
                   {/* Image Info */}
                   <div className="absolute bottom-0 left-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="bg-white/95 backdrop-blur-sm rounded-lg p-3">
-                      <p className="text-sm font-medium text-yoga-earth">Campus View #{index + 1}</p>
+                      <p className="text-sm font-medium text-yoga-earth">Uluwatu View #{index + 1}</p>
                       <p className="text-xs text-gray-600">Click to view full size</p>
                     </div>
                   </div>
@@ -245,18 +268,18 @@ const UbudCampusGallery = () => {
         <section className="text-center">
           <div className="bg-gradient-to-br from-yoga-sage/10 to-yoga-earth/10 backdrop-blur-sm rounded-3xl p-12 shadow-xl border border-yoga-sage/20">
             <h3 className="font-playfair text-4xl font-bold text-yoga-earth mb-6">
-              Ready to Experience It Yourself?
+              Ready to Experience Cliff-top Serenity?
             </h3>
             <p className="font-inter text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-              Join us at our beautiful Ubud campus for a transformative yoga retreat experience
+              Join us at our breathtaking Uluwatu campus for dramatic ocean views and transformative yoga experiences
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
                 className="bg-yoga-sage hover:bg-yoga-sage/90 text-white font-semibold px-8 py-4 text-lg"
-                onClick={() => window.location.href = '/3-days-retreat'}
+                onClick={() => window.location.href = '/uluwatu-3-days-retreat'}
               >
-                Book Your Retreat
+                Book Uluwatu Retreat
               </Button>
               <Button 
                 variant="outline" 
@@ -307,14 +330,14 @@ const UbudCampusGallery = () => {
             {/* Image */}
             <img 
               src={selectedImage} 
-              alt={`Ubud retreat campus view ${currentIndex + 1}`}
+              alt={uluwatuImages[currentIndex]?.alt || `Uluwatu retreat campus view ${currentIndex + 1}`}
               className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
             />
             
             {/* Image Counter */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
               <span className="text-white text-sm font-medium">
-                {currentIndex + 1} of {allImages.length}
+                {currentIndex + 1} of {uluwatuImages.length}
               </span>
             </div>
           </div>
@@ -326,4 +349,4 @@ const UbudCampusGallery = () => {
   );
 };
 
-export default UbudCampusGallery;
+export default UluwatuCampusGallery;

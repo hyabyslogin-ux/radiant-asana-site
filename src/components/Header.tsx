@@ -6,6 +6,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isRetreatsOpen, setIsRetreatsOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
+  const [isCampusPhotosOpen, setIsCampusPhotosOpen] = useState(false);
   const [isUbudOpen, setIsUbudOpen] = useState(false);
   const [isUluwatuOpen, setIsUluwatuOpen] = useState(false);
   const [isCangguOpen, setIsCangguOpen] = useState(false);
@@ -13,6 +14,7 @@ const Header = () => {
   
   const retreatsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const aboutTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const campusPhotosTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const ubudTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const uluwatuTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const cangguTimeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -25,6 +27,9 @@ const Header = () => {
       }
       if (aboutTimeoutRef.current) {
         clearTimeout(aboutTimeoutRef.current);
+      }
+      if (campusPhotosTimeoutRef.current) {
+        clearTimeout(campusPhotosTimeoutRef.current);
       }
       if (ubudTimeoutRef.current) {
         clearTimeout(ubudTimeoutRef.current);
@@ -64,6 +69,19 @@ const Header = () => {
   const handleAboutLeave = () => {
     aboutTimeoutRef.current = setTimeout(() => {
       setIsAboutOpen(false);
+    }, 150);
+  };
+
+  const handleCampusPhotosEnter = () => {
+    if (campusPhotosTimeoutRef.current) {
+      clearTimeout(campusPhotosTimeoutRef.current);
+    }
+    setIsCampusPhotosOpen(true);
+  };
+
+  const handleCampusPhotosLeave = () => {
+    campusPhotosTimeoutRef.current = setTimeout(() => {
+      setIsCampusPhotosOpen(false);
     }, 150);
   };
 
@@ -292,15 +310,50 @@ const Header = () => {
               )}
             </div>
 
-            <Link 
-              to="/ubud-campus-gallery"
-              className="flex items-center space-x-2 text-foreground hover:text-primary transition-all duration-300 group"
+            {/* Campus Photos Dropdown */}
+            <div 
+              className="relative"
+              onMouseEnter={handleCampusPhotosEnter}
+              onMouseLeave={handleCampusPhotosLeave}
             >
-              <svg className="w-4 h-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <span>Campus Photos</span>
-            </Link>
+              <button className="flex items-center space-x-2 text-foreground hover:text-primary transition-all duration-300 group">
+                <svg className="w-4 h-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span>Campus Photos</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isCampusPhotosOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {isCampusPhotosOpen && (
+                <div 
+                  className="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-xl z-50"
+                  onMouseEnter={handleCampusPhotosEnter}
+                  onMouseLeave={handleCampusPhotosLeave}
+                >
+                  <Link 
+                    to="/ubud-campus-gallery" 
+                    className="block px-4 py-3 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-t-lg" 
+                    onClick={() => setIsCampusPhotosOpen(false)}
+                  >
+                    Ubud Campus
+                  </Link>
+                  <Link 
+                    to="/uluwatu-campus-gallery" 
+                    className="block px-4 py-3 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" 
+                    onClick={() => setIsCampusPhotosOpen(false)}
+                  >
+                    Uluwatu Campus
+                  </Link>
+                  <Link 
+                    to="/canggu-campus-gallery" 
+                    className="block px-4 py-3 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors rounded-b-lg" 
+                    onClick={() => setIsCampusPhotosOpen(false)}
+                  >
+                    Canggu Campus
+                  </Link>
+                </div>
+              )}
+            </div>
 
             <Link 
               to="/blog"
