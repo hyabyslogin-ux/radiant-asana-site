@@ -13,6 +13,34 @@ const Footer = () => {
       
       <div className="relative py-24">
         <div className="container mx-auto px-4">
+          {/* Popular Keywords Section - Top of Footer */}
+          <div className="mb-20">
+            <div className="text-center mb-12">
+              <h3 className="font-playfair text-4xl font-bold mb-4 bg-gradient-to-r from-yoga-cream via-yoga-peach to-white bg-clip-text text-transparent">
+                Popular Keywords & Search Terms
+              </h3>
+              <p className="text-white/80 text-xl font-inter max-w-3xl mx-auto">
+                Discover what makes our Bali yoga retreats unique - from sacred valley experiences to cliff-top serenity
+              </p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4 max-w-6xl mx-auto">
+              {[
+                'Bali Yoga Retreat', 'Ubud Meditation', 'Uluwatu Cliff Yoga', 'Canggu Beach Wellness',
+                'Spiritual Awakening', 'Balinese Healing', 'Yoga Teacher Training', 'Mindfulness Retreat',
+                'Sacred Valley Ubud', 'Ocean View Yoga', 'Surf & Yoga', 'Authentic Bali Experience',
+                'Yoga Alliance Certified', 'Holistic Wellness', 'Chakra Balancing', 'Pranayama Classes',
+                'Meditation Sessions', 'Ayurvedic Healing', 'Bali Yoga School', 'Retreat Transformation'
+              ].map((keyword, index) => (
+                <span 
+                  key={index}
+                  className="bg-white/15 backdrop-blur-sm border border-white/30 rounded-full px-6 py-3 text-lg font-inter text-white/95 hover:bg-white/25 hover:scale-105 transition-all duration-300 cursor-pointer shadow-lg"
+                >
+                  {keyword}
+                </span>
+              ))}
+            </div>
+          </div>
+
           {/* Main Footer Content */}
           <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-16 mb-16">
             
@@ -34,25 +62,6 @@ const Footer = () => {
                   <p className="text-white/90 text-xl leading-relaxed max-w-xl font-inter">
                     Transform your mind, body, and soul through authentic Balinese healing practices, mindful yoga, and spiritual awakening in paradise. Experience the magic of Ubud, Uluwatu, and Canggu.
                   </p>
-                </div>
-              </div>
-              
-              {/* Keywords Section */}
-              <div className="mb-10">
-                <h4 className="font-playfair text-2xl font-semibold mb-6 text-yoga-cream">Popular Keywords</h4>
-                <div className="flex flex-wrap gap-3">
-                  {[
-                    'Bali Yoga Retreat', 'Ubud Meditation', 'Uluwatu Cliff Yoga', 'Canggu Beach Wellness',
-                    'Spiritual Awakening', 'Balinese Healing', 'Yoga Teacher Training', 'Mindfulness Retreat',
-                    'Sacred Valley Ubud', 'Ocean View Yoga', 'Surf & Yoga', 'Authentic Bali Experience'
-                  ].map((keyword, index) => (
-                    <span 
-                      key={index}
-                      className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-sm font-inter text-white/90 hover:bg-white/20 transition-all duration-300 cursor-pointer"
-                    >
-                      {keyword}
-                    </span>
-                  ))}
                 </div>
               </div>
               
