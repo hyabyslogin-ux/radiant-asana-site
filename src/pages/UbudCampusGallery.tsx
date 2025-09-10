@@ -9,26 +9,19 @@ const UbudCampusGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-  // Curated Ubud-specific gallery images (removing duplicates and selecting best ones)
+  // Curated Ubud-specific gallery images (removing duplicates and specified images)
   const allImages = [
     '/lovable-uploads/006e4b87-f686-4703-bc52-d499a78f67df.png',
     '/lovable-uploads/09dfc4f5-0f6e-4884-a662-96aa7dcd9ee6.png',
     '/lovable-uploads/09fdfbc9-ac2c-4ddc-acfb-efddfc6bf6e9.png',
-    '/lovable-uploads/14ae0fe9-ca33-463f-8698-24208b61a9f7.png',
     '/lovable-uploads/173537e5-6843-47f7-8ed8-37529c8eb27e.png',
-    '/lovable-uploads/1ca1ff4f-7a55-4087-9cc9-e270eb98efc8.png',
     '/lovable-uploads/1f912899-2fba-4e5e-900d-da42b1a0d026.png',
     '/lovable-uploads/31da4317-88ad-4519-8397-4428779fefc4.png',
     '/lovable-uploads/3a5a6a3a-f2c8-45ad-9db2-c6e920fd1a07.png',
     '/lovable-uploads/3b45fe7e-1832-4fee-92d1-320376e40af5.png',
-    '/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png',
-    '/lovable-uploads/46a670a0-e176-42ef-9f57-e6e9814b6bb9.png',
-    '/lovable-uploads/4d1d4d50-849e-4a3d-a886-557f7e491b7c.png',
     '/lovable-uploads/5117ac0b-9cea-4be9-83af-8536b5cd98d6.png',
     '/lovable-uploads/51653aef-5975-435c-b70d-7a6aa6565482.png',
-    '/lovable-uploads/52121918-0404-4420-9333-3747af0f9d7a.png',
     '/lovable-uploads/56b08f35-18f2-4235-8c72-80caf5e99d21.png',
-    '/lovable-uploads/5bc20f00-75c6-4f94-83f8-be72e5c72b78.png',
     '/lovable-uploads/62650205-96dd-45fd-a68e-6eb105184280.png',
     '/lovable-uploads/67c5fc29-d538-4741-a4aa-4e5affaebef3.png',
     '/lovable-uploads/71f70b0a-7265-4b1e-b0b1-c5a91f8e39fe.png',
@@ -39,8 +32,6 @@ const UbudCampusGallery = () => {
     '/lovable-uploads/8a948cb6-13f9-44c9-8fef-bce571ae9145.png',
     '/lovable-uploads/9d85e84b-2b54-463f-a296-cb8633fc085c.png',
     '/lovable-uploads/9e3fcc3b-076b-4912-b3b1-67a84baae207.png',
-    '/lovable-uploads/b36093bd-c1e4-40a7-8601-24e53d082b0c.png',
-    '/lovable-uploads/b6b1e71e-5af0-4506-8ed2-50fbb49feb6a.png',
     '/lovable-uploads/b7c337a0-f964-45ce-ba6f-0dbe704e5e64.png',
     '/lovable-uploads/b91ee822-4e33-4513-a5ec-abce556ce83a.png',
     '/lovable-uploads/cb9d17a6-619d-4a6f-ad15-e3dd95953b54.png',
