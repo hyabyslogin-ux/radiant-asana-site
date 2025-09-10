@@ -8,8 +8,8 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <MapPin className="w-5 h-5" />,
-      title: "Studio Location",
-      details: ["Jl. Campuhan III, Singakerta", "Kecamatan Ubud, Kabupaten Gianyar", "Bali 80571, Indonesia"]
+      title: "Locations",
+      details: ["Ubud", "Uluwatu", "Canggu"]
     },
     {
       icon: <Phone className="w-5 h-5" />,
@@ -50,7 +50,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div>
             <div className="text-center lg:text-left mb-8">
-              <h3 className="text-3xl font-bold text-primary mb-4">Visit Our Beautiful Studio</h3>
+              <h3 className="text-3xl font-bold text-primary mb-4">Discover Our Beautiful Retreat Centers</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Located in the heart of Ubud, surrounded by lush rice paddies and tropical gardens. 
                 Come experience the magic of Bali while deepening your yoga practice.

@@ -160,6 +160,9 @@ const SocialMedia = () => {
                 <span className="bg-yoga-plum/20 text-yoga-plum px-4 py-2 rounded-full text-sm font-medium">
                   #BaliYogaRetreatCanggu
                 </span>
+                <span className="bg-yoga-sage/20 text-yoga-plum px-4 py-2 rounded-full text-sm font-medium">
+                  #BaliYogaSchool
+                </span>
               </div>
             </div>
           </div>
