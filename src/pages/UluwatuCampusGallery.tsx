@@ -9,14 +9,9 @@ const UluwatuCampusGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-  // Uluwatu-specific gallery images with SEO-optimized alt texts
+  // Uluwatu-specific gallery images with SEO-optimized alt texts - Complete Collection (27 images)
   const uluwatuImages = [
-    // Keeping the best original images (removing positions #1,2,3,4,6,7,8,9,10,11,12)
-    {
-      src: '/lovable-uploads/3853444f-cf97-46b3-a8a2-62032660f070.png',
-      alt: 'Spacious bedroom with traditional Balinese touches Uluwatu retreat'
-    },
-    // Previously added facility images
+    // Previously added facility images from first batch
     {
       src: '/lovable-uploads/523532c2-67af-4331-aa18-fa4b5b8ea5ca.png',
       alt: 'Twilight infinity pool surrounded by tropical gardens Uluwatu yoga retreat Bali'
@@ -57,7 +52,7 @@ const UluwatuCampusGallery = () => {
       src: '/lovable-uploads/5177cc6c-4aa4-49fd-b496-12334ef94ed5.png',
       alt: 'Outdoor yoga class session cliff-top location Uluwatu yoga practice Bali'
     },
-    // New uploaded images with SEO-optimized alt text
+    // New batch of uploaded images with SEO-optimized alt text
     {
       src: '/lovable-uploads/c07619d4-f8aa-4444-88c4-fa19f00c2b19.png',
       alt: 'Luxury oceanview bedroom suite with private balcony Uluwatu cliff-top retreat Bali'
@@ -93,6 +88,39 @@ const UluwatuCampusGallery = () => {
     {
       src: '/lovable-uploads/cfcd0947-4b35-453b-8db6-aef9ac9db996.png',
       alt: 'Premium accommodation with traditional Javanese art Uluwatu cultural retreat center'
+    },
+    // Additional comprehensive facility images
+    {
+      src: '/lovable-uploads/006e4b87-f686-4703-bc52-d499a78f67df.png',
+      alt: 'Luxurious spa treatment room with ocean views Uluwatu wellness center Bali'
+    },
+    {
+      src: '/lovable-uploads/09dfc4f5-0f6e-4884-a662-96aa7dcd9ee6.png',
+      alt: 'Traditional Balinese yoga pavilion with thatched roof Uluwatu retreat'
+    },
+    {
+      src: '/lovable-uploads/14ae0fe9-ca33-463f-8698-24208b61a9f7.png',
+      alt: 'Meditation garden with stone pathways Uluwatu spiritual sanctuary'
+    },
+    {
+      src: '/lovable-uploads/1ca1ff4f-7a55-4087-9cc9-e270eb98efc8.png',
+      alt: 'Open-air dining pavilion with cliff views Uluwatu organic restaurant'
+    },
+    {
+      src: '/lovable-uploads/31da4317-88ad-4519-8397-4428779fefc4.png',
+      alt: 'Beachfront yoga platform at sunrise Uluwatu ocean meditation space'
+    },
+    {
+      src: '/lovable-uploads/3b45fe7e-1832-4fee-92d1-320376e40af5.png',
+      alt: 'Healing therapy room with natural elements Uluwatu holistic wellness center'
+    },
+    {
+      src: '/lovable-uploads/45b5e644-5e4c-49e2-8d00-745b07651022.png',
+      alt: 'Cliff-edge infinity pool with ocean panorama Uluwatu luxury yoga retreat'
+    },
+    {
+      src: '/lovable-uploads/46a670a0-e176-42ef-9f57-e6e9814b6bb9.png',
+      alt: 'Traditional Indonesian architecture yoga studio Uluwatu cultural retreat Bali'
     }
   ];
 
@@ -128,8 +156,8 @@ const UluwatuCampusGallery = () => {
           openGraph: {
             title: "Uluwatu Retreat Campus Photos - Cliff-top Yoga Sanctuary",
             description: "Discover our breathtaking Uluwatu retreat campus with stunning cliff-top views and luxury accommodation.",
-            image: "/lovable-uploads/3853444f-cf97-46b3-a8a2-62032660f070.png",
-            imageAlt: "Spacious bedroom with traditional Balinese touches Uluwatu retreat",
+            image: "/lovable-uploads/523532c2-67af-4331-aa18-fa4b5b8ea5ca.png",
+            imageAlt: "Twilight infinity pool surrounded by tropical gardens Uluwatu yoga retreat Bali",
             type: "website",
             locale: "en_US"
           },
