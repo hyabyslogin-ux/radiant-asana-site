@@ -11,6 +11,7 @@ const UluwatuCampusGallery = () => {
 
   // Uluwatu-specific gallery images with SEO-optimized alt texts
   const uluwatuImages = [
+    // Existing Uluwatu accommodation images
     {
       src: '/lovable-uploads/116af622-9ecd-4d77-a979-6c043102cfce.png',
       alt: 'Luxury bedroom with ocean view at Uluwatu yoga retreat center Bali'
@@ -58,6 +59,47 @@ const UluwatuCampusGallery = () => {
     {
       src: '/lovable-uploads/8ce277ec-6c63-418b-99ae-6196e53a01e8.png',
       alt: 'Traditional Balinese bedroom design Uluwatu retreat accommodation facilities'
+    },
+    // New Uluwatu facility images with SEO optimization
+    {
+      src: '/lovable-uploads/523532c2-67af-4331-aa18-fa4b5b8ea5ca.png',
+      alt: 'Twilight infinity pool surrounded by tropical gardens Uluwatu yoga retreat Bali'
+    },
+    {
+      src: '/lovable-uploads/bb8bd107-35c1-45e2-9c2f-5b03debc7247.png',
+      alt: 'Modern guest room with TV entertainment center Uluwatu cliff-top yoga sanctuary'
+    },
+    {
+      src: '/lovable-uploads/4e094a58-353b-4a0e-97e2-1f3ca09aca04.png',
+      alt: 'Elegant dining hall with garden views Uluwatu yoga retreat accommodation'
+    },
+    {
+      src: '/lovable-uploads/9e795bc7-6f70-4078-a708-4fe58fb4d7e5.png',
+      alt: 'Artistic dining room with Balinese cultural artwork Uluwatu yoga center'
+    },
+    {
+      src: '/lovable-uploads/83745c90-8bda-4e67-97c2-ba309016288b.png',
+      alt: 'Spacious yoga studio with wooden ceiling beams Uluwatu meditation hall Bali'
+    },
+    {
+      src: '/lovable-uploads/22ff8ffe-c4a1-40c4-ad3a-06b929134d99.png',
+      alt: 'Fully equipped kitchen facilities for healthy meals Uluwatu yoga retreat'
+    },
+    {
+      src: '/lovable-uploads/58833e66-1e43-412a-aa48-5ce164453851.png',
+      alt: 'Daytime swimming pool with sun loungers Uluwatu cliff-top wellness center'
+    },
+    {
+      src: '/lovable-uploads/713bd85a-f655-415b-9f6a-ddc9dffe4652.png',
+      alt: 'Outdoor dining terrace with tropical ambiance Uluwatu yoga retreat Bali'
+    },
+    {
+      src: '/lovable-uploads/022d795e-7c61-45d6-944d-7eca6a128cab.png',
+      alt: 'Evening exterior view traditional Balinese architecture Uluwatu yoga school'
+    },
+    {
+      src: '/lovable-uploads/5177cc6c-4aa4-49fd-b496-12334ef94ed5.png',
+      alt: 'Outdoor yoga class session cliff-top location Uluwatu yoga practice Bali'
     }
   ];
 
@@ -220,7 +262,7 @@ const UluwatuCampusGallery = () => {
                 Campus Gallery
               </h2>
               <p className="font-inter text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Discover our cliff-top sanctuary where dramatic ocean views meet luxury accommodation and serene yoga spaces
+                Discover our cliff-top sanctuary where dramatic ocean views meet luxury accommodation, serene yoga spaces, and complete wellness facilities
               </p>
             </div>
             
