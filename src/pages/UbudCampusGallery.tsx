@@ -118,7 +118,7 @@ const UbudCampusGallery = () => {
               <h1 className="font-playfair text-6xl sm:text-7xl lg:text-8xl font-bold leading-none">
                 <span className="block text-white drop-shadow-xl tracking-tight">Ubud Retreat</span>
                 <span className="block bg-gradient-to-r from-yoga-cream via-yoga-peach to-yoga-rose bg-clip-text text-transparent font-playfair">
-                  Campus Photos
+                  Photos
                 </span>
               </h1>
               <div className="flex items-center justify-center gap-4 mb-6">
