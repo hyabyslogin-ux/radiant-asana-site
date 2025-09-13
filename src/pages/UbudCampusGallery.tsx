@@ -17,7 +17,6 @@ const UbudCampusGallery = () => {
     '/lovable-uploads/1f912899-2fba-4e5e-900d-da42b1a0d026.png',
     '/lovable-uploads/31da4317-88ad-4519-8397-4428779fefc4.png',
     '/lovable-uploads/5117ac0b-9cea-4be9-83af-8536b5cd98d6.png',
-    '/lovable-uploads/56b08f35-18f2-4235-8c72-80caf5e99d21.png',
     '/lovable-uploads/62650205-96dd-45fd-a68e-6eb105184280.png',
     '/lovable-uploads/67c5fc29-d538-4741-a4aa-4e5affaebef3.png',
     '/lovable-uploads/71f70b0a-7265-4b1e-b0b1-c5a91f8e39fe.png',
