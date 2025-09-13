@@ -298,38 +298,125 @@ const ElevenDaysRetreat = () => {
                   <span className="font-inter text-yoga-earth font-medium">Sacred Schedule</span>
                 </div>
                 <h2 className="font-playfair text-5xl lg:text-6xl font-bold text-yoga-earth mb-4">
-                  Your 11-Day
+                  Your Daily
                   <span className="block bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-plum bg-clip-text text-transparent">
-                    Sacred Journey
+                    Schedule
                   </span>
                 </h2>
                 <p className="font-inter text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                  A divinely crafted journey through complete spiritual mastery and transcendent awakening
+                  A meticulously crafted journey through complete spiritual mastery and transcendent awakening
                 </p>
               </div>
             </div>
 
             <div className="px-12 py-16">
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="space-y-8">
+                
+                {/* Day 1 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-plum/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum to-yoga-rose rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">1</span>
+                    </div>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 1 Schedule</h3>
+                      <p className="font-inter text-yoga-plum">Sacred Arrival & Welcome</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Sacred Check in</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:30 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Welcome Lunch</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">4:00 - 5:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Sacred Healing Treatment</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">7:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Sacred Dinner</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Days 2-10 Schedules */}
                 {[
-                  { phase: "Days 1-3", title: "Sacred Foundation", desc: "Arrival, grounding, and establishing your sacred practice foundation" },
-                  { phase: "Days 4-6", title: "Deepening Practice", desc: "Building strength, exploring inner wisdom, and breaking through barriers" },
-                  { phase: "Days 7-9", title: "Spiritual Mastery", desc: "Advanced techniques, awakening consciousness, and transcendent experiences" },
-                  { phase: "Days 10-11", title: "Divine Integration", desc: "Wisdom consolidation and sacred completion of your transformation" }
-                ].map((item, index) => (
-                  <Card key={index} className="group bg-gradient-to-br from-white to-yoga-cream/10 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-cream/20 hover:scale-105">
-                    <CardHeader className="pb-4">
-                      <div className="w-16 h-16 bg-gradient-to-br from-yoga-sage via-yoga-earth to-yoga-plum rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <Calendar className="w-8 h-8 text-white" />
+                  { day: 2, theme: "Sacred Foundation & Sound Healing", color: "sage" },
+                  { day: 3, theme: "Divine Reiki Healing & Deepening", color: "earth" },
+                  { day: 4, theme: "Sacred Sound Healing & Inner Journey", color: "rose" },
+                  { day: 5, theme: "Advanced Sacred Reiki & Transformation", color: "peach" },
+                  { day: 6, theme: "Divine Sound Healing & Mastery", color: "cream" },
+                  { day: 7, theme: "Sacred Advanced Practice & Integration", color: "plum" },
+                  { day: 8, theme: "Peak Divine Experience & Healing", color: "sage" },
+                  { day: 9, theme: "Sacred Wisdom Integration & Mastery", color: "earth" },
+                  { day: 10, theme: "Divine Transcendence & Completion", color: "rose" }
+                ].map(({ day, theme, color }) => (
+                  <div key={day} className={`bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-${color}/10`}>
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className={`w-16 h-16 bg-gradient-to-br from-yoga-${color} to-yoga-earth rounded-2xl flex items-center justify-center`}>
+                        <span className="font-playfair text-white text-2xl font-bold">{day}</span>
                       </div>
-                      <CardTitle className="text-center text-yoga-earth text-lg font-playfair">{item.phase}</CardTitle>
-                    </CardHeader>
-                    <CardContent className="text-center pt-0">
-                      <h3 className="font-playfair font-bold mb-3 text-yoga-earth text-xl">{item.title}</h3>
-                      <p className="font-inter text-gray-600 text-sm leading-relaxed">{item.desc}</p>
-                    </CardContent>
-                  </Card>
+                      <div>
+                        <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day {day} Schedule</h3>
+                        <p className={`font-inter text-yoga-${color}`}>{theme}</p>
+                      </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4 text-center">
+                      {["7:00 - 8:00 AM", "8:00 - 9:00 AM", "9:30 AM", "11:00 - 12:00 PM", "12:30 PM & 4:00 - 5:00 PM", "7:00 PM"].map((time, idx) => {
+                        const activities = ["Sacred Pranayama & Meditation", "Divine Hatha Vinyasa Yoga", "Sacred Breakfast", 
+                          (day === 3 || day === 5) ? "Sacred Reiki Healing Session" : 
+                          (day === 7 || day === 8) ? "Advanced Sacred Practice" : "Divine Sound Healing Session", 
+                          "Sacred Lunch & Healing Massage", "Sacred Dinner"];
+                        const colors = ["cream", "sage", "peach", "rose", "earth", "plum"];
+                        return (
+                          <div key={idx} className={`bg-yoga-${colors[idx]}/20 rounded-xl p-4`}>
+                            <p className="font-inter font-semibold text-yoga-earth text-sm">{time}</p>
+                            <p className="font-inter text-xs text-gray-600">{activities[idx]}</p>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
                 ))}
+
+                {/* Day 11 Final Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-plum/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum to-yoga-rose rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">11</span>
+                    </div>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 11 Schedule</h3>
+                      <p className="font-inter text-yoga-plum">Sacred Completion & Divine Departure</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Final Sacred Pranayama & Meditation</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Divine Completion Ceremony</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">9:30 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Sacred Farewell Breakfast</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">11:00 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Final Divine Blessings</p>
+                    </div>
+                    <div className="bg-yoga-earth/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Sacred Check out</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
