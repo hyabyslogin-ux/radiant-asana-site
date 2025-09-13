@@ -3,6 +3,15 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import { Calendar, Users, Heart } from 'lucide-react';
+import ubud3DayImage from '@/assets/ubud-3day-retreat.jpg';
+import ubud4DayImage from '@/assets/ubud-4day-retreat.jpg';
+import ubud5DayImage from '@/assets/ubud-5day-retreat.jpg';
+import ubud6DayImage from '@/assets/ubud-6day-retreat.jpg';
+import ubud7DayImage from '@/assets/ubud-7day-retreat.jpg';
+import ubud8DayImage from '@/assets/ubud-8day-retreat.jpg';
+import ubud9DayImage from '@/assets/ubud-9day-retreat.jpg';
+import ubud10DayImage from '@/assets/ubud-10day-retreat.jpg';
+import ubud11DayImage from '@/assets/ubud-11day-retreat.jpg';
 
 const UbudRetreats = () => {
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
@@ -17,7 +26,7 @@ const UbudRetreats = () => {
       days: '3 Days',
       price: '$265',
       level: 'All Levels',
-      image: '/lovable-uploads/f58e04e1-fda5-48c9-b3ab-41f6f7235e94.png',
+      image: ubud3DayImage,
       title: '3 Days Yoga Retreat in Ubud Bali',
       description: 'Immerse yourself in the sacred energy of Ubud with this transformative 3-day retreat. Experience daily hatha vinyasa yoga, meditation, and pranayama sessions in the spiritual heart of Bali. This perfect introduction retreat includes vegan meals, swimming pool access, Balinese massages, and sound healing sessions.',
       highlights: [
@@ -42,7 +51,7 @@ const UbudRetreats = () => {
       days: '4 Days',
       price: '$372',
       level: 'All Levels',
-      image: '/lovable-uploads/1d7f913b-8b12-4d76-a477-0c6d244780e6.png',
+      image: ubud4DayImage,
       title: '4 Days Yoga Retreat in Ubud Bali',
       description: 'Deepen your practice with this 4-day retreat featuring daily hatha vinyasa yoga combined with transformative healing sessions. Experience the perfect balance of yoga, meditation, pranayama, and traditional Balinese healing modalities including massages, sound healing, and reiki sessions.',
       highlights: [
@@ -68,7 +77,7 @@ const UbudRetreats = () => {
       days: '5 Days',
       price: '$478',
       level: 'All Levels',
-      image: '/lovable-uploads/f2151035-c120-4b70-b58d-3ba55d30bf7f.png',
+      image: ubud5DayImage,
       title: '5 Days Yoga Retreat in Ubud Bali',
       description: 'Dive deeper into traditional practices with this comprehensive 5-day retreat. Focus on daily hatha vinyasa yoga, meditation, and pranayama while enjoying enhanced healing experiences with multiple Balinese massages, sound healing, and reiki sessions in Ubud\'s serene environment.',
       highlights: [
@@ -94,7 +103,7 @@ const UbudRetreats = () => {
       days: '6 Days',
       price: '$584',
       level: 'All Levels',
-      image: '/lovable-uploads/76153bc7-9de3-4b24-b604-6f11f047c77a.png',
+      image: ubud6DayImage,
       title: '6 Days Yoga Retreat in Ubud Bali',
       description: 'Embark on a transformative 6-day journey focusing on deeper healing and spiritual practices. Experience daily yoga sessions combined with an abundance of healing treatments including multiple Balinese massages, sound healing, and reiki sessions for complete rejuvenation.',
       highlights: [
@@ -120,7 +129,7 @@ const UbudRetreats = () => {
       days: '7 Days',
       price: '$690',
       level: 'All Levels',
-      image: '/lovable-uploads/eb7f3511-36b4-4061-b6ee-7bc64b93bd1e.png',
+      image: ubud7DayImage,
       title: '7 Days Yoga Retreat in Ubud Bali',
       description: 'Experience a comprehensive 7-day wellness transformation that addresses body, mind, and spirit. This all-levels retreat combines daily hatha vinyasa yoga with extensive healing modalities including multiple massages, sound healing, and reiki sessions for deep renewal.',
       highlights: [
@@ -146,7 +155,7 @@ const UbudRetreats = () => {
       days: '8 Days',
       price: '$796',
       level: 'All Levels',
-      image: '/lovable-uploads/6e9de023-381f-457c-9bae-69019d80a410.png',
+      image: ubud8DayImage,
       title: '8 Days Yoga Retreat in Ubud Bali',
       description: 'Designed for deep transformation, this 8-day retreat focuses on intensive daily practices and comprehensive healing experiences. Master daily hatha vinyasa yoga, meditation, and pranayama while enjoying extensive spa treatments and healing sessions.',
       highlights: [
@@ -172,7 +181,7 @@ const UbudRetreats = () => {
       days: '9 Days',
       price: '$930',
       level: 'All Levels',
-      image: '/lovable-uploads/c07619d4-f8aa-4444-88c4-fa19f00c2b19.png',
+      image: ubud9DayImage,
       title: '9 Days Yoga Retreat in Ubud Bali',
       description: 'An intensive 9-day program for comprehensive wellness transformation. This retreat combines daily hatha vinyasa yoga with extensive healing treatments and introduces Ayurveda consultation for personalized lifestyle guidance and holistic well-being.',
       highlights: [
@@ -199,7 +208,7 @@ const UbudRetreats = () => {
       days: '10 Days',
       price: '$1009',
       level: 'All Levels',
-      image: '/lovable-uploads/cfcd0947-4b35-453b-8db6-aef9ac9db996.png',
+      image: ubud10DayImage,
       title: '10 Days Yoga Retreat in Ubud Bali',
       description: 'Embark on a profound 10-day spiritual and wellness journey. This comprehensive retreat includes daily practices, extensive healing treatments, Ayurveda consultation, and sacred aura cleansing ceremonies for complete transformation.',
       highlights: [
@@ -227,7 +236,7 @@ const UbudRetreats = () => {
       days: '11 Days',
       price: '$1115',
       level: 'All Levels',
-      image: '/lovable-uploads/2666d43f-e0a5-4bba-a044-58ad4248a4cf.png',
+      image: ubud11DayImage,
       title: '11 Days Yoga Retreat in Ubud Bali',
       description: 'The ultimate 11-day retreat for complete transformation and spiritual awakening. This comprehensive program includes all healing modalities, Ayurveda consultation, aura cleansing ceremonies, and sacred Shiva mantra meditation for the deepest spiritual experience.',
       highlights: [
