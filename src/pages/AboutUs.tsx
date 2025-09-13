@@ -7,11 +7,13 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SEO from '@/components/SEO';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import groupHeroBg from '@/assets/group-hero-bg.jpg';
+import yogiHimanshu from '@/assets/yogi-himanshu.jpg';
 
 const AboutUs = () => {
   const stats = [
     { number: "10+", label: "Years Experience", icon: Award },
-    { number: "5000+", label: "Happy Students", icon: Users },
+    { number: "10K+", label: "Happy Students", icon: Users },
     { number: "50+", label: "Countries Reached", icon: Globe },
     { number: "3", label: "Sacred Locations", icon: MapPin }
   ];
@@ -69,8 +71,11 @@ const AboutUs = () => {
       
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-hero"></div>
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${groupHeroBg})` }}
+        ></div>
+        <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative container mx-auto px-6 py-20 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
@@ -80,18 +85,19 @@ const AboutUs = () => {
               Transforming Lives Through Authentic Balinese Wisdom & Modern Wellness
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/3-days-retreat">
+              <Link to="/contact-us">
                 <Button className="bg-white text-primary hover:bg-white/90 px-8 py-3 text-lg">
                   Start Your Journey
                 </Button>
               </Link>
-              <Button 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg"
-                onClick={() => document.getElementById('story')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Our Story
-              </Button>
+              <Link to="/founder">
+                <Button 
+                  variant="outline" 
+                  className="border-white text-white hover:bg-white hover:text-primary px-8 py-3 text-lg"
+                >
+                  Our Founder
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -112,33 +118,40 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Our Story Section */}
+      {/* Our Founder Section */}
       <section id="story" className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Story</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Founder</h2>
             <p className="text-xl text-muted-foreground">
-              Born from a deep love for Balinese culture and ancient wisdom
+              The journey of transformation from athlete to spiritual guide
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg leading-relaxed">
-                Bali Yoga Retreats was founded in 2014 with a simple yet profound mission: to share the authentic spiritual wisdom of Bali with seekers from around the world. What started as a small gathering in Ubud has grown into a transformative experience that has touched thousands of lives.
+                The story of Bali Yoga Retreats started in 2017 in the birthplace of yoga - Rishikesh, India - by Yogi Himanshu with a simple yet profound mission: to share the authentic spiritual wisdom of Yoga with seekers from around the world. Yogi Himanshu visited Bali with no planning as a holiday, and the powerful energy of Ubud grabbed his heart to create the second yoga school on his own in this beautiful island. What started as the first yoga teacher training school in Ubud has grown into a community that transform many lives through various yoga / healing retreats and courses.
               </p>
               <p className="text-lg leading-relaxed">
-                Our founder, Kadek Sari, grew up in a traditional Balinese family where yoga and meditation were not just practices but a way of life. After studying with masters in India and experiencing the transformative power of these ancient teachings, she felt called to create a space where authentic Balinese wisdom could be shared with the modern world.
+                Our founder, Yogi Himanshu was born in the world capital of yoga Rishikesh. He began his journey early as a multi-talented athlete, representing his state and nation in various sports disciplines. During his time in rigorous military-style training, Himanshu suffered an internal injury—one that no medical treatment could cure. What seemed like a physical setback eventually became the gateway to a profound spiritual awakening. Turning to meditation as his last hope, he devoted himself fully to the practice for over a year. That suffering has brought the light to his life, the story of Bali Yoga Retreat has begun.
               </p>
               <p className="text-lg leading-relaxed">
-                Today, we continue to honor this vision by offering retreats that blend traditional Balinese spiritual practices with contemporary wellness approaches, creating a unique experience that nurtures both personal growth and cultural understanding.
+                Today, we continue to honor this vision by offering retreats that blend traditional Balinese spiritual practices with yoga, creating a unique experience that nurtures both personal growth and cultural understanding.
               </p>
+              <div className="pt-4">
+                <Link to="/founder">
+                  <Button className="bg-primary text-white hover:bg-primary/90 px-6 py-3">
+                    About Yogi Himanshu
+                  </Button>
+                </Link>
+              </div>
             </div>
             <div className="relative">
               <div className="aspect-square bg-gradient-primary rounded-3xl overflow-hidden">
                 <img 
-                  src="/lovable-uploads/31da4317-88ad-4519-8397-4428779fefc4.png" 
-                  alt="Balinese temple ceremony" 
+                  src={yogiHimanshu} 
+                  alt="Yogi Himanshu - Founder of Bali Yoga Retreats" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -153,43 +166,55 @@ const AboutUs = () => {
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Philosophy</h2>
             <p className="text-xl text-muted-foreground">
-              Rooted in the sacred Balinese principle of Tri Hita Karana
+              Rooted in the authentic yoga teaching from Rishikesh, India
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <Card className="text-center p-6 hover:shadow-glow transition-all duration-300">
               <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Heart className="w-8 h-8 text-white" />
+                <div className="aspect-square mb-4 rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/3a5a6a3a-f2c8-45ad-9db2-c6e920fd1a07.png" 
+                    alt="Holistic Retreat Experiences" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Parahyangan</h3>
+                <h3 className="text-xl font-bold mb-3">Holistic Retreat Experiences</h3>
                 <p className="text-muted-foreground">
-                  Harmonious relationship with the divine through meditation, prayer, and spiritual practice
+                  Our yoga retreats are designed to provide yoga and wellness experiences holistically from many directions. We are not limited to provided yoga sessions, but a whole experience.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="text-center p-6 hover:shadow-glow transition-all duration-300">
               <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="w-8 h-8 text-white" />
+                <div className="aspect-square mb-4 rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/82f12a81-9889-4829-a670-f5c77558bc74.png" 
+                    alt="Yoga As It Is" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Pawongan</h3>
+                <h3 className="text-xl font-bold mb-3">Yoga As It Is</h3>
                 <p className="text-muted-foreground">
-                  Balanced relationships with fellow humans through community, compassion, and understanding
+                  Unlike many other retreats, we provide yoga in its purest form thorough traditional practices. Unaffected by constantly changing trends, we always provide what is real.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="text-center p-6 hover:shadow-glow transition-all duration-300">
               <CardContent className="pt-6">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Leaf className="w-8 h-8 text-white" />
+                <div className="aspect-square mb-4 rounded-lg overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/b91ee822-4e33-4513-a5ec-abce556ce83a.png" 
+                    alt="Practice, Not Performance" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Palemahan</h3>
+                <h3 className="text-xl font-bold mb-3">Practice, Not Performance</h3>
                 <p className="text-muted-foreground">
-                  Respectful relationship with nature through sustainable practices and environmental consciousness
+                  We protect the purity of yoga through our existence. Our yoga retreats in Bali are for practice, not for performance.
                 </p>
               </CardContent>
             </Card>
@@ -197,7 +222,7 @@ const AboutUs = () => {
 
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-lg leading-relaxed">
-              This ancient Balinese philosophy guides everything we do, from our teaching methods to our environmental practices. We believe that true wellness comes from achieving balance in all three aspects of life.
+              These core principles guide everything we do, from our teaching methods to our retreat experiences. We believe that authentic yoga practice creates lasting transformation in all aspects of life.
             </p>
           </div>
         </div>
