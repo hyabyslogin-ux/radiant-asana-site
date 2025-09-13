@@ -228,32 +228,44 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Our Values Section */}
+      {/* Our Memories Section */}
       <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Values</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Memories</h2>
             <p className="text-xl text-muted-foreground">
-              The principles that guide our practice and community
+              We have been creating a space for each individual's transformation.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {values.map((value, index) => (
-              <Card key={index} className="p-6 hover:shadow-glow transition-all duration-300">
-                <CardContent className="pt-6">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
-                      <value.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold mb-3">{value.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed">{value.description}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="aspect-[4/3] rounded-lg overflow-hidden">
+              <img 
+                src="/lovable-uploads/3a5a6a3a-f2c8-45ad-9db2-c6e920fd1a07.png" 
+                alt="Yoga retreat memory 1" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="aspect-[4/3] rounded-lg overflow-hidden">
+              <img 
+                src="/lovable-uploads/82f12a81-9889-4829-a670-f5c77558bc74.png" 
+                alt="Yoga retreat memory 2" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="aspect-[4/3] rounded-lg overflow-hidden">
+              <img 
+                src="/lovable-uploads/b91ee822-4e33-4513-a5ec-abce556ce83a.png" 
+                alt="Yoga retreat memory 3" 
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Button className="bg-primary text-white hover:bg-primary/90 px-8 py-3">
+              View More
+            </Button>
           </div>
         </div>
       </section>
