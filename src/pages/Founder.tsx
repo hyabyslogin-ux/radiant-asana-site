@@ -320,15 +320,7 @@ const Founder = () => {
                   </blockquote>
                 </div>
                 
-                <div className="pt-8">
-                  <Button 
-                    size="lg"
-                    className="bg-gradient-to-r from-yoga-sage via-yoga-earth to-yoga-plum hover:opacity-90 text-white px-12 py-4 text-lg"
-                    onClick={() => window.location.href = '/contact-us'}
-                  >
-                    Connect with Yogi Himanshu
-                  </Button>
-                </div>
+               
               </div>
             </div>
           </div>
