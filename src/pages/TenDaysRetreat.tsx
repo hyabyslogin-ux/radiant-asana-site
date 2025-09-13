@@ -310,124 +310,112 @@ const TenDaysRetreat = () => {
             </div>
 
             <div className="px-12 py-16">
-              <div className="grid gap-8">
+              <div className="space-y-8">
+                
+                {/* Day 1 Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-plum/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum to-yoga-rose rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">1</span>
+                    </div>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 1 Schedule</h3>
+                      <p className="font-inter text-yoga-plum">Arrival & Welcome</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Check in</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:30 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Lunch</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">4:00 - 5:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Balinese Massage Treatment</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">7:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Dinner</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Days 2-9 Schedules */}
                 {[
-                  {
-                    day: "Day 1",
-                    title: "Sacred Arrival",
-                    focus: "Grounding & Intention Setting",
-                    activities: ["Welcome ceremony", "Gentle yoga introduction", "Group meditation", "Sacred intention setting"],
-                    highlight: "Begin your transformative journey"
-                  },
-                  {
-                    day: "Day 2",
-                    title: "Foundation Building",
-                    focus: "Establishing Practice",
-                    activities: ["Morning pranayama", "Hatha yoga basics", "Philosophy introduction", "Evening reflection"],
-                    highlight: "Build strong practice foundation"
-                  },
-                  {
-                    day: "Day 3",
-                    title: "Deepening Practice",
-                    focus: "Strength & Flexibility",
-                    activities: ["Advanced breathing", "Vinyasa flow", "Sound healing session", "Meditation techniques"],
-                    highlight: "Expand physical capabilities"
-                  },
-                  {
-                    day: "Day 4",
-                    title: "Inner Exploration",
-                    focus: "Self-Discovery",
-                    activities: ["Chakra meditation", "Therapeutic yoga", "Personal coaching", "Journaling practice"],
-                    highlight: "Discover inner wisdom"
-                  },
-                  {
-                    day: "Day 5",
-                    title: "Transformation Gateway",
-                    focus: "Breaking Through Barriers",
-                    activities: ["Advanced asanas", "Energy healing", "Deep meditation", "Emotional release work"],
-                    highlight: "Break through limitations"
-                  },
-                  {
-                    day: "Day 6",
-                    title: "Mastery Development",
-                    focus: "Advanced Techniques",
-                    activities: ["Complex poses", "Breathwork mastery", "Philosophy deep dive", "Spiritual practices"],
-                    highlight: "Develop advanced skills"
-                  },
-                  {
-                    day: "Day 7",
-                    title: "Spiritual Awakening",
-                    focus: "Higher Consciousness",
-                    activities: ["Silent meditation", "Advanced pranayama", "Kundalini practices", "Sacred ceremonies"],
-                    highlight: "Awaken higher consciousness"
-                  },
-                  {
-                    day: "Day 8",
-                    title: "Peak Experience",
-                    focus: "Ultimate Integration",
-                    activities: ["Master-level practice", "Healing ceremonies", "Wisdom integration", "Group bonding"],
-                    highlight: "Reach peak transformation"
-                  },
-                  {
-                    day: "Day 9",
-                    title: "Wisdom Integration",
-                    focus: "Consolidation",
-                    activities: ["Integration practices", "Personal planning", "Celebration ceremony", "Final teachings"],
-                    highlight: "Integrate all wisdom gained"
-                  },
-                  {
-                    day: "Day 10",
-                    title: "Sacred Completion",
-                    focus: "New Beginning",
-                    activities: ["Graduation ceremony", "Final meditation", "Blessing circle", "Journey forward planning"],
-                    highlight: "Complete your transformation"
-                  }
-                ].map((schedule, index) => (
-                  <div key={index} className="group bg-gradient-to-r from-white to-yoga-cream/5 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-cream/20">
-                    <div className="flex flex-col lg:flex-row lg:items-center gap-6">
-                      <div className="flex-shrink-0">
-                        <div className="w-20 h-20 bg-gradient-to-br from-yoga-sage via-yoga-earth to-yoga-plum rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                          <span className="font-playfair text-lg font-bold text-white">{schedule.day.split(' ')[1]}</span>
-                        </div>
-                        <div className="text-center">
-                          <div className="text-sm font-medium text-yoga-earth">{schedule.day}</div>
-                        </div>
+                  { day: 2, theme: "Foundation & Sound Healing", color: "sage" },
+                  { day: 3, theme: "Reiki Healing & Deepening", color: "earth" },
+                  { day: 4, theme: "Sound Healing & Inner Journey", color: "rose" },
+                  { day: 5, theme: "Advanced Reiki & Transformation", color: "peach" },
+                  { day: 6, theme: "Sound Healing & Mastery", color: "cream" },
+                  { day: 7, theme: "Advanced Practice & Integration", color: "plum" },
+                  { day: 8, theme: "Peak Experience & Healing", color: "sage" },
+                  { day: 9, theme: "Wisdom Integration & Completion", color: "earth" }
+                ].map(({ day, theme, color }) => (
+                  <div key={day} className={`bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-${color}/10`}>
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className={`w-16 h-16 bg-gradient-to-br from-yoga-${color} to-yoga-earth rounded-2xl flex items-center justify-center`}>
+                        <span className="font-playfair text-white text-2xl font-bold">{day}</span>
                       </div>
-                      
-                      <div className="flex-grow space-y-4">
-                        <div>
-                          <h3 className="font-playfair text-2xl font-bold text-yoga-earth mb-2">{schedule.title}</h3>
-                          <p className="font-inter text-lg text-yoga-sage font-medium mb-4">{schedule.focus}</p>
-                        </div>
-                        
-                        <div className="grid md:grid-cols-2 gap-6">
-                          <div>
-                            <h4 className="font-inter font-semibold text-gray-800 mb-3">Daily Activities</h4>
-                            <ul className="space-y-2">
-                              {schedule.activities.map((activity, idx) => (
-                                <li key={idx} className="flex items-center gap-2 text-gray-600">
-                                  <div className="w-1.5 h-1.5 bg-yoga-sage rounded-full"></div>
-                                  <span className="font-inter text-sm">{activity}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                          
-                          <div className="flex items-center">
-                            <div className="bg-gradient-to-br from-yoga-peach/10 to-yoga-rose/10 rounded-xl p-4 border border-yoga-peach/20">
-                              <div className="flex items-center gap-3">
-                                <div className="w-8 h-8 bg-yoga-earth/20 rounded-full flex items-center justify-center">
-                                  <Star className="w-4 h-4 text-yoga-earth" />
-                                </div>
-                                <p className="font-inter text-sm text-gray-700 italic">{schedule.highlight}</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                      <div>
+                        <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day {day} Schedule</h3>
+                        <p className={`font-inter text-yoga-${color}`}>{theme}</p>
                       </div>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-4 text-center">
+                      {["7:00 - 8:00 AM", "8:00 - 9:00 AM", "9:30 AM", "11:00 - 12:00 PM", "12:30 PM & 4:00 - 5:00 PM", "7:00 PM"].map((time, idx) => {
+                        const activities = ["Pranayama & Meditation", "Hatha Vinyasa Yoga", "Breakfast", 
+                          (day === 3 || day === 5) ? "Reiki Healing Session" : 
+                          (day === 7 || day === 8) ? "Advanced Practice" : "Sound Healing Session", 
+                          "Lunch & Massage", "Dinner"];
+                        const colors = ["cream", "sage", "peach", "rose", "earth", "plum"];
+                        return (
+                          <div key={idx} className={`bg-yoga-${colors[idx]}/20 rounded-xl p-4`}>
+                            <p className="font-inter font-semibold text-yoga-earth text-sm">{time}</p>
+                            <p className="font-inter text-xs text-gray-600">{activities[idx]}</p>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 ))}
+
+                {/* Day 10 Final Schedule */}
+                <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-yoga-plum/10">
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-yoga-plum to-yoga-rose rounded-2xl flex items-center justify-center">
+                      <span className="font-playfair text-white text-2xl font-bold">10</span>
+                    </div>
+                    <div>
+                      <h3 className="font-playfair text-2xl font-bold text-yoga-earth">Day 10 Schedule</h3>
+                      <p className="font-inter text-yoga-plum">Sacred Completion & Departure</p>
+                    </div>
+                  </div>
+                  <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 text-center">
+                    <div className="bg-yoga-cream/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">7:00 - 8:00 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Final Pranayama & Meditation</p>
+                    </div>
+                    <div className="bg-yoga-sage/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">8:00 - 9:00 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Completion Ceremony</p>
+                    </div>
+                    <div className="bg-yoga-peach/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">9:30 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Farewell Breakfast</p>
+                    </div>
+                    <div className="bg-yoga-rose/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">11:00 AM</p>
+                      <p className="font-inter text-sm text-gray-600">Final Blessings</p>
+                    </div>
+                    <div className="bg-yoga-earth/20 rounded-xl p-4">
+                      <p className="font-inter font-semibold text-yoga-earth">12:00 PM</p>
+                      <p className="font-inter text-sm text-gray-600">Check out</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
