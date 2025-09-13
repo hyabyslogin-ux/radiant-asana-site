@@ -116,6 +116,27 @@ export const seoPages: Record<string, SEOData> = {
     }
   },
 
+  gallery: {
+    title: 'Photo Gallery - Bali Yoga Retreat Memories | Transformative Moments Captured',
+    description: 'Explore our photo gallery showcasing authentic yoga experiences in Bali. See partner yoga, beach sessions, cultural immersion, and transformative moments from our retreats.',
+    keywords: ['bali yoga retreat photos', 'yoga retreat gallery', 'partner yoga bali', 'beach yoga photos', 'yoga retreat memories', 'authentic yoga bali'],
+    canonical: `${baseUrl}/photo-gallery`,
+    openGraph: {
+      title: 'Photo Gallery - Bali Yoga Retreat Transformative Moments',
+      description: 'Experience the magic of our Bali yoga retreats through our photo gallery. See authentic moments of transformation and connection.',
+      image: defaultImage,
+      imageAlt: 'Collection of beautiful moments from Bali yoga retreats',
+      type: 'website',
+      locale: 'en_US'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Bali Yoga Retreat Photo Gallery',
+      description: 'Authentic moments of transformation and connection captured in Bali.',
+      image: defaultImage
+    }
+  },
+
   // Dynamic retreat pages
   'ubud-3-days': {
     title: '3 Days Ubud Yoga Retreat - Sacred Valley Spiritual Immersion | From $675',

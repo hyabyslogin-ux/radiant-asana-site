@@ -7,6 +7,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import OrganizationSchema from '@/components/schema/OrganizationSchema';
 import WebSiteSchema from '@/components/schema/WebSiteSchema';
 import PreloadCriticalResources from '@/components/performance/PreloadCriticalResources';
+import PhotoGallery from "./pages/PhotoGallery";
 import Index from "./pages/Index";
 import BlogPage from "./pages/Blog";
 import Founder from "./pages/Founder";
@@ -63,6 +64,7 @@ const App = () => (
         <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/photo-gallery" element={<PhotoGallery />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/founder" element={<Founder />} />
           <Route path="/3-days-retreat" element={<ThreeDaysRetreat />} />
