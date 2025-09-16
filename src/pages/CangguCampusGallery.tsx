@@ -222,6 +222,46 @@ const CangguCampusGallery = () => {
                 Immerse yourself in Canggu's vibrant beach culture where surf meets wellness and creativity flows as freely as the ocean waves
               </p>
             </div>
+
+            {/* Video Section */}
+            <div className="bg-gradient-to-br from-yoga-sage/10 to-yoga-earth/10 backdrop-blur-sm rounded-3xl p-8 lg:p-12 shadow-xl border border-yoga-sage/20 mb-12">
+              <div className="text-center mb-8">
+                <h3 className="font-playfair text-3xl lg:text-4xl font-bold text-yoga-earth mb-4">
+                  Experience Our Canggu Retreat
+                </h3>
+                <p className="font-inter text-lg text-gray-600 max-w-2xl mx-auto">
+                  Take a virtual tour of our beautiful Canggu campus and discover the serene spaces where your transformation begins
+                </p>
+              </div>
+              
+              {/* Video Player */}
+              <div className="relative max-w-4xl mx-auto">
+                <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+                  <video 
+                    className="w-full h-full object-cover"
+                    controls
+                    preload="metadata"
+                    poster={cangguBuilding}
+                  >
+                    <source 
+                      src="https://www.baliyogaschool.com/wp-content/uploads/2025/09/BYS-Canggu-Retreat-Site-Video.mp4" 
+                      type="video/mp4" 
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                  
+                  {/* Video Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
+                </div>
+                
+                {/* Video Caption */}
+                <div className="text-center mt-6">
+                  <p className="font-inter text-sm text-gray-600 italic">
+                    Discover the peaceful atmosphere and beautiful facilities at our Canggu yoga retreat center
+                  </p>
+                </div>
+              </div>
+            </div>
             
             {/* Masonry Grid */}
             <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
