@@ -5,59 +5,58 @@ import { Button } from '@/components/ui/button';
 import { X, ZoomIn, ArrowLeft, ArrowRight } from 'lucide-react';
 import SEO from '@/components/SEO';
 
+// Import Canggu retreat images
+import cangguBuilding from '@/assets/canggu-building.png';
+import cangguBathroom1 from '@/assets/canggu-bathroom-1.png';
+import cangguBathroom2 from '@/assets/canggu-bathroom-2.png';
+import cangguBathroom3 from '@/assets/canggu-bathroom-3.png';
+import cangguDeluxeRoom1 from '@/assets/canggu-deluxe-room-1.png';
+import cangguDeluxeRoom2 from '@/assets/canggu-deluxe-room-2.png';
+import cangguSuperiorRoom1 from '@/assets/canggu-superior-room-1.png';
+import cangguSuperiorRoom2 from '@/assets/canggu-superior-room-2.png';
+import cangguSuperiorRoom3 from '@/assets/canggu-superior-room-3.png';
+
 const CangguCampusGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
-  // Canggu-specific gallery images with SEO-optimized alt texts
+  // Canggu retreat accommodation gallery with SEO-optimized alt texts
   const cangguImages = [
     {
-      src: '/lovable-uploads/1d7f913b-8b12-4d76-a477-0c6d244780e6.png',
-      alt: 'Vibrant beachside yoga retreat accommodation in Canggu Bali'
+      src: cangguBuilding,
+      alt: 'Modern white yoga retreat building exterior in Canggu Bali with tropical palms'
     },
     {
-      src: '/lovable-uploads/981ca3dd-5d39-44da-b4c8-3499c01be289.png',
-      alt: 'Modern surf-inspired bedroom design Canggu yoga retreat center'
+      src: cangguDeluxeRoom1,
+      alt: 'Luxury deluxe bedroom with wooden ceiling and balcony view at Canggu yoga retreat'
     },
     {
-      src: '/lovable-uploads/a264314e-ebb8-4cf2-9d4c-ed3d0ead35be.png',
-      alt: 'Tropical beach retreat bathroom with natural materials Canggu'
+      src: cangguDeluxeRoom2,
+      alt: 'Spacious deluxe room with tropical garden view in Canggu wellness retreat'
     },
     {
-      src: '/lovable-uploads/a35d681b-4c7f-4c37-a46a-0819aefe2841.png',
-      alt: 'Comfortable twin beds with surf culture vibes Canggu retreat'
+      src: cangguSuperiorRoom1,
+      alt: 'Comfortable superior room with teak furnishing and natural light Canggu retreat'
     },
     {
-      src: '/lovable-uploads/a484ca51-8206-4f6e-b28f-d23f0c4117f1.png',
-      alt: 'Spacious bedroom with beach views Canggu yoga sanctuary'
+      src: cangguSuperiorRoom2,
+      alt: 'Modern superior bedroom with wooden ceiling and mountain views Canggu'
     },
     {
-      src: '/lovable-uploads/a6cba14b-4185-4bb9-a735-b0849031e1fe.png',
-      alt: 'Creative wellness space bedroom Canggu beach yoga retreat'
+      src: cangguSuperiorRoom3,
+      alt: 'Superior accommodation with contemporary design and garden views Canggu yoga center'
     },
     {
-      src: '/lovable-uploads/ab158cc1-e50f-4cec-9d1c-fa7552956f77.png',
-      alt: 'Premium bathroom facilities with tropical design Canggu retreat'
+      src: cangguBathroom1,
+      alt: 'Modern bathroom with natural stone tiles and rainfall shower Canggu retreat'
     },
     {
-      src: '/lovable-uploads/c07619d4-f8aa-4444-88c4-fa19f00c2b19.png',
-      alt: 'Peaceful single bedroom sanctuary near Canggu beach'
+      src: cangguBathroom2,
+      alt: 'Elegant bathroom with wooden vanity and contemporary design Canggu accommodation'
     },
     {
-      src: '/lovable-uploads/c0ffb891-44b4-4ba9-be24-c4ab9c5696ac.png',
-      alt: 'Modern minimalist bathroom with ocean breeze Canggu yoga center'
-    },
-    {
-      src: '/lovable-uploads/cfcd0947-4b35-453b-8db6-aef9ac9db996.png',
-      alt: 'Cozy twin bedroom with surf-inspired decor Canggu retreat'
-    },
-    {
-      src: '/lovable-uploads/e06db653-c279-4b2c-9b83-85ca57581582.png',
-      alt: 'Luxury accommodation steps from Canggu beach yoga facilities'
-    },
-    {
-      src: '/lovable-uploads/f119daec-93cb-4d9d-880c-085db403ebee.png',
-      alt: 'Beach town retreat bedroom with creative wellness atmosphere Canggu'
+      src: cangguBathroom3,
+      alt: 'Spa-style bathroom with natural materials and modern fixtures Canggu yoga retreat'
     }
   ];
 
@@ -84,31 +83,31 @@ const CangguCampusGallery = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <SEO 
+        <SEO 
         data={{
-          title: "Canggu Beach Retreat Campus Photos - Surf Culture Yoga Sanctuary",
-          description: "Discover our vibrant Canggu beach yoga retreat campus. Creative wellness spaces, surf culture vibes, and beachside accommodation near the best waves in Bali.",
-          keywords: ["Canggu retreat campus", "beach yoga retreat", "surf culture wellness", "Canggu yoga photos", "beachside accommodation", "creative wellness retreat"],
+          title: "Canggu Retreat Accommodation Photos - Premium Yoga Sanctuary",
+          description: "Explore our premium accommodation at Canggu yoga retreat. Modern rooms, spa bathrooms, and peaceful spaces designed for your wellness transformation in Bali.",
+          keywords: ["Canggu yoga retreat accommodation", "Bali retreat rooms", "yoga sanctuary photos", "wellness retreat facilities", "premium yoga accommodation", "Canggu retreat gallery"],
           canonical: "/canggu-campus-gallery",
           openGraph: {
-            title: "Canggu Beach Retreat Campus Photos - Surf Culture & Wellness",
-            description: "Explore our vibrant Canggu retreat campus where surf culture meets creative wellness in the heart of Bali's beach town.",
-            image: "/lovable-uploads/1d7f913b-8b12-4d76-a477-0c6d244780e6.png",
-            imageAlt: "Vibrant beachside yoga retreat accommodation in Canggu Bali",
+            title: "Canggu Yoga Retreat Accommodation Photos - Premium Sanctuary",
+            description: "Discover our beautiful accommodation facilities at Canggu yoga retreat with modern amenities and peaceful spaces for your wellness journey.",
+            image: cangguBuilding,
+            imageAlt: "Modern white yoga retreat building exterior in Canggu Bali with tropical palms",
             type: "website",
             locale: "en_US"
           },
           twitter: {
             card: "summary_large_image",
-            title: "Canggu Beach Retreat Campus Photos",
-            description: "Surf culture meets creative wellness at our Canggu beach retreat",
-            image: "/lovable-uploads/1d7f913b-8b12-4d76-a477-0c6d244780e6.png"
+            title: "Canggu Yoga Retreat Accommodation Photos",
+            description: "Premium accommodation and facilities at our Canggu yoga retreat sanctuary",
+            image: cangguBuilding
           },
           schema: [{
             "@context": "https://schema.org",
             "@type": "ImageGallery",
-            "name": "Canggu Beach Yoga Retreat Campus Photo Gallery",
-            "description": "Photo gallery showcasing our beachside yoga retreat campus in Canggu, Bali",
+            "name": "Canggu Yoga Retreat Accommodation Photo Gallery",
+            "description": "Photo gallery showcasing accommodation and facilities at our premium yoga retreat in Canggu, Bali",
             "image": cangguImages.map(img => ({
               "@type": "ImageObject",
               "url": `https://baliyogaretreat.org${img.src}`,
@@ -125,7 +124,7 @@ const CangguCampusGallery = () => {
         <div className="absolute inset-0">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-            style={{ backgroundImage: `url(${cangguImages[0].src})` }}
+            style={{ backgroundImage: `url(${cangguBuilding})` }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-yoga-sage/90 via-yoga-earth/80 to-yoga-plum/90"></div>
         </div>
