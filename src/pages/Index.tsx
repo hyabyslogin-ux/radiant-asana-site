@@ -27,14 +27,14 @@ const Index = () => {
       <div id="about">
         <About />
       </div>
+      <div id="canggu-retreats">
+        <CangguRetreats />
+      </div>
       <div id="ubud-retreats">
         <UbudRetreats />
       </div>
       <div id="uluwatu-retreats">        
         <UluwatuRetreats />
-      </div>
-      <div id="canggu-retreats">
-        <CangguRetreats />
       </div>
       <HappyStudents />
       <SocialMedia />
