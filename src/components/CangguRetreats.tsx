@@ -45,7 +45,7 @@ const CangguRetreats = () => {
         'Visit to local art studios',
         'Rice field yoga sessions'
       ],
-      includes: ['Eco-friendly accommodation', 'Organic plant-based meals', 'Surf lessons & board rental', 'Art workshops', 'Transportation']
+      includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
     {
       days: '5 Days',
@@ -62,7 +62,7 @@ const CangguRetreats = () => {
         'Innovative sequencing techniques',
         'Artist collective visits'
       ],
-      includes: ['Creative accommodation', 'Inspiring meals', 'Art supplies', 'Workshop materials', 'Creative guidance']
+      includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
     {
       days: '6 Days',
@@ -79,7 +79,7 @@ const CangguRetreats = () => {
         'Environmental conservation projects',
         'Natural setting yoga sessions'
       ],
-      includes: ['Eco-accommodation', 'Organic farm meals', 'Sustainability workshops', 'Conservation activities', 'Environmental education']
+      includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
     {
       days: '7 Days',
@@ -96,7 +96,7 @@ const CangguRetreats = () => {
         'Community cooking sessions',
         'Sustainable daily routine development'
       ],
-      includes: ['Disconnected accommodation', 'Mindful meals', 'Craft materials', 'Nature activities', 'Mindfulness guidance']
+      includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
     {
       days: '8 Days',
@@ -113,7 +113,7 @@ const CangguRetreats = () => {
         'Adjustment techniques training',
         'Personal practice development'
       ],
-      includes: ['Training accommodation', 'Educational meals', 'Training materials', 'Teaching certification', 'Personal mentoring']
+      includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
     {
       days: '9 Days',
@@ -130,7 +130,7 @@ const CangguRetreats = () => {
         'Professional content development',
         'Wellness entrepreneur networking'
       ],
-      includes: ['Business accommodation', 'Networking meals', 'Business materials', 'Marketing tools', 'Professional guidance']
+      includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
     {
       days: '10 Days',
@@ -147,7 +147,7 @@ const CangguRetreats = () => {
         'Goal-setting and habit formation',
         'Personalized transformation plans'
       ],
-      includes: ['Transformation accommodation', 'Specialized meals', 'Coaching sessions', 'Wellness assessments', 'Lifestyle planning']
+      includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
     {
       days: '11 Days',
@@ -164,7 +164,7 @@ const CangguRetreats = () => {
         'Conflict resolution training',
         'Spiritual mentorship development'
       ],
-      includes: ['Leader accommodation', 'Community meals', 'Leadership materials', 'Mentorship opportunities', 'Service projects']
+      includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     }
   ];
 
