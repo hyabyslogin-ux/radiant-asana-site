@@ -4,11 +4,11 @@
   <!-- Home Page -->
   <url>
     <loc>https://baliyogaretreat.org/</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://baliyogaretreat.org/lovable-uploads/yoga-hero.jpg</image:loc>
+      <image:loc>https://baliyogaretreat.org/src/assets/yoga-hero.jpg</image:loc>
       <image:title>Bali Yoga Retreats Hero Image</image:title>
     </image:image>
   </url>
@@ -16,213 +16,295 @@
   <!-- About Us -->
   <url>
     <loc>https://baliyogaretreat.org/about-us</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  
+  <!-- Founder -->
+  <url>
+    <loc>https://baliyogaretreat.org/founder</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://baliyogaretreat.org/src/assets/yogi-himanshu.jpg</image:loc>
+      <image:title>Yogi Himanshu - Founder</image:title>
+    </image:image>
   </url>
   
   <!-- Contact Us -->
   <url>
     <loc>https://baliyogaretreat.org/contact-us</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  
+  <!-- Blog -->
+  <url>
+    <loc>https://baliyogaretreat.org/blog</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Photo Gallery -->
+  <url>
+    <loc>https://baliyogaretreat.org/photo-gallery</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Campus Galleries -->
+  <url>
+    <loc>https://baliyogaretreat.org/ubud-campus-gallery</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://baliyogaretreat.org/uluwatu-campus-gallery</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://baliyogaretreat.org/canggu-campus-gallery</loc>
+    <lastmod>2024-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <!-- Ubud Retreats -->
   <url>
     <loc>https://baliyogaretreat.org/3-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
-      <image:loc>https://baliyogaretreat.org/lovable-uploads/yoga-retreat-1.jpg</image:loc>
+      <image:loc>https://baliyogaretreat.org/src/assets/ubud-3day-retreat.jpg</image:loc>
       <image:title>3 Days Ubud Yoga Retreat</image:title>
     </image:image>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/4-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baliyogaretreat.org/src/assets/ubud-4day-retreat.jpg</image:loc>
+      <image:title>4 Days Ubud Yoga Retreat</image:title>
+    </image:image>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/5-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baliyogaretreat.org/src/assets/ubud-5day-retreat.jpg</image:loc>
+      <image:title>5 Days Ubud Yoga Retreat</image:title>
+    </image:image>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/6-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baliyogaretreat.org/src/assets/ubud-6day-retreat.jpg</image:loc>
+      <image:title>6 Days Ubud Yoga Retreat</image:title>
+    </image:image>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/7-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baliyogaretreat.org/src/assets/ubud-7day-retreat.jpg</image:loc>
+      <image:title>7 Days Ubud Yoga Retreat</image:title>
+    </image:image>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/8-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baliyogaretreat.org/src/assets/ubud-8day-retreat.jpg</image:loc>
+      <image:title>8 Days Ubud Yoga Retreat</image:title>
+    </image:image>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/9-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baliyogaretreat.org/src/assets/ubud-9day-retreat.jpg</image:loc>
+      <image:title>9 Days Ubud Yoga Retreat</image:title>
+    </image:image>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/10-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baliyogaretreat.org/src/assets/ubud-10day-retreat.jpg</image:loc>
+      <image:title>10 Days Ubud Yoga Retreat</image:title>
+    </image:image>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/11-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://baliyogaretreat.org/src/assets/ubud-11day-retreat.jpg</image:loc>
+      <image:title>11 Days Ubud Yoga Retreat</image:title>
+    </image:image>
   </url>
-  
+
   <!-- Uluwatu Retreats -->
   <url>
     <loc>https://baliyogaretreat.org/uluwatu-3-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/uluwatu-4-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/uluwatu-5-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/uluwatu-6-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/uluwatu-7-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/uluwatu-8-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/uluwatu-9-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/uluwatu-10-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/uluwatu-11-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
+
   <!-- Canggu Retreats -->
   <url>
     <loc>https://baliyogaretreat.org/canggu-3-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/canggu-4-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/canggu-5-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/canggu-6-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/canggu-7-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/canggu-8-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/canggu-9-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/canggu-10-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <url>
     <loc>https://baliyogaretreat.org/canggu-11-days-retreat</loc>
-    <lastmod>2024-01-15</lastmod>
+    <lastmod>2024-09-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-  
+
 </urlset>

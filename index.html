@@ -2,7 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/lovable-uploads/ecc51699-b2a2-48db-b13f-653aca4b3e91.png" type="image/png">
+    <!-- Favicon and web app icons -->
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Preload critical favicon -->
+    <link rel="preload" href="/favicon-32x32.png" as="image" type="image/png">
     
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,11 +52,20 @@
     <meta name="twitter:description" content="Transform your life with authentic yoga retreats in Bali's most sacred locations." />
     <meta name="twitter:image" content="https://baliyogaretreat.org/lovable-uploads/yoga-hero.jpg" />
     
-    <!-- Additional meta tags for better SEO -->
+    <!-- Additional meta tags for better SEO and mobile -->
     <meta name="theme-color" content="#914955" />
     <meta name="msapplication-TileColor" content="#914955" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Bali Yoga Retreats" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Bali Yoga Retreats" />
+    
+    <!-- Google Search Console verification (replace with your actual verification code) -->
+    <meta name="google-site-verification" content="your-google-verification-code-here" />
+    
+    <!-- Enhanced viewport for mobile optimization -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
     
     <!-- Structured data for organization -->
     <script type="application/ld+json">
