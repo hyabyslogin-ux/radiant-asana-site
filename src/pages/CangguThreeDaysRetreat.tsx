@@ -349,6 +349,111 @@ const CangguThreeDaysRetreat = () => {
                 </div>
               </div>
 
+              {/* Included in Your Retreat */}
+              <div className="space-y-12">
+                <div className="text-center">
+                  <h3 className="font-playfair text-3xl font-bold text-yoga-earth mb-4">Included in Your Retreat</h3>
+                  <p className="font-inter text-lg text-gray-600 max-w-3xl mx-auto">
+                    Everything you need for a transformative 3-day yoga experience by the ocean
+                  </p>
+                </div>
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  
+                  {/* Private Accommodation */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-cream/10 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-cream/20 hover:scale-105">
+                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 21v-4a2 2 0 012-2h4a2 2 0 012 2v4" />
+                      </svg>
+                    </div>
+                    <h4 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Private Accommodation</h4>
+                    <p className="font-inter text-sm text-gray-600">Comfortable beachfront bungalow with ocean views</p>
+                  </div>
+
+                  {/* 3 Daily Vegetarian Meals */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-peach/10 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-peach/20 hover:scale-105">
+                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-earth to-yoga-plum rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Utensils className="w-6 h-6 text-white" />
+                    </div>
+                    <h4 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">3 Daily Vegetarian Meals</h4>
+                    <p className="font-inter text-sm text-gray-600">Nutritious organic meals to support your practice</p>
+                  </div>
+
+                  {/* Mentioned Yoga Classes */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-rose/10 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-rose/20 hover:scale-105">
+                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-rose to-yoga-mauve rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                      </svg>
+                    </div>
+                    <h4 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">All Yoga Classes</h4>
+                    <p className="font-inter text-sm text-gray-600">Hatha, Vinyasa, and beachside yoga sessions</p>
+                  </div>
+
+                  {/* Mentioned Healing Sessions */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-sage/10 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-sage/20 hover:scale-105">
+                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      </svg>
+                    </div>
+                    <h4 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Healing Sessions</h4>
+                    <p className="font-inter text-sm text-gray-600">Sound healing, massage therapy, and meditation</p>
+                  </div>
+
+                  {/* Swimming Pool Access */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-cream/10 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-cream/20 hover:scale-105">
+                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-earth to-yoga-plum rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Waves className="w-6 h-6 text-white" />
+                    </div>
+                    <h4 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Swimming Pool Access</h4>
+                    <p className="font-inter text-sm text-gray-600">Refreshing pool with ocean views for relaxation</p>
+                  </div>
+
+                  {/* Gym Access */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-peach/10 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-peach/20 hover:scale-105">
+                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-rose to-yoga-mauve rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <h4 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Gym Access</h4>
+                    <p className="font-inter text-sm text-gray-600">Fully equipped fitness center for cross-training</p>
+                  </div>
+
+                  {/* Free High-Speed Wi-Fi */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-sage/10 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-sage/20 hover:scale-105">
+                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-sage to-yoga-earth rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Wifi className="w-6 h-6 text-white" />
+                    </div>
+                    <h4 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Free High-Speed Wi-Fi</h4>
+                    <p className="font-inter text-sm text-gray-600">Stay connected with reliable internet access</p>
+                  </div>
+
+                  {/* All Necessary Items */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-rose/10 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-rose/20 hover:scale-105">
+                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-earth to-yoga-plum rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <h4 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">All Session Items</h4>
+                    <p className="font-inter text-sm text-gray-600">Yoga mats, props, and equipment provided</p>
+                  </div>
+
+                  {/* Retreat Materials */}
+                  <div className="group bg-gradient-to-br from-white to-yoga-cream/10 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-yoga-cream/20 hover:scale-105">
+                    <div className="w-12 h-12 bg-gradient-to-br from-yoga-rose to-yoga-mauve rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Gift className="w-6 h-6 text-white" />
+                    </div>
+                    <h4 className="font-playfair text-lg font-semibold text-yoga-earth mb-2">Retreat Materials</h4>
+                    <p className="font-inter text-sm text-gray-600">School bag, t-shirt, notebook, and pen included</p>
+                  </div>
+                </div>
+              </div>
+
               {/* Pricing */}
               <div className="space-y-12">
                 <div className="text-center">
