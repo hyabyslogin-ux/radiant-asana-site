@@ -15,7 +15,7 @@ const UluwatuRetreats = () => {
   const allRetreats = [
     {
       days: '3 Days',
-      price: '$380',
+      price: '$265',
       level: 'All Levels',
       image: '/lovable-uploads/f119daec-93cb-4d9d-880c-085db403ebee.png',
       title: '3 Days Yoga Retreat in Uluwatu Bali',
@@ -32,7 +32,7 @@ const UluwatuRetreats = () => {
     },
     {
       days: '4 Days',
-      price: '$480',
+      price: '$372',
       level: 'All Levels',
       image: '/lovable-uploads/a484ca51-8206-4f6e-b28f-d23f0c4117f1.png',
       title: '4 Days Yoga Retreat in Uluwatu Bali',
@@ -49,7 +49,7 @@ const UluwatuRetreats = () => {
     },
     {
       days: '5 Days',
-      price: '$580',
+      price: '$478',
       level: 'All Levels',
       image: '/lovable-uploads/3007f6a0-2fd5-4ac3-a3c8-96fd132eb857.png',
       title: '5 Days Yoga Retreat in Uluwatu Bali',
@@ -66,7 +66,7 @@ const UluwatuRetreats = () => {
     },
     {
       days: '6 Days',
-      price: '$680',
+      price: '$584',
       level: 'All Levels',
       image: '/lovable-uploads/fdb98fee-a394-4daa-85fa-ac6f82ae729b.png',
       title: '6 Days Yoga Retreat in Uluwatu Bali',
@@ -83,7 +83,7 @@ const UluwatuRetreats = () => {
     },
     {
       days: '7 Days',
-      price: '$780',
+      price: '$690',
       level: 'All Levels',
       image: '/lovable-uploads/e06db653-c279-4b2c-9b83-85ca57581582.png',
       title: '7 Days Yoga Retreat in Uluwatu Bali',
@@ -100,7 +100,7 @@ const UluwatuRetreats = () => {
     },
     {
       days: '8 Days',
-      price: '$880',
+      price: '$796',
       level: 'All Levels',
       image: '/lovable-uploads/a6cba14b-4185-4bb9-a735-b0849031e1fe.png',
       title: '8 Days Yoga Retreat in Uluwatu Bali',
@@ -117,7 +117,7 @@ const UluwatuRetreats = () => {
     },
     {
       days: '9 Days',
-      price: '$980',
+      price: '$930',
       level: 'All Levels',
       image: '/lovable-uploads/116af622-9ecd-4d77-a979-6c043102cfce.png',
       title: '9 Days Yoga Retreat in Uluwatu Bali',
@@ -134,7 +134,7 @@ const UluwatuRetreats = () => {
     },
     {
       days: '10 Days',
-      price: '$1080',
+      price: '$1009',
       level: 'All Levels',
       image: '/lovable-uploads/981ca3dd-5d39-44da-b4c8-3499c01be289.png',
       title: '10 Days Yoga Retreat in Uluwatu Bali',
@@ -151,7 +151,7 @@ const UluwatuRetreats = () => {
     },
     {
       days: '11 Days',
-      price: '$1180',
+      price: '$1050',
       level: 'All Levels',
       image: '/lovable-uploads/78d35dbb-ba28-454c-adc8-b8feb1ee2a9b.png',
       title: '11 Days Yoga Retreat in Uluwatu Bali',
