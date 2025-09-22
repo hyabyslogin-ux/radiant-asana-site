@@ -166,19 +166,9 @@ const CangguRetreats = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Yoga Retreats in Canggu Bali
           </h2>
-          <div className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed space-y-4">
+          <div className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             <p>
-              Embrace the vibrant, creative energy of Canggu, Bali's bohemian coastal paradise where surf culture meets spiritual practice. 
-              Our Canggu yoga retreats offer the perfect blend of beachside relaxation, dynamic yoga sessions, and the contemporary Balinese 
-              lifestyle. Located along volcanic black sand beaches with world-renowned surf breaks, Canggu provides an energetic yet peaceful 
-              setting for yoga practice, surrounded by lush rice fields, trendy cafés, and a thriving international community.
-            </p>
-            <p>
-              Enjoy morning yoga flows on the beach as surfers catch their first waves, explore colorful street art and local markets, 
-              savor organic smoothie bowls and plant-based cuisine at hip beachfront cafés, and unwind with sunset sessions overlooking 
-              the Indian Ocean. Our Canggu retreats include accommodation in boutique eco-resorts, wellness workshops, surfing lessons, 
-              visits to local art galleries and markets, and plenty of free time to explore this creative coastal town. Perfect for those 
-              seeking a more contemporary approach to spiritual practice while still honoring traditional yoga wisdom in a modern, inspiring environment.
+              Yoga retreat like no others. Everyday, learn and practice something new, discover a new aspect of yoga and yourself everyday during the retreat with Bali Yoga School in Canggu. Embrace the vibrant, creative energy of Canggu, Bali's bohemian coastal paradise where surf culture meets spiritual practice. Located along volcanic black sand beaches with world-renowned surf breaks, Canggu provides an energetic yet peaceful setting for yoga practice, surrounded by lush rice fields, trendy cafés, and a thriving international community. Enjoy sunset yoga flows on the beach as surfers catch their last waves of the day into the horizon, explore colorful street art and local markets, savor organic smoothie bowls and plant-based cuisine at hip beachfront cafés, and unwind with sunset sessions overlooking the Indian Ocean. Our Canggu retreats are programmed with different daily schedules from Monday to Sunday. It include private accommodation, sound healing sessions, yang to yin practices of yoga, various meditation and pranayama sessions, visits to local beach for sunset flow and meditation. Explore this creative coastal town in your free-time. Perfect for those seeking a more practical approach to spiritual practice while still honoring traditional yoga wisdom in a modern, inspiring environment.
             </p>
           </div>
         </div>
@@ -196,15 +186,15 @@ const CangguRetreats = () => {
             <div className="flex justify-center mb-4">
               <Coffee className="w-12 h-12 text-yoga-mauve" />
             </div>
-            <h3 className="text-xl font-semibold text-primary mb-3">Wellness Culture</h3>
-            <p className="text-muted-foreground">Immerse yourself in Canggu's vibrant wellness scene with organic cafés and health-focused lifestyle</p>
+            <h3 className="text-xl font-semibold text-primary mb-3">Professional Team</h3>
+            <p className="text-muted-foreground">We have been leading the yoga scene in Bali for many years as a top yoga teacher training school. Receive authentic yoga practices that you can practice even after the retreat, not an illusional moment.</p>
           </div>
           <div className="text-center">
             <div className="flex justify-center mb-4">
               <Calendar className="w-12 h-12 text-yoga-mauve" />
             </div>
-            <h3 className="text-xl font-semibold text-primary mb-3">Creative Energy</h3>
-            <p className="text-muted-foreground">Connect with like-minded individuals in this artistic coastal community</p>
+            <h3 className="text-xl font-semibold text-primary mb-3">Choose As You Want</h3>
+            <p className="text-muted-foreground">You are the one to choose the programs. Monday to Sunday, we provide different daily programs with transparency. Start and end your retreat according to the daily topics we provide.</p>
           </div>
         </div>
 
