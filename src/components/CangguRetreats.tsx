@@ -28,7 +28,7 @@ const CangguRetreats = () => {
         'Art gallery and market tours',
         'Community beach cleanup activity'
       ],
-      includes: ['Boutique accommodation', 'Healthy meals & smoothies', 'Beach activities', 'Cultural tours', 'Wellness workshops']
+      includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
     {
       days: '4 Days',
