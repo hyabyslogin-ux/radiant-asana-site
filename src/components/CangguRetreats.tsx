@@ -21,12 +21,11 @@ const CangguRetreats = () => {
       title: '3 Days Yoga Retreat in Canggu Bali',
       description: 'Experience Canggu\'s vibrant wellness scene with this energizing 3-day retreat that combines beachside yoga with the area\'s famous health-conscious lifestyle. Perfect for modern yogis seeking community and creativity. Morning beach yoga sessions are complemented by healthy smoothie bowl workshops and sunset practices on volcanic black sand beaches. Explore local wellness cafés, art galleries, and bustling markets while participating in community beach cleanup activities. This retreat offers the perfect introduction to Canggu\'s unique blend of surf culture, artistic expression, and conscious living, creating connections with like-minded individuals from around the world.',
       highlights: [
-        'Morning beach yoga sessions',
-        'Healthy smoothie bowl workshops',
-        'Sunset yoga on black sand beaches',
-        'Visit to local wellness cafés',
-        'Art gallery and market tours',
-        'Community beach cleanup activity'
+        'Daily Hatha yoga, meditation, pranayama sessions along with sound healing sessions, sunset beach yoga, yin yoga. Everyday, different schedules. You can choose how you want it to be.',
+        '3 daily vegetarian meals',
+        'Private accommodation',
+        'Swimming pool access',
+        'Gym access'
       ],
       includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
@@ -38,12 +37,11 @@ const CangguRetreats = () => {
       title: '4 Days Yoga Retreat in Canggu Bali',
       description: 'Dive into Canggu\'s unique blend of surf culture and spiritual practice with this comprehensive 4-day lifestyle immersion. Combine beach yoga sessions at sunrise and sunset with beginner-friendly surf lessons and ocean meditation practices. Experience plant-based cooking classes, visit local art studios, and participate in rice field yoga sessions. The retreat includes community wellness events and opportunities to connect with Canggu\'s creative international community. This program perfectly balances physical activity, spiritual growth, and cultural exploration, offering participants a taste of the modern nomadic lifestyle that makes Canggu a global wellness destination.',
       highlights: [
-        'Beach yoga at sunrise and sunset',
-        'Beginner-friendly surf lessons',
-        'Meditation sessions by the ocean',
-        'Plant-based cooking classes',
-        'Visit to local art studios',
-        'Rice field yoga sessions'
+        'Daily Hatha yoga, meditation, pranayama sessions along with sound healing sessions, sunset beach yoga, yin yoga. Everyday, different schedules. You can choose how you want it to be.',
+        '3 daily vegetarian meals',
+        'Private accommodation',
+        'Swimming pool access',
+        'Gym access'
       ],
       includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
@@ -55,12 +53,11 @@ const CangguRetreats = () => {
       title: '5 Days Yoga Retreat in Canggu Bali',
       description: 'Unleash your creativity through this dynamic 5-day retreat that combines intermediate yoga practice with artistic expression and creative workshops. Experience flowing yoga sequences inspired by ocean waves, participate in creative writing sessions, and explore various art forms including painting, photography, and music. The retreat takes place in multiple inspiring locations throughout Canggu, from beachfront studios to rice field platforms and artist collectives. Participants develop their unique creative voice while deepening their yoga practice through innovative sequencing and mindful movement. This transformative experience attracts artists, writers, and creative professionals seeking inspiration and community in Bali\'s most artistic coastal town.',
       highlights: [
-        'Ocean-inspired flowing yoga sequences',
-        'Creative writing and art workshops',
-        'Photography and music sessions',
-        'Multiple inspiring practice locations',
-        'Innovative sequencing techniques',
-        'Artist collective visits'
+        'Daily Hatha yoga, meditation, pranayama sessions along with sound healing sessions, sunset beach yoga, yin yoga. Everyday, different schedules. You can choose how you want it to be.',
+        '3 daily vegetarian meals',
+        'Private accommodation',
+        'Swimming pool access',
+        'Gym access'
       ],
       includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
@@ -72,12 +69,11 @@ const CangguRetreats = () => {
       title: '6 Days Yoga Retreat in Canggu Bali',
       description: 'Learn sustainable living practices while deepening your yoga practice in this eco-conscious 6-day retreat. Explore permaculture gardens, participate in organic farming activities, and learn about sustainable tourism and conscious consumption. The retreat combines intermediate yoga practice with workshops on zero-waste living, renewable energy, and environmental stewardship. Participants visit local eco-projects, learn traditional Balinese sustainable practices, and engage with environmental conservation efforts. Daily yoga sessions take place in natural settings including bamboo studios, organic gardens, and beachfront locations. This retreat attracts environmentally conscious travelers seeking to align their lifestyle with their values while maintaining a strong yoga practice.',
       highlights: [
-        'Permaculture garden exploration',
-        'Organic farming participation',
-        'Zero-waste living workshops',
-        'Traditional sustainable practices',
-        'Environmental conservation projects',
-        'Natural setting yoga sessions'
+        'Daily Hatha yoga, meditation, pranayama sessions along with sound healing sessions, sunset beach yoga, yin yoga. Everyday, different schedules. You can choose how you want it to be.',
+        '3 daily vegetarian meals',
+        'Private accommodation',
+        'Swimming pool access',
+        'Gym access'
       ],
       includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
@@ -89,12 +85,11 @@ const CangguRetreats = () => {
       title: '7 Days Yoga Retreat in Canggu Bali',
       description: 'Reconnect with yourself and nature through this comprehensive 7-day digital detox retreat designed for all levels. Experience life without constant connectivity while developing mindful living practices that can be sustained long-term. The retreat combines various yoga styles with meditation techniques, mindful eating practices, and nature immersion activities. Participants learn to cultivate presence, develop healthy boundaries with technology, and create sustainable daily routines. Daily activities include beach walks, jungle meditations, traditional craft workshops, and community cooking sessions. This transformative week helps modern individuals rediscover the joy of simple living while building a strong yoga practice rooted in mindfulness and authentic connection.',
       highlights: [
-        'Complete digital disconnection',
-        'Mindful eating and living practices',
-        'Nature immersion activities',
-        'Traditional craft workshops',
-        'Community cooking sessions',
-        'Sustainable daily routine development'
+        'Daily Hatha yoga, meditation, pranayama sessions along with sound healing sessions, sunset beach yoga, yin yoga. Everyday, different schedules. You can choose how you want it to be.',
+        '3 daily vegetarian meals',
+        'Private accommodation',
+        'Swimming pool access',
+        'Gym access'
       ],
       includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
@@ -106,12 +101,11 @@ const CangguRetreats = () => {
       title: '8 Days Yoga Retreat in Canggu Bali',
       description: 'Master advanced Vinyasa flow techniques in this intensive 8-day training designed for experienced practitioners and aspiring teachers. Develop sophisticated sequencing skills, explore complex transitions, and learn advanced poses including challenging arm balances and deep backbends. The training covers anatomy, alignment principles, energetic sequencing, and creative flow development. Participants practice teaching with peer feedback, learn adjustment techniques, and explore the philosophical foundations of Vinyasa yoga. Daily sessions include personal practice development, group classes, and individual mentoring. This intensive training attracts serious practitioners ready to elevate their practice and potentially begin teaching. The program combines technical excellence with creative expression in Canggu\'s inspiring beachside environment.',
       highlights: [
-        'Advanced Vinyasa sequencing techniques',
-        'Complex transitions and arm balances',
-        'Anatomy and alignment principles',
-        'Teaching practice with feedback',
-        'Adjustment techniques training',
-        'Personal practice development'
+        'Daily Hatha yoga, meditation, pranayama sessions along with sound healing sessions, sunset beach yoga, yin yoga. Everyday, different schedules. You can choose how you want it to be.',
+        '3 daily vegetarian meals',
+        'Private accommodation',
+        'Swimming pool access',
+        'Gym access'
       ],
       includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
@@ -123,12 +117,11 @@ const CangguRetreats = () => {
       title: '9 Days Yoga Retreat in Canggu Bali',
       description: 'Combine advanced yoga practice with entrepreneurial skill development in this unique 9-day retreat for yogis building wellness businesses. Learn to create sustainable income streams through yoga teaching, retreat leading, online course creation, and wellness coaching. The program includes advanced practice sessions, business development workshops, marketing strategy sessions, and financial planning guidance. Participants develop their unique brand, create professional content, and build networks with other wellness entrepreneurs. Daily activities balance intensive yoga practice with practical business skills, social media training, and legal considerations for wellness professionals. This retreat attracts ambitious yogis ready to turn their passion into a thriving business while maintaining authentic practice.',
       highlights: [
-        'Business development workshops',
-        'Marketing and branding strategy',
-        'Online course creation training',
-        'Financial planning guidance',
-        'Professional content development',
-        'Wellness entrepreneur networking'
+        'Daily Hatha yoga, meditation, pranayama sessions along with sound healing sessions, sunset beach yoga, yin yoga. Everyday, different schedules. You can choose how you want it to be.',
+        '3 daily vegetarian meals',
+        'Private accommodation',
+        'Swimming pool access',
+        'Gym access'
       ],
       includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
@@ -140,12 +133,11 @@ const CangguRetreats = () => {
       title: '10 Days Yoga Retreat in Canggu Bali',
       description: 'Undergo a complete lifestyle transformation through this comprehensive 10-day retreat that addresses all aspects of wellbeing. The program combines yoga practice with nutrition education, fitness training, mental health support, and life coaching. Participants work with specialists in various fields to create personalized wellness plans, develop healthy habits, and overcome limiting beliefs. Daily activities include diverse exercise modalities, cooking classes, goal-setting workshops, and one-on-one coaching sessions. The retreat includes detox protocols, stress management techniques, and sustainable lifestyle design. This transformative experience attracts individuals ready for significant life changes, providing tools and support for lasting transformation. The program creates lasting change through holistic approach to mind, body, and lifestyle optimization.',
       highlights: [
-        'Comprehensive wellness planning',
-        'Nutrition and fitness education',
-        'Mental health and life coaching',
-        'Detox and stress management',
-        'Goal-setting and habit formation',
-        'Personalized transformation plans'
+        'Daily Hatha yoga, meditation, pranayama sessions along with sound healing sessions, sunset beach yoga, yin yoga. Everyday, different schedules. You can choose how you want it to be.',
+        '3 daily vegetarian meals',
+        'Private accommodation',
+        'Swimming pool access',
+        'Gym access'
       ],
       includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     },
@@ -157,12 +149,11 @@ const CangguRetreats = () => {
       title: '11 Days Yoga Retreat in Canggu Bali',
       description: 'Develop into a wellness leader through this comprehensive 11-day program combining advanced yoga practice with leadership development and community building skills. Learn to create transformative experiences for others, develop retreat planning abilities, and build authentic wellness communities. The program includes advanced teaching techniques, group facilitation skills, conflict resolution training, and spiritual mentorship development. Participants practice leading groups, organizing events, and creating inclusive environments for diverse populations. Daily activities balance intensive personal practice with leadership challenges, community service projects, and mentorship opportunities. This ultimate program attracts experienced practitioners ready to serve others and create positive change in the wellness industry through authentic leadership and service.',
       highlights: [
-        'Wellness leadership development',
-        'Retreat planning and facilitation',
-        'Community building skills',
-        'Group leadership practice',
-        'Conflict resolution training',
-        'Spiritual mentorship development'
+        'Daily Hatha yoga, meditation, pranayama sessions along with sound healing sessions, sunset beach yoga, yin yoga. Everyday, different schedules. You can choose how you want it to be.',
+        '3 daily vegetarian meals',
+        'Private accommodation',
+        'Swimming pool access',
+        'Gym access'
       ],
       includes: ['Private accommodation', '3 daily vegetarian meals', 'Mentioned yoga classes', 'Mentioned healing sessions', 'Swimming pool access', 'Gym access', 'Free high-speed Wi-Fi', 'All the necessary items for the sessions', 'Retreat materials (1 school bag / 1 school t-shirt / 1 notebook / 1 pen)']
     }
