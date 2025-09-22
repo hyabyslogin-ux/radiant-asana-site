@@ -15,7 +15,7 @@ const CangguRetreats = () => {
   const allRetreats = [
     {
       days: '3 Days',
-      price: '$320',
+      price: '$425',
       level: 'All Levels',
       image: '/lovable-uploads/8ce277ec-6c63-418b-99ae-6196e53a01e8.png',
       title: '3 Days Yoga Retreat in Canggu Bali',
@@ -31,7 +31,7 @@ const CangguRetreats = () => {
     },
     {
       days: '4 Days',
-      price: '$420',
+      price: '$531',
       level: 'All Levels',
       image: '/lovable-uploads/a35d681b-4c7f-4c37-a46a-0819aefe2841.png',
       title: '4 Days Yoga Retreat in Canggu Bali',
@@ -47,7 +47,7 @@ const CangguRetreats = () => {
     },
     {
       days: '5 Days',
-      price: '$520',
+      price: '$637',
       level: 'All Levels',
       image: '/lovable-uploads/5452b8e2-9e0c-4bd4-bd15-5598c37da455.png',
       title: '5 Days Yoga Retreat in Canggu Bali',
@@ -63,7 +63,7 @@ const CangguRetreats = () => {
     },
     {
       days: '6 Days',
-      price: '$620',
+      price: '$743',
       level: 'All Levels',
       image: '/lovable-uploads/ab158cc1-e50f-4cec-9d1c-fa7552956f77.png',
       title: '6 Days Yoga Retreat in Canggu Bali',
@@ -79,7 +79,7 @@ const CangguRetreats = () => {
     },
     {
       days: '7 Days',
-      price: '$720',
+      price: '$850',
       level: 'All Levels',
       image: '/lovable-uploads/c0ffb891-44b4-4ba9-be24-c4ab9c5696ac.png',
       title: '7 Days Yoga Retreat in Canggu Bali',
